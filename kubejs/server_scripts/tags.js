@@ -20,6 +20,16 @@ const RegisterDisabledItems = (event) => {
     event.add('kubejs:disabled_items', 'projectred_core:electrotine_silicon')
     event.add('kubejs:disabled_items', 'projectred_core:woven_cloth')
     event.add('kubejs:disabled_items', 'projectred_core:sail')
+    event.add('cct:chest_nugget',[
+        'minecraft:iron_nugget',
+        'gtceu:zinc_nugget',
+        'gtceu:copper_nugget',
+        'gtceu:aluminium_nugget',
+        'gtceu:lead_nugget',
+        'gtceu:bronze_nugget',
+        'gtceu:invar_nugget',
+        'gtceu:steel_nugget'
+    ])
 
 
 }
