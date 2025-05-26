@@ -8,6 +8,7 @@ const RegistryStartUpItems = (event) =>{
     event.create('sculk_thing').displayName('Скалковые волокна')
     event.create('illager_chains').displayName('Украшения разбойников')
     event.create('corrupted_flesh').displayName('Потусторонняя ткань')
+    event.create('rusty_v1').displayName('Вазилиновое дрисло')
     //фрагменты материалов редкости
     event.create('common_fragment').displayName('Осколки магического металла')
     event.create('uncommon_fragment').displayName('Обрывки ткани времени')
