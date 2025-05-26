@@ -1,2 +1,4 @@
 # CCT04
-JavaScript recipes and something else absolutely free to use everywhere 
+Minecraft scripts for modpack CCT
+----------------------------------
+
