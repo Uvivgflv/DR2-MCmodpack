@@ -1886,6 +1886,14 @@
 					level: 5
 				}
 			]
+		},{
+                        item: "minecraft:deepslate"
+                        aptitudes: [
+                                {
+                                       aptitude: "Strength",
+                                       level: 5
+				},{aptitude: "Constitution", level: 5}
+			]
 		}
 		
 	]
