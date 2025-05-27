@@ -11,7 +11,7 @@ startingExpPercent = 0.3
 #Defines should player pick up items with higher Tier or not.
 pickUp = true
 #Set to true if player can't craft higher Tier item.
-craftLock = false
+craftLock = true
 #Tiers for Items: 
 itemTiers = ""
 #Tiers for Entities: 
