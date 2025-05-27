@@ -446,7 +446,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 6
+					level: 16
 				}
 			]
 		},
@@ -531,7 +531,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 8
+					level: 6
 				}
 			]
 		},
@@ -540,7 +540,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 16
+					level: 25
 				}
 			]
 		},
@@ -606,7 +606,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 12
+					level: 15
 				},
 				{
 					aptitude: "Luck",
@@ -850,7 +850,7 @@
 			item: "minecraft:brown_mushroom",
 			aptitudes: [
 				{
-					aptitude: "Intelligence",
+					aptitude: "Magic",
 					level: 8
 				}
 			]
@@ -859,7 +859,7 @@
 			item: "minecraft:red_mushroom",
 			aptitudes: [
 				{
-					aptitude: "Intelligence",
+					aptitude: "Magic",
 					level: 8
 				}
 			]
@@ -913,7 +913,7 @@
 			item: "minecraft:chorus_plant",
 			aptitudes: [
 				{
-					aptitude: "Intelligence",
+					aptitude: "Magic",
 					level: 12
 				}
 			]
@@ -922,7 +922,7 @@
 			item: "minecraft:chorus_flower",
 			aptitudes: [
 				{
-					aptitude: "Intelligence",
+					aptitude: "Magic",
 					level: 12
 				}
 			]
@@ -1425,6 +1425,10 @@
 				{
 					aptitude: "Luck",
 					level: 4
+				},
+                                {
+                                        aptitude: "Constitution",
+                                        level: 12
 				}
 			]
 		},
@@ -1462,7 +1466,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1475,7 +1479,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1488,7 +1492,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1501,7 +1505,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1514,7 +1518,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1527,7 +1531,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1540,7 +1544,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1553,7 +1557,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1566,7 +1570,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1579,7 +1583,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1592,7 +1596,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1605,7 +1609,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1618,7 +1622,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1631,7 +1635,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1644,7 +1648,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1657,7 +1661,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1670,7 +1674,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1683,7 +1687,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1696,7 +1700,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1709,7 +1713,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1722,7 +1726,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1735,7 +1739,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1748,7 +1752,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1761,7 +1765,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1774,7 +1778,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1787,7 +1791,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1800,7 +1804,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1813,7 +1817,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1826,7 +1830,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1839,7 +1843,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1852,7 +1856,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1865,7 +1869,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Building",
 					level: 3
 				}
 			]
@@ -1878,7 +1882,7 @@
 					level: 2
 				},
 				{
-					aptitude: "Intelligence",
+					aptitude: "Constitution",
 					level: 5
 				}
 			]
