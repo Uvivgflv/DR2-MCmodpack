@@ -17,4 +17,5 @@ const RegistryStartUpItems = (event) =>{
     event.create('legendary_fragment').displayName('Осколки жемчуженны богославленной кузни')
     //материалы крафта
     event.create('ash_compound').displayName('Зольная смесь')
+    event.create('prim_glass_mix').displayName('Стеклянная смесь')
 }
