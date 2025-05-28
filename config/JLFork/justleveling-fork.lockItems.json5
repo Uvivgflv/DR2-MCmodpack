@@ -1875,7 +1875,7 @@
 			]
 		},
 		{
-			item: "quark:backpack"
+			item: "quark:backpack",
 			aptitudes: [
 				{
 					aptitude: "Dexterity",
@@ -1886,13 +1886,18 @@
 					level: 5
 				}
 			]
-		},{
-                        item: "minecraft:deepslate"
-                        aptitudes: [
-                                {
-                                       aptitude: "Strength",
-                                       level: 5
-				},{aptitude: "Constitution", level: 5}
+		},
+		{
+			item: "minecraft:deepslate",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 5
+				},
+				{
+					aptitude: "Constitution",
+					level: 5
+				}
 			]
 		}
 		
