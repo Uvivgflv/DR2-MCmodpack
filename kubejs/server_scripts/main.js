@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
     RegisterTFMGRecipes(event)
     RegistryCCTRecipes(event)
     RegistryTconstructResipes(event)
+    RegisterAE2Recipes(event)
 })
 ServerEvents.tags('item', event => {
     RegisterDisabledItems(event)

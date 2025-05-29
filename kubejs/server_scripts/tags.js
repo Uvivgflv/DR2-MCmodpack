@@ -41,6 +41,10 @@ const RegisterDisabledItems = (event) => {
         'malum:cursed_sapball',
         'malum:runic_sapball'
     ])
+    event.add('cct:stonecuter_saw_blades', [
+        'gtceu:bronze_buzz_saw_blade', 
+        'gtceu:iron_buzz_saw_blade'
+    ])
 
 
 }

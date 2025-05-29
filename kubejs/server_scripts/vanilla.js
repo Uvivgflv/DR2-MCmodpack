@@ -35,7 +35,7 @@ event.remove({id:'minecraft:smoker'})
 event.remove({id:'minecraft:blast_furnace'})
 event.remove({output:'minecraft:grindstone'})
 event.remove({id:'minecraft:smithing_table'})
-event.remove({id:'minecraft:stonecutter'})
+event.remove({output:'minecraft:stonecutter'})
 event.remove({output:/^minecraft:.*_bed/})
 event.remove({id:'quark:building/crafting/furnaces/blackstone_smoker'})
 event.remove({id:'quark:building/crafting/furnaces/deepslate_smoker'})
@@ -43,6 +43,8 @@ event.remove({id:'quark:building/crafting/furnaces/blackstone_blast_furnace'})
 event.remove({id:'quark:building/crafting/furnaces/deepslate_blast_furnace'})
 event.remove({id:'tconstruct:common/basalt_blast_furnace'})
 event.remove({id:'minecraft:barrel'})
+event.remove({id:'quark:oddities/crafting/crate'})
+event.remove({id:'quark:automation/crafting/crafter'})
 //--
 event.remove({id:'tfmg:mixing/cast_iron_ingot'})
 event.remove({id:'gtceu:shapeless/fireclay_dust'})
@@ -298,18 +300,6 @@ event.shaped('minecraft:barrel',[
   C:'#forge:tools/hammers'
 }).id('cct:barrel')
 
-// event.shaped('minecraft:bed',[
-//   'AAA',
-//   'BCB',
-//   'DED'
-// ],{
-//   A:'',
-//   B:'',
-//   C:'',
-//   D:'',
-//   E:''
-// })
-
 event.shaped('minecraft:blast_furnace',[
   'AAA',
   'BCD',
@@ -384,6 +374,83 @@ event.shaped('minecraft:smithing_table',[
   E:'#forge:bolts/lead',
   F:'tconstruct:crafting_station'
 }).id('cct:smithing_table')
+
+event.shaped('minecraft:stonecutter',[
+  'ABC',
+  'DED',
+  'FFF'
+],{
+  A:'#forge:tools/screwdrivers',
+  B:'#forge:tools/hammers',
+  C:'#forge:tools/files',
+  D:'#forge:bolts',
+  E:'#cct:stonecuter_saw_blades',
+  F:'minecraft:smooth_stone_slab'
+}).id('cct:stonecutter')
+
+event.shaped('minecraft:lectern',[
+  'AAB',
+  'CDC',
+  'AEA'
+],{
+  A:'#minecraft:wooden_slabs',
+  B:'#forge:tools/screwdrivers',
+  C:'#forge:bolts',
+  D:'#forge:bookshelves',
+  E:'#minecraft:planks'
+}).id('cct:lectern')
+
+event.shaped('quark:crate',[
+  'ABA',
+  'CDC',
+  'EBF'
+],{
+  A:'#forge:screws/brass',
+  B:'#forge:plates/zinc',
+  C:Item.of('tconstruct:large_plate', '{Material:"tconstruct:plated_slimewood"}').strongNBT(),
+  D:'#forge:chests/wooden',
+  E:'#forge:tools/screwdrivers',
+  F:'#forge:tools/hammers'
+}).id('cct:crate')
+
+event.shaped('quark:crafter',[
+  'AAA',
+  'BCB',
+  'DED'
+],{
+  A:'#forge:plates/zinc',
+  B:Item.of('tconstruct:large_plate', '{Material:"tconstruct:pig_iron"}').strongNBT(),
+  C:'tconstruct:crafting_station',
+  D:'minecraft:redstone',
+  E:'minecraft:dropper'
+}).id('cct:crafter')
+
+event.shaped('minecraft:dropper',[
+  'ABC',
+  'DED',
+  'FFF'
+],{
+  A:'#forge:tools/files',
+  B:'#forge:tools/hammers',
+  C:'#forge:tools/crowbars',
+  D:'minecraft:smooth_stone',
+  E:'minecraft:redstone',
+  F:'quark:sturdy_stone'
+}).id('cct:dropper')
+
+event.shaped('minecraft:dispenser',[
+  'ABC',
+  'DED',
+  'FGF'
+],{
+  A:'#forge:tools/files',
+  B:'#forge:tools/hammers',
+  C:'#forge:tools/crowbars',
+  D:'minecraft:smooth_stone',
+  E:'minecraft:redstone',
+  F:'quark:sturdy_stone',
+  G:Item.of('minecraft:bow', '{Damage:0}').strongNBT()
+}).id('cct:dispenser')
 //#endregion
 //#region primitive glassblowing
 event.blasting('minecraft:glass','kubejs:prim_glass_mix').xp(0.2).cookingTime(1200).id('cct:blasting/glass')

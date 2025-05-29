@@ -2028,6 +2028,19 @@
 					level: 10
 				}
 			]
+		},
+		{
+			item: "quark:crafter",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 24
+				},
+				{
+					aptitude: "Building",
+					level: 12
+				}
+			]
 		}
 	]
 }
