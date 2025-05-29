@@ -6,4 +6,5 @@ ServerEvents.recipes(event => {
 })
 ServerEvents.tags('item', event => {
     RegisterDisabledItems(event)
+    RegisterCreateTags(event)
 })

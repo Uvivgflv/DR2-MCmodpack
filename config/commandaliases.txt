@@ -1,0 +1,2 @@
+r | reload
+kh | kubejs hand

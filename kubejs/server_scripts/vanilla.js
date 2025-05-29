@@ -30,10 +30,10 @@ event.remove({id:'tconstruct:common/slime/sticky_piston'})
 event.remove({id:'undergarden:sticky_piston_from_goo_ball'})
 event.remove({id:'minecraft:sticky_piston'})
 event.remove({id:'minecraft:brewing_stand'})
-event.remove({id:'minecraft:anvil'})
+event.remove({output:'minecraft:anvil'})
 event.remove({id:'minecraft:smoker'})
 event.remove({id:'minecraft:blast_furnace'})
-event.remove({id:'minecraft:grindstone'})
+event.remove({output:'minecraft:grindstone'})
 event.remove({id:'minecraft:smithing_table'})
 event.remove({id:'minecraft:stonecutter'})
 event.remove({output:/^minecraft:.*_bed/})
@@ -42,6 +42,7 @@ event.remove({id:'quark:building/crafting/furnaces/deepslate_smoker'})
 event.remove({id:'quark:building/crafting/furnaces/blackstone_blast_furnace'})
 event.remove({id:'quark:building/crafting/furnaces/deepslate_blast_furnace'})
 event.remove({id:'tconstruct:common/basalt_blast_furnace'})
+event.remove({id:'minecraft:barrel'})
 //--
 event.remove({id:'tfmg:mixing/cast_iron_ingot'})
 event.remove({id:'gtceu:shapeless/fireclay_dust'})
@@ -199,6 +200,33 @@ event.shaped('quark:bamboo_chest',[
   A:'minecraft:bamboo_planks',
   B:'#cct:chest_nugget'
 }).id('cct:storage/bamboo_chest')
+
+event.shaped('quark:nether_brick_chest',[
+  'AAA',
+  'ABA',
+  'AAA'
+],{
+  A:'minecraft:nether_bricks',
+  B:'#cct:chest_nugget'
+}).id('cct:storage/nether_chest')
+
+event.shaped('quark:purpur_chest',[
+  'AAA',
+  'ABA',
+  'AAA'
+],{
+  A:'minecraft:purpur_block',
+  B:'#cct:chest_nugget'
+}).id('cct:storage/purpur_chest')
+
+event.shaped('quark:prismarine_chest',[
+  'AAA',
+  'ABA',
+  'AAA'
+],{
+  A:'minecraft:prismarine',
+  B:'#cct:chest_nugget'
+}).id('cct:storage/prismarine_chest')
 //#endregion
 //#endregion
 //#region functioanal blocks
@@ -253,23 +281,114 @@ event.custom({
     }
   ]
 }).id('cct:tinker_station_from_item_application')
+
+event.replaceInput(
+  {id:'gtceu:shaped/sticky_piston_resin'},
+  'gtceu:sticky_resin',
+  '#cct:resin'
+)
+
+event.shaped('minecraft:barrel',[
+  'ABA',
+  'ACA',
+  'ABA'
+],{
+  A:'#minecraft:planks',
+  B:'#minecraft:wooden_slabs',
+  C:'#forge:tools/hammers'
+}).id('cct:barrel')
+
+// event.shaped('minecraft:bed',[
+//   'AAA',
+//   'BCB',
+//   'DED'
+// ],{
+//   A:'',
+//   B:'',
+//   C:'',
+//   D:'',
+//   E:''
+// })
+
+event.shaped('minecraft:blast_furnace',[
+  'AAA',
+  'BCD',
+  'EFE'
+],{
+  A:'#forge:plates/iron',
+  B:'minecraft:iron_bars',
+  C:'minecraft:furnace',
+  D:'quark:sturdy_stone',
+  E:'#tconstruct:smeltery_bricks',
+  F:'tfmg:fireproof_bricks'
+}).id('cct:blast_furnace')
+
+event.shaped('minecraft:smoker',[
+  'ABA',
+  'CDC',
+  'EFE'
+],{
+  A:Item.of('tconstruct:large_plate', '{Material:"tconstruct:bronze"}').strongNBT(),
+  B:'#forge:plates/bronze',
+  C:Item.of('tconstruct:large_plate', '{Material:"tconstruct:nahuatl"}').strongNBT(),
+  D:'minecraft:furnace',
+  E:'#tconstruct:smeltery_bricks',
+  F:'tfmg:fireproof_bricks'
+}).id('cct:smoker')
+
+event.shaped('minecraft:brewing_stand',[
+  ' A ',
+  ' BE',
+  'CDC'
+],{
+  A:'twilightforest:fiery_tears',
+  B:'minecraft:blaze_rod',
+  C:'#forge:plates/invar',
+  D:'#forge:ingots/fiery',
+  E:'#forge:tools/files'
+}).id('cct:brewing_stand')
+
+event.shaped('minecraft:anvil',[
+  'AAA',
+  'CBD',
+  'BBB'
+],{
+  A:'#forge:storage_blocks/steel',
+  B:'#forge:ingots/steel',
+  C:'#forge:tools/hammers',
+  D:'#forge:tools/crowbars'
+}).id('cct:anvil')
+
+event.shaped('minecraft:grindstone',[
+  'ABA',
+  'CDC',
+  'EFE'
+],{
+  A:'#forge:screws/iron',
+  B:'#forge:tools/screwdrivers',
+  C:'#minecraft:planks',
+  D:'quark:sturdy_stone',
+  E:'#forge:rods/wood',
+  F:'#forge:tools/files'
+}).id('cct:grindstone')
+
+event.shaped('minecraft:smithing_table',[
+  'AAA',
+  'BCD',
+  'EFE'
+],{
+  A:Item.of('tconstruct:large_plate', '{Material:"tconstruct:lead"}').strongNBT(),
+  B:'#forge:tools/hammers',
+  C:'quark:sturdy_stone',
+  D:'#forge:tools/files',
+  E:'#forge:bolts/lead',
+  F:'tconstruct:crafting_station'
+}).id('cct:smithing_table')
 //#endregion
 //#region primitive glassblowing
 event.blasting('minecraft:glass','kubejs:prim_glass_mix').xp(0.2).cookingTime(1200).id('cct:blasting/glass')
 //#endregion
 event.shapeless('3x gtceu:fireclay_dust',['gtceu:clay_dust', 'gtceu:brick_dust', 'tfmg:fireclay_ball']).id('cct:phase1/fireclay_dust')
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 

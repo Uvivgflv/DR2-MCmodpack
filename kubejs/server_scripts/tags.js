@@ -30,6 +30,17 @@ const RegisterDisabledItems = (event) => {
         'gtceu:invar_nugget',
         'gtceu:steel_nugget'
     ])
+    event.add('cct:resin', [
+        'minecraft:slime_ball', 
+        'gtceu:sticky_resin', 
+        'tconstruct:sky_slime_ball',
+        'tconstruct:ender_slime_ball',
+        'tconstruct:ichor_slime_ball',
+        'luminous_depths:indigo_slime_ball',
+        'undergarden:goo_ball',
+        'malum:cursed_sapball',
+        'malum:runic_sapball'
+    ])
 
 
 }

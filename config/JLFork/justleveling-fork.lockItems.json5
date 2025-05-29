@@ -1899,7 +1899,135 @@
 					level: 5
 				}
 			]
+		},
+		{
+			item: "sophisticatedbackpacks:backpack",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 10
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "sophisticatedbackpacks:copper_backpack",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 12
+				},
+				{
+					aptitude: "Constitution",
+					level: 12
+				}
+			]
+		},
+		{
+			item: "sophisticatedbackpacks:iron_backpack",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 14
+				},
+				{
+					aptitude: "Constitution",
+					level: 14
+				}
+			]
+		},
+		{
+			item: "sophisticatedbackpacks:gold_backpack",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 14
+				},
+				{
+					aptitude: "Constitution",
+					level: 14
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "sophisticatedbackpacks:diamond_backpack",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 16
+				},
+				{
+					aptitude: "Constitution",
+					level: 16
+				},
+				{
+					aptitude: "Intelligence",
+					level: 16
+				}
+			]
+		},
+		{
+			item: "sophisticatedbackpacks:netherite_backpack",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 24
+				},
+				{
+					aptitude: "Constitution",
+					level: 16
+				},
+				{
+					aptitude: "Intelligence",
+					level: 18
+				}
+			]
+		},
+		{
+			item: "minecraft:spawner",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 20
+				},
+				{
+					aptitude: "Luck",
+					level: 16
+				}
+			]
+		},
+		{
+			item: "create:empty_blaze_burner",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Strength",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "create:blaze_burner",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Strength",
+					level: 10
+				}
+			]
 		}
-		
 	]
 }
