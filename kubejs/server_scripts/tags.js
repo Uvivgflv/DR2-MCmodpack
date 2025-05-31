@@ -1,4 +1,4 @@
-const RegisterDisabledItems = (event) => {
+const RegisterItemsTagsMain = (event) => {
 
     event.add('kubejs:disabled_items', 'luminousworld:ironhammer')
     event.add('kubejs:disabled_items', 'luminousworld:goldhammer')
@@ -45,6 +45,11 @@ const RegisterDisabledItems = (event) => {
         'gtceu:bronze_buzz_saw_blade', 
         'gtceu:iron_buzz_saw_blade'
     ])
-
+    event.add('cct:brass_casing_wood_variant',[
+        'botania:livingwood_planks',
+        'gtceu:treated_wood_planks',
+        'tfmg:hardened_planks'
+    ])
+    
 
 }

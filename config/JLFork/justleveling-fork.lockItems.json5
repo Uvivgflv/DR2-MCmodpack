@@ -2041,6 +2041,32 @@
 					level: 12
 				}
 			]
+		},
+		{
+			item: "minecraft:redstone_block",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 12
+				},
+				{
+					aptitude: "Building",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "tconstruct:smeltery_controller",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 15
+				},
+				{
+					aptitude: "Building",
+					level: 15
+				}
+			]
 		}
 	]
 }

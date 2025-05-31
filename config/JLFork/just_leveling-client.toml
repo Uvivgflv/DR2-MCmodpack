@@ -2,7 +2,7 @@
 [general]
 	showCriticalRollSkillOverlay = true
 	showLuckyDropSkillOverlay = true
-	showSkillModName = false
+	showSkillModName = true
 	showTitleModName = false
 	#Allowed Values: ByName, ByReverseName
 	sortPassive = "ByName"

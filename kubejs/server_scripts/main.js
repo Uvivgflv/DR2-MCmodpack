@@ -4,8 +4,12 @@ ServerEvents.recipes(event => {
     RegistryCCTRecipes(event)
     RegistryTconstructResipes(event)
     RegisterAE2Recipes(event)
+    RegisterBotaniaRecipes(event)
 })
 ServerEvents.tags('item', event => {
-    RegisterDisabledItems(event)
+    RegisterItemsTagsMain(event)
     RegisterCreateTags(event)
+})
+ServerEvents.tags('block', event =>{
+    RegisterBotaniaTagsBlock(event)
 })

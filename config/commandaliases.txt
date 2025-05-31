@@ -1,2 +1,3 @@
 r | reload
 kh | kubejs hand
+killall | kill @e[type=!player]

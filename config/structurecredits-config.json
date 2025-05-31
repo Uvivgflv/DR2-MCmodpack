@@ -1,0 +1,31 @@
+{
+  "active": true,
+  "showOnlyOneTime": true,
+  "chatMessage": false,
+  "showCreator": true,
+  "customStructureName": {
+    "minecraft:swamp_hut": "a_cat:cat_hut"
+  },
+  "dontShowAll": [
+    "minecraft:",
+    "dimdungeons:"
+  ],
+  "dontShow": [
+    "minecraft:plains_village",
+    "minecraft:desert_village",
+    "idas:redhorn_guild",
+    "apotheosis:tower_main",
+    "idas:windswept_shrine",
+    "dungeoncrawl:dungeon",
+    "idas:ancient_statue/ancient_statue_plains",
+    "overhauledstructures:overhauleddungeonprison",
+    "betterfortresses:fortress",
+    "netherexp:chapel",
+    "idas:ancient_portal/nether_ancient_portal",
+    "biomeswevegone:lush_arch",
+    "tconstruct:sky_slime_island",
+    "stellarity:obsidian_spike",
+    "stellarity:campsite",
+    "stellarity:village"
+  ]
+}

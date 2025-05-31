@@ -12,10 +12,14 @@ const RegistryStartUpItems = (event) =>{
     //фрагменты материалов редкости
     event.create('common_fragment').displayName('Осколки магического металла')
     event.create('uncommon_fragment').displayName('Обрывки ткани времени')
-    event.create('rare_fragment').displayName('что бля там')
+    event.create('rare_fragment').displayName('Крупица светящегося кристалла')
     event.create('epic_fragment').displayName('Крупицы арканы')
     event.create('legendary_fragment').displayName('Осколки жемчуженны богославленной кузни')
     //материалы крафта
     event.create('ash_compound').displayName('Зольная смесь')
     event.create('prim_glass_mix').displayName('Стеклянная смесь')
+}
+
+const RegistryStartUpBlocks = (event) =>{
+    event.create('unfired_coke_bricks').displayName('Необоженные кокстовые кирпичи')
 }

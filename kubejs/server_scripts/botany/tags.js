@@ -1,0 +1,24 @@
+const RegisterBotaniaTagsBlock = event =>{
+    event.add('cct:magic_logs',[
+        'biomesoplenty:magic_log', 
+        'biomesoplenty:umbran_log', 
+        'biomeswevegone:blue_enchanted_log', 
+        'biomeswevegone:rainbow_eucalyptus_log', 
+        'biomeswevegone:witch_hazel_log', 
+        'biomeswevegone:skyris_log', 
+        'biomeswevegone:zelkova_log', 
+        'forbidden_arcanus:edelwood_log',
+        'malum:runewood_log',
+        'biomesoplenty:stripped_umbran_log', 
+        'biomeswevegone:stripped_blue_enchanted_log', 
+        'biomeswevegone:stripped_rainbow_eucalyptus_log',
+        'biomeswevegone:stripped_witch_hazel_log', 
+        'biomeswevegone:stripped_skyris_log', 
+        'biomeswevegone:stripped_zelkova_log', 
+        'forbidden_arcanus:carved_edelwood_log', 
+        'malum:stripped_runewood_log', 
+        'biomesoplenty:stripped_magic_log',
+        'malum:stripped_soulwood_log',
+        'malum:soulwood_log'
+    ])
+}

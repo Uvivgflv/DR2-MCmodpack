@@ -47,6 +47,7 @@ event.remove({id:'quark:oddities/crafting/crate'})
 event.remove({id:'quark:automation/crafting/crafter'})
 //--
 event.remove({id:'tfmg:mixing/cast_iron_ingot'})
+event.remove({id:'tfmg:smelting/fireclay_brick'})
 event.remove({id:'gtceu:shapeless/fireclay_dust'})
 event.remove({id:'quark:oddities/crafting/backpack'})
 event.remove({id:'tconstruct:tables/crafting_station_from_logs'})
@@ -455,7 +456,12 @@ event.shaped('minecraft:dispenser',[
 //#region primitive glassblowing
 event.blasting('minecraft:glass','kubejs:prim_glass_mix').xp(0.2).cookingTime(1200).id('cct:blasting/glass')
 //#endregion
+
+//#region resources & materials
 event.shapeless('3x gtceu:fireclay_dust',['gtceu:clay_dust', 'gtceu:brick_dust', 'tfmg:fireclay_ball']).id('cct:phase1/fireclay_dust')
+
+event.blasting('tfmg:fireproof_brick', 'tfmg:fireclay_ball').cookingTime(1800).xp(1.0).id('cct:fireproof_brick_blasting')
+event.smelting('tfmg:fireproof_brick', 'tfmg:fireclay_ball').cookingTime(2000).xp(1.0).id('cct:fireproof_brick_smelting')
 }
 
 
