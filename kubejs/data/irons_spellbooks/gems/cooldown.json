@@ -1,0 +1,64 @@
+{
+    "variant": "cooldown",
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "irons_spellbooks"
+	}],
+    "weight": 5,
+    "quality": 0,
+    "dimensions": [],
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "gem_class":
+            {
+                "key": "anything",
+                "types": ["helmet",
+                    "chestplate",
+                    "leggings",
+                    "boots", "curios:spellbook"]
+            },
+            "attribute": "irons_spellbooks:cooldown_reduction",
+            "operation": "MULTIPLY_TOTAL",
+            "values":
+            {
+                "common":
+                {
+                    "min": 0.001,
+                    "steps": 10,
+                    "step": 0.001
+                },
+                "uncommon":
+                {
+                    "min": 0.006,
+                    "steps": 10,
+                    "step": 0.001
+                },
+                "rare":
+                {
+                    "min": 0.01,
+                    "steps": 10,
+                    "step": 0.001
+                },
+                "epic":
+                {
+                    "min": 0.014,
+                    "steps": 10,
+                    "step": 0.001
+                },
+                "mythic":
+                {
+                    "min": 0.018,
+                    "steps": 10,
+                    "step": 0.001
+                },
+                "ancient":
+                {
+                    "min": 0.02,
+                    "steps": 10,
+                    "step": 0.001
+                }
+            }
+        }
+    ]
+}

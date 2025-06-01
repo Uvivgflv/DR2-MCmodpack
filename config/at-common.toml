@@ -13,7 +13,7 @@ pickUp = true
 #Set to true if player can't craft higher Tier item.
 craftLock = true
 #Tiers for Items: 
-itemTiers = ""
+itemTiers = "1-item.minecraft.wooden_sword,2-item.minecraft.stone_sword,2-item.minecraft.bowl,"
 #Tiers for Entities: 
 entityTiers = ""
 #Tiers for Blocks: 

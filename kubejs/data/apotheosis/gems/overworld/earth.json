@@ -1,0 +1,68 @@
+{
+	"weight": 5,
+	"quality": 1.5,
+	"dimensions": [
+		"overworld"
+	],
+	"unique": true,
+	"min_rarity": "rare",
+	"bonuses": [
+		{
+			"type": "apotheosis:enchantment",
+			"gem_class": {
+				"key": "weapon",
+				"types": [
+					"sword",
+					"trident",
+					"heavy_weapon",
+					"bow",
+					"crossbow"
+				]
+			},
+			"enchantment": "bane_of_arthropods",
+			"must_exist": false,
+			"values": {
+				"rare": 1,
+				"epic": 2,
+				"mythic": 3,
+				"ancient": 4
+			}
+		},
+		{
+			"type": "apotheosis:enchantment",
+			"gem_class": {
+				"key": "core_armor",
+				"types": [
+					"chestplate",
+					"leggings"
+				]
+			},
+			"enchantment": "blast_protection",
+			"must_exist": false,
+			"values": {
+				"rare": 1,
+				"epic": 1,
+				"mythic": 2,
+				"ancient": 2
+			}
+		},
+		{
+			"type": "apotheosis:enchantment",
+			"gem_class": {
+				"key": "breaker",
+				"types": [
+					"shovel",
+					"pickaxe"
+				]
+			},
+			"enchantment": "efficiency",
+			"must_exist": true,
+			"values": {
+				"rare": 1,
+				"epic": 1,
+				"mythic": 1,
+				"ancient": 2
+			}
+		}
+	]
+}

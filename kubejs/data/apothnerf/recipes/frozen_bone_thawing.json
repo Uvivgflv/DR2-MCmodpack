@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "irons_spellbooks"
+	}],
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "irons_spellbooks:frozen_bone"
+  },
+  "result": "minecraft:bone"
+}

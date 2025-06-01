@@ -18,8 +18,9 @@ const RegistryStartUpItems = (event) =>{
     //материалы крафта
     event.create('ash_compound').displayName('Зольная смесь')
     event.create('prim_glass_mix').displayName('Стеклянная смесь')
+    event.create('tinned_leather').displayName('Обработанная кожа')
 }
 
 const RegistryStartUpBlocks = (event) =>{
-    event.create('unfired_coke_bricks').displayName('Необоженные кокстовые кирпичи')
+    event.create('unfired_coke_bricks').displayName('Необоженные коксовые кирпичи')
 }

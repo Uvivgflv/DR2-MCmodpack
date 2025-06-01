@@ -1,0 +1,46 @@
+{
+	"type": "apotheosis:mob_effect",
+	"mob_effect": "attributeslib:knowledge",
+	"target": "ATTACK_SELF",
+	"values": {
+		"epic": {
+			"duration": {
+				"min": 80,
+				"steps": 4,
+				"step": 10
+			},
+			"amplifier": 0,
+			"cooldown": 1000
+		},
+		"mythic": {
+			"duration": {
+				"min": 100,
+				"steps": 4,
+				"step": 10
+			},
+			"amplifier": {
+				"min": 0,
+				"steps": 8,
+				"step": 0.26
+			},
+			"cooldown": 1000
+		},
+		"ancient": {
+			"duration": {
+				"min": 100,
+				"steps": 6,
+				"step": 10
+			},
+			"amplifier": {
+				"min": 0,
+				"steps": 12,
+				"step": 0.26
+			},
+			"cooldown": 1000
+		}
+	},
+	"types": [
+		"sword",
+		"trident"
+	]
+}

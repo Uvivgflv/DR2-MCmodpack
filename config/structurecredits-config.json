@@ -26,6 +26,13 @@
     "tconstruct:sky_slime_island",
     "stellarity:obsidian_spike",
     "stellarity:campsite",
-    "stellarity:village"
+    "stellarity:village",
+    "ae2:meteorite",
+    "tconstruct:blood_island",
+    "idas:animal_den/foxhound_den",
+    "idas:apothecary_abode",
+    "idas:enchantingtower",
+    "idas:tinkers_citadel",
+    "undergarden:catacombs"
   ]
 }

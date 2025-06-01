@@ -3,8 +3,11 @@ ServerEvents.recipes(event => {
     RegisterTFMGRecipes(event)
     RegistryCCTRecipes(event)
     RegistryTconstructResipes(event)
+    RegistrySmelteryRecipes(event)
     RegisterAE2Recipes(event)
+    RegistryTGCEURecipes(event)
     RegisterBotaniaRecipes(event)
+    RegisterSophisBackpacksRecipes(event)
 })
 ServerEvents.tags('item', event => {
     RegisterItemsTagsMain(event)

@@ -1,0 +1,21 @@
+{
+	"type": "apotheosis:spawner_modifier",
+	"conditions": [{
+		"type": "apotheosis:module",
+		"module": "spawner"
+	},{
+		"type": "forge:mod_loaded",
+		"modid": "disabled"
+	}],
+	"mainhand": {
+		"item": "minecraft:bedrock"
+	},
+	"offhand": {
+		"item": "minecraft:quartz"
+	},
+	"consumes_offhand": false,
+	"stat_changes": [{
+		"id": "ignore_conditions",
+		"value": false
+	}]
+}

@@ -2067,6 +2067,32 @@
 					level: 15
 				}
 			]
+		},
+		{
+			item: "minecraft:obsidian",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Strength",
+					level: 20
+				}
+			]
+		},
+		{
+			item: "create:lit_blaze_burner",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Strength",
+					level: 10
+				}
+			]
 		}
 	]
 }

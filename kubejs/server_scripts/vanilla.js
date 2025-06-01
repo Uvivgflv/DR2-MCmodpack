@@ -462,6 +462,8 @@ event.shapeless('3x gtceu:fireclay_dust',['gtceu:clay_dust', 'gtceu:brick_dust',
 
 event.blasting('tfmg:fireproof_brick', 'tfmg:fireclay_ball').cookingTime(1800).xp(1.0).id('cct:fireproof_brick_blasting')
 event.smelting('tfmg:fireproof_brick', 'tfmg:fireclay_ball').cookingTime(2000).xp(1.0).id('cct:fireproof_brick_smelting')
+
+
 }
 
 

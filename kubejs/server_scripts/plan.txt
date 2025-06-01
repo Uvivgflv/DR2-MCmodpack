@@ -1,6 +1,37 @@
-1 дроп незерита изменить 
-2 регистрация предметов
-3 текстуры для предметов в фш
-4 пробный геймплей
-айди жидкости получать через суперрезевуар из грегтеха
-netherexp:ectoplasm
+Create - врашщние автоматизация шестерни
+Botania - "магия" цветы мана 
+TC - плавильная печь, основа всех инструмаентов/оружия/брони
+GregTech - завод пляшет
+Malum - интересный опыт новый 
+BloodMagic - кровь кишки жертвоприношения магия крови из аватара 
+Forbidden - недоделанный таумкрафт
+----------
+Enigmatic - кольцо проклятий 
+Autioleveling - скейл мобов по уровню
+JLF: максимальный уровень 150; цена первого 15 Таблица зависимости уровня 
+---------
+Apotheosis - аффиксы, зачарования и боссы 
+---------
+Биомы и миры
+Twilightforest
+Nether exp
+Undergarden
+Midnight
+End exp
+Biomesoplenty|otbyg
+Alex's caves
+Deeper and darker
+tectonc
+---------
+chipped
+quark
+------
+FIX
+quark furnaces
+Add level lock furnace
+Add level lock bookshelfs
+Change Twilightforest portal activation item (from nether)
+add level lock lit_blaze_burner
+------
+Undergarden fluids
+undergarden:virulent_mix_source

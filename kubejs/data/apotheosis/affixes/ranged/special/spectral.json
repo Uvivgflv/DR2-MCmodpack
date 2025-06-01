@@ -1,0 +1,20 @@
+{
+	"type": "apotheosis:spectral",
+	"values": {
+		"epic": {
+			"min": 0.04,
+			"steps": 6,
+			"step": 0.005
+		},
+		"mythic": {
+			"min": 0.05,
+			"steps": 8,
+			"step": 0.005
+		},
+		"ancient": {
+			"min": 0.06,
+			"steps": 8,
+			"step": 0.005
+		}
+	}
+}

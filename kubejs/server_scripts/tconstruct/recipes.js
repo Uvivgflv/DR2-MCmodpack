@@ -59,20 +59,7 @@ const RegistryTconstructResipes = event => {
         // ],{A:'tconstruct:seared_brick'}).id('cct:smeltery/seared_bricks')
 
 
-        event.custom({
-                "type": "tconstruct:casting_basin",
-                "cast": {
-                    "item": "minecraft:blast_furnace"
-                        },
-                    "cast_consumed": true,
-                "cooling_time": 400,
-                 "fluid": {
-                    "amount": 1080,
-                    "tag": "forge:molten_copper"
-                },
-                "result": "tconstruct:smeltery_controller"
-        }).id('cct:smeltery/casting/smeltery_contriller')
-
+        
         event.shaped('tconstruct:seared_melter',[
             'AAA',
             'BCB',

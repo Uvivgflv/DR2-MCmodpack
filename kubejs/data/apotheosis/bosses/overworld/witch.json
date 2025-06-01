@@ -1,0 +1,167 @@
+{
+	"entity": "minecraft:witch",
+	"weight": 45,
+	"quality": 4,
+	"size": {
+		"width": 0.6,
+		"height": 1.95
+	},
+	"valid_gear_sets": [
+		"#overworld"
+	],
+	"dimensions": [
+		"minecraft:overworld"
+	],
+	"min_rarity": "common",
+	"max_rarity": "rare",
+	"stats": {
+		"common": {
+			"enchant_chance": 0.25,
+			"enchantment_levels": [9, 6, 14, 11],
+			"effects": [{
+				"effect": "minecraft:water_breathing",
+				"chance": 0.2
+			}],
+			"attribute_modifiers": [{
+					"attribute": "minecraft:generic.max_health",
+					"operation": "ADDITION",
+					"value": {
+						"min": 8,
+						"steps": 20,
+						"step": 1
+					}
+				},
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_BASE",
+					"value": {
+						"min": 0.02,
+						"steps": 12,
+						"step": 0.002
+					}
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_BASE",
+					"value": {
+						"min": 0.125,
+						"steps": 30,
+						"step": 0.002
+					}
+				},
+				{
+					"attribute": "minecraft:generic.knockback_resistance",
+					"operation": "ADDITION",
+					"value": 0.08
+				},
+				{
+					"attribute": "attributeslib:healing_received",
+					"operation": "MULTIPLY_TOTAL",
+					"value": -0.25
+				}
+			]
+		},
+		"uncommon": {
+			"enchant_chance": 0.25,
+			"enchantment_levels": [9, 6, 14, 11],
+			"effects": [{
+				"effect": "minecraft:fire_resistance",
+				"chance": 0.2
+			}],
+			"attribute_modifiers": [{
+					"attribute": "minecraft:generic.max_health",
+					"operation": "ADDITION",
+					"value": {
+						"min": 8,
+						"steps": 20,
+						"step": 1
+					}
+				},
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_BASE",
+					"value": {
+						"min": 0.02,
+						"steps": 12,
+						"step": 0.002
+					}
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_BASE",
+					"value": {
+						"min": 0.125,
+						"steps": 30,
+						"step": 0.002
+					}
+				},
+				{
+					"attribute": "minecraft:generic.knockback_resistance",
+					"operation": "ADDITION",
+					"value": 0.08
+				},
+				{
+					"attribute": "attributeslib:healing_received",
+					"operation": "MULTIPLY_TOTAL",
+					"value": -0.25
+				}
+			]
+		},
+		"rare": {
+			"enchant_chance": 0.32,
+			"enchantment_levels": [11, 8, 15, 12],
+			"effects": [{
+				"effect": "minecraft:fire_resistance",
+				"chance": 0.25
+			}],
+			"attribute_modifiers": [{
+					"attribute": "minecraft:generic.max_health",
+					"operation": "ADDITION",
+					"value": {
+						"min": 12,
+						"steps": 20,
+						"step": 1
+					}
+				},
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_BASE",
+					"value": {
+						"min": 0.02,
+						"steps": 12,
+						"step": 0.002
+					}
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_BASE",
+					"value": {
+						"min": 0.125,
+						"steps": 30,
+						"step": 0.002
+					}
+				},
+				{
+					"attribute": "minecraft:generic.knockback_resistance",
+					"operation": "ADDITION",
+					"value": 0.09
+				},
+				{
+					"attribute": "minecraft:generic.armor",
+					"operation": "ADDITION",
+					"value": 3
+				},
+				{
+					"attribute": "minecraft:generic.armor_toughness",
+					"operation": "ADDITION",
+					"value": 2
+				},
+				{
+					"attribute": "attributeslib:healing_received",
+					"operation": "MULTIPLY_TOTAL",
+					"value": -0.25
+				}
+			]
+		}
+	}
+}

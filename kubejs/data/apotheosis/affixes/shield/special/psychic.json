@@ -1,0 +1,25 @@
+{
+	"type": "apotheosis:psychic",
+	"values": {
+		"rare": {
+			"min": 0.020,
+			"steps": 20,
+			"step": 0.001
+		},
+		"epic": {
+			"min": 0.030,
+			"steps": 25,
+			"step": 0.001
+		},
+		"mythic": {
+			"min": 0.040,
+			"steps": 30,
+			"step": 0.001
+		},
+		"ancient": {
+			"min": 0.060,
+			"steps": 50,
+			"step": 0.001
+		}
+	}
+}

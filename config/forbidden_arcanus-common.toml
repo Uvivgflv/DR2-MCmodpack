@@ -39,7 +39,7 @@
 	[items.eternal_stella]
 		#How many times the Eternal Stella can be used before breaking [default: 3]
 		#Range: 1 ~ 100
-		uses = 3
+		uses = 1
 
 [blocks]
 
@@ -50,12 +50,12 @@
 		block_damage = true
 		#Radius of Stella Arcanum explosions (if explosions enabled) [default: 3]
 		#Range: 1 ~ 10
-		explosion_radius = 3
+		explosion_radius = 8
 
 	[blocks.edelwood_ladder]
 		#The speed multiplier that gets added to the players y movement when on the ladder [default: 2.0
 		#Range: 0.0 ~ 10.0
-		speed = 2.0
+		speed = 2.5
 
 [enchantments]
 

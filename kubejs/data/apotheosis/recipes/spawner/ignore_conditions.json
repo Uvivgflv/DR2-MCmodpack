@@ -1,0 +1,17 @@
+{
+	"type": "apotheosis:spawner_modifier",
+	"conditions": [{
+		"type": "apotheosis:module",
+		"module": "spawner"
+	},{
+		"type": "forge:mod_loaded",
+		"modid": "disabled"
+	}],
+	"mainhand": {
+		"item": "minecraft:bedrock"
+	},
+	"stat_changes": [{
+		"id": "ignore_conditions",
+		"value": false
+	}]
+}
