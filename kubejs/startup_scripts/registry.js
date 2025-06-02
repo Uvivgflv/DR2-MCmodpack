@@ -5,7 +5,7 @@ const RegistryStartUpItems = (event) =>{
     event.create('catalyst').displayName('Катализатор')
     event.create('ancient_fragments').displayName('Древние фрагменты')
     event.create('frost_fragment').displayName('Ледянной осколок')
-    event.create('sculk_fibers').displayName('Скалковые волокна')
+    event.create('sculk_fibers').parentModel("kubejs:item/sculk_fiber").displayName('Скалковые волокна')
     event.create('illager_chains').displayName('Украшения разбойников')
     event.create('corrupted_flesh').displayName('Потусторонняя ткань')
     event.create('rusty_v1').displayName('Вазилиновое дрисло')
