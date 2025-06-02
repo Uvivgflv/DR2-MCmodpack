@@ -24,5 +24,5 @@ const RegistryStartUpItems = (event) =>{
 
 const RegistryStartUpBlocks = (event) =>{
     event.create('unfired_coke_bricks').displayName('Необоженные коксовые кирпичи')
-    event.create('computation_matrix').displayName('TEST')
+    //event.create('computation_matrix').displayName('TEST')
 }
