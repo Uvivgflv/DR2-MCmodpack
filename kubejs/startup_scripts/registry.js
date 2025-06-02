@@ -19,7 +19,7 @@ const RegistryStartUpItems = (event) =>{
     event.create('ash_compound').displayName('Зольная смесь')
     event.create('prim_glass_mix').displayName('Стеклянная смесь')
     event.create('tinned_leather').displayName('Обработанная кожа')
-    event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix').rarity(RARITY_UNCOMMON).unstackable()
+    event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix')//.rarity(RARITY_UNCOMMON).unstackable()
 }
 
 const RegistryStartUpBlocks = (event) =>{
