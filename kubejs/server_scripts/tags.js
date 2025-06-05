@@ -50,6 +50,7 @@ const RegisterItemsTagsMain = (event) => {
         'gtceu:treated_wood_planks',
         'tfmg:hardened_planks'
     ])
+    event.add('twilightforest:portal/activator', 'twforest_activator')
     
 
 }

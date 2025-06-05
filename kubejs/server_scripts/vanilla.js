@@ -16,6 +16,9 @@ event.remove({output:'minecraft:lead'})
 //--
 event.remove({output:'minecraft:crafting_table'})
 event.remove({output:'minecraft:furnace'})
+event.remove({id:'quark:building/crafting/furnaces/deepslate_furnace'})
+event.remove({id:'quark:building/crafting/furnaces/blackstone_furnace'})
+
 //--
 event.remove({id:'minecraft:netherite_ingot'})
 event.remove({id:'tconstruct:common/materials/netherite_ingot_from_nuggets'})
@@ -52,6 +55,7 @@ event.remove({id:'gtceu:shapeless/fireclay_dust'})
 event.remove({id:'quark:oddities/crafting/backpack'})
 event.remove({id:'tconstruct:tables/crafting_station_from_logs'})
 event.remove({id:'supplementaties:slime_ball'})
+event.remove({id:'tfmg:filling/hardened_wood_creosote'})
 //--
 event.remove({output:'#kubejs:disabled_items'})
 //#endregion
@@ -250,11 +254,36 @@ event.shaped(
         'cac',
         'ccc'
     ],{
-        c:'#forge:cobblestone',
+        c:'minecraft:cobblestone',
         f:'minecraft:flint',
         a:'kubejs:ash_compound'
     }
 ).id('cct:furnace')
+
+event.shaped(
+    Item.of('quark:deepslate_furnace'),[
+        'cfc',
+        'cac',
+        'ccc'
+    ],{
+        c:'minecraft:cobbled_deepslate',
+        f:'minecraft:flint',
+        a:'kubejs:ash_compound'
+    }
+).id('cct:furnace_deepslate')
+
+event.shaped(
+    Item.of('quark:blackstone_furnace'),[
+        'cfc',
+        'cac',
+        'ccc'
+    ],{
+        c:'minecraft:blackstone',
+        f:'minecraft:flint',
+        a:'kubejs:ash_compound'
+    }
+).id('cct:furnace_blackstone')
+
 
 event.shaped(
     Item.of('kubejs:ash_compound'),[
@@ -459,6 +488,8 @@ event.blasting('minecraft:glass','kubejs:prim_glass_mix').xp(0.2).cookingTime(12
 
 //#region resources & materials
 event.shapeless('3x gtceu:fireclay_dust',['gtceu:clay_dust', 'gtceu:brick_dust', 'tfmg:fireclay_ball']).id('cct:phase1/fireclay_dust')
+event.shapeless('tfmg:hardened_planks', 'gtceu:treated_wood_planks').id('cct:converting/treated_wood/tfmg_to_gt')
+event.shapeless('gtceu:treated_wood_planks','tfmg:hardened_planks').id('cct:converting/treated_wood/gt_to_tfmg')
 
 event.blasting('tfmg:fireproof_brick', 'tfmg:fireclay_ball').cookingTime(1800).xp(1.0).id('cct:fireproof_brick_blasting')
 event.smelting('tfmg:fireproof_brick', 'tfmg:fireclay_ball').cookingTime(2000).xp(1.0).id('cct:fireproof_brick_smelting')

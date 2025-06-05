@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
     RegistryTGCEURecipes(event)
     RegisterBotaniaRecipes(event)
     RegisterSophisBackpacksRecipes(event)
+    RegisterCreateRecipes(event)
 })
 ServerEvents.tags('item', event => {
     RegisterItemsTagsMain(event)

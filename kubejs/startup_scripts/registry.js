@@ -5,10 +5,11 @@ const RegistryStartUpItems = (event) =>{
     event.create('catalyst').displayName('Катализатор')
     event.create('ancient_fragments').displayName('Древние фрагменты')
     event.create('frost_fragment').displayName('Ледянной осколок')
-    event.create('sculk_fibers').parentModel("kubejs:item/sculk_fiber").displayName('Скалковые волокна')
+    event.create('sculk_fibers').displayName('Скалковые волокна')
     event.create('illager_chains').displayName('Украшения разбойников')
     event.create('corrupted_flesh').displayName('Потусторонняя ткань')
     event.create('rusty_v1').displayName('Вазилиновое дрисло')
+    event.create('twforest_activator').displayName('Ключ от сумеречного леса')
     //фрагменты материалов редкости
     event.create('common_fragment').displayName('Осколки магического металла')
     event.create('uncommon_fragment').displayName('Обрывки ткани времени')
@@ -19,10 +20,13 @@ const RegistryStartUpItems = (event) =>{
     event.create('ash_compound').displayName('Зольная смесь')
     event.create('prim_glass_mix').displayName('Стеклянная смесь')
     event.create('tinned_leather').displayName('Обработанная кожа')
-    event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix')//.rarity(RARITY_UNCOMMON).unstackable()
+    event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix')
+    //вспомогательные предметы
+    event.create('iron_casing_parts').displayName('Железные детали')
+    event.create('brass_casing_parts').displayName('Латунные детали')
 }
 
 const RegistryStartUpBlocks = (event) =>{
     event.create('unfired_coke_bricks').displayName('Необоженные коксовые кирпичи')
-    //event.create('computation_matrix').displayName('TEST')
+   // event.create('computation_matrix').displayName('TEST')
 }

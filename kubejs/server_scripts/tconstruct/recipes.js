@@ -170,4 +170,47 @@ const RegistryTconstructResipes = event => {
             D:'#forge:glass'
         }).id('cct:smeltery/seared_glass')
     //#endregion
+
+    //#region alloys compat
+    //#region sterling silver
+        event.custom({
+            "type": "tconstruct:alloy",
+            "inputs": [
+                {
+            "amount": 90,
+            "tag": "forge:molten_copper"
+                },
+                {
+            "amount": 360,
+            "tag": "tconstruct:molten_silver"
+                }
+            ],
+            "result": {
+            "amount": 450,
+            "tag": "forge:sterling_silver"
+            },
+            "temperature": 820
+        }).id('cct:compat/alloying/sterling_silver')
+
+        event.custom({
+            "type": "tconstruct:casting_table",
+            "cast": {
+            "tag": "tconstruct:casts/multi_use/plate"
+                },
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:plates/sterling_silver"
+                }
+            ],
+            "cooling_time": 57,
+            "fluid": {
+            "amount": 90,
+            "tag": "forge:sterling_silver"
+            },
+            "result": {
+            "tag": "forge:plates/sterling_silver"
+            }
+        })
+    //#endregion
 }
