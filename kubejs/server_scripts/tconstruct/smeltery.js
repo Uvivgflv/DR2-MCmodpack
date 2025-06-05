@@ -54,4 +54,18 @@ const RegistrySmelteryRecipes = event =>{
             },
         "result": "gtceu:primitive_blast_furnace"
     }).id('cct:primitive_blast_furnace/casting/primitive_blast_furnace')
+
+    event.custom({
+        "type": "tconstruct:casting_basin",
+        "cast": {
+                "item": "gtceu:coke_oven_bricks"
+                },
+            "cast_consumed": true,
+            "cooling_time": 1200,
+            "fluid": {
+            "amount": 540,
+            "tag": "tconstruct:molten_bronze"
+            },
+        "result": "gtceu:steam_machine_casing"
+    }).id('cct:casting/steam_machine_casing')
 }

@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id":"kubejs:twforest_activator",
+      "required":false
+    }
+  ]
+}

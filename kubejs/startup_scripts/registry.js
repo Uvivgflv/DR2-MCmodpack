@@ -24,9 +24,13 @@ const RegistryStartUpItems = (event) =>{
     //вспомогательные предметы
     event.create('iron_casing_parts').displayName('Железные детали')
     event.create('brass_casing_parts').displayName('Латунные детали')
+    //drop from mobs undergarden
+    event.create('fermanted_warp').displayName('Ферментированное искажение')
+    event.create('under_shards').displayName('Глубинные осколки')
 }
 
 const RegistryStartUpBlocks = (event) =>{
     event.create('unfired_coke_bricks').displayName('Необоженные коксовые кирпичи')
+    event.create('lead_molded_bricks').displayName('Залитые свинцом кирпичи')
    // event.create('computation_matrix').displayName('TEST')
 }

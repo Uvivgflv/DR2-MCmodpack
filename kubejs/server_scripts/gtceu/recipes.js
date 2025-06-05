@@ -3,6 +3,8 @@ const RegistryTGCEURecipes = event =>{
         event.remove({id:'gtceu:shaped/casing_coke_bricks'})
         event.remove({id:'gtceu:shaped/coke_oven'})
         event.remove({id:'gtceu:shaped/casing_primitive_bricks'})
+        event.remove({id:'gtceu:shaped/bronze_primitive_blast_furnace'})
+        event.remove({id:'gtceu:shaped/casing_bronze_bricks'})
         //--
         event.remove({id:'gtceu:shaped/steam_miner_bronze'})
     //#endregion
@@ -24,4 +26,5 @@ const RegistryTGCEURecipes = event =>{
             B:'gtceu:firebrick'
         }).id('cct:primitive_blast_furnace/shaped/firebricks')
     //#endregion 
+    
 }
