@@ -5,12 +5,12 @@ GTCEuServerEvents.oreVeins(event => {
     })
     event.modify("gtceu:oilsands_vein", vein => {
         vein.density(0.1)
-        vein.weight(16)
+        vein.weight(8)
     })
     event.modify("gtceu:apatite_vein", vein => {
         vein.density(0.1)
     })
-  
+    
     event.remove("gtceu:redstone_vein_ow") 
     
     event.modify("gtceu:magnetite_vein_ow", vein => {

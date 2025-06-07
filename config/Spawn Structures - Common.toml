@@ -1,0 +1,35 @@
+
+["Common Configs for Spawn Structures"]
+	#------------------------#
+	"Config Version" = "1.0.4"
+
+#----------------------------------#
+["Starter Structure Spawn Location"]
+	# Should the Starter Structure spawn at a specific location?
+	"Set World Spawn" = true
+	# Which specific location should the Starter Structure generate at? [x,z]
+	"Specify World Spawn Location" = "[0,0]"
+	# Should the Starter Structure spawn in a specific biome? (Takes priority over "Set World Spawn" if not set to "ANY")
+	#    Example 1: "MINECRAFT:CHERRY_GROVE" will search specifically for the Cherry Grove biome.
+	#    Example 2: "TAIGA" will search for ANY Taiga biome, including the Snowy Taiga and Old Growth Taiga biomes.
+	"Set Spawn Biome" = "ANY"
+
+#--------------------#
+["GameRule Overrides"]
+	# Should the Starter Structure spawn even if Generate Structures is set to false?
+	"Ignore GameRule: Generate Structures" = true
+	# Should the Spawn Radius set in the World Options be ignored?
+	"Ignore GameRule: Spawn Radius" = true
+	# How big should the new Spawn Radius be? (Only applies if "Ignore GameRule: Spawn Radius" is true)
+	#Range: 0 ~ 4
+	"Spawn Radius" = 0
+	# Which direction should the player spawn facing? ("STRUCTURE_LOCKED" usually means facing the Spawn Structure's door)
+	# Values: "STRUCTURE_LOCKED", "RANDOMIZED", "NORTH", "EAST", "SOUTH", "WEST"   -->   Default Value: "STRUCTURE_LOCKED"
+	"Spawn Orientation" = "STRUCTURE_LOCKED"
+
+#---------------------------------#
+["Starter Structure Customization"]
+	# Which Starter Structure should generate at the world Spawn Location?
+	# Values: "BIOME_DEPENDENT", "RANDOMIZED", "CHERRY_BLOSSOM", "LOG_CABIN", "SAND_CASTLE"
+	"Starter Structure" = "BIOME_DEPENDENT"
+

@@ -53,5 +53,6 @@ const RegisterItemsTagsMain = (event) => {
     event.add('twilightforest:portal/activator', 'kubejs:twforest_activator')
     event.remove('twilightforest:portal/activator', 'minecraft:diamond')
     
+    event.removeAllTagsFrom('tfmg:heavy_plate')
 
 }

@@ -11,7 +11,7 @@
   "features": {
     // Enabling deeper oceans will lower vanilla ocean monuments to compensate for lower depth.
     // Snow start offset moves where snow starts, preventing biomes like Taigas looking weird next to mountain ranges.
-    "deeper_oceans": true,
+    "deeper_oceans": false,
     "desert_dunes": true,
     "lava_rivers": true,
     "snow_start_offset": 128,

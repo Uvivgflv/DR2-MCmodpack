@@ -68,4 +68,32 @@ const RegistrySmelteryRecipes = event =>{
             },
         "result": "gtceu:steam_machine_casing"
     }).id('cct:casting/steam_machine_casing')
+
+    event.custom({
+        "type": "tconstruct:casting_basin",
+        "cast": {
+                "item": "minecraft:bricks"
+                },
+            "cast_consumed": true,
+            "cooling_time": 1200,
+            "fluid": {
+            "amount": 540,
+            "tag": "tconstruct:molten_lead"
+            },
+        "result": "kubejs:lead_molded_bricks"
+    }).id('cct:casting/lead_foundation')
+
+    event.custom({
+        "type": "tconstruct:casting_basin",
+        "cast": {
+                "item": "twilightforest:underbrick"
+                },
+            "cast_consumed": true,
+            "cooling_time": 2200,
+            "fluid": {
+            "amount": 540,
+            "tag": "tconstruct:molten_steel"
+            },
+        "result": "gtceu:steel_brick_casing"
+    }).id('cct:casting/steel_brick_casing')
 }

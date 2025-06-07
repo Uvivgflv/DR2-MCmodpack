@@ -30,7 +30,17 @@ const RegistryStartUpItems = (event) =>{
 }
 
 const RegistryStartUpBlocks = (event) =>{
-    event.create('unfired_coke_bricks').displayName('Необоженные коксовые кирпичи')
-    event.create('lead_molded_bricks').displayName('Залитые свинцом кирпичи')
+    event.create('unfired_coke_bricks')
+    .displayName('Необоженные коксовые кирпичи')
+    .requiresTool(true)
+    .soundType('clay')
+    .tagBlock('minecraft:mineable/shovel')
+
+    event.create('lead_molded_bricks')
+    .displayName('Залитые свинцом кирпичи')
+    .requiresTool(true)
+    .soundType('stone')
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:mineable/wrench')
    // event.create('computation_matrix').displayName('TEST')
 }

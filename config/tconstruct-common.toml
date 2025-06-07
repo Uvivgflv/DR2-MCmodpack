@@ -21,12 +21,12 @@
 	cheaperNetheriteAlloy = true
 	#Makes wither skeletons drop necrotic bones
 	witherBoneDrop = true
-	#Allows converting wither bones to regular bones
-	witherBoneConversion = true
 	#Slimeballs not being usable in vanilla recipes that require slimeballs. Config option exists to disable easily in case this fix is redundant to another mod
 	slimeRecipeFix = true
 	#Fixes clear glass not being usable in vanilla recipes that require glass. Config option exists to disable easily in case this fix is redundant to another mod
 	glassRecipeFix = true
+	#Allows converting wither bones to regular bones
+	witherBoneConversion = true
 
 	[recipes.ore_rates]
 

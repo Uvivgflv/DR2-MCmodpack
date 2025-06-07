@@ -148,6 +148,10 @@
 
 	[mod_compat.enabled_builtin_plugins]
 		#
+		# Enables the plugin for Tinkers' Construct.
+		# Default: true
+		tconstruct = true
+		#
 		# Enables the plugin for Create.
 		# Default: true
 		create = true
@@ -155,8 +159,4 @@
 		# Enables the plugin for Quark.
 		# Default: true
 		quark = true
-		#
-		# Enables the plugin for Tinkers' Construct.
-		# Default: true
-		tconstruct = true
 

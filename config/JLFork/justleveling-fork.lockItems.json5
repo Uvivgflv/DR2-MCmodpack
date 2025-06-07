@@ -50,7 +50,11 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 12
+					level: 20
+				},
+				{
+					aptitude: "Building",
+					level: 15
 				}
 			]
 		},
