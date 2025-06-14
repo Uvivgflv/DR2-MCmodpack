@@ -33,7 +33,6 @@ const RegistryStartUpBlocks = (event) =>{
     event.create('unfired_coke_bricks')
     .displayName('Необоженные коксовые кирпичи')
     .requiresTool(true)
-    .soundType('clay')
     .tagBlock('minecraft:mineable/shovel')
 
     event.create('lead_molded_bricks')
