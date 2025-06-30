@@ -2,6 +2,8 @@ const RegistryTGCEURecipes = event =>{
     //#region remove recipes
         event.remove({id:'gtceu:shaped/casing_coke_bricks'})
         event.remove({id:'gtceu:shaped/coke_oven'})
+        event.remove({id:'gtceu:smelting/coke_oven_brick'})
+        event.remove({id:'gtceu:compressor/coke_bricks'})
         event.remove({id:'gtceu:shaped/casing_primitive_bricks'})
         event.remove({id:'gtceu:shaped/bronze_primitive_blast_furnace'})
         event.remove({id:'gtceu:shaped/casing_bronze_bricks'})
@@ -20,7 +22,7 @@ const RegistryTGCEURecipes = event =>{
         event.remove({id:'gtceu:shaped/steam_rock_breaker_bronze'})
         //--
         event.remove({id:'gtceu:shaped/steel_hull'})
-        event.remove({id:'gtceu:shaped/steam_boiler_steel'})
+        event.remove({id:'gtceu:shaped/steam_boiler_coal_steel'})
         event.remove({id:'gtceu:shaped/steam_boiler_lava_steel'})
         event.remove({id:'gtceu:shaped/steam_boiler_solar_steel'})
         event.remove({id:'gtceu:shaped/steam_extractor_steel'})

@@ -51,6 +51,7 @@
     "biomeswevegone:lush_grass_block",
     "luminousworld:ishstone",
     "quark:limestone",
-    "glowroot:glowrootdirt"
+    "glowroot:glowrootdirt",
+    "minecraft:rooted_dirt"
   ]
 }

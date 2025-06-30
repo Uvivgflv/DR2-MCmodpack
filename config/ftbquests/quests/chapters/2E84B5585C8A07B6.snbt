@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2E84B5585C8A07B6"
+	group: "01A83B53FD1D0E4F"
+	id: "2E84B5585C8A07B6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Начальный этап "
+}

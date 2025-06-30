@@ -171,8 +171,8 @@ const RegistryTconstructResipes = event => {
         }).id('cct:smeltery/seared_glass')
     //#endregion
 
-    //#region alloys compat
-    //#region sterling silver
+    // //#region alloys compat
+    // //#region sterling silver
         event.custom({
             "type": "tconstruct:alloy",
             "inputs": [
@@ -289,8 +289,8 @@ const RegistryTconstructResipes = event => {
             "tag": "forge:storage_blocks/sterling_silver"
             }
         }).id('cct:compat/alloyng/sterling_silver/block')
-        //#endregion
-    //#region tin_alloy
+    //     //#endregion
+    // //#region tin_alloy
         event.custom({
             "type": "tconstruct:alloy",
             "inputs": [
@@ -407,7 +407,45 @@ const RegistryTconstructResipes = event => {
             "tag": "forge:storage_blocks/tin_alloy"
             }
         }).id('cct:compat/alloyng/tin_alloy/block')
-        //#endregion
-    //#region red_alloy
-    //#endregion
+    //     //#endregion
+    // //#region red_alloy
+        //#region redstone melting
+        event.custom({
+            "type": "tconstruct:melting",
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:dusts/redstone"
+                }
+            ],
+            "ingredient": {
+            "tag": "forge:dusts/redstone"
+            },
+            "result": {
+            "amount": 90,
+            "tag": "forge:redstone"
+            },
+            "temperature": 300,
+            "time": 23
+        }).id('cct:compat/alloying/melting_redstone')
+
+        event.custom({
+            "type": "tconstruct:melting",
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:storage_blocks/redstone"
+                }
+            ],
+            "ingredient": {
+            "tag": "forge:storage_blocks/redstone"
+            },
+            "result": {
+            "amount": 810,
+            "tag": "forge:redstone"
+            },
+            "temperature": 300,
+            "time": 200
+        }).id('cct:compat/alloying/melting_redstone_block')
+    // //#endregion
 }

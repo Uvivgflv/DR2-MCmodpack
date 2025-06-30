@@ -56,6 +56,11 @@
     "idas:pillager_camp",
     "spawn-structures:starter_structure",
     "apotheosis:tower_leaf",
-    "idas:cottage"
+    "idas:cottage",
+    "idas:winter_wagon",
+    "alexscaves:cake_cave",
+    "dungeons_and_combat:ancient_tree",
+    "irons_spellbooks:evoker_fort",
+    "twilightforest:small_hollow_hill"
   ]
 }

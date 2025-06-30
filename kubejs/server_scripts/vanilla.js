@@ -18,6 +18,7 @@ event.remove({output:'minecraft:crafting_table'})
 event.remove({output:'minecraft:furnace'})
 event.remove({id:'quark:building/crafting/furnaces/deepslate_furnace'})
 event.remove({id:'quark:building/crafting/furnaces/blackstone_furnace'})
+event.remove({id:'minecraft:enchanting_table'})
 
 //--
 event.remove({id:'minecraft:netherite_ingot'})

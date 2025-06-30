@@ -1,6 +1,6 @@
 const RegisterSophisBackpacksRecipes = event =>{
     //#region remove recipes
-        event.remove({id:'sophisticatedbackpacks:backpackwa'})
+        event.remove({id:'sophisticatedbackpacks:backpack'})
         event.remove({output:/^sophisticatedbackpacks:.*_backpack/})
     //#endregion
 

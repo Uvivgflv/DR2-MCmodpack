@@ -15,7 +15,9 @@ WorldgenEvents.remove(event =>
         'glowroot:glowroot_coppe_ore', 'glowroot:glowroot_iron_ore',
         'glowroot:glowroot_gold_ore', 'glowroot:glowroot_lapis_ore', 
         'glowroot:glowroot_emerald_ore', 'glowroot:glowroot_redstone_ore',
-        'glowroot:glowroot_diamond_ore', 'malum:deepslate_quartz_ore', 'malum:natural_quartz_ore']
+        'glowroot:glowroot_diamond_ore', 'malum:deepslate_quartz_ore', 'malum:natural_quartz_ore', 
+        'malum:soulstone_ore', 'forbidden_arcanus:xpetrified_ore', 'malum:cthonic_gold_ore',
+        'forbidden_arcanus:arcane_crystal_ore', 'forbidden_arcanus:runic_deepslate', 'malum:brilliant_deepslate']
     event.removeOres(props => 
         { props.worldgenLayer = 'underground_ores';
             props.blocks = oreList
@@ -23,6 +25,6 @@ WorldgenEvents.remove(event =>
     event.removeOres(props =>
     {
         props.worldgenLayer = 'underground_decoration';
-        props.blocks = 'tconstruct:cobalt_ore'
+        props.blocks = 'tconstruct:cobalt_ore';
     })
 })

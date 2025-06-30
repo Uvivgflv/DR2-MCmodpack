@@ -1,0 +1,9 @@
+{
+  "hunger": 100.0,
+  "happiness": 100.0,
+  "energy": 100.0,
+  "funLevel": 100.0,
+  "screenWidth": 0,
+  "screenHeight": 0,
+  "poops": []
+}

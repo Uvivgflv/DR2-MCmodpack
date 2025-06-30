@@ -17,7 +17,7 @@ const RegisterTFMGRecipes = event =>{
 
     //#region remove some sus recipes
 
-    event.remove({id:'tfmg:sequensed_assembly/heavy_plate'})
+    event.remove({output: 'tfmg:heavy_plate'})
 
     //#endregion
 }

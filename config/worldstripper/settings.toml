@@ -9,7 +9,7 @@
 	stripRadiusZ = 200
 	#Strip Start: Y
 	#Range: -10240 ~ 10240
-	stripStartY = 256
+	stripStartY = 512
 	#Strip Stop: Y
 	#Range: -10240 ~ 10240
 	stripStopY = -64
