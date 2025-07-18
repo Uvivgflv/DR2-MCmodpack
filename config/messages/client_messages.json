@@ -1,0 +1,11 @@
+[
+  {
+    "identifier": "default_message",
+    "schedule": "on_first_join",
+    "type": "chat",
+    "repeats": false,
+    "pack_intro": false,
+    "link": "https://www.google.com",
+    "text": "Client (with link): Welcome to AutoMessage, %player%!"
+  }
+]

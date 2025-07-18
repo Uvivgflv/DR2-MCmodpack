@@ -343,7 +343,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 6
+					level: 8
 				}
 			]
 		},
@@ -383,7 +383,7 @@
 			aptitudes: [
 				{
 					aptitude: "Luck",
-					level: 4
+					level: 5
 				}
 			]
 		},
@@ -410,7 +410,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 4
+					level: 5
 				}
 			]
 		},
@@ -451,6 +451,10 @@
 				{
 					aptitude: "Intelligence",
 					level: 16
+				},
+				{
+					aptitude: "Strength",
+					level: 5
 				}
 			]
 		},
@@ -459,7 +463,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 4
+					level: 5
 				}
 			]
 		},
@@ -468,7 +472,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 4
+					level: 5
 				}
 			]
 		},
@@ -477,7 +481,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 4
+					level: 8
 				}
 			]
 		},
@@ -486,7 +490,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 4
+					level: 8
 				}
 			]
 		},
@@ -522,11 +526,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 6
+					level: 18
 				},
 				{
 					aptitude: "Building",
-					level: 4
+					level: 8
 				}
 			]
 		},
@@ -544,7 +548,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 25
+					level: 45
 				}
 			]
 		},
@@ -570,7 +574,7 @@
 				},
 				{
 					aptitude: "Strength",
-					level: 4
+					level: 5
 				}
 			]
 		},
@@ -588,7 +592,7 @@
 			aptitudes: [
 				{
 					aptitude: "Dexterity",
-					level: 30
+					level: 60
 				}
 			]
 		},
@@ -610,11 +614,11 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 15
+					level: 18
 				},
 				{
 					aptitude: "Luck",
-					level: 10
+					level: 16
 				}
 			]
 		},
@@ -704,7 +708,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 10
+					level: 12
 				},
 				{
 					aptitude: "Magic",
@@ -766,6 +770,10 @@
 				{
 					aptitude: "Intelligence",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
 				}
 			]
 		},
@@ -774,6 +782,10 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
 					level: 8
 				}
 			]
@@ -784,6 +796,10 @@
 				{
 					aptitude: "Intelligence",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
 				}
 			]
 		},
@@ -792,6 +808,10 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
 					level: 8
 				}
 			]
@@ -802,6 +822,10 @@
 				{
 					aptitude: "Intelligence",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
 				}
 			]
 		},
@@ -810,6 +834,10 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
 					level: 8
 				}
 			]
@@ -820,6 +848,10 @@
 				{
 					aptitude: "Intelligence",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
 				}
 			]
 		},
@@ -828,6 +860,10 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
 					level: 8
 				}
 			]
@@ -847,6 +883,10 @@
 				{
 					aptitude: "Intelligence",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
 				}
 			]
 		},
@@ -855,7 +895,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 8
+					level: 9
 				}
 			]
 		},
@@ -864,7 +904,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 8
+					level: 9
 				}
 			]
 		},
@@ -873,6 +913,10 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
 					level: 8
 				}
 			]
@@ -883,6 +927,10 @@
 				{
 					aptitude: "Intelligence",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
 				}
 			]
 		},
@@ -892,6 +940,10 @@
 				{
 					aptitude: "Intelligence",
 					level: 8
+				},
+				{
+					aptitude: "Building",
+					level: 5
 				}
 			]
 		},
@@ -900,7 +952,15 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 5
+				},
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Constitution",
+					level: 5
 				}
 			]
 		},
@@ -909,6 +969,10 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
 					level: 8
 				}
 			]
@@ -919,6 +983,10 @@
 				{
 					aptitude: "Magic",
 					level: 12
+				},
+				{
+					aptitude: "Constitution",
+					level: 20
 				}
 			]
 		},
@@ -928,6 +996,10 @@
 				{
 					aptitude: "Magic",
 					level: 12
+				},
+				{
+					aptitude: "Constitution",
+					level: 20
 				}
 			]
 		},
@@ -950,6 +1022,10 @@
 				{
 					aptitude: "Defense",
 					level: 4
+				},
+				{
+					aptitude: "Constitution",
+					level: 5
 				}
 			]
 		},
@@ -959,6 +1035,10 @@
 				{
 					aptitude: "Defense",
 					level: 4
+				},
+				{
+					aptitude: "Constitution",
+					level: 5
 				}
 			]
 		},
@@ -968,6 +1048,10 @@
 				{
 					aptitude: "Defense",
 					level: 4
+				},
+				{
+					aptitude: "Constitution",
+					level: 5
 				}
 			]
 		},
@@ -977,6 +1061,10 @@
 				{
 					aptitude: "Defense",
 					level: 4
+				},
+				{
+					aptitude: "Constitution",
+					level: 5
 				}
 			]
 		},
@@ -986,6 +1074,10 @@
 				{
 					aptitude: "Defense",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
 				}
 			]
 		},
@@ -995,6 +1087,10 @@
 				{
 					aptitude: "Defense",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
 				}
 			]
 		},
@@ -1004,6 +1100,10 @@
 				{
 					aptitude: "Defense",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
 				}
 			]
 		},
@@ -1013,6 +1113,10 @@
 				{
 					aptitude: "Defense",
 					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
 				}
 			]
 		},
@@ -1074,6 +1178,10 @@
 				{
 					aptitude: "Defense",
 					level: 16
+				},
+				{
+					aptitude: "Constitution",
+					level: 20
 				}
 			]
 		},
@@ -1083,6 +1191,10 @@
 				{
 					aptitude: "Defense",
 					level: 16
+				},
+				{
+					aptitude: "Constitution",
+					level: 20
 				}
 			]
 		},
@@ -1092,6 +1204,10 @@
 				{
 					aptitude: "Defense",
 					level: 16
+				},
+				{
+					aptitude: "Constitution",
+					level: 20
 				}
 			]
 		},
@@ -1101,6 +1217,10 @@
 				{
 					aptitude: "Defense",
 					level: 16
+				},
+				{
+					aptitude: "Constitution",
+					level: 20
 				}
 			]
 		},
@@ -1110,6 +1230,10 @@
 				{
 					aptitude: "Defense",
 					level: 24
+				},
+				{
+					aptitude: "Constitution",
+					level: 28
 				}
 			]
 		},
@@ -1119,6 +1243,10 @@
 				{
 					aptitude: "Defense",
 					level: 24
+				},
+				{
+					aptitude: "Constitution",
+					level: 28
 				}
 			]
 		},
@@ -1128,6 +1256,10 @@
 				{
 					aptitude: "Defense",
 					level: 24
+				},
+				{
+					aptitude: "Constitution",
+					level: 28
 				}
 			]
 		},
@@ -1137,6 +1269,10 @@
 				{
 					aptitude: "Defense",
 					level: 24
+				},
+				{
+					aptitude: "Constitution",
+					level: 28
 				}
 			]
 		},
@@ -1197,11 +1333,15 @@
 			aptitudes: [
 				{
 					aptitude: "Constitution",
-					level: 16
+					level: 20
 				},
 				{
 					aptitude: "Magic",
-					level: 12
+					level: 25
+				},
+				{
+					aptitude: "Dexterity",
+					level: 10
 				}
 			]
 		},
@@ -1419,7 +1559,11 @@
 			aptitudes: [
 				{
 					aptitude: "Constitution",
-					level: 4
+					level: 8
+				},
+				{
+					aptitude: "Dexterity",
+					level: 5
 				}
 			]
 		},
@@ -1428,11 +1572,11 @@
 			aptitudes: [
 				{
 					aptitude: "Luck",
-					level: 4
+					level: 5
 				},
-                                {
-                                        aptitude: "Constitution",
-                                        level: 12
+                {
+                    aptitude: "Constitution",
+                    level: 12
 				}
 			]
 		},
@@ -1607,6 +1751,19 @@
 		},
 			{
 			item: "botania:light_gray_mystical_flower",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 3
+				}
+			]
+		},
+			{
+			item: "botania:gray_mystical_flower",
 			aptitudes: [
 				{
 					aptitude: "Magic",
@@ -1935,11 +2092,11 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 14
+					level: 24
 				},
 				{
 					aptitude: "Constitution",
-					level: 14
+					level: 24
 				}
 			]
 		},
@@ -1948,11 +2105,11 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 14
+					level: 32
 				},
 				{
 					aptitude: "Constitution",
-					level: 14
+					level: 32
 				},
 				{
 					aptitude: "Intelligence",
@@ -1965,15 +2122,15 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 16
+					level: 44
 				},
 				{
 					aptitude: "Constitution",
-					level: 16
+					level: 44
 				},
 				{
 					aptitude: "Intelligence",
-					level: 16
+					level: 20
 				}
 			]
 		},
@@ -1982,15 +2139,15 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 24
+					level: 50
 				},
 				{
 					aptitude: "Constitution",
-					level: 16
+					level: 48
 				},
 				{
 					aptitude: "Intelligence",
-					level: 18
+					level: 20
 				}
 			]
 		},
@@ -1999,11 +2156,11 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 20
+					level: 32
 				},
 				{
 					aptitude: "Luck",
-					level: 16
+					level: 20
 				}
 			]
 		},
@@ -2095,6 +2252,2096 @@
 				{
 					aptitude: "Strength",
 					level: 10
+				}
+			]
+		},
+		{
+			item: "minecraft:arrow",
+			aptitudes: [
+				{
+					aptitude: "Dexterity",
+					level: 1
+				},
+				{
+					aptitude: "Strength",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "apotheosis:gem",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "create:brown_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:white_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:orange_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:magenta_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:light_blue_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:yellow_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:lime_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:pink_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:gray_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:light_gray_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:cyan_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:purple_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:blue_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:green_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:red_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "create:black_toolbox",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 2
+				}
+			]
+		},
+		{
+			item: "gtceu:rubber_sapling",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		}
+		,
+		{
+			item: "minecraft:bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:spruce_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:birch_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:jungle_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:acacia_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:dark_oak_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:crimson_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:warped_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:mangrove_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:bamboo_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:cherry_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:blossom_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:azalea_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "quark:ancient_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "midnight:shadowroot_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "midnight:dark_willow_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "midnight:decayed_wood_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "midnight:manglewood_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:aspen_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:baobab_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:blue_enchanted_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:cika_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:cypress_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:ebony_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:fir_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:florus_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:green_enchanted_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:holly_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:ironwood_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:jacaranda_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:mahogany_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:maple_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:palm_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:rainbow_eucalyptus_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:redwood_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:sakura_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:skyris_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:white_mangrove_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:willow_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:witch_hazel_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "biomeswevegone:zelkova_bookshelf",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "apotheosis:hellshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 20
+				},
+				{
+					aptitude: "Magic",
+					level: 25
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:infused_hellshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 20
+				},
+				{
+					aptitude: "Magic",
+					level: 25
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:blazing_hellshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 20
+				},
+				{
+					aptitude: "Magic",
+					level: 25
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:glowing_hellshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 20
+				},
+				{
+					aptitude: "Magic",
+					level: 25
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:sightshelf",
+			aptitudes:[
+				{
+					aptitude: "Strength",
+					level: 20
+				},
+				{
+					aptitude: "Magic",
+					level: 25
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:seashelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 15
+				},
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:infused_seashelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 15
+				},
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:crystal_seashelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 15
+				},
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:heart_seashelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 15
+				},
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:rectifier",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 15
+				},
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:dormant_deepshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 30
+				},
+				{
+					aptitude: "Magic",
+					level: 35
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:dormant_deepshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 30
+				},
+				{
+					aptitude: "Magic",
+					level: 35
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:echoing_deepshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 30
+				},
+				{
+					aptitude: "Magic",
+					level: 35
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:soul_touched_deepshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 30
+				},
+				{
+					aptitude: "Magic",
+					level: 35
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:echoing_sculkshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 35
+				},
+				{
+					aptitude: "Magic",
+					level: 35
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:soul_touched_sculkshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 35
+				},
+				{
+					aptitude: "Magic",
+					level: 35
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "apotheosis:treasure_shelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 30
+				},
+				{
+					aptitude: "Magic",
+					level: 35
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				},
+				{
+					aptitude: "Luck",
+					level: 20
+				}
+			]
+		},
+		{
+			item: "apotheosis:endshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 45
+				},
+				{
+					aptitude: "Magic",
+					level: 40
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				},
+				{
+					aptitude: "Luck",
+					level: 20
+				}
+			]
+		},
+		{
+			item: "apotheosis:pearl_endshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 45
+				},
+				{
+					aptitude: "Magic",
+					level: 40
+				},
+				{
+					aptitude: "Intelligence",
+					level: 15
+				},
+				{
+					aptitude: "Luck",
+					level: 20
+				}
+			]
+		},
+		{
+			item: "apotheosis:draconic_endshelf",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 45
+				},
+				{
+					aptitude: "Magic",
+					level: 50
+				},
+				{
+					aptitude: "Intelligence",
+					level: 20
+				}
+			]
+		},
+		{
+			item: "apotheosis:beeshelf",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "apotheosis:melonshelf",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "apotheosis:stoneshelf",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 5
+				},
+				{
+					aptitude: "Intelligence",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "dungeonsdelight:rotten_spawner",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 15
+				},
+				{
+					aptitude: "Luck",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "netherexp:soul_magma_block",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Strength",
+					level: 12
+				}
+			]
+		},
+		{
+			item: "botania:livingrock",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "botania:livingwood_log",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "botania:stripped_livingwood_log",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "botania:livingwood",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "botania:livingwood_planks",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "botania:livingwood_planks_slab",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "endrem:black_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:cold_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Constitution",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:corrupted_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Luck",
+					level: 25
+				}
+			]
+		},
+		{
+			item: "endrem:lost_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:nether_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Constitution",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:old_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:rogue_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:cursed_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:evil_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:guardian_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:magical_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:wither_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:witch_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:undead_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "endrem:exotic_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 32
+				},
+				{
+					aptitude: "Strength",
+					level: 20
+				}
+			]
+		},
+		{
+			item: "endrem:cryptic_eye",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 100
+				},
+				{
+					aptitude: "Strength",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "minecraft:end_portal_frame",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 45
+				},
+				{
+					aptitude: "Strength",
+					level: 35
+				},
+				{
+					aptitude: "Constitution",
+					level: 32
+				}
+			]
+		},
+		{
+			item: "minecraft:ancient_debris",
+			aptitudes: [
+				{
+					aptitude: "Constitution",
+					level: 22
+				},
+				{
+					aptitude: "Strength",
+					level: 24
+				}
+			]
+		},
+		{
+			item: "quark:ancient_sapling",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 22
+				},
+				{
+					aptitude: "Building",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "quark:ancient_log",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 22
+				},
+				{
+					aptitude: "Building",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "quark:ancient_leaves",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 22
+				},
+				{
+					aptitude: "Building",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "quark:ancient_fruit",
+			aptitudes: [
+				{
+					aptitude: "Luck",
+					level: 5
+				}
+			]
+		},
+		{
+			item:"minecraft:sculk_sensor",
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 8
+				},
+				{
+					aptitude: "Magic",
+					level: 5
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "minecraft:sculk_catalyst",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Building",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "minecraft:sckulk_shrieker",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Building",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "minecraft:sckulk",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Building",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "minecraft:sckulk_vein",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Building",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "minecraft:candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:white_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:black_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:gray_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:light_gray_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:blue_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:light_blue_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:red_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:pink_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:orange_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:yellow_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:green_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:lime_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:cyan_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:brown_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:purple_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:magenta_candle",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Building",
+					level: 4
+				}
+			]
+		},
+		{
+			item: "minecraft:crying_obsidian",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Strength",
+					level: 20
+				}
+			]
+		},
+		{
+			item: "supplementaries:urn",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 3
+				},
+				{
+					aptitude: "Luck",
+					level: 5
+				}
+			]
+		},
+		{
+			item: "quark:monster_box",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 20
+				},
+				{
+					aptitude: "Defense",
+					level: 12
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "deeperdarker:ancient_vase",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 5
+				},
+				{
+					aptitude: "Luck",
+					level: 15
+				}
+			]
+		},
+		{
+			item: "forbidden_arcanus:darkstone",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 4
+				},
+				{
+					aptitude: "Strength",
+					level: 5
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "forbidden_arcanus:petrified_root",
+			aptitudes: [
+				{
+					aptitude: "Strength",
+					level: 5
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "forbidden_arcanus:stella_arcanum",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 15
+				},
+				{
+					aptitude: "Strength",
+					level: 5
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:sculk_spouts",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:vilethorn",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:large_infected_mushroom",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:short_infected_mushroom",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:long_sculk_tendril",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:overloaded_sculk",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				},
+				{
+					aptitude: "Strength",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:fernus",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:large_fernus",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:exxo_growth",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				},
+				{
+					aptitude: "Strength",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:sculk_tendril",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:sculk_soil",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				},
+				{
+					aptitude: "Strength",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:fluorescent_moss",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				},
+				{
+					aptitude: "Strength",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:apatine_plant",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:pulse_flower",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				},
+				{
+					aptitude: "Intelligence",
+					level: 5
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:sculk_exhaler",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				},
+				{
+					aptitude: "Intelligence",
+					level: 5
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:sculk_ribs",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 16
+				},
+				{
+					aptitude: "Constitution",
+					level: 16
+				},
+				{
+					aptitude: "Strength",
+					level: 16
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:sculk_carapace",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 24
+				},
+				{
+					aptitude: "Constitution",
+					level: 24
+				},
+				{
+					aptitude: "Strength",
+					level: 24
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:plasma_block",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 24
+				},
+				{
+					aptitude: "Constitution",
+					level: 24
+				},
+				{
+					aptitude: "Strength",
+					level: 24
+				}
+			]
+		},
+		{
+			item: "deep_dark_regrowth:sculk_heart",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 24
+				},
+				{
+					aptitude: "Constitution",
+					level: 24
+				},
+				{
+					aptitude: "Strength",
+					level: 24
 				}
 			]
 		}

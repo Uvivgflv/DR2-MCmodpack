@@ -17,14 +17,44 @@ WorldgenEvents.remove(event =>
         'glowroot:glowroot_emerald_ore', 'glowroot:glowroot_redstone_ore',
         'glowroot:glowroot_diamond_ore', 'malum:deepslate_quartz_ore', 'malum:natural_quartz_ore', 
         'malum:soulstone_ore', 'forbidden_arcanus:xpetrified_ore', 'malum:cthonic_gold_ore',
-        'forbidden_arcanus:arcane_crystal_ore', 'forbidden_arcanus:runic_deepslate', 'malum:brilliant_deepslate']
+        'forbidden_arcanus:arcane_crystal_ore', 'forbidden_arcanus:runic_deepslate', 'malum:brilliant_deepslate', 'undergarden:depthrock_diamond_ore',
+        'undergarden:depthrock_cloggrum_ore',
+        'undergarden:shiverstone_coal_ore',
+        'undergarden:shiverstone_cloggrum_ore',
+        'undergarden:depthrock_coal_ore',
+        'undergarden:depthrock_utherium_ore',
+        'undergarden:depthrock_regalium_ore',
+        'undergarden:depthrock_iron_ore',
+        'undergarden:depthrock_gold_ore']
+
+    var oreListUndergarden = [
+        'undergarden:depthrock_diamond_ore',
+        'undergarden:depthrock_cloggrum_ore',
+        'undergarden:shiverstone_coal_ore',
+        'undergarden:shiverstone_cloggrum_ore',
+        'undergarden:depthrock_coal_ore',
+        'undergarden:depthrock_utherium_ore',
+        'undergarden:depthrock_regalium_ore',
+        'undergarden:depthrock_iron_ore',
+        'undergarden:depthrock_gold_ore']
     event.removeOres(props => 
-        { props.worldgenLayer = 'underground_ores';
+        { props.worldgenLayer = 'underground_ores'
             props.blocks = oreList
         })
     event.removeOres(props =>
     {
-        props.worldgenLayer = 'underground_decoration';
-        props.blocks = 'tconstruct:cobalt_ore';
+        props.worldgenLayer = 'underground_decoration'
+        props.blocks = oreListUndergarden
+        console.log('undergarden ores tried to remove !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     })
+})
+
+GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+    event.create('depthrock', 'ore')
+        .stateSupplier(() => Block.getBlock('undergarden:depthrock').defaultBlockState()) // 
+        .baseModelLocation('undergarden:block/depthrock')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
+        console.log('undergarden stone type registered ')
 })

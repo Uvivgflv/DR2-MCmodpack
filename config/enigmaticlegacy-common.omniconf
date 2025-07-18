@@ -607,7 +607,7 @@
     I:GuardianHeartEnrageRange=12
 
     # Multiplier for experience consumption by Gift of the Heaven. [range: 0.0 ~ 32768.0, default: 1.0, synchronized: yes]
-    D:HeavenScrollXPCostModifier=1.0
+    D:HeavenScrollXPCostModifier=5.0
 
     # The range in which Guide to Feral Hunt will redirect damage from pet to it's owner. [range: 0 ~ 32768, default: 24, synchronized: yes]
     I:HunterGuideEffectiveDistance=24
@@ -637,7 +637,7 @@
     B:MonsterCharmBonusLooting=true
 
     # Whether or not Emblem of Monster Slayer should provide double experience drop from monsters. [default: true, synchronized: yes]
-    B:MonsterCharmDoubleXP=true
+    B:MonsterCharmDoubleXP=false
 
     # Damage bonus against agressive creatures for Emblem of Monster Slayer. Defined as percentage. [range: 0 ~ 1000, default: 10, synchronized: yes]
     I:MonsterCharmHostileDamage=10
@@ -661,7 +661,7 @@
     I:OceanStoneUnderwaterCreaturesResistance=40
 
     # Multiplier for experience consumption by active ability of Will of the Ocean. [range: 0.0 ~ 1000.0, default: 1.0, synchronized: yes]
-    D:OceanStoneXPCostModifier=1.0
+    D:OceanStoneXPCostModifier=5.0
 
     # Whether or not it should be allowed to equip multiple spellstones if they are different items, granted player somehow gets more than one spellstone slot. [default: false, synchronized: yes]
     B:SpellstonesMultiequip=false

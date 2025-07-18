@@ -1,0 +1,10 @@
+[
+  {
+    "identifier": "default_message",
+    "schedule": "on_first_join",
+    "type": "chat",
+    "repeats": false,
+    "pack_intro": false,
+    "text": "Server: Welcome, %player%, to AutoMessage!"
+  }
+]

@@ -19,6 +19,11 @@ event.remove({output:'minecraft:furnace'})
 event.remove({id:'quark:building/crafting/furnaces/deepslate_furnace'})
 event.remove({id:'quark:building/crafting/furnaces/blackstone_furnace'})
 event.remove({id:'minecraft:enchanting_table'})
+event.remove({id:'luminousworld:smelt_white_oak'})
+event.remove({id:'luminousworld:smelt_palm'})
+event.remove({id:'luminousworld:smelt_auburn'})
+event.remove({id:'luminousworld:smelt_baobab'})
+event.remove({id:'luminousworld:smelt_soft_birch'})
 
 //--
 event.remove({id:'minecraft:netherite_ingot'})

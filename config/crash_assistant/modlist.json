@@ -3,6 +3,10 @@
     "modId": "forge",
     "version": "fmlloader-1.20.1-47.4.0.jar"
   },
+  "accessories-neoforge-1.0.0-beta.46+1.20.1.jar": {
+    "modId": "accessories",
+    "version": "1.0.0-beta46+1.20.1"
+  },
   "adaptive_performance_tweaks_core_1.20.1-11.3.0.jar": {
     "modId": "adaptive_performance_tweaks_core",
     "version": "11.3.0"
@@ -71,9 +75,17 @@
     "modId": "autoleveling",
     "version": "1.19b"
   },
+  "automessage-merged-1.20.1-3.0.0.jar": {
+    "modId": "automessage",
+    "version": "3.0.0"
+  },
   "bbs-1.20.1-0.1.3-forge.jar": {
     "modId": "bbs",
     "version": "1.20.1-0.1.3"
+  },
+  "betterarcheology-1.2.1-1.20.1.jar": {
+    "modId": "betterarcheology",
+    "version": "1.2.1-1.20.1"
   },
   "bettercombat-forge-1.8.6+1.20.1.jar": {
     "modId": "bettercombat",
@@ -211,9 +223,17 @@
     "modId": "customvillagertrades",
     "version": "20.25.0"
   },
+  "Deep Dark Regrowth 1.2.6.1 - 1.20.1.jar": {
+    "modId": "deep_dark_regrowth",
+    "version": "1.2.6.1"
+  },
   "deeperdarker-forge-1.20.1-1.3.3.jar": {
     "modId": "deeperdarker",
     "version": "1.3.3"
+  },
+  "deimos-1.20.1-forge-2.2.jar": {
+    "modId": "deimos",
+    "version": "2.2"
   },
   "DimensionLocalizedInventories-1.20.1-1.9FE.jar": {
     "modId": "dimensionlocalizedinventories",
@@ -279,6 +299,10 @@
     "modId": "euphoria_patcher",
     "version": "1.6.5-r5.5.1-forge"
   },
+  "expcounter-1.20.1-forge-2.1.jar": {
+    "modId": "expcounter",
+    "version": "2.1"
+  },
   "FancyHotbar-Fabric-1.0.0.jar": {
     "modId": "fancy_hotbar",
     "version": "1.0.0"
@@ -334,6 +358,10 @@
   "functionalstorage-1.20.1-1.2.12.jar": {
     "modId": "functionalstorage",
     "version": "1.20.1-1.2.12"
+  },
+  "fusion-1.2.7b-forge-mc1.20.1.jar": {
+    "modId": "fusion",
+    "version": "1.2.7+b"
   },
   "fzzy_config-0.7.0+1.20.1+forge.jar": {
     "modId": "fzzy_config",
@@ -411,6 +439,10 @@
     "modId": "immediatelyfast",
     "version": "1.5.0+1.20.4"
   },
+  "immersivelanterns-forge-1.0.6-1.20.1.jar": {
+    "modId": "immersivelanterns",
+    "version": "1.0.6"
+  },
   "immersivesnow-1.20.1-1.3.2.jar": {
     "modId": "immersivesnow",
     "version": "1.3.2"
@@ -418,6 +450,18 @@
   "integrated_api-1.5.3+1.20.1-forge.jar": {
     "modId": "integrated_api",
     "version": "1.5.3+1.20.1-forge"
+  },
+  "integrated_cataclysm_forge-1.0.4+1.20.1.jar": {
+    "modId": "integrated_cataclysm",
+    "version": "1.0.4+1.20.1"
+  },
+  "integrated_stronghold-1.1.2+1.20.1-forge.jar": {
+    "modId": "integrated_stronghold",
+    "version": "1.1.2+1.20.1-forge"
+  },
+  "integrated_villages-1.3.0+1.20.1-forge.jar": {
+    "modId": "integrated_villages",
+    "version": "1.3.0+1.20.1-forge"
   },
   "irons_spellbooks-1.20.1-3.4.0.9.jar": {
     "modId": "irons_spellbooks",
@@ -442,6 +486,10 @@
   "Jadens-Nether-Expansion-2.3.2.jar": {
     "modId": "netherexp",
     "version": "2.3.2"
+  },
+  "jei-1.20.1-forge-15.20.0.106.jar": {
+    "modId": "jei",
+    "version": "15.20.0.106"
   },
   "justlevelingfork-1.2.1.jar": {
     "modId": "justlevelingfork",
@@ -483,6 +531,18 @@
   "lootintegrations-1.20.1-4.4.jar": {
     "modId": "lootintegrations",
     "version": "1.20.1-4.4"
+  },
+  "lootintegrations_betterarcheology-1.2.jar": {
+    "modId": "lootintegrations_betterarcheology",
+    "version": "1"
+  },
+  "lootintegrations_cataclysm-1.1.jar": {
+    "modId": "lootintegrations_cataclysm",
+    "version": "1"
+  },
+  "lootintegrations_dungeoncrawl-1.1.jar": {
+    "modId": "lootintegrations_dungeoncrawl",
+    "version": "1"
   },
   "lootintegrations_hopo-1.4.jar": {
     "modId": "lootintegrations_hopo",
@@ -564,6 +624,10 @@
     "modId": "modernworldcreation",
     "version": "2.0.2"
   },
+  "monolib-forge-1.20.1-2.1.0.jar": {
+    "modId": "monolib",
+    "version": "2.1.0"
+  },
   "monomorphism-1.20.1-1.0.10.jar": {
     "modId": "monomorphism",
     "version": "1.0.10"
@@ -592,6 +656,10 @@
     "modId": "mr_netherweather",
     "version": "1.1.2_backport"
   },
+  "Notes-1.20.1-1.3.0-forge.jar": {
+    "modId": "notes",
+    "version": "1.20.1-1.3.0-forge"
+  },
   "oceansdelight-1.0.2-1.20.jar": {
     "modId": "oceansdelight",
     "version": "1.0.2-1.20"
@@ -611,6 +679,10 @@
   "ParCool-1.20.1-3.4.0.4.jar": {
     "modId": "parcool",
     "version": "3.4.0.4"
+  },
+  "particle_effects-1.20.1-Forge-1.0.1.jar": {
+    "modId": "particle_effects",
+    "version": "1.0.1"
   },
   "PassableFoliage-1.20.1-forge-8.2.1.jar": {
     "modId": "passablefoliage",
@@ -700,6 +772,14 @@
     "modId": "smartbrainlib",
     "version": "1.15"
   },
+  "sodiumdynamiclights-forge-1.0.10-1.20.1.jar": {
+    "modId": "sodiumdynamiclights",
+    "version": "1.0.9"
+  },
+  "sodiumoptionsapi-forge-1.0.10-1.20.1.jar": {
+    "modId": "sodiumoptionsapi",
+    "version": "1.0.10"
+  },
   "sophisticatedbackpacks-1.20.1-3.23.15.1236.jar": {
     "modId": "sophisticatedbackpacks",
     "version": "3.23.15.1236"
@@ -711,6 +791,10 @@
   "sound-physics-remastered-forge-1.20.1-1.4.13.jar": {
     "modId": "sound_physics_remastered",
     "version": "1.20.1-1.4.13"
+  },
+  "spanorama-1.5.2.jar": {
+    "modId": "spanorama",
+    "version": "1.5.2"
   },
   "spark-1.10.53-forge.jar": {
     "modId": "spark",
@@ -724,9 +808,13 @@
     "modId": "structurecredits",
     "version": "1.20.1-2.3.1"
   },
-  "SubtleEffects-forge-1.20.1-1.10.0.jar": {
-    "modId": "subtle_effects",
-    "version": "1.10.0"
+  "supermartijn642configlib-1.1.8-forge-mc1.20.jar": {
+    "modId": "supermartijn642configlib",
+    "version": "1.1.8"
+  },
+  "supplemental_patches-0.4.0-beta.jar": {
+    "modId": "supplemental_patches",
+    "version": "0.4.0-beta"
   },
   "supplementaries-1.20-3.1.30.jar": {
     "modId": "supplementaries",

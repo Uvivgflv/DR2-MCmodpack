@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     RegisterBotaniaRecipes(event)
     RegisterSophisBackpacksRecipes(event)
     RegisterCreateRecipes(event)
+    RegisterTConSmelteryCompat(event)
 })
 ServerEvents.tags('item', event => {
     RegisterItemsTagsMain(event)

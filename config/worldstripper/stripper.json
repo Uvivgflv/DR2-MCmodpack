@@ -52,6 +52,11 @@
     "luminousworld:ishstone",
     "quark:limestone",
     "glowroot:glowrootdirt",
-    "minecraft:rooted_dirt"
+    "minecraft:rooted_dirt",
+    "undergarden:depthrock",
+    "undergarden:deepturf",
+    "undergarden:deepturf_block",
+    "undergarden:deepsoil",
+    "undergarden:shiverstone"
   ]
 }

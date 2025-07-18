@@ -131,4 +131,31 @@ GTCEuServerEvents.oreVeins(event => {
         .layer(l => l.weight(2).block(() => Block.getBlock('forbidden_arcanus:runic_stone')).size(1, 1))
     ))
     })
+
+    event.add("kubejs:tw_lapis_vein", vein => {
+        // Basic vein generation properties
+        vein.weight(19) // [*] 
+        vein.clusterSize(10) // [*] 
+        vein.density(0.7) // [*] 
+        vein.discardChanceOnAirExposure(0) // 
+
+        // Define where the vein can generate
+        vein.layer("twilight") // [*] 
+        //vein.dimensions("twilightforest:twilightforest") // 
+        //vein.biomes("twilightforest:dense_forest")
+
+        // Define a height range:
+        // You must choose EXACTLY ONE of these options! [*]
+        //vein.heightRangeUniform(-12, 12) // 
+        vein.heightRangeTriangle(-32, 12) // 
+
+        // Define the vein's generator:
+        vein.layeredVeinGenerator(generator => generator
+        .buildLayerPattern(pattern => pattern
+        .layer(l => l.weight(4).mat(GTMaterials.Sodalite).size(2, 4))
+        .layer(l => l.weight(3).mat(GTMaterials.Lazurite).size(1, 1))
+        .layer(l => l.weight(2).mat(GTMaterials.Lapis).size(1, 1))
+        .layer(l => l.weight(3).mat(GTMaterials.Calcite).size(2,2))
+    ))
+    })
 })
