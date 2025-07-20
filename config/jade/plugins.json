@@ -51,6 +51,11 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "lightmanscurrency": {
+    "model_variant": true,
+    "model_variant.locked": false,
+    "paygate": true
+  },
   "treechop": {
     "plugin": true,
     "show_tree_block_counts": true,
@@ -62,9 +67,6 @@
   },
   "gtmutils": {
     "pterb_info": true
-  },
-  "autoleveling": {
-    "level": true
   },
   "gtceu": {
     "primitive_pump": true,
@@ -87,12 +89,6 @@
     "cable_info": true,
     "parallel_info": true
   },
-  "twilightforest": {
-    "quest_ram_wool": true
-  },
-  "supplementaries": {
-    "hat_stand": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -106,9 +102,6 @@
     "ench": true,
     "spawner": true
   },
-  "corpse": {
-    "corpse": true
-  },
   "ae2": {
     "part_icon": true,
     "charger": true,
@@ -120,5 +113,17 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "autoleveling": {
+    "level": true
+  },
+  "twilightforest": {
+    "quest_ram_wool": true
+  },
+  "supplementaries": {
+    "hat_stand": true
+  },
+  "corpse": {
+    "corpse": true
   }
 }

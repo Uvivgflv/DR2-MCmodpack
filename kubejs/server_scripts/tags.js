@@ -50,6 +50,12 @@ const RegisterItemsTagsMain = (event) => {
         'gtceu:treated_wood_planks',
         'tfmg:hardened_planks'
     ])
+
+    event.add('cct:quality_items', ['kubejs:common_fragment',
+        'kubejs:uncommon_fragment',
+        'kubejs:rare_fragment',
+        'kubejs:epic_fragment',
+        'kubejs:legendary_fragment'])
     event.add('twilightforest:portal/activator', 'kubejs:twforest_activator')
     event.remove('twilightforest:portal/activator', 'minecraft:diamond')
     

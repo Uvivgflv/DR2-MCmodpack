@@ -27,7 +27,7 @@ skull_candles = false
 default_item_enchantments = true
 #If true, Twilight Forest's bosses will put their drops inside of a chest where they originally spawned instead of dropping the loot directly.
 #Note that the Knight Phantoms are not affected by this as their drops work differently.
-boss_drop_chests = true
+boss_drop_chests = false
 #Dictates how many blocks down from a cloud block should the game logic check for handling weather related code.
 #Lower if experiencing low tick rate. Set to 0 to turn all cloud precipitation logic off.
 #Range: > 0

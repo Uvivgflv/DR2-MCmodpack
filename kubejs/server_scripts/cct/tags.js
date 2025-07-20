@@ -1,0 +1,3 @@
+const RegisterCCTSpeacialTags = event => {
+    //event.
+}

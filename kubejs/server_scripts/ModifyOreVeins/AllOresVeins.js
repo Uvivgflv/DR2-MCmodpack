@@ -13,6 +13,8 @@ GTCEuServerEvents.oreVeins(event => {
     
     event.remove("gtceu:redstone_vein_ow") 
     event.remove("gtceu:lapis_vein")
+    event.remove("manganese_vein_ow")
+    event.remove("olivine_vein")
     
     
     event.modify("gtceu:magnetite_vein_ow", vein => {

@@ -63,6 +63,11 @@
     "irons_spellbooks:evoker_fort",
     "twilightforest:small_hollow_hill",
     "apotheosis:tower_spruce",
-    "idas:abandoned_lighthouse"
+    "idas:abandoned_lighthouse",
+    "twilightforest:hydra_lair",
+    "twilightforest:hedge_maze",
+    "twilightforest:lich_tower",
+    "twilightforest:labyrinth",
+    "twilightforest:dark_tower"
   ]
 }
