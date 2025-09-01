@@ -20,6 +20,13 @@ const RegisterItemsTagsMain = (event) => {
     event.add('kubejs:disabled_items', 'projectred_core:electrotine_silicon')
     event.add('kubejs:disabled_items', 'projectred_core:woven_cloth')
     event.add('kubejs:disabled_items', 'projectred_core:sail')
+    event.add('kubejs:disabled_items', [
+        'aquaculture:wooden_fillet_knife',
+        'aquaculture:stone_fillet_knife',
+        'aquaculture:iron_fillet_knife',
+        'aquaculture:gold_fillet_knife',
+        'aquaculture:diamond_fillet_knife',
+        'aquaculture:neptunium_fillet_knife'])
     event.add('cct:chest_nugget',[
         'minecraft:iron_nugget',
         'gtceu:zinc_nugget',
@@ -56,7 +63,10 @@ const RegisterItemsTagsMain = (event) => {
         'kubejs:rare_fragment',
         'kubejs:epic_fragment',
         'kubejs:legendary_fragment'])
+    event.add('cct:rose_quartz',['create:rose_quartz', 'biomesoplenty:rose_quartz_chunk'])
+    event.add('minecraft:mineable/shovel', 'tfmg:fireclay')
     event.add('twilightforest:portal/activator', 'kubejs:twforest_activator')
+    event.add('forge:gems/regalium', 'undergarden:regalium_crystal')
     event.remove('twilightforest:portal/activator', 'minecraft:diamond')
     
     event.removeAllTagsFrom('tfmg:heavy_plate')

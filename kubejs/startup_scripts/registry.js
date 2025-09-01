@@ -9,7 +9,9 @@ const RegistryStartUpItems = (event) =>{
     event.create('illager_chains').displayName('Украшения разбойников')
     event.create('corrupted_flesh').displayName('Потусторонняя ткань')
     event.create('rusty_v1').displayName('Вазилиновое дрисло')
-    event.create('twforest_activator').displayName('Ключ от сумеречного леса')
+    event.create('twforest_activator').displayName('Ключ от сумеречного леса').unstackable()
+    event.create('inert_dust').displayName('Инертный порошок')
+    event.create('aluminum_casting_compound').displayName('Смесь для плавки алюминия')
     //фрагменты материалов редкости
     event.create('common_fragment').displayName('Осколки магического металла')
     event.create('uncommon_fragment').displayName('Обрывки ткани времени')
@@ -20,6 +22,8 @@ const RegistryStartUpItems = (event) =>{
     event.create('ash_compound').displayName('Зольная смесь')
     event.create('prim_glass_mix').displayName('Стеклянная смесь')
     event.create('tinned_leather').displayName('Обработанная кожа')
+    event.create('raw_relict').displayName('Необработанный реликтовый металл')
+    event.create('relict_ingot').displayName('Слиток реликтового металла')//ug unique material
     event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix')
     //вспомогательные предметы
     event.create('iron_casing_parts').displayName('Железные детали')
@@ -27,6 +31,24 @@ const RegistryStartUpItems = (event) =>{
     //drop from mobs undergarden
     event.create('fermanted_warp').displayName('Ферментированное искажение')
     event.create('under_shards').displayName('Глубинные осколки')
+    //приколы
+    event.create('processors_super_soup').displayName('Супер суп из процессоров').maxStackSize(16).food(food =>{
+        food
+        .hunger(12)
+        .saturation(12)
+    })
+    event.create('fried_beer').displayName('Жаренное пиво').maxStackSize(4).food(food => {
+        food
+        .hunger(10)
+        .saturation(10)
+    })
+    event.create('snus').displayName('Подозрительный мешочек').maxStackSize(16).food(food => {
+        food
+        .hunger(1)
+        .saturation(20)
+        .effect('minecraft:poison', 100, 0, 2)
+        .removeEffect('minecraft:hunger')
+    })
 }
 
 const RegistryStartUpBlocks = (event) =>{

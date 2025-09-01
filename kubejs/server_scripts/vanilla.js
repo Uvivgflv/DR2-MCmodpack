@@ -13,12 +13,23 @@ event.remove({output:/^minecraft:.*_boots/})
 //--
 event.remove({id:'minecraft:fishing_rod'})
 event.remove({output:'minecraft:lead'})
+event.remove({output:'minecraft:map'})
+event.remove({id:'minecraft:compass'})
+event.remove({id:'minecraft:clock'})
+event.remove({id:'gtceu:shaped/flint_and_steel'})
+event.remove({id:'minecraft:brush'})
+event.remove({id:'betterarcheology:iron_brush'})
+event.remove({id:'betterarcheology:diamond_brush'})
+event.remove({id:'quark:tools/crafting/trowel'})
+event.remove({id:'minecraft:shears'})
+event.remove({id:'minecraft:spyglass'})
 //--
 event.remove({output:'minecraft:crafting_table'})
+event.remove({id:/^biomeswevegone:.*_crafting_table/})
 event.remove({output:'minecraft:furnace'})
 event.remove({id:'quark:building/crafting/furnaces/deepslate_furnace'})
 event.remove({id:'quark:building/crafting/furnaces/blackstone_furnace'})
-event.remove({id:'minecraft:enchanting_table'})
+event.remove({output:'minecraft:enchanting_table'})
 event.remove({id:'luminousworld:smelt_white_oak'})
 event.remove({id:'luminousworld:smelt_palm'})
 event.remove({id:'luminousworld:smelt_auburn'})
@@ -490,6 +501,133 @@ event.shaped('minecraft:dispenser',[
 //#endregion
 //#region primitive glassblowing
 event.blasting('minecraft:glass','kubejs:prim_glass_mix').xp(0.2).cookingTime(1200).id('cct:blasting/glass')
+//#endregion
+
+//#region functional items
+event.shaped('minecraft:map',[
+  'AAA',
+  'ABA',
+  'AAA'
+],{
+  A:'minecraft:paper',
+  B:'minecraft:compass'
+}).id('dr2:map')
+
+event.shaped('minecraft:compass',[
+  ' A ',
+  'ABA',
+  ' A '
+],{
+  A:'#forge:plates/iron',
+  B:'#forge:dusts/redstone'
+}).id('dr2:compass')
+
+event.shaped('minecraft:clock',[
+  ' A ',
+  'ABA',
+  ' A '
+],{
+  A:'#forge:plates/gold',
+  B:'#forge:dusts/redstone'
+}).id('dr2:clock')
+
+event.shaped('minecraft:flint_and_steel',[
+  'ABC',
+  'DEF',
+  ' G '
+],{
+  A:'#forge:tools/screwdrivers',
+  B:'#forge:small_gears/steel',
+  C:'#forge:plates/steel',
+  D:'#forge:screws/steel',
+  E:'#forge:gems/flint',
+  F:'#forge:tools/files',
+  G:'#forge:small_springs/steel'
+}).id('dr2:flint_and_steel')
+
+event.shaped('minecraft:brush',[
+  ' AE',
+  ' BD',
+  ' C '
+],{
+  A:'minecraft:feather',
+  B:'#forge:plates/copper',
+  C:'gtceu:treated_wood_rod',
+  D:'#forge:screws/bronze',
+  E:'#forge:tools/screwdrivers'
+}).id('dr2:brush')
+
+event.shaped('betterarcheology:iron_brush',[
+  ' AE',
+  ' BD',
+  ' C '
+],{
+  A:'minecraft:feather',
+  B:'#forge:plates/iron',
+  C:'gtceu:treated_wood_rod',
+  D:'#forge:screws/bronze',
+  E:'#forge:tools/screwdrivers'
+}).id('dr2:brush_iron')
+
+event.shaped('betterarcheology:diamond_brush',[
+  ' AE',
+  ' BD',
+  ' C '
+],{
+  A:'minecraft:feather',
+  B:'#forge:plates/diamond',
+  C:'gtceu:treated_wood_rod',
+  D:'#forge:screws/bronze',
+  E:'#forge:tools/screwdrivers'
+}).id('dr2:brush_diamond')
+
+event.shaped('quark:trowel',[
+  ' A ',
+  'BCE',
+  ' DF'
+],{
+  A:'#forge:tools/hammers',
+  B:'gtceu:treated_wood_rod',
+  C:'#forge:bolts/iron',
+  D:'#forge:ingots/iron',
+  E:'#forge:tools/files',
+  F:'#forge:plates/iron'
+}).id('dr2:trowel')
+
+event.shaped('minecraft:shears',[
+  'ABC',
+  'DEB',
+  ' DK'
+],{
+  A:'#forge:tools/screwdrivers',
+  B:'#forge:plates/iron',
+  C:'#forge:tools/files',
+  D:'minecraft:stick',
+  E:'#forge:screws/iron',
+  K:'#forge:tools/hammers'
+}).id('dr2:shears')
+
+event.shaped('minecraft:spyglass',[
+  ' AB',
+  ' C ',
+  'DC '
+],{
+  A:'#forge:lenses/amethyst',
+  B:'#forge:tools/mallets',
+  C:'#forge:plates/copper',
+  D:'#forge:tools/hammers'
+}).id('dr2:spyglass')
+
+event.shaped('minecraft:fishing_rod',[
+  '  A',
+  ' BA',
+  'C D'
+],{
+  A:'#forge:string',
+  B:'minecraft:stick',
+  C:'#forge:rods/long/wood',
+  D:'aquaculture:iron_hook'
+}).id('dr2:fishing_rod')
 //#endregion
 
 //#region resources & materials

@@ -1,0 +1,25 @@
+
+["starting health"]
+	#Number of hearts the player starts with (2 health = 1 heart) (range 4-10, default 6)
+	base_health = 6.0
+
+["regen factor"]
+	#Time it takes (in ticks) for the player to passively regain 1 health (½ heart) (range 20-200, default 100)
+	base_regen_rate = 100.0
+
+["regen cooldown"]
+	#Delay (in ticks) before regeneration starts after taking damage (range 20-600, default 60) (0 to disable the cooldown)
+	regen_cooldown = 60.0
+
+["food duration"]
+	#Time (in seconds) that food should last per saturation level (range 60-300, default 180)
+	food_duration = 180.0
+
+["unstackable food duration"]
+	#Increased duration for food items that don't stack up to 64 (boolean, default = true)
+	bonus_duration = true
+
+["food timeout damage"]
+	#Damages the player when the timer of a food slot runs out (boolean, default = true)
+	timeout_damage = true
+

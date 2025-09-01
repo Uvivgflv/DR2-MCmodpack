@@ -171,5 +171,38 @@ const RegistryTconstructResipes = event => {
         }).id('cct:smeltery/seared_glass')
     //#endregion
 
+    //#region alloys recipes
+        //queens slime
+        event.remove({id:'tconstruct:smeltery/alloys/molten_queens_slime'})
+
+        event.custom({
+            "type": "tconstruct:alloy",
+            "inputs": [
+            {
+                "amount": 1440,
+                "fluid": "undergarden:virulent_mix_source"
+            },
+            {
+                "amount": 180,
+                "tag": "forge:molten_fiery"
+            },
+            {
+                "amount": 360,
+                "tag": "forge:magma"
+            },
+            {
+                "amount": 90,
+                "tag": "forge:molten_gold"
+            }
+            ],
+                "result": {
+                "amount": 360,
+                "fluid": "tconstruct:molten_queens_slime"
+                },
+            "temperature": 1150
+        }).id('dr2:tconstruct/alloys/molten_queen_slime')
+
+    //#endregion
+
     
 }

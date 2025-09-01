@@ -277,4 +277,152 @@ const RegisterTConSmelteryCompat = event => {
             "time": 200
         }).id('cct:compat/alloying/melting_redstone_block')
     // //#endregion
+    //#region venomius
+    //melting venomius
+        event.custom({
+            "type": "tconstruct:melting",
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:dusts/venomius"
+                }
+            ],
+            "ingredient": {
+            "tag": "forge:dusts/venomius"
+            },
+            "result": {
+            "amount": 90,
+            "fluid": "gtceu:venomius"
+            },
+            "temperature": 1300,
+            "time": 23
+        }).id('dr2:compat/alloying/melting_venomius_dust')
+
+        event.custom({
+            "type": "tconstruct:melting",
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:ingots/venomius"
+                }
+            ],
+            "ingredient": {
+            "tag": "forge:ingots/venomius"
+            },
+            "result": {
+            "amount": 90,
+            "fluid": "gtceu:venomius"
+            },
+            "temperature": 1300,
+            "time": 23
+        }).id('dr2:compat/alloying/melting_venomius_ingot')
+
+        event.custom({
+            "type": "tconstruct:melting",
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:dusts/relict"
+                }
+            ],
+            "ingredient": {
+            "tag": "forge:dusts/relict"
+            },
+            "result": {
+            "amount": 90,
+            "fluid": "gtceu:relict"
+            },
+            "temperature": 1300,
+            "time": 23
+        }).id('dr2:compat/alloying/melting_relict_dust')
+
+        event.custom({
+            "type": "tconstruct:melting",
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:ingots/relict"
+                }
+            ],
+            "ingredient": {
+            "tag": "forge:ingots/relict"
+            },
+            "result": {
+            "amount": 90,
+            "fluid": "gtceu:relict"
+            },
+            "temperature": 1300,
+            "time": 23
+        }).id('dr2:compat/alloying/melting_relict_ingot')
+
+    //alloying venomius
+        event.custom({
+            "type": "tconstruct:alloy",
+            "inputs": [
+            {
+                "amount": 1440,
+                "fluid": "undergarden:virulent_mix_source"
+            },
+            {
+                "amount": 90,
+                "fluid": "tcintegrations:molten_soul_stained_steel"
+            },
+            {
+                "amount": 180,
+                "fluid": "tcintegrations:molten_manasteel"
+            },
+            {
+                "amount": 360,
+                "tag": "forge:relict"
+            }
+            ],
+                "result": {
+                "amount": 3600,
+                "tag": "forge:venomius"
+                },
+            "temperature": 1300
+        }).id('dr2:tconstruct/alloys/molten_venomuis')
+    //casting
+        event.custom({
+            "type": "tconstruct:casting_table",
+            "cast": {
+            "tag": "tconstruct:casts/multi_use/ingot"
+                },
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:ingots/relict"
+                }
+            ],
+            "cooling_time": 77,
+            "fluid": {
+            "amount": 90,
+            "tag": "forge:relict"
+            },
+            "result": {
+            "tag": "forge:ingots/relict"
+            }
+        }).id('dr2:tconstruct/casting/relict_ingot')
+
+        event.custom({
+            "type": "tconstruct:casting_table",
+            "cast": {
+            "tag": "tconstruct:casts/multi_use/ingot"
+                },
+            "conditions": [
+                {
+            "type": "mantle:tag_filled",
+            "tag": "forge:ingots/venomius"
+                }
+            ],
+            "cooling_time": 80,
+            "fluid": {
+            "amount": 90,
+            "tag": "forge:venomius"
+            },
+            "result": {
+            "tag": "forge:ingots/venomius"
+            }
+        }).id('dr2:tconstruct/casting/venomius_ingot')
+    //#endregion
 }

@@ -1,0 +1,27 @@
+
+{
+  // this is a list of custom density factors
+  "ConfiguredPortals": [
+    // example of the mansion and end cities being doubled in quantity
+    {
+      "isFlat": false,
+      "frameBlock": "minecraft:stone",
+      "isFluidIgniter": false,
+      "itemIgniter": "minecraft:diamond",
+      "dimension": "minecraft:the_nether",
+      "r": 50,
+      "g": 50,
+      "b": 200
+    },
+    {
+      "isFlat": true,
+      "frameBlock": "minecraft:netherrack",
+      "isFluidIgniter": true,
+      "fluidIgniter": "minecraft:lava",
+      "dimension": "minecraft:the_end",
+      "r": 250,
+      "g": 30,
+      "b": 30
+    }
+  ]
+}

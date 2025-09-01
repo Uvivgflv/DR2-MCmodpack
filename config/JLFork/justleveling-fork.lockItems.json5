@@ -4344,6 +4344,45 @@
 					level: 24
 				}
 			]
+		},
+		{
+			item: "irons_spellbooks:scroll",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 3
+				}
+			]
+		},
+		{
+			item: "irons_spellbooks:inscription_table",
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 5
+				},
+				{
+					aptitude: "Magic",
+					level: 10
+				}
+			]
+		},
+		{
+			item: "irons_spellbooks:armor_pile",
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 20
+				},
+				{
+					aptitude: "Strength",
+					level: 10
+				},
+				{
+					aptitude: "Constitution",
+					level: 5
+				}
+			]
 		}
 	]
 }

@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "biomesoplenty:highlands",
+        "biomesoplenty:crag",
+        "biomesoplenty:forested_field",
+        "biomesoplenty:field",
+        "biomesoplenty:coniferous_forest"
+    ]
+}

@@ -1,3 +1,9 @@
 {
-    "tagprefix.depthrock": "Depthrock %s Ore"
+    "tagprefix.depthrock": "Depthrock %s Ore",
+    "tagprefix.dacite": "Dacite %s Ore",
+    "tagprefix.grimstone": "Grimstone %s Ore",
+    "material.gtceu.hepatizon":"Hepatizon",
+    "material.gtceu.soul_stained_steel": "Soul stained steel",
+    "material.gtceu.manasteel": "Manasteel",
+    "material.gtceu.relict": "Relict"
 }

@@ -2,7 +2,7 @@
 ["General Settings"]
 	#How close (in blocks) entities should be before TES starts tracking them
 	#Range: 8.0 ~ 512.0
-	entityTrackingDistance = 64.0
+	entityTrackingDistance = 32.0
 	#How frequently TES should clear out its tracking cache. Generally this should stay at default, but if you are noticing issues you can try adjusting it
 	#Range: > 20
 	cacheCleanFrequency = 400

@@ -57,6 +57,14 @@
     "undergarden:deepturf",
     "undergarden:deepturf_block",
     "undergarden:deepsoil",
-    "undergarden:shiverstone"
+    "undergarden:shiverstone",
+    "biomeswevegone:dacite",
+    "biomeswevegone:overgrown_dacite",
+    "biomeswevegone:podzol_dacite",
+    "undergarden:sediment",
+    "twilightforest:twilight_oak_log",
+    "twilightforest:twilight_oak_wood",
+    "twilightforest:twilight_oak_leaves",
+    "twilightforest:dark_leaves"
   ]
 }

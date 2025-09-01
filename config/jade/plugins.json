@@ -73,6 +73,7 @@
     "auto_output_info": true,
     "workable_provider": true,
     "transformer": true,
+    "energy_converter_provider": true,
     "controllable_provider": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,
@@ -89,6 +90,9 @@
     "cable_info": true,
     "parallel_info": true
   },
+  "collectorsreap": {
+    "crop_progress": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -101,6 +105,9 @@
     "adventure": true,
     "ench": true,
     "spawner": true
+  },
+  "functionalstorage": {
+    "armory": true
   },
   "ae2": {
     "part_icon": true,

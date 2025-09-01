@@ -26,6 +26,7 @@
 	can_VerticalWallRun = true
 	can_WallJump = true
 	can_WallSlide = true
+	can_StartSwimByCrawl = true
 
 [Stamina_HUD_Configuration]
 	#Allowed Values: Normal, Light, Hide
@@ -51,6 +52,8 @@
 	#vertical offset of light HUD
 	#Range: -100 ~ 100
 	offset_v_light_hud = 0
+	#Light stamina HUD shows always
+	show_light_hud_always = false
 
 [Animations]
 	#Enable custom animations
@@ -153,6 +156,9 @@
 	#Max number of times of successive Dodge action
 	#Range: > 1
 	successive_dodge_count = 3
+	#Lowest fall distance needed to trigger breakfall movements
+	#Range: 0.0 ~ 10.0
+	lowest_fall_distance_for_breakfall = 2.0
 
 [Modifier]
 	#How long you can do Horizontal Wall Run
@@ -202,6 +208,8 @@
 	infinite_stamina = false
 	#Infinite Stamina while player is creative mode
 	infinite_stamina_if_creative_mode = true
+	#Enable slowing down of stamina exhaustion
+	enable_stamina_exhaustion_penalty = true
 
 	[Stamina.Consumption]
 		#Range: 0 ~ 10000
@@ -256,4 +264,6 @@
 		stamina_consumption_of_WallJump = 120
 		#Range: 0 ~ 10000
 		stamina_consumption_of_WallSlide = 8
+		#Range: 0 ~ 10000
+		stamina_consumption_of_StartSwimByCrawl = 0
 

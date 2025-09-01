@@ -1,0 +1,8 @@
+{
+    "default": [
+        { "name": "tinkers_things:common_material", "level": 1}
+    ],
+    "perStat": {
+        "tconstruct:armor": [{ "name": "tinkers_things:common_material", "level": 1}]
+    }
+}

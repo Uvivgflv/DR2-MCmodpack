@@ -35,3 +35,29 @@ add level lock lit_blaze_burner
 ------
 Undergarden fluids
 undergarden:virulent_mix_source
+------
+add cobalt brass to tcon alloying 
+(create mixer[7 brass, aluminium dust||bauxite dust, cobalt])
+
+add structures to layers, dungeons big and small
+------
+overworld => first layer =>
+second layer => undergarden =>
+nether => ... =>
+Twilightforest => end => 
+Moon => Mars => 
+other only resources planets
+-----
+Нефтеуралоперьмь
+Электроуранск
+-----
+тиры мехов 
+bronze low pressure = bronze/amethyst bronze
+steel high pressure = steel | undergarden
+LV = steel
+MV = soul stained aluminium | nether
+HV = stainless steel (mb abyssal steel)
+EV = Manulititanium | nether
+IV = Wolfram manasteel
+LuV = Sculk isulated tarrasteel
+ZPM = 

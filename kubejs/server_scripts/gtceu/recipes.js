@@ -33,8 +33,29 @@ const RegistryTGCEURecipes = event =>{
         event.remove({id:'gtceu:shaped/steam_alloy_smelter_steel'})
         event.remove({id:'gtceu:shaped/steam_rock_breaker_steel'})
         event.remove({id:'gtceu:shaped/steam_miner_steel'})
+        //-- 
+        event.remove({output: '#forge:ingots/aluminium'})
+        //--
+        event.remove({id:"gtceu:shaped/knife_flint"})
+        //remove lv machines uncomment for nuke
+        //event.remove({id:/^gtceu:shaped\/lv_.*/})
 
 
+    //#endregion
+
+    //#region electric blast furnace
+
+        event.recipes.gtceu.electric_blast_furnace('gtceu:aluminium_ingot')
+		.itemInputs('kubejs:aluminum_casting_compound')
+		.itemOutputs('gtceu:aluminium_ingot')
+        .inputFluids(GTMaterials.Nitrogen.getFluid(250))
+		.duration(1200)
+        .blastFurnaceTemp(1200)
+		.EUt(128)
+        //nitrogen
+
+        //event.recipes.gtceu.electric_blast_furnace('')
+        
 
     //#endregion
 

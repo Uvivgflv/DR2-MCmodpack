@@ -25,7 +25,7 @@ WorldgenEvents.remove(event =>
         'undergarden:depthrock_utherium_ore',
         'undergarden:depthrock_regalium_ore',
         'undergarden:depthrock_iron_ore',
-        'undergarden:depthrock_gold_ore']
+        'undergarden:depthrock_gold_ore','glowroot:glowroot_coal_ore', 'dungeons_and_combat:titanium_ore', 'dungeons_and_combat:titanium_deepslate_ore']
 
     var oreListUndergarden = [
         'undergarden:depthrock_diamond_ore',
@@ -36,7 +36,10 @@ WorldgenEvents.remove(event =>
         'undergarden:depthrock_utherium_ore',
         'undergarden:depthrock_regalium_ore',
         'undergarden:depthrock_iron_ore',
-        'undergarden:depthrock_gold_ore']
+        'undergarden:depthrock_gold_ore','glowroot:glowroot_coppe_ore', 'glowroot:glowroot_iron_ore',
+        'glowroot:glowroot_gold_ore', 'glowroot:glowroot_lapis_ore', 
+        'glowroot:glowroot_emerald_ore', 'glowroot:glowroot_redstone_ore',
+        'glowroot:glowroot_diamond_ore', 'glowroot:glowroot_coal_ore']
     event.removeOres(props => 
         { props.worldgenLayer = 'underground_ores'
             props.blocks = oreList
@@ -56,5 +59,34 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
-        console.log('undergarden stone type registered ')
+    console.log('undergarden stone type registered ')
+
+    event.create('grimstone', 'ore')
+        .stateSupplier(() => Block.getBlock('deep_dark_regtowth:grimstone').defaultBlockState()) // 
+        .baseModelLocation('deep_dark_regrowth:block/grimstone')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
+    console.log('deep dark regrowth stone type registered ')
+    
+    event.create('dacite', 'ore')
+        .stateSupplier(() => Block.getBlock('biomeswevegone:dacite').defaultBlockState())
+        .baseModelLocation('biomeswevegone:block/dacite')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
+    console.log('dacite stone type registered ')
+    //tests
+    event.create('root', 'ore')
+        .stateSupplier(() => Block.getBlock('twilightforest:root').defaultBlockState())
+        .baseModelLocation('twilightforest:block/root')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
+    event.create('twilight', 'ore')
+        .stateSupplier(() => Block.getBlock('twilightforest:twilight_oak_wood').defaultBlockState())
+        .baseModelLocation('twilightforest:block/twilight_oak_wood')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
 })

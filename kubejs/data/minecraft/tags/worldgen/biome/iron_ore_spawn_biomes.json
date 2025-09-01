@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "biomeswevegone:dacite_ridges",
+        "biomesoplenty:highlands",
+        "biomesoplenty:crag",
+        "minecraft:forest",
+        "minecraft:plains",
+        "minecraft:stony_shore"
+    ]
+}

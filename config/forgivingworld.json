@@ -5,11 +5,11 @@
   },
   "teleportCooldown": {
     "desc:": "Sets a delay before you can teleport again, default:15 seconds",
-    "teleportCooldown": 15
+    "teleportCooldown": 30
   },
   "instantTeleport": {
     "desc:": "Instantly teleports instead of notifying the user over time,(Note this causes some lag, due to loading chunks directly) default:false",
-    "instantTeleport": false
+    "instantTeleport": true
   },
   "teleportedRidden": {
     "desc:": "Teleport ridden entities too, default:true",
@@ -21,59 +21,65 @@
   },
   "debuglogging": {
     "desc:": "Enable debug logging, default:false",
-    "debuglogging": false
+    "debuglogging": true
   },
   "dimensionconnections": [
     {
       "from": "minecraft:overworld",
-      "to": "minecraft:the_nether",
-      "xcoordmultiplier": 0.125,
-      "zcoordmultiplier": 0.125,
+      "to": "infinite_abyss:first_layer",
       "teleporttype": {
-        "teleporttype": "AIR",
+        "teleporttype": "CAVE",
         "teleport_to_y": 125
       },
       "belowy": -60,
       "slowfallticks": 400
     },
     {
-      "from": "minecraft:the_end",
-      "to": "minecraft:overworld",
+      "from": "infinite_abyss:first_layer",
+      "to": "infinite_abyss:second_layer",
       "teleporttype": {
-        "teleporttype": "AIR",
-        "teleport_to_y": 300
+        "teleporttype": "CAVE",
+        "teleport_to_y": 125
       },
-      "belowy": 0,
+      "belowy": 3,
       "slowfallticks": 400
     },
     {
-      "from": "minecraft:the_nether",
+      "from": "infinite_abyss:second_layer",
       "to": "minecraft:the_nether",
       "teleporttype": {
         "teleporttype": "CAVE",
-        "teleport_to_y": 4
+        "teleport_to_y": 125
       },
-      "belowy": 0
+      "belowy": 3,
+      "slowfallticks": 400
     },
     {
-      "from": "minecraft:the_nether",
+      "from": "infinite_abyss:second_layer",
+      "to": "infinite_abyss:first_layer",
+      "teleporttype": {
+        "teleporttype": "CAVE",
+        "teleport_to_y": 5
+      },
+      "abovey": 120
+    },
+    {
+      "from": "infinite_abyss:first_layer",
       "to": "minecraft:overworld",
-      "xcoordmultiplier": 8.0,
-      "zcoordmultiplier": 8.0,
       "teleporttype": {
         "teleporttype": "CAVE",
         "teleport_to_y": -60
       },
-      "abovey": 121
+      "abovey": 120
     },
     {
-      "from": "minecraft:overworld",
-      "to": "minecraft:overworld",
+      "from": "minecraft:nether",
+      "to": "infinite_abyss:second_layer",
       "teleporttype": {
-        "teleporttype": "AIR",
-        "teleport_to_y": 360
+        "teleporttype": "CAVE",
+        "teleport_to_y": 5
       },
-      "abovey": 364
+      "abovey": 120
     }
   ]
 }

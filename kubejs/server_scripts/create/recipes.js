@@ -10,6 +10,9 @@ const RegisterCreateRecipes = event =>{
         event.remove({output:'create:cogwheel'})
         event.remove({output:'create:large_cogwheel'})
         event.remove({output:'create:shaft'})
+        //--
+        event.remove({id:'create:crafting/materials/electron_tube'})
+        event.remove({id:'create:crafting/appliances/copper_backtank'})
 
     //#endregion
 
@@ -81,6 +84,8 @@ const RegisterCreateRecipes = event =>{
     }).id('cct:create/casting/copper_casing')
     //#endregion
 
+    
+
     //#region kinetic recipes
 
     event.shaped('create:cogwheel',[
@@ -103,5 +108,34 @@ const RegisterCreateRecipes = event =>{
 
     event.stonecutting('16x create:shaft', Item.of('tconstruct:large_plate', '{Material:"tconstruct:steel"}').strongNBT()).id('cct:create/stonecutting/shafts')
 
-    //#endrecipes
+    //#endregion
+    //#region add recipes
+
+    event.shaped('create:electron_tube', [
+        'ABC',
+        'DED',
+        'ABF'
+    ],{
+        A:'gtceu:copper_single_wire',
+        B:'#forge:plates/sterling_silver',
+        C:'#forge:fine_wires/copper',
+        D:'gtceu:resistor',
+        E:'gtceu:resin_circuit_board',
+        F:'create:polished_rose_quartz'
+    }).id('cct:create/electrone_tube')
+
+    event.shaped('create:copper_backtank',[
+        'ABA',
+        'CDC',
+        'EFG'
+    ],{
+        A:'#forge:plates/steel',
+        B:'create:shaft',
+        C:Item.of('tconstruct:large_plate', '{Material:"tconstruct:copper"}').strongNBT(),
+        D:'#forge:frames/bronze',
+        E:'#forge:tools/hammers',
+        F:Item.of('twilightforest:knightmetal_chestplate', '{Damage:0}').strongNBT(),
+        G:'#forge:tools/wrenches'
+    }).id('cct:create/copper_backtank')
+    //#endregion
 }
