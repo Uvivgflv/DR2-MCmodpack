@@ -96,4 +96,16 @@ const RegistrySmelteryRecipes = event =>{
             },
         "result": "gtceu:steel_brick_casing"
     }).id('cct:casting/steel_brick_casing')
+//#region v0.1.10092025
+    event.custom({
+        "type":"tconstruct:casting_basin",
+        "cast": {"item":"gtceu:bronze_frame"},
+        "cast_consumed": true,
+        "cooling_time": 3200,
+        "fluid":{
+            "amount": 1080,
+            "fluid":"twilight_construct:fiery_blood"
+        },
+        "result":"gtceu:bronze_firebox_casing"
+    }).id('dr2:casting/bronze_firebox_casing')
 }

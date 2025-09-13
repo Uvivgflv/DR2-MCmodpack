@@ -19,7 +19,8 @@ GTCEuServerEvents.oreVeins(event => {
     .buildLayerPattern(pattern => pattern
         .layer(l => l.weight(1).mat(GTMaterials.Silver).size(1, 1))
         .layer(l => l.weight(2).mat(GTMaterials.Lead).size(3, 4))
-        .layer(l => l.weight(1).block(() => Block.getBlock('undergarden:depthrock_cloggrum_ore')).size(1, 1))
+        //.layer(l => l.weight(1).block(() => Block.getBlock('undergarden:depthrock_cloggrum_ore')).size(1, 1))
+        .layer(l => l.weight(1).mat(GTMaterials.get('cloggrum')).size(1, 2))
     ))
     })
 

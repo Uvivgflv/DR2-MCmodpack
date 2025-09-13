@@ -32,6 +32,9 @@ ServerEvents.recipes(event => {
     RegistrySeqAssembleGTPartsRecipes(event)
     RegisterApothCreateTicCompat(event)
     RegisterMalumRecipes(event)
+    RegistryInfAbyssRecipes(event)
+    //v0.1.10092025 6:48
+    RegistryTCONTweaks(event)
 })
 ServerEvents.tags('item', event => {
     RegisterItemsTagsMain(event)
@@ -40,4 +43,7 @@ ServerEvents.tags('item', event => {
 })
 ServerEvents.tags('block', event =>{
     RegisterBotaniaTagsBlock(event)
+})
+GTCEuServerEvents.oreVeins(event => {
+    AdAstraMoon(event)
 })

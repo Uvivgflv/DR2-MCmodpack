@@ -13,6 +13,9 @@ const RegisterCreateRecipes = event =>{
         //--
         event.remove({id:'create:crafting/materials/electron_tube'})
         event.remove({id:'create:crafting/appliances/copper_backtank'})
+        //--
+        event.remove({id:'create:crafting/kinetics/fluid_tank'})
+        event.remove({id:'create:crafting/kinetics/brass_hand'})
 
     //#endregion
 
@@ -105,6 +108,30 @@ const RegisterCreateRecipes = event =>{
         A:'tconstruct:nahuatl',
         B:'create:cogwheel'
     }).id('cct:create/large_cogwheel')
+
+    event.shaped('create:fluid_tank',[
+        'ABA',
+        'CDC',
+        'ABA'
+    ],{
+        A:'#forge:screws/copper',
+        B:'#forge:double_plates/red_alloy',
+        C:'#forge:plates/red_alloy',
+        D:'#forge:glass_panes'
+    }).id('dr2:create/fluid_tank')
+
+    event.shaped('create:brass_hand',[
+        'ABC',
+        'DDD',
+        'EDF'
+    ],{
+        A:'#forge:screws/steel',
+        B:Item.of('tconstruct:large_plate', '{Material:"tconstruct:steel"}').strongNBT(),
+        C:'#forge:tools/screwdrivers',
+        D:'#forge:plates/brass',
+        E:'#forge:tools/hammers',
+        F:'#forge:tools/files'
+    }).id('dr2:create/brass_hand')
 
     event.stonecutting('16x create:shaft', Item.of('tconstruct:large_plate', '{Material:"tconstruct:steel"}').strongNBT()).id('cct:create/stonecutting/shafts')
 

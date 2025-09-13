@@ -1,7 +1,11 @@
 {
-    "tagprefix.depthrock": "Глубинно каменная %s руда",
+    "tagprefix.depthrock": "Глубиннокаменная %s руда",
     "tagprefix.dacite": "Дацитовая %s руда",
-    "tagprefix.grimstone": "Grimstone %s Ore",
+    "tagprefix.grimstone": "Жуткокаменная %s руда",
+    "tagprefix.deepstone": "Глубинный камень %s руда",
+    "tagprefix.red_deepstone": "Красный глубинный камень %s руда",
+    "tagprefix.root": "Корневая %s руда",
+    "tagprefix.moon_stone":"Лунный камень %s руда",
     "material.gtceu.hepatizon": "Гепатизон",
     "material.gtceu.relict": "Реликт",
     "material.gtceu.queens_slime": "Королевская слизь",
@@ -12,5 +16,6 @@
     "material.gtceu.regalium": "Регалий",
     "material.gtceu.venomius": "Веномий",
     "material.gtceu.fiery": "Огненный",
-    "material.gtceu.pig_iron": "Свинное железо"
+    "material.gtceu.pig_iron": "Свинное железо",
+    "meterial.gtceu.desh": "Деш"
 }

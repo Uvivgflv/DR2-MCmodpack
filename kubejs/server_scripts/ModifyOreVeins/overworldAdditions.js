@@ -113,7 +113,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(22)
         vein.density(0.7)
         vein.discardChanceOnAirExposure(0)
-        //vein.biomes('#dr2:copper_spawn_biomes')
 
         vein.layer('overworld')
 
