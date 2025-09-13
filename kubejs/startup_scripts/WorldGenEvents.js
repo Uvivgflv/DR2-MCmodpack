@@ -49,7 +49,9 @@ WorldgenEvents.remove(event =>
         'glowroot:glowroot_coal_ore',
         'dungeons_and_combat:titanium_ore',
         'dungeons_and_combat:titanium_deepslate_ore',
-        'ad_astra:deepslate_desh_ore'
+        'ad_astra:deepslate_desh_ore',
+        'ad_astra:deepslate_ostrum_ore',
+        'ad_astra:deepslate_calorite_ore'
     ]
 
     var oreListUndergarden = [
@@ -73,24 +75,28 @@ WorldgenEvents.remove(event =>
     ]
 
     var oreListMoon = [
-        'ad_astra:moon_cheese_ore',
-        'ad_astra:moon_desh_ore',
-        'ad_astra:moon_iron_ore',
-        'ad_astra:moon_ice_shard_ore'
+        'ad_astra:moon_cheese_ore', //remove
+        'ad_astra:moon_desh_ore', //replace
+        'ad_astra:moon_iron_ore', //replace
+        'ad_astra:moon_ice_shard_ore' //remove
     ]
 
     var oreListMars = [
-        'ad_astra:mars_iron_ore',
-        'ad_astra:mars_diamond_ore',
-        'ad_astra:mars_ostrum_ore',
-        'ad_astra:mars_ice_shard_ore'
+        'ad_astra:mars_iron_ore', //replace
+        'ad_astra:mars_diamond_ore', //replace
+        'ad_astra:mars_ostrum_ore', //replace
+        'ad_astra:mars_ice_shard_ore' //remove
     ]
 
     var oreListVenus = [
-        'ad_astra:venus_coal_ore',
-        'ad_astra:venus_gold_ore',
-        'ad_astra:venus_diamond_ore',
-        'ad_astra:venus_calorite_ore'
+        'ad_astra:venus_coal_ore', //replae
+        'ad_astra:venus_gold_ore', //replace
+        'ad_astra:venus_diamond_ore', //remove
+        'ad_astra:venus_calorite_ore' //replace
+    ]
+
+    var oreListMercury = [
+        'ad_astra:mercury_iron_ore' //replace
     ]
 //#endregion
 
@@ -111,11 +117,17 @@ WorldgenEvents.remove(event =>
         props.worldgenLayer = 'underground_ores'
         props.blocks = oreListVenus
     })
+    event.removeOres(props =>{
+        props.worldgenLayer = 'underground_ores'
+        props.blocks = oreListMercury
+    })
     event.removeOres(props =>
     {
         props.worldgenLayer = 'underground_decoration'
         props.blocks = oreListUndergarden
     })
+
+    //event.removeFeature('gtceu:raw_oil_sprout')
 //#endregion
 })
 //#region oreblocks
@@ -142,6 +154,7 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
+
     console.log('dacite stone type registered ')
     event.create('deepstone', 'ore')
         .stateSupplier(() => Block.getBlock('infinite_abyss:deepstone').defaultBlockState())
@@ -149,18 +162,34 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
+
     event.create('red_deepstone', 'ore')
         .stateSupplier(() => Block.getBlock('infinite_abyss:red_deepstone').defaultBlockState())
         .baseModelLocation('infinite_abyss:block/red_deepstone')
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
+
     event.create('moon_stone', 'ore')
         .stateSupplier(() => Block.getBlock('ad_astra:moon_stone').defaultBlockState())
         .baseModelLocation('ad_astra:block/moon_stone')
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)  
+
+    event.create('mars_stone', 'ore')
+        .stateSupplier(() => Block.getBlock('ad_astra:mars_stone').defaultBlockState())
+        .baseModelLocation('ad_astra:block/mars_stone')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
+
+    event.create('venus_stone', 'ore')
+        .stateSupplier(() => Block.getBlock('ad_astra:venus_stone').defaultBlockState())
+        .baseModelLocation('ad_astra:block/venus_stone')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
     //tests
     event.create('root', 'ore')
         .stateSupplier(() => Block.getBlock('twilightforest:root').defaultBlockState())

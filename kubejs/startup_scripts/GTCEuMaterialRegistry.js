@@ -140,11 +140,34 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_GEAR,
         GTMaterialFlags.GENERATE_SMALL_GEAR
     )
+    event.create('ostrum')
+    .ingot().liquid().ore()
+    .color(0x593d49).iconSet(GTMaterialIconSet.DULL)
+    .flags(
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD,
+        GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_SMALL_GEAR
+    )
+    event.create('calorite')
+    .ingot().liquid().ore()
+    .color(0xad1834).iconSet(GTMaterialIconSet.SHINY)
+    .flags(
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD,
+        GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_SMALL_GEAR
+    )
     //test
     const $OreProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
     //osmium & iridium
     GTMaterials.Osmium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Iridium.setProperty(PropertyKey.ORE, new $OreProperty());
+    GTMaterials.Graphene.setProperty(PropertyKey.ORE, new $OreProperty());
     //GTMaterials.Tantalum.setProperty(PropertyKey.ORE, new $OreProperty());
     //GTMaterials.Chromium.setProperty(PropertyKey.ORE, new $OreProperty());
     //GTMaterials.Vanadium.setProperty(PropertyKey.ORE, new $OreProperty());

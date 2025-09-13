@@ -45,5 +45,11 @@ ServerEvents.tags('block', event =>{
     RegisterBotaniaTagsBlock(event)
 })
 GTCEuServerEvents.oreVeins(event => {
+    //v0.1.13092025 22:20
     AdAstraMoon(event)
+    AdAstraMars(event)
+    AdAstraVenus(event)
+    //v0.1.13092025 23:20
+    InfAbyssFirstLayer(event)
+    InfAbyssSecondLayer(event)
 })

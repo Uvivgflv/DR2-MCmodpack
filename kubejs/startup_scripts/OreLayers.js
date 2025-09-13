@@ -25,8 +25,17 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', event => {
     event.create('tw_test_tree')
         .targets('twilightforest:root')
         .dimensions('twilightforest:twilight_forest')
+
     event.create('ad_astra_moon')
         .targets('ad_astra:moon_stone')
         .dimensions('ad_astra:moon')
+
+    event.create('ad_astra_mars')
+        .targets('ad_astra:mars_stone')
+        .dimensions('ad_astra:mars')
+
+    event.create('ad_astra_venus')
+        .targets('ad_astra:venus_stone')
+        .dimensions('ad_astra:venus')
 })
 
