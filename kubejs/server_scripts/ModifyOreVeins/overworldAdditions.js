@@ -40,7 +40,7 @@ GTCEuServerEvents.oreVeins(event => {
 
         vein.layer("overworld") // [*] 
 
-        vein.heightRangeUniform(0, 100) // 
+        vein.heightRangeUniform(45, 100) // 
         //vein.heightRangeTriangle(-32, 5) // 
 
         vein.layeredVeinGenerator(generator => generator

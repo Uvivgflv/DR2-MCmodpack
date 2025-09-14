@@ -38,7 +38,7 @@ const AdAstraMars = event =>{
     })
 //#endregion
 //#region ostrum&iridium ore
-    event.add('kubejs:ostrum', vein =>{
+    event.add('kubejs:ostrum_mars', vein =>{
         vein.weight(12)
         vein.clusterSize(20)
         vein.density(0.7)

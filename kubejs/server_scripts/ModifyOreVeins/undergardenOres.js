@@ -184,8 +184,8 @@ GTCEuServerEvents.oreVeins(event => {
     vein.layeredVeinGenerator(generator => generator
     .buildLayerPattern(pattern => pattern
         .layer(l => l.weight(3).mat(GTMaterials.Lead).size(1, 3))
-        .layer(l => l.weight(1).block(() => Block.getBlock('undergarden:depthrock_cloggrum_ore')).size(1, 2))
-        .layer(l => l.weight(1).block(()=> Block.getBlock('gtceu:depthrock_relict_ore')).size(0, 1))
+        .layer(l => l.weight(1).mat(GTMaterials.get('cloggrum')).size(1, 2))
+        .layer(l => l.weight(1).mat(GTMaterials.get('relict')).size(0, 1))
     ))
     })
 

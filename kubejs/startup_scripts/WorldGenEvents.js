@@ -98,6 +98,10 @@ WorldgenEvents.remove(event =>
     var oreListMercury = [
         'ad_astra:mercury_iron_ore' //replace
     ]
+
+    var oreListInfLayers = [
+        'infinite_abyss:opal_ore'
+    ]
 //#endregion
 
 //#region ores remove
@@ -125,6 +129,12 @@ WorldgenEvents.remove(event =>
     {
         props.worldgenLayer = 'underground_decoration'
         props.blocks = oreListUndergarden
+    })
+
+    event.removeOres(props =>
+    {
+        props.worldgenLayer = 'underground_decoration'
+        props.blocks = oreListInfLayers
     })
 
     //event.removeFeature('gtceu:raw_oil_sprout')
@@ -187,6 +197,13 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
     event.create('venus_stone', 'ore')
         .stateSupplier(() => Block.getBlock('ad_astra:venus_stone').defaultBlockState())
         .baseModelLocation('ad_astra:block/venus_stone')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
+
+    event.create('mercury_stone', 'ore')
+        .stateSupplier(() => Block.getBlock('ad_astra:mercury_stone').defaultBlockState())
+        .baseModelLocation('ad_astra:block/mercury_stone')
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)

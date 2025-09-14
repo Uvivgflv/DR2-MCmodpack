@@ -168,6 +168,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Osmium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Iridium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Graphene.setProperty(PropertyKey.ORE, new $OreProperty());
+    GTMaterials.Electrum.setProperty(PropertyKey.ORE, new $OreProperty());
     //GTMaterials.Tantalum.setProperty(PropertyKey.ORE, new $OreProperty());
     //GTMaterials.Chromium.setProperty(PropertyKey.ORE, new $OreProperty());
     //GTMaterials.Vanadium.setProperty(PropertyKey.ORE, new $OreProperty());

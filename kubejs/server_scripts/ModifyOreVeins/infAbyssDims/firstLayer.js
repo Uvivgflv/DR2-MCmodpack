@@ -2,9 +2,9 @@ const InfAbyssFirstLayer = event =>{
 //#region magnetite ore
     event.add("kubejs:magnetite_inf", vein => {
         vein.weight(22)
-        vein.clusterSize(15) 
+        vein.clusterSize(23) 
         vein.density(0.4) 
-        vein.discardChanceOnAirExposure(0)
+        vein.discardChanceOnAirExposure(1)
 
         vein.layer("first_layer_inf")
 
@@ -20,9 +20,9 @@ const InfAbyssFirstLayer = event =>{
 //#region hematite ore
     event.add("kubejs:hematite_inf", vein => {
         vein.weight(22)
-        vein.clusterSize(15)
+        vein.clusterSize(22)
         vein.density(0.4)
-        vein.discardChanceOnAirExposure(0) 
+        vein.discardChanceOnAirExposure(1) 
 
         vein.layer("first_layer_inf")
 
@@ -38,9 +38,9 @@ const InfAbyssFirstLayer = event =>{
 //#region pyrite ore
     event.add("kubejs:pyrite_inf", vein => {
         vein.weight(22)
-        vein.clusterSize(15)
+        vein.clusterSize(32)
         vein.density(0.4)
-        vein.discardChanceOnAirExposure(0) 
+        vein.discardChanceOnAirExposure(1) 
 
         vein.layer("first_layer_inf")
 
@@ -55,9 +55,9 @@ const InfAbyssFirstLayer = event =>{
 //#region quartz ore
     event.add("kubejs:quartz_sand_inf", vein => {
         vein.weight(22)
-        vein.clusterSize(15)
+        vein.clusterSize(23)
         vein.density(0.4)
-        vein.discardChanceOnAirExposure(0) 
+        vein.discardChanceOnAirExposure(1) 
 
         vein.layer("first_layer_inf")
 

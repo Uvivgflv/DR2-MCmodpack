@@ -56,7 +56,7 @@ const AdAstraVenus = event => {
     ))
     })
 
-    event.add('kubejs:pyrochlore', vein =>{
+    event.add('kubejs:pyrochlore_venus', vein =>{
         vein.weight(20)
         vein.clusterSize(23)
         vein.density(0.6)
@@ -76,5 +76,22 @@ const AdAstraVenus = event => {
 
 //#endregion
 //#region titan ores
+    event.add('kubejs:ilmenite_venus', vein =>{
+        vein.weight(22)
+        vein.clusterSize(26)
+        vein.density(1.0)
+        vein.discardChanceOnAirExposure(1)
 
+        vein.layer('ad_astra_venus')
+
+        vein.heightRangeUniform(-10, 64)
+
+         vein.layeredVeinGenerator(generator => generator
+    .buildLayerPattern(pattern => pattern
+        .layer(l => l.weight(2).mat(GTMaterials.Ilmenite).size(2, 5))
+        .layer(l => l.weight(3).mat(GTMaterials.Tantalite).size(2, 4))
+        .layer(l => l.weight(2).mat(GTMaterials.get('desh')).size(1, 1))))
+        
+        
+    })
 }

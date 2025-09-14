@@ -49,6 +49,8 @@ GTCEuServerEvents.oreVeins(event => {
     AdAstraMoon(event)
     AdAstraMars(event)
     AdAstraVenus(event)
+    //v0.1.14092025 18:50
+    AdAstraMercury(event)
     //v0.1.13092025 23:20
     InfAbyssFirstLayer(event)
     InfAbyssSecondLayer(event)
