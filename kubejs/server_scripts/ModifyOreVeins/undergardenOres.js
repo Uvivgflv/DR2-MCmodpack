@@ -1,5 +1,5 @@
-GTCEuServerEvents.oreVeins(event => {
-    
+const UndergardenOreVeins = event => {
+ 
    event.add("kubejs:undgr_lead_vein", vein => {
         vein.weight(18)
         vein.clusterSize(35)
@@ -191,4 +191,4 @@ GTCEuServerEvents.oreVeins(event => {
 
     
 
-})
+}

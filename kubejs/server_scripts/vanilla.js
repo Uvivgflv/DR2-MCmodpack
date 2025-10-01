@@ -505,9 +505,9 @@ event.blasting('minecraft:glass','kubejs:prim_glass_mix').xp(0.2).cookingTime(12
 
 //#region functional items
 event.shaped('minecraft:map',[
-  'AAA',
+  ' A ',
   'ABA',
-  'AAA'
+  ' A '
 ],{
   A:'minecraft:paper',
   B:'minecraft:compass'

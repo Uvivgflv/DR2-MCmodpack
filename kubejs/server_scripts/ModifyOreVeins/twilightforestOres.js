@@ -1,6 +1,5 @@
-GTCEuServerEvents.oreVeins(event => {
-    
-    
+const TwilightforestOreVeins = event => {
+ 
     event.add("kubejs:cthonic_vein", vein => {
         // Basic vein generation properties
         vein.weight(22) // [*] 
@@ -188,4 +187,4 @@ GTCEuServerEvents.oreVeins(event => {
     //woodloged steelleaf ore 35 to 90 on twilight oak wood     worked
     //mustroomloged funginal ore 10 to 30 on twilight musrooms  unreal
     
-})
+}

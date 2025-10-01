@@ -1,10 +1,12 @@
 const RegisterSophisBackpacksRecipes = event =>{
-    //#region remove recipes
+    //#region remove backpacks recipes
         event.remove({id:'sophisticatedbackpacks:backpack'})
         event.remove({output:/^sophisticatedbackpacks:.*_backpack/})
     //#endregion
+    //#region remove upgrade recipes
+    //#endregion
 
-    //region add recipes
+    //region add backbacks recipes
         event.shaped('sophisticatedbackpacks:backpack',[
             'ABB',
             'CDC',
@@ -92,5 +94,7 @@ const RegisterSophisBackpacksRecipes = event =>{
           item: "sophisticatedbackpacks:iron_backpack"
         }
         }).id('dr2:iron_backpack')
+    //#endregion
+    //#region add upgrade recipes
     //#endregion
 }

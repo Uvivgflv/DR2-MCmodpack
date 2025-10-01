@@ -1,6 +1,6 @@
 const RegisterCBSRecipes = event => {
     event.remove({mod:'cyberspace'})
-
+    //переделать на механический крафтер или на сборочную машину
     event.shaped('cyberspace:terminal',[
         'ABA',
         'CDE',

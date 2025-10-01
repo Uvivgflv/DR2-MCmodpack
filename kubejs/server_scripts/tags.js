@@ -1,5 +1,5 @@
 const RegisterItemsTagsMain = (event) => {
-
+    //переписать по-человечески
     event.add('kubejs:disabled_items', 'luminousworld:ironhammer')
     event.add('kubejs:disabled_items', 'luminousworld:goldhammer')
     event.add('kubejs:disabled_items', 'luminousworld:diamond_hammer')

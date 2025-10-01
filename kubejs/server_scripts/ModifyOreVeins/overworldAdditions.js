@@ -1,4 +1,5 @@
-GTCEuServerEvents.oreVeins(event => {
+const OverworldOreVeins = event => {
+
     /* Надо доработать эту идею возможно добавить тэги к этим биомам #cct:copper_ore_biomes
     var copper_biomes = 
     [
@@ -141,4 +142,4 @@ GTCEuServerEvents.oreVeins(event => {
         .layer(l => l.weight(1).mat(GTMaterials.Graphite).size(1, 1))
     ))
     })
-})
+}

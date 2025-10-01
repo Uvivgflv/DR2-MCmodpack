@@ -9,3 +9,7 @@ GTCEuStartupEvents.materialModification(event =>{
     //крашит из-за отсутствия материалов крафта (слитков)
     //GTCEuMatMod(event)
 })
+GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+    RegisterOreBlocksGT(event)
+})
+

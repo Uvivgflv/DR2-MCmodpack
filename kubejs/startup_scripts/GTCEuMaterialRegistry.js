@@ -1,6 +1,11 @@
+// GTCEuStartupEvents.registry('gtceu:element', event => {
+//    event.create('manalium', 27, 177, -1, null, 'Ma', false) 
+// })
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hepatizon')
         .ingot()
+        .fluid().blastTemp(1700)
         .components('2x copper', '1x cobalt', '1x nether_quartz')
         .color(0x2C0D4B).iconSet(GTMaterialIconSet.METALLIC)
         .flags(
@@ -162,6 +167,28 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_GEAR,
         GTMaterialFlags.GENERATE_SMALL_GEAR
     )
+    //midnight ores
+    event.create('night_crystal')
+    .gem().liquid().ore()
+    .color(0x644ac2).iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+    .flags(
+        GTMaterialFlags.GENERATE_LENS,
+        GTMaterialFlags.GENERATE_DENSE
+    )
+    event.create('blazeium')//HV circuit material
+    .ingot().liquid().ore()
+    .color(0xffa826).iconSet(GTMaterialIconSet.DULL)
+    .flags(
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_FRAME,
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD,
+        GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_SMALL_GEAR
+    )
     //test
     const $OreProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
     //osmium & iridium
@@ -169,6 +196,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Iridium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Graphene.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Electrum.setProperty(PropertyKey.ORE, new $OreProperty());
+    GTMaterials.SulfurDioxide.setProperty(PropertyKey.ORE, new $OreProperty());
+    
     //GTMaterials.Tantalum.setProperty(PropertyKey.ORE, new $OreProperty());
     //GTMaterials.Chromium.setProperty(PropertyKey.ORE, new $OreProperty());
     //GTMaterials.Vanadium.setProperty(PropertyKey.ORE, new $OreProperty());
@@ -177,3 +206,4 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // GTMaterials.Palladium.setProperty(PropertyKey.ORE, new $OreProperty());
     //platinum, vanadium, palladium, gallium, indium, tantalum
 })
+
