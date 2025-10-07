@@ -1,0 +1,7 @@
+- Рецепты LV механизмов
+- Рецепты Malum, BM, F&A, Botania, Apotheosis, Iron's Spells
+- Ребаланс брони из модификаций
+- Мобдроп создать текстуры и завершить таблицы для Ваниллы 
+- Дроп с Undergarden 
+- Дроп с Midnight
+- Рецепты Midnight

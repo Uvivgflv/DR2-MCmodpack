@@ -41,5 +41,9 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', event => {
     event.create('ad_astra_mercury')
         .targets('ad_astra:mercury_stone')
         .dimensions('ad_astra:mercury')
+    //midnight
+    event.create('midnight')
+        .targets('midnight:nightstone')
+        .dimensions('midnight:the_midnight')
 })
 

@@ -61,10 +61,15 @@ GTCEuServerEvents.oreVeins(event => {
     TwilightforestOreVeins(event)
     UndergardenOreVeins(event)
     OverworldOreVeins(event)
+    TheMidnightOreVeins(event)
 
     console.log('Register GTCEU custom oreVeins')
 })
 GTCEuServerEvents.fluidVeins(event => {
     //BedrokFluidOverworld(event)
     console.log('Register GTCEU custom fluidVeins')
+})
+LootJS.modifiers((event) => {
+    //v0.2.07102025 23:40
+    ModifyVanillaMobLootTable(event)
 })

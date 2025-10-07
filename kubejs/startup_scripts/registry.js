@@ -12,6 +12,7 @@ const RegistryStartUpItems = (event) =>{
     event.create('twforest_activator').displayName('Ключ от сумеречного леса').unstackable()
     event.create('inert_dust').displayName('Инертный порошок')
     event.create('aluminum_casting_compound').displayName('Смесь для плавки алюминия')
+    event.create('old_fabric').displayName('Старая ткань')
     //фрагменты материалов редкости
     event.create('common_fragment').displayName('Осколки магического металла')
     event.create('uncommon_fragment').displayName('Обрывки ткани времени')

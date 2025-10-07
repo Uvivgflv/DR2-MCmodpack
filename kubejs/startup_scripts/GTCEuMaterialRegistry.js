@@ -1,8 +1,8 @@
 // GTCEuStartupEvents.registry('gtceu:element', event => {
 //    event.create('manalium', 27, 177, -1, null, 'Ma', false) 
 // })
-
-GTCEuStartupEvents.registry('gtceu:material', event => {
+const GTCEuMaterialRegistry = event =>{
+    //#region compat materials
     event.create('hepatizon')
         .ingot()
         .fluid().blastTemp(1700)
@@ -30,6 +30,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_DENSE,
             GTMaterialFlags.GENERATE_LONG_ROD
         )
+    //#endregion
     event.create('relict')//add tag #forge:ingots/relict
     .ingot().blastTemp(2200).fluid().ore()
     .components('2x lead', '4x oxygen', 'coal', 'water')
@@ -189,6 +190,68 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         GTMaterialFlags.GENERATE_GEAR,
         GTMaterialFlags.GENERATE_SMALL_GEAR
     )
+    //the midnight materials
+    event.create('rendium')
+    .gem().liquid().ore()
+    .color(0x4839b8).iconSet(GTMaterialIconSet.EMERALD)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD
+    )
+    event.create('dark_pearl')
+    .gem().liquid().ore()
+    .color(0x482478).secondaryColor(0x1a1224).iconSet(GTMaterialIconSet.EMERALD)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD
+    )
+    event.create('nagrilite')
+    .ingot().liquid().ore()
+    .color(0x3d3942).secondaryColor(0x7c7882).iconSet(GTMaterialIconSet.SHINY)
+    .flags(
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_FRAME,
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD,
+        GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_SMALL_GEAR
+    )
+    event.create('tenebrum')
+    .ingot().liquid().ore()
+    .color(0x4b594e).secondaryColor(0x2d332f).iconSet(GTMaterialIconSet.DULL)
+    .flags(
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_FRAME,
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD,
+        GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_SMALL_GEAR
+    )
+    event.create('virilux')
+    .gem().liquid().ore()
+    .color(0x0ccf4d).iconSet(GTMaterialIconSet.GEM_VERTICAL)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD
+    )
+    event.create('ebonite')
+    .gem().ore()
+    .color(0x241601).secondaryColor(0x030200).iconSet(GTMaterialIconSet.DIAMOND)
+    .flags(
+        GTMaterialFlags.GENERATE_PLATE,
+        GTMaterialFlags.GENERATE_DENSE,
+        GTMaterialFlags.GENERATE_LONG_ROD,
+        GTMaterialFlags.GENERATE_LENS
+    )
     //test
     const $OreProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
     //osmium & iridium
@@ -205,5 +268,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // GTMaterials.Indium.setProperty(PropertyKey.ORE, new $OreProperty());
     // GTMaterials.Palladium.setProperty(PropertyKey.ORE, new $OreProperty());
     //platinum, vanadium, palladium, gallium, indium, tantalum
-})
+}
 

@@ -1,5 +1,4 @@
-WorldgenEvents.remove(event => 
-{ 
+const RemoveOres = event =>{
 //#region ore lists
     var oreList = [
         'create:deepslate_zinc_ore','create:zinc_ore',
@@ -102,9 +101,27 @@ WorldgenEvents.remove(event =>
     var oreListInfLayers = [
         'infinite_abyss:opal_ore'
     ]
+
+    var oreListMidnight = [
+        'midnight:virilux_ore',
+        'midnight:dark_pearl_ore',
+        'midnight:tenebrum_ore',
+        'midnight:nagrilite_ore',
+        'midnight:rendium_ore',
+        'midnight:ebonite_ore'
+    ]
 //#endregion
 
 //#region ores remove
+    event.removeOres(props =>
+        { props.worldgenLayer = 'underground_ores'
+            props.blocks = oreListMidnight
+        }
+    )
+    event.removeOres(props =>{
+        props.worldgenLayer = 'underground_decoration'
+        props.blocks = 'midnight:virilux_ore'
+    })
     event.removeOres(props => 
         { props.worldgenLayer = 'underground_ores'
             props.blocks = oreList
@@ -139,5 +156,5 @@ WorldgenEvents.remove(event =>
 
     //event.removeFeature('gtceu:raw_oil_sprout')
 //#endregion
-})
+}
 //#region oreblocks
