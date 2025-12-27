@@ -76,7 +76,7 @@ rhino.local.properties
 
 supportercache.json
 
-scripts/
+#scripts/
 
 #======SYSTEM===============
 .DS_Store
