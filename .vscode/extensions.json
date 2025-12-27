@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "xabikos.JavaScriptSnippets",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "orderwat.indent-rainbow",
+    "usernamehw.errorlene",
+    "naumovs.color-highlight",
+    "pkief.material-icon-theme",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-typescript-next",
+    "wix.vscode-import-cost",
+    "quicktype.quicktype",
+    "spgoding.datapack-lamguage-server",
+    "minecraftcommands.syntax-mcfunction"
+  ]
+}

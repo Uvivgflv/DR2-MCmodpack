@@ -1,0 +1,37 @@
+{
+   "name": "dark-realm-modpack",
+  "version": "1.0.0",
+  "description": "KubeJS scripts for Dark Realm modpack",
+  "scripts": {
+    "format": "prettier --write \"kubejs/**/*.js\" \"scripts/**/*.js\"",
+    "format:check": "prettier --check kubejs/**/*.js scripts/**/*.js",
+    "lint": "eslint kubejs/**/*.js",
+    "lint:fix": "eslint kubejs/**/*.js --fix",
+    "init": "node scripts/init.js",
+    "backup": "node scripts/backup.js",
+    "deploy": "node scripts/deploy.js",
+    "test": "node scripts/test.js",
+    "git:init": "node scripts/git_init.js",
+    "git:status": "git status",
+    "git:add": "git add .",
+    "git:commit": "git commit -m",
+    "clean": "node scripts/clean.js",
+    "build": "npm run format && npm run lint",
+    "dev": "echo 'Development mode - watching files...'",
+    "git:check": "node scripts/check_git_setup.js",
+    "git:setup": "node scripts/git_setup.js"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "eslint": "^8.57.0",
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.7.4"
+  },
+  "keywords": [
+    "minecraft",
+    "kubejs",
+    "modpack"
+  ],
+  "author": "UVIV",
+  "license": "MIT"
+}

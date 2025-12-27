@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Format ALL JS",
+      "type": "shell",
+      "command": "npx prettier --write 'kubejs/**/*.js' 'scripts/**/*.js'",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lint JS Files",
+      "type": "shell",
+      "command": "npx eslint 'kubejs/**/*.js'",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Check Git Status",
+      "type": "shell",
+      "command": "git status",
+      "group": "test"
+    },
+    {
+      "label": "Deploy to Instance",
+      "type": "shell",
+      "command": "node scripts/deploy.js",
+      "group": "build"
+    }
+  ]
+}
