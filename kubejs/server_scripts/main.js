@@ -1,34 +1,112 @@
-// ============================================
-// ГЛАВНЫЙ ФАЙЛ DARK REALM MODPACK
-// ============================================
+// priority: 0
+// Все в верстаке сложнее верстака делать с инструментами из gtceu
+//
+//
+//
+//
+//
 
-console.log("§6=== DARK REALM MODPACK ===§r");
+ServerEvents.tags("item", (event) => {
+  RegisterItemsTagsMain(event);
+  RegisterCreateTags(event);
+  RegisterMalumTags(event);
+  RegistryInfAbyssTagsItems(event);
+  RegistryAdAstraItemTags(event);
+  RegisterTFMGItemTags(event);
+  RegisterGTCEUToCreateCompatTags(event);
+  RegisterForbiddenArcanusItemTags(event);
+  UnearthedTagsRegolite(event);
+  RegistryUnearthedRecipesTags(event);
 
-// Загружаем модули в правильном порядке
-require("./00_constants.js");
-require("./01_utils.js");
+  console.log("Register DR2 custom itemTags");
+});
+ServerEvents.tags("block", (event) => {
+  RegisterBotaniaTagsBlock(event);
+  RegisterGTTagsBlocks(event);
+  RegisterBlocksTagsMain(event);
+  RegisterUnearthedTags(event);
+  RegisterRealisticStepsBlockTags(event);
 
-// Загружаем остальные модули
-const moduleFiles = [
-  // Добавьте здесь свои модули
-  // './modules/ores.js',
-  // './modules/recipes.js',
-];
-
-moduleFiles.forEach((module) => {
-  try {
-    require(module);
-    Utils.log(`Загружен модуль: ${module}`, "info");
-  } catch (error) {
-    Utils.log(`Ошибка загрузки ${module}: ${error.message}`, "error");
-  }
+  console.log("Register DR2 custom blockTags");
 });
 
-// Обработчики событий
+GTCEuServerEvents.oreVeins((event) => {
+  AdAstraMoon(event);
+  AdAstraMars(event);
+  AdAstraVenus(event);
+  AdAstraMercury(event);
+  InfAbyssFirstLayer(event);
+  InfAbyssSecondLayer(event);
+  TwilightforestOreVeins(event);
+  UndergardenOreVeins(event);
+  OverworldOreVeins(event);
+  TheMidnightOreVeins(event);
+
+  console.log("Register GTCEU custom oreVeins");
+});
+GTCEuServerEvents.fluidVeins((event) => {
+  BedrokFluidOverworld(event); //created v1.0a
+  BedrokFluidUndergarden(event); //created v1.0a
+  BedrokFluidFirstLayer(event); //created v1.0a
+
+  console.log("Register GTCEU custom fluidVeins");
+});
+LootJS.modifiers((event) => {
+  ModifyVanillaMobLootTable(event);
+  //regoliteLootTableReplace(event)
+  grassRegoliteLootTableReplace(event);
+  BlockLootTableReplace(event);
+  UndeadsMobDrops(event);
+  MagicMobDrops(event);
+
+  console.log("Register DR2 custom loottables");
+});
+/**
+ * functions lower letter
+ * исполнение после тэгов и датапаков
+ */
 ServerEvents.recipes((event) => {
-  Utils.log("Система рецептов инициализирована", "info");
-});
+  RegisterVanillaRecipes(event);
+  RegisterTFMGRecipes(event);
+  RegistryCCTRecipes(event);
+  RegistryTconstructResipes(event);
+  RegistrySmelteryRecipes(event);
+  RegisterAE2Recipes(event);
+  RegistryTGCEURecipes(event);
+  RegisterGTCEUComponentsRecipes(event); //created v1.0a
+  RegisterBotaniaRecipes(event); //change v0.4.0
+  RegisterSophisBackpacksRecipes(event);
+  RegistrySophiStorageRecipes(event);
+  RegisterCreateRecipes(event);
+  RegisterTConSmelteryCompat(event);
+  RegisterApothRecipes(event);
+  RegisterCreateCompatRecipes(event);
+  RegisterCBSRecipes(event);
+  RegistryCreateGTMCrafterRecipes(event);
+  RegistryBMRecipes(event); //change v0.4.0
+  RegistrySeqAssembleGTPartsRecipes(event);
+  RegisterApothCreateTicCompat(event);
+  RegisterMalumRecipes(event);
+  RegistryInfAbyssRecipes(event);
+  RegistryTCONTweaks(event);
+  RegistryAdAstraRecipes(event);
+  RegisterIERecipes(event);
+  RegistrySeqAssemblyTFMGRecipes(event);
+  RegistryMechCrafterTFMGRecipes(event);
+  registerMechanicalPressPlatesRecipes(event);
+  RegisterIESequenseAssemblyRecipes(event);
+  RegisterIEMechanicalCrafterRecipes(event);
+  RegisterGefestForgeBlocksRecipes(event);
+  GTCEUMachineCraftingRegistry(event);
+  RegisterApotheosisInfusionResipes(event);
+  RegistryIronsSpellbooksRecipes(event);
+  RegistryWayStoneRecipes(event);
+  //v0.4.0
+  RegisterIEAlloysmelterRecipes(event); //created v0.4.0
+  RegisterPetalApothecaryRecipes(event); //created v0.4.0
+  //RegisterAE2Recipes(event) //use magic materials
+  //RegisterTwilightforestRecipes(event) //twilightKey recipes from Hefest forge
+  //RegisterBloodMagicRecipes //progress into magic mods malum -> bloodmagic -> f&a ->
 
-ServerEvents.loaded(() => {
-  Utils.log("Модпак полностью загружен!", "info");
+  console.log("Register DR2 custom recipes");
 });

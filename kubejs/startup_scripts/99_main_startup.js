@@ -1,6 +1,7 @@
 Platform.mods.kubejs.name = "Dark Realms 2";
 StartupEvents.registry("item", (event) => {
   RegistryStartUpItems(event);
+  RegisterOreVariants(event);
 });
 StartupEvents.registry("block", (event) => {
   RegistryStartUpBlocks(event);
