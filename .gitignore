@@ -43,6 +43,7 @@ screenshots/
 *.temp
 cache/
 tmp/
+temp/
 panoramas/
 patchouil_books/
 modernfix/
@@ -74,7 +75,10 @@ emi.json
 patchouli_data.json
 rhino.local.properties
 ops.json
-
+config/oculus.properties
+config/packetfixer.properties
+config/worldedit/worldedit.properties
+config/xaerominimap_entities.json
 supportercache.json
 
 #scripts/
