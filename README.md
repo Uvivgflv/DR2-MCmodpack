@@ -1,18 +1,6 @@
 # Minecraft Modpack - KubeJS Development
 
-## Структура проекта
-
-modpack/
-├── .vscode/ # Настройки VS Code
-├── kubejs/ # KubeJS скрипты
-│ ├── server_scripts/ # Серверные скрипты
-│ └── startup_scripts/ # Стартовые скрипты
-├── config/ # Конфиги модов
-├── scripts/ # Утилиты разработки
-├── docs/ # Документация
-└── .gitignore # Git игнорирование
-
-## Команды разработки
+## Команды разработки WIP
 
 ```bash
 # Форматирование кода
