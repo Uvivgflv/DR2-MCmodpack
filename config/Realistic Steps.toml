@@ -1,0 +1,23 @@
+
+["Block speeds and extra (It doesn't let me separate categories, don't use Mcreator, please)"]
+	#Multiplier that gets added to the player when walking on grass, the rest of the variables in this list will not have comments as it's pretty obvious what something will do
+	"Grass Multiplier" = 0.95
+	"Dirt Multiplier" = 0.8
+	#this includes ores
+	"Stone Multiplier" = 0.7
+	"Leaves Multiplier" = 0.5
+	#this includes logs
+	"Planks Multiplier" = 0.75
+	"Cobble Multiplier" = 0.65
+	"Metal Multiplier" = 0.75
+	"Sand Multiplier" = 0.55
+	"Gravel Multiplier" = 0.5
+	"Wool Multiplier" = 0.75
+	"Clay Multiplier" = 0.5
+	#i.e. grass at feet
+	"One Multiplier" = 0.75
+	#i.e. grass at head
+	"Two Multiplier" = 0.5
+	#When in open sky and is raining
+	"Rain Multiplier" = 0.8
+

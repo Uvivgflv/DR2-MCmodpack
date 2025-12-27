@@ -1,0 +1,35 @@
+{
+  "FTBChunks" : {
+    "shipsProtectedByClaims" : true,
+    "shipsProtectionOutOfBuildHeight" : false
+  },
+  "ComputerCraft" : {
+    "canTurtlesLeaveScaledShips" : false
+  },
+  "Weather2" : {
+    "enableWeatherCompat" : true,
+    "windMultiplier" : 0.1,
+    "windMaxVel" : 20.0,
+    "stormRange" : 150.0,
+    "stormDampening" : 0.0
+  },
+  "Dynmap" : {
+    "showIconMarkers" : true,
+    "showPolylineMarkers" : true,
+    "showShipId" : true,
+    "showShipMass" : true
+  },
+  "enableInteractDistanceChecks" : true,
+  "transformTeleports" : true,
+  "enableMovementChecks" : false,
+  "teleportReconnectedPlayers" : true,
+  "maxAirborneTicksForReconnectedPlayerTeleport" : 4,
+  "preventFluidEscapingShip" : true,
+  "explosionBlastForce" : 500000.0,
+  "allowMobSpawns" : true,
+  "aiOnShips" : true,
+  "miniShipSize" : 0.5,
+  "minScaling" : 0.25,
+  "vsCommandPerms" : 2,
+  "$schema" : "schemas/vs_server.schema.json"
+}

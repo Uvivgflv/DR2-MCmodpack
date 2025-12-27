@@ -1,0 +1,579 @@
+# specialai:idle_ai.toml
+# This config contains options for idle behaviors; actions taken by mobs when they are bored.
+
+  # Entity List fields: General format = [ "namespace:entity_type value1 value2 ...", ... ]
+  #   Entity lists are arrays of entity types. Some entity lists specify a number of values linked to each entity type.
+  #   Entity types are defined by their key in the entity registry, usually following the pattern
+  #     'namespace:entity_name'.
+  #   'default' can be used instead of an entity type registry key to provide default values for all entities.
+  #   List entries by default match any entity type derived from (i.e. based on) their entity type. For example,
+  #     '~minecraft:zombie'.
+  #     There is no steadfast rule about extending, even in vanilla, but the hope is that mod-added mobs will extend
+  #       their base mob.
+  #   An asterisk '*' can be used to match all registry entries belonging to X namespace. For example, 'minecraft:*'
+  #     will match all vanilla entries.
+  #   Entity type tags can also be used here. To declare a tag, start with a '#' followed by the rest of the tag path.
+  #   Tag example: '#minecraft:beehive_inhabitors'
+  #       Priority order: specific entries > tag entries > namespace entries > default
+
+  # Block List fields: General format = [ "namespace:block_name[property1=value1,...]", ... ]
+  #   Block lists are arrays of blocks and partial block states.
+  #   Blocks are defined by their key in the block registry, usually following the pattern 'namespace:block_name'.
+  #   An asterisk '*' can be used to match all blocks belonging to X namespace. For example, 'minecraft:*' will match
+  #     all vanilla blocks.
+  #   Block tags can also be used here. To declare a tag, start with a '#' followed by the rest of the tag path.
+  #   Tag example: '#minecraft:beehive_inhabitors'
+  #   List entries by default match any block state. The block states to match can be narrowed down by specifying
+  #     properties. The syntax for block state properties is the same as for commands. Any properties not specified will
+  #     match any value. For example, 'minecraft:beehive[honey_level=5]' will match any full beehives, regardless of the
+  #     direction they face.
+  #   Note that tags and namespace entries are not block state sensitive; they only care about the base block
+  #       Priority order: specific entries > tag entries > namespace entries
+
+
+# Category: idle_general
+# Options that affect all idle behaviors for monsters (griefing and fiddling).
+
+  # Mobs' reach (from eye height) when targeting blocks. Player reach is about 4.5.
+  # <Number> Range: ≥ 0.0, Default: 3.5
+  idle_general.reach = 3.5
+
+  # The range at which mobs will search for blocks to target horizontally (xz-plane) and vertically (y-axis).
+  # <Integer> Range: ≥ 1, Default: 12
+  idle_general.scan_range.horizontal = 12
+  # <Integer> Range: ≥ 1, Default: 6
+  idle_general.scan_range.vertical = 6
+
+  # The number of ticks between each block scan.
+  # <Integer> Range: ≥ 1, Default: 2
+  idle_general.scan_delay = 2
+  # The number of blocks each mob randomly searches to grief/fiddle with every "scan_delay" ticks.
+  # <Integer> Range: ≥ 1, Default: 32
+  idle_general.scan_count = 32
+  # The maximum number of blocks that can be searched in any given tick by all mobs. 0 is no limit.
+  # <Integer> Range: ≥ 0, Default: 3000
+  idle_general.global_scan_count = 3000
+
+
+# Category: idle_griefing
+# Options to customize monsters' idle block breaking behavior.
+
+  # List of mobs that can gain passive griefing AI (note that the entity must have task-based AI enabled).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with the AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: [ "minecraft:zombie 1.0",
+  #   "minecraft:creeper 1.0" ]
+  #    Range for Values: 0.0 ~ 1.0
+  idle_griefing.entities.whitelist = [
+    "minecraft:zombie 1.0",
+    "minecraft:creeper 1.0"
+  ]
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  idle_griefing.entities.blacklist = []
+
+  # If true, mobs will only grief blocks they have the tools to harvest.
+  # For example, they will only break furnaces if they have a pickaxe.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  idle_griefing.requires_tools = true
+
+  # If true, blocks griefed by mobs will leave item drops.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  idle_griefing.leaves_drops = false
+  # If true, a loud snapping sound (the vanilla door break sound) will be played when a block is broken, which is
+  #   audible regardless of distance.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  idle_griefing.break_sound = false
+
+  # The block breaking speed multiplier for mobs griefing blocks, relative to the player's block breaking speed.
+  # <Number> Range: ≥ 0.0, Default: 0.5
+  idle_griefing.break_speed = 0.5
+  # If true, creepers will be upset about not having arms to grief blocks with and resort to what they know best.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  idle_griefing.mad_creepers = false
+  # If 'mad_creepers' is enabled, creepers will not try to explode blocks with an explosion resistance value equal to
+  #   or higher than this value.
+  # Blocks with negative resistance such as bedrock are automatically omitted.
+  # <Number> Range: ≥ 0.0, Default: 6.0
+  idle_griefing.resistance_threshold = 6.0
+
+  # If true, idle griefing AI will automatically target all light sources (light value > 1). This will do its best to
+  #   avoid natural sources such as fire and redstone ore.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  idle_griefing.targets.auto_target_lights = true
+  # If true, idle griefing AI will automatically target all blocks that derive from the vanilla beds.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  idle_griefing.targets.auto_target_beds = true
+  # List of blocks that can be broken by the idle griefing AI.
+  # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:farmland",
+  #   "minecraft:beehive", "minecraft:crafting_table", "minecraft:furnace", "minecraft:ladder",
+  #   "minecraft:enchanting_table", "minecraft:brewing_stand", "minecraft:anvil", "minecraft:chipped_anvil", ... ]
+  idle_griefing.targets.whitelist = [
+    "minecraft:farmland",
+    "minecraft:beehive",
+    "minecraft:crafting_table",
+    "minecraft:furnace",
+    "minecraft:ladder",
+    "minecraft:enchanting_table",
+    "minecraft:brewing_stand",
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:damaged_anvil",
+    "minecraft:scaffolding",
+    "minecraft:loom",
+    "minecraft:smoker",
+    "minecraft:blast_furnace",
+    "minecraft:cartography_table",
+    "minecraft:fletching_table",
+    "minecraft:grindstone",
+    "minecraft:smithing_table",
+    "minecraft:stonecutter",
+    "immersiveengineering:metal_ladder_none",
+    "immersiveengineering:metal_ladder_alu",
+    "immersiveengineering:metal_ladder_steel",
+    "midnight:nightstone_furnace",
+    "midnight:shadowroot_crafting_table",
+    "midnight:shadowroot_ladder",
+    "midnight:dark_willow_crafting_table",
+    "midnight:dark_willow_ladder",
+    "midnight:decayed_wood_crafting_table",
+    "midnight:decayed_wood_ladder",
+    "midnight:nightshroom_crafting_table",
+    "midnight:nightshroom_ladder",
+    "midnight:dewshroom_crafting_table",
+    "midnight:dewshroom_ladder",
+    "midnight:viridshroom_crafting_table",
+    "midnight:viridshroom_ladder",
+    "midnight:moonshroom_crafting_table",
+    "midnight:moonshroom_ladder",
+    "midnight:bogshroom_crafting_table",
+    "midnight:bogshroom_ladder",
+    "midnight:tenebrum_smithing_table",
+    "ad_astra:aeronos_ladder",
+    "ad_astra:strophar_ladder",
+    "twilightforest:iron_ladder",
+    "chipped:crooked_ladder",
+    "chipped:crooked_plank_ladder",
+    "chipped:crooked_ropeplank_ladder",
+    "chipped:metal_ladder",
+    "chipped:mossy_ladder",
+    "chipped:plank_ladder",
+    "chipped:railed_ladder",
+    "chipped:rope_planked_ladder",
+    "chipped:roped_ladder",
+    "chipped:strong_ladder",
+    "copycats:copycat_ladder",
+    "biomeswevegone:aspen_crafting_table",
+    "biomeswevegone:baobab_crafting_table",
+    "biomeswevegone:blue_enchanted_crafting_table",
+    "biomeswevegone:cika_crafting_table",
+    "biomeswevegone:cypress_crafting_table",
+    "biomeswevegone:ebony_crafting_table",
+    "biomeswevegone:fir_crafting_table",
+    "biomeswevegone:florus_crafting_table",
+    "biomeswevegone:green_enchanted_crafting_table",
+    "biomeswevegone:holly_crafting_table",
+    "biomeswevegone:ironwood_crafting_table",
+    "biomeswevegone:jacaranda_crafting_table",
+    "biomeswevegone:mahogany_crafting_table",
+    "biomeswevegone:maple_crafting_table",
+    "biomeswevegone:palm_crafting_table",
+    "biomeswevegone:pine_crafting_table",
+    "biomeswevegone:rainbow_eucalyptus_crafting_table",
+    "biomeswevegone:redwood_crafting_table",
+    "biomeswevegone:sakura_crafting_table",
+    "biomeswevegone:skyris_crafting_table",
+    "biomeswevegone:white_mangrove_crafting_table",
+    "biomeswevegone:willow_crafting_table",
+    "biomeswevegone:witch_hazel_crafting_table",
+    "biomeswevegone:zelkova_crafting_table",
+    "create:andesite_ladder",
+    "create:brass_ladder",
+    "create:copper_ladder",
+    "create:andesite_scaffolding",
+    "create:brass_scaffolding",
+    "create:copper_scaffolding",
+    "tfmg:steel_ladder",
+    "tfmg:aluminum_ladder",
+    "tfmg:cast_iron_ladder",
+    "tfmg:lead_ladder",
+    "tfmg:nickel_ladder",
+    "tfmg:constantan_ladder",
+    "tfmg:steel_scaffolding",
+    "tfmg:aluminum_scaffolding",
+    "forbidden_arcanus:edelwood_ladder",
+    "nethersdelight:blackstone_furnace",
+    "nethersdelight:nether_brick_smoker",
+    "nethersdelight:blackstone_blast_furnace",
+    "quark:ancient_ladder",
+    "quark:azalea_ladder",
+    "quark:blossom_ladder",
+    "quark:iron_ladder",
+    "quark:matrix_enchanter",
+    "quark:deepslate_furnace",
+    "quark:blackstone_furnace",
+    "quark:spruce_ladder",
+    "quark:birch_ladder",
+    "quark:jungle_ladder",
+    "quark:acacia_ladder",
+    "quark:dark_oak_ladder",
+    "quark:crimson_ladder",
+    "quark:warped_ladder",
+    "quark:mangrove_ladder",
+    "quark:bamboo_ladder",
+    "quark:cherry_ladder",
+    "#minecraft:crops"
+  ]
+  # Like "grief_targets.whitelist", but these blocks will not be targeted if they have a loot table tag.
+  # For example, unopened dungeon chests will not be targeted.
+  # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:chest",
+  #   "minecraft:ender_chest", "minecraft:trapped_chest", "minecraft:barrel", "midnight:shadowroot_chest",
+  #   "midnight:dark_willow_chest", "midnight:decayed_wood_chest", "midnight:manglewood_chest",
+  #   "midnight:nightshroom_chest", ... ]
+  idle_griefing.targets.lootable_list = [
+    "minecraft:chest",
+    "minecraft:ender_chest",
+    "minecraft:trapped_chest",
+    "minecraft:barrel",
+    "midnight:shadowroot_chest",
+    "midnight:dark_willow_chest",
+    "midnight:decayed_wood_chest",
+    "midnight:manglewood_chest",
+    "midnight:nightshroom_chest",
+    "midnight:dewshroom_chest",
+    "midnight:viridshroom_chest",
+    "midnight:moonshroom_chest",
+    "midnight:bogshroom_chest",
+    "lootr:lootr_barrel",
+    "lootr:lootr_chest",
+    "lootr:lootr_trapped_chest",
+    "lootr:lootr_inventory",
+    "aquaculture:neptunes_bounty",
+    "twilightforest:twilight_oak_chest",
+    "twilightforest:canopy_chest",
+    "twilightforest:mangrove_chest",
+    "twilightforest:dark_chest",
+    "twilightforest:time_chest",
+    "twilightforest:transformation_chest",
+    "twilightforest:mining_chest",
+    "twilightforest:sorting_chest",
+    "chipped:acacia_barrel",
+    "chipped:acacia_crate",
+    "chipped:bamboo_barrel",
+    "chipped:birch_barrel",
+    "chipped:birch_crate",
+    "chipped:coal_barrel",
+    "chipped:copper_barrel",
+    "chipped:crimson_barrel",
+    "chipped:crimson_crate",
+    "chipped:dark_oak_crate",
+    "chipped:fish_barrel",
+    "chipped:fruit_barrel",
+    "chipped:gilded_barrel",
+    "chipped:gold_barrel",
+    "chipped:iron_barrel",
+    "chipped:jungle_crate",
+    "chipped:mangrove_brick_barrel",
+    "chipped:mangrove_crate",
+    "chipped:mangrove_tile_barrel",
+    "chipped:metal_barrel",
+    "chipped:mushroom_barrel",
+    "chipped:netherite_safe",
+    "chipped:oak_barrel",
+    "chipped:oak_crate",
+    "chipped:reinforced_acacia_crate",
+    "chipped:reinforced_birch_crate",
+    "chipped:reinforced_crimson_crate",
+    "chipped:reinforced_dark_oak_crate",
+    "chipped:reinforced_jungle_crate",
+    "chipped:reinforced_mangrove_crate",
+    "chipped:reinforced_oak_crate",
+    "chipped:reinforced_spruce_crate",
+    "chipped:reinforced_warped_crate",
+    "chipped:spruce_barrel",
+    "chipped:spruce_crate",
+    "chipped:varnished_barrel",
+    "chipped:warped_crate",
+    "underground_jungle:temple_chest",
+    "alexscaves:metal_barrel",
+    "alexscaves:rusty_barrel",
+    "alexscaves:gingerbarrel",
+    "quark:ancient_chest",
+    "quark:ancient_trapped_chest",
+    "quark:lootr_ancient_chest",
+    "quark:lootr_ancient_trapped_chest",
+    "quark:azalea_chest",
+    "quark:azalea_trapped_chest",
+    "quark:lootr_azalea_chest",
+    "quark:lootr_azalea_trapped_chest",
+    "quark:blossom_chest",
+    "quark:blossom_trapped_chest",
+    "quark:lootr_blossom_chest",
+    "quark:lootr_blossom_trapped_chest",
+    "quark:oak_chest",
+    "quark:oak_trapped_chest",
+    "quark:lootr_oak_chest",
+    "quark:lootr_oak_trapped_chest",
+    "quark:spruce_chest",
+    "quark:spruce_trapped_chest",
+    "quark:lootr_spruce_chest",
+    "quark:lootr_spruce_trapped_chest",
+    "quark:birch_chest",
+    "quark:birch_trapped_chest",
+    "quark:lootr_birch_chest",
+    "quark:lootr_birch_trapped_chest",
+    "quark:jungle_chest",
+    "quark:jungle_trapped_chest",
+    "quark:lootr_jungle_chest",
+    "quark:lootr_jungle_trapped_chest",
+    "quark:acacia_chest",
+    "quark:acacia_trapped_chest",
+    "quark:lootr_acacia_chest",
+    "quark:lootr_acacia_trapped_chest",
+    "quark:dark_oak_chest",
+    "quark:dark_oak_trapped_chest",
+    "quark:lootr_dark_oak_chest",
+    "quark:lootr_dark_oak_trapped_chest",
+    "quark:crimson_chest",
+    "quark:crimson_trapped_chest",
+    "quark:lootr_crimson_chest",
+    "quark:lootr_crimson_trapped_chest",
+    "quark:warped_chest",
+    "quark:warped_trapped_chest",
+    "quark:lootr_warped_chest",
+    "quark:lootr_warped_trapped_chest",
+    "quark:mangrove_chest",
+    "quark:mangrove_trapped_chest",
+    "quark:lootr_mangrove_chest",
+    "quark:lootr_mangrove_trapped_chest",
+    "quark:bamboo_chest",
+    "quark:bamboo_trapped_chest",
+    "quark:lootr_bamboo_chest",
+    "quark:lootr_bamboo_trapped_chest",
+    "quark:cherry_chest",
+    "quark:cherry_trapped_chest",
+    "quark:lootr_cherry_chest",
+    "quark:lootr_cherry_trapped_chest",
+    "quark:nether_brick_chest",
+    "quark:nether_brick_trapped_chest",
+    "quark:lootr_nether_brick_chest",
+    "quark:lootr_nether_brick_trapped_chest",
+    "quark:purpur_chest",
+    "quark:purpur_trapped_chest",
+    "quark:lootr_purpur_chest",
+    "quark:lootr_purpur_trapped_chest",
+    "quark:prismarine_chest",
+    "quark:prismarine_trapped_chest",
+    "quark:lootr_prismarine_chest",
+    "quark:lootr_prismarine_trapped_chest"
+  ]
+  # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: []
+  idle_griefing.targets.blacklist = []
+
+
+# Category: idle_fiddling
+# Options to customize monsters' idle fiddling behavior (block interaction).
+
+  # List of mobs that can gain passive fiddling AI (note that the entity must have task-based AI enabled).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with the AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: [ "minecraft:skeleton 1.0",
+  #   "minecraft:stray 1.0", "minecraft:wither_skeleton 1.0", "minecraft:zombified_piglin 1.0", "minecraft:piglin 1.0" ]
+  #    Range for Values: 0.0 ~ 1.0
+  idle_fiddling.entities.whitelist = [
+    "minecraft:skeleton 1.0",
+    "minecraft:stray 1.0",
+    "minecraft:wither_skeleton 1.0",
+    "minecraft:zombified_piglin 1.0",
+    "minecraft:piglin 1.0"
+  ]
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  idle_fiddling.entities.blacklist = []
+
+  # If true, idle fiddling AI will automatically target all blocks that derive from
+  # the vanilla levers and buttons.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  idle_fiddling.targets.auto_target_switches = true
+  # If true, idle fiddling AI will automatically target all non-metal blocks that derive
+  # from the vanilla doors, fence gates, and trapdoors.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  idle_fiddling.targets.auto_target_doors = true
+  # List of blocks that can be interacted with by the idle fiddling AI.
+  # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:repeater",
+  #   "minecraft:comparator", "minecraft:tnt", "minecraft:cake" ]
+  idle_fiddling.targets.whitelist = [
+    "minecraft:repeater",
+    "minecraft:comparator",
+    "minecraft:tnt",
+    "minecraft:cake"
+  ]
+  # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: []
+  idle_fiddling.targets.blacklist = []
+
+
+# Category: idle_hiding
+# Options to customize monsters' idle hiding behavior. This causes the mob to crawl inside a container block and pop
+#   out when the container is opened (or destroyed).
+
+  # List of mobs that can gain passive hiding AI (note that the entity must have task-based AI enabled).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with the AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: [ "minecraft:creeper 1.0",
+  #   "minecraft:spider 1.0" ]
+  #    Range for Values: 0.0 ~ 1.0
+  idle_hiding.entities.whitelist = [
+    "minecraft:creeper 1.0",
+    "minecraft:spider 1.0"
+  ]
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  idle_hiding.entities.blacklist = []
+
+  # The chance for blocks (0.0 to 1.0) that have a loot table tag to be targetable by the idle hiding AI.
+  # For example, only 25% of unopened dungeon chests will be targetable at the default setting.
+  # <Number> Range: 0.0 ~ 1.0, Default: 0.25
+  idle_hiding.targets.lootable_chance.base = 0.25
+  # The chance for blocks (0.0 to 1.0) that have a loot table tag to be targetable by the idle hiding AI when specific
+  #   environmental conditions are met.
+  # <Environment List> Format: [ "value condition1 state1 & condition2 state2 & ...", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  idle_hiding.targets.lootable_chance.exceptions = []
+  # List of blocks that can be hidden in by the idle hiding AI. Note that only blocks with tile entities are able to
+  #   be hidden in.
+  # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:chest",
+  #   "minecraft:trapped_chest", "minecraft:barrel", "midnight:shadowroot_chest", "midnight:dark_willow_chest",
+  #   "midnight:decayed_wood_chest", "midnight:manglewood_chest", "midnight:nightshroom_chest",
+  #   "midnight:dewshroom_chest", ... ]
+  idle_hiding.targets.whitelist = [
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "minecraft:barrel",
+    "midnight:shadowroot_chest",
+    "midnight:dark_willow_chest",
+    "midnight:decayed_wood_chest",
+    "midnight:manglewood_chest",
+    "midnight:nightshroom_chest",
+    "midnight:dewshroom_chest",
+    "midnight:viridshroom_chest",
+    "midnight:moonshroom_chest",
+    "midnight:bogshroom_chest",
+    "lootr:lootr_barrel",
+    "lootr:lootr_chest",
+    "lootr:lootr_trapped_chest",
+    "lootr:lootr_inventory",
+    "aquaculture:neptunes_bounty",
+    "twilightforest:twilight_oak_chest",
+    "twilightforest:canopy_chest",
+    "twilightforest:mangrove_chest",
+    "twilightforest:dark_chest",
+    "twilightforest:time_chest",
+    "twilightforest:transformation_chest",
+    "twilightforest:mining_chest",
+    "twilightforest:sorting_chest",
+    "chipped:acacia_barrel",
+    "chipped:acacia_crate",
+    "chipped:bamboo_barrel",
+    "chipped:birch_barrel",
+    "chipped:birch_crate",
+    "chipped:coal_barrel",
+    "chipped:copper_barrel",
+    "chipped:crimson_barrel",
+    "chipped:crimson_crate",
+    "chipped:dark_oak_crate",
+    "chipped:fish_barrel",
+    "chipped:fruit_barrel",
+    "chipped:gilded_barrel",
+    "chipped:gold_barrel",
+    "chipped:iron_barrel",
+    "chipped:jungle_crate",
+    "chipped:mangrove_brick_barrel",
+    "chipped:mangrove_crate",
+    "chipped:mangrove_tile_barrel",
+    "chipped:metal_barrel",
+    "chipped:mushroom_barrel",
+    "chipped:netherite_safe",
+    "chipped:oak_barrel",
+    "chipped:oak_crate",
+    "chipped:reinforced_acacia_crate",
+    "chipped:reinforced_birch_crate",
+    "chipped:reinforced_crimson_crate",
+    "chipped:reinforced_dark_oak_crate",
+    "chipped:reinforced_jungle_crate",
+    "chipped:reinforced_mangrove_crate",
+    "chipped:reinforced_oak_crate",
+    "chipped:reinforced_spruce_crate",
+    "chipped:reinforced_warped_crate",
+    "chipped:spruce_barrel",
+    "chipped:spruce_crate",
+    "chipped:varnished_barrel",
+    "chipped:warped_crate",
+    "underground_jungle:temple_chest",
+    "alexscaves:metal_barrel",
+    "alexscaves:rusty_barrel",
+    "alexscaves:gingerbarrel",
+    "quark:ancient_chest",
+    "quark:ancient_trapped_chest",
+    "quark:lootr_ancient_chest",
+    "quark:lootr_ancient_trapped_chest",
+    "quark:azalea_chest",
+    "quark:azalea_trapped_chest",
+    "quark:lootr_azalea_chest",
+    "quark:lootr_azalea_trapped_chest",
+    "quark:blossom_chest",
+    "quark:blossom_trapped_chest",
+    "quark:lootr_blossom_chest",
+    "quark:lootr_blossom_trapped_chest",
+    "quark:oak_chest",
+    "quark:oak_trapped_chest",
+    "quark:lootr_oak_chest",
+    "quark:lootr_oak_trapped_chest",
+    "quark:spruce_chest",
+    "quark:spruce_trapped_chest",
+    "quark:lootr_spruce_chest",
+    "quark:lootr_spruce_trapped_chest",
+    "quark:birch_chest",
+    "quark:birch_trapped_chest",
+    "quark:lootr_birch_chest",
+    "quark:lootr_birch_trapped_chest",
+    "quark:jungle_chest",
+    "quark:jungle_trapped_chest",
+    "quark:lootr_jungle_chest",
+    "quark:lootr_jungle_trapped_chest",
+    "quark:acacia_chest",
+    "quark:acacia_trapped_chest",
+    "quark:lootr_acacia_chest",
+    "quark:lootr_acacia_trapped_chest",
+    "quark:dark_oak_chest",
+    "quark:dark_oak_trapped_chest",
+    "quark:lootr_dark_oak_chest",
+    "quark:lootr_dark_oak_trapped_chest",
+    "quark:crimson_chest",
+    "quark:crimson_trapped_chest",
+    "quark:lootr_crimson_chest",
+    "quark:lootr_crimson_trapped_chest",
+    "quark:warped_chest",
+    "quark:warped_trapped_chest",
+    "quark:lootr_warped_chest",
+    "quark:lootr_warped_trapped_chest",
+    "quark:mangrove_chest",
+    "quark:mangrove_trapped_chest",
+    "quark:lootr_mangrove_chest",
+    "quark:lootr_mangrove_trapped_chest",
+    "quark:bamboo_chest",
+    "quark:bamboo_trapped_chest",
+    "quark:lootr_bamboo_chest",
+    "quark:lootr_bamboo_trapped_chest",
+    "quark:cherry_chest",
+    "quark:cherry_trapped_chest",
+    "quark:lootr_cherry_chest",
+    "quark:lootr_cherry_trapped_chest",
+    "quark:nether_brick_chest",
+    "quark:nether_brick_trapped_chest",
+    "quark:lootr_nether_brick_chest",
+    "quark:lootr_nether_brick_trapped_chest",
+    "quark:purpur_chest",
+    "quark:purpur_trapped_chest",
+    "quark:lootr_purpur_chest",
+    "quark:lootr_purpur_trapped_chest",
+    "quark:prismarine_chest",
+    "quark:prismarine_trapped_chest",
+    "quark:lootr_prismarine_chest",
+    "quark:lootr_prismarine_trapped_chest"
+  ]
+  # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: []
+  idle_hiding.targets.blacklist = []

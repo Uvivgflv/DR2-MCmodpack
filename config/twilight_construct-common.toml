@@ -1,0 +1,24 @@
+#Base interval for mystic growth repair in ticks. Should be a multiple of 6
+#Range: 6 ~ 150000
+mysticGrowthBaseInterval = 150
+#Chance for Synergy to repair items per second at 1 steeleaf
+#Every time steeleaf count is doubled, increase repair chance by this number as well
+#Example: when player holds 64 steeleaf, the repair chance will be 7x this number
+#Range: 0.0 ~ 1.0
+synergyRepairChance = 0.05
+#Mining speed percentage bonus for Twilight modifier, when user is in Twilight Forest
+#Range: 0.0 ~ 1.0
+twilightMiningSpeedBonus = 0.2
+#Damage percentage bonus for Twilight modifier, when user is not in Twilight Forest
+#Range: 0.0 ~ 1.0
+twilightAttackDamageBonus = 0.05
+#Invulnerability tick bonus for Reappearing modifier
+#Range: 0 ~ 20
+reappearingTicks = 5
+#Primal Burst maximum tool speed bonus at near-zero durability
+#Range: 0.0 ~ 1.0
+primalBurstBonus = 0.1
+#Primal Instinct health threshold
+#Range: 0.0 ~ 1.0
+primalInstinctThreshold = 0.5
+

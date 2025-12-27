@@ -1,0 +1,13 @@
+
+["Day Length Settings"]
+	#Use server time instead of system clock.
+	useServerTime = true
+	#Sets your custom time zone offset (in hours) relative to UTC (Coordinated Universal Time). This is only used if useServerTime is set to false. It lets you simulate real-time sync based on any time zone, regardless of your server or system clock.
+	#Range: -12 ~ 14
+	manualUtcOffset = 0
+	#Controls whether time changes — such as switching time zones, enabling real-time sync or updating custom day length — happen instantly or gradually.
+	smoothTimeTransition = true
+	#How many real-world seconds the transition to a new time should take when smoothTimeTransition is true.
+	#Range: > 1
+	smoothTransitionDuration = 10
+

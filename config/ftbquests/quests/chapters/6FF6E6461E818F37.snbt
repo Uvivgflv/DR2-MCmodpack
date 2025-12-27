@@ -1,0 +1,29 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6FF6E6461E818F37"
+	group: "01A83B53FD1D0E4F"
+	icon: "gtceu:lp_steam_solid_boiler"
+	id: "6FF6E6461E818F37"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "2E882FFBCC40A9CF"
+		tasks: [
+			{
+				id: "2205732D8D5CF028"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}
+			{
+				count: 16L
+				id: "0B526AB6224E2359"
+				item: "gtceu:steel_brick_casing"
+				type: "item"
+			}
+		]
+		x: -0.5d
+		y: -3.0d
+	}]
+	title: "Стим-панк"
+}

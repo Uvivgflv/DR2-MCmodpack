@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "51154FBA9DA0B07F"
+	group: "01A83B53FD1D0E4F"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "51154FBA9DA0B07F"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["741C83F58374D498"]
+		id: "051BFC0D29086093"
+		tasks: [{
+			id: "0303A13F7FCE87C5"
+			item: "kubejs:twforest_activator"
+			type: "item"
+		}]
+		x: 1.0d
+		y: -2.5d
+	}]
+	title: "Сумеречный лес"
+}

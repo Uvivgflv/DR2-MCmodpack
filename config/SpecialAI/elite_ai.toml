@@ -1,0 +1,1025 @@
+# specialai:elite_ai.toml
+# This config contains options for elite AI patterns. Elite AI patterns bestow stat boosts, specific equipment, and
+#   allow these 'elite' mobs to perform actions in combat that can pose a great threat.
+# In general; changing options for elite AIs granted, attributes, and equipment only affects new entities. All other
+#   option changes affect existing entities (even in a running client) unless otherwise stated.
+
+  # See the appendix at the bottom of this file for more information on the elite AI patterns available.
+
+  # Entity List fields: General format = [ "namespace:entity_type value1 value2 ...", ... ]
+  #   Entity lists are arrays of entity types. Some entity lists specify a number of values linked to each entity type.
+  #   Entity types are defined by their key in the entity registry, usually following the pattern
+  #     'namespace:entity_name'.
+  #   'default' can be used instead of an entity type registry key to provide default values for all entities.
+  #   List entries by default match any entity type derived from (i.e. based on) their entity type. For example,
+  #     '~minecraft:zombie'.
+  #     There is no steadfast rule about extending, even in vanilla, but the hope is that mod-added mobs will extend
+  #       their base mob.
+  #   An asterisk '*' can be used to match all registry entries belonging to X namespace. For example, 'minecraft:*'
+  #     will match all vanilla entries.
+  #   Entity type tags can also be used here. To declare a tag, start with a '#' followed by the rest of the tag path.
+  #   Tag example: '#minecraft:beehive_inhabitors'
+  #       Priority order: specific entries > tag entries > namespace entries > default
+
+  # Environment List fields: General format =
+  #     [ "value environment1 condition1 & environment2 condition2 & ...", ... ]
+  #   Environment lists are arrays of environment entries. Each entry is a value followed by the environment
+  #     conditions that must be satisfied for the value to be chosen. The environments are tested in the order listed,
+  #     and the first matching entry is chosen.
+  #   See the bottom of this file for an explanation on each environment condition available.
+
+
+# Category: general
+# Options for customizing the elite AI system and options that affect all elite AI patterns.
+
+  # List of mobs that can gain random elite AI patterns and their chances to gain those AIs.
+  # Additional values after the entity type are the chances (0.0 to 1.0) for entities of that type to spawn with elite
+  #   AI. You can specify multiple chances for each entity - each chance will be rolled and multiple AIs can stack.
+  # AI patterns applied this way are in addition to any that you have applied directly in the specific categories below.
+  # <Entity List> Format: [ "namespace:entity_type value1 value2 ...", ... ], Default: [ "minecraft:zombie 0.04",
+  #   "minecraft:skeleton 0.1 0.02", "minecraft:stray 0.1 0.02", "minecraft:wither_skeleton 0.1 0.02", "minecraft:piglin
+  #   0.04 0.04 0.02", "minecraft:zombified_piglin 0.04 0.04 0.02", "minecraft:piglin_brute 0.5 0.01 0.01" ]
+  #    Range for Values: 0.0 ~ 1.0
+  general.entities.whitelist = [
+    "minecraft:zombie 0.04",
+    "minecraft:skeleton 0.1 0.02",
+    "minecraft:stray 0.1 0.02",
+    "minecraft:wither_skeleton 0.1 0.02",
+    "minecraft:piglin 0.04 0.04 0.02",
+    "minecraft:zombified_piglin 0.04 0.04 0.02",
+    "minecraft:piglin_brute 0.5 0.01 0.01"
+  ]
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  general.entities.blacklist = []
+
+  # Weights:
+  # The following options are the weights for each elite AI pattern to be chosen when assigning a random elite AI to
+  #   entities in the above list. Higher weight is more common.
+  # Elite AIs given a weight of 0 will never be selected, though they can still be applied directly by the entity list
+  #   in their specific category below and can still be NBT-edited onto mobs.
+  # <Number> Range: ≥ 0.0
+  general.weight.leap.base = 200.0
+  general.weight.jump.base = 100.0
+  general.weight.sprint.base = 200.0
+  general.weight.slam.base = 50.0
+  general.weight.barrage.base = 50.0
+  general.weight.charge.base = 100.0
+  general.weight.thief.base = 25.0
+  general.weight.shaman.base = 50.0
+  general.weight.spawner.base = 25.0
+  general.weight.throw_ally.base = 100.0
+  general.weight.throw_enemy.base = 25.0
+
+  # Weight Exceptions:
+  # The following options are the weights for each elite AI pattern to be chosen when assigning a random elite AI to
+  #   entities in the above list when specific environmental conditions are met. See above for the weights used when
+  #   none of the conditions are met.
+  # <Environment List> Format: [ "value condition1 state1 & condition2 state2 & ...", ... ], Default: []
+  #    Range for Values: ≥ 0.0
+  general.weight.leap.exceptions = []
+  general.weight.jump.exceptions = []
+  general.weight.sprint.exceptions = []
+  general.weight.slam.exceptions = []
+  general.weight.barrage.exceptions = []
+  general.weight.charge.exceptions = []
+  general.weight.thief.exceptions = []
+  general.weight.shaman.exceptions = []
+  general.weight.spawner.exceptions = []
+  general.weight.throw_ally.exceptions = []
+  general.weight.throw_enemy.exceptions = []
+
+  # When true, elite AI patterns that "prefer melee" will replace any shooting item held by the entity with a golden
+  #   sword, in the hopes they will use melee attacks (instead of bow/crossbow attacks).
+  # Note that this can be enabled or disabled for each AI pattern individually (see categories below).
+  # <Boolean> Valid Values: { true, false }, Default: true
+  general.prefer_melee_enabled = true
+  # When true, elite AI patterns will be allowed to apply attribute modifiers to entities.
+  # Note that each modifier can be disabled or changed individually (see categories below).
+  # <Boolean> Valid Values: { true, false }, Default: true
+  general.attribute_modifiers_enabled = true
+  # When true, elite AI patterns will be allowed to overwrite existing entity equipment (aside from melee preference).
+  #   This equipment is designed to visually distinguish the elite AI pattern(s) on entities, so disabling this may make
+  #   it more difficult for players to understand what they are fighting.
+  # Note that each equipment item can be disabled individually and some can be modified (see categories below).
+  # <Boolean> Valid Values: { true, false }, Default: true
+  general.equipment_replacement_enabled = true
+
+
+
+# Category: leap
+# Options for customizing the Leap elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  leap.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  leap.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  leap.prefer_melee = true
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  leap.modifier.added_follow_range = 0.0
+  leap.modifier.added_max_health = 0.0
+  leap.modifier.increased_max_health = 0.0
+  leap.modifier.added_knockback_resistance = 0.0
+  leap.modifier.added_armor = 0.0
+  leap.modifier.added_armor_toughness = 0.0
+  leap.modifier.added_damage = 0.0
+  leap.modifier.increased_damage = 0.0
+  leap.modifier.added_knockback = 1.0
+  leap.modifier.increased_speed = 0.1
+
+  # The minimum and maximum distance the entity must be from its target for this AI to activate, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 2.0
+  leap.range.min = 2.0
+  # <Number> Range: ≥ 0.0, Default: 6.0
+  leap.range.max = 6.0
+
+  # The minimum and maximum (inclusive) time this AI is disabled for after completion, in ticks (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 20
+  leap.cooldown.min = 20
+  # <Integer> Range: ≥ 0, Default: 40
+  leap.cooldown.max = 40
+
+  # The horizontal speed given to the entity in its target's direction when this AI activates, in blocks per second
+  #   (m/s).
+  # <Number> Range: Any Value, Default: 16.0
+  leap.jump_speed.forward = 16.0
+  # The vertical speed given to the entity when this AI activates, in blocks per second (m/s). For reference, normal
+  #   jumping speed is 8.4 m/s.
+  # <Number> Range: Any Value, Default: 8.0
+  leap.jump_speed.upward = 8.0
+
+
+# Category: jump
+# Options for customizing the Jump elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  jump.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  jump.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  jump.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  jump.modifier.added_follow_range = 0.0
+  jump.modifier.added_max_health = 0.0
+  jump.modifier.increased_max_health = 0.0
+  jump.modifier.added_knockback_resistance = 0.0
+  jump.modifier.added_armor = 0.0
+  jump.modifier.added_armor_toughness = 0.0
+  jump.modifier.added_damage = 0.0
+  jump.modifier.increased_damage = 0.0
+  jump.modifier.added_knockback = 0.0
+  jump.modifier.increased_speed = 0.0
+
+  # The minimum and maximum distance the entity must be from its target for this AI to activate, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 6.0
+  jump.range.min = 6.0
+  # <Number> Range: ≥ 0.0, Default: 12.0
+  jump.range.max = 12.0
+
+  # The minimum and maximum (inclusive) time this AI is disabled for after completion, in ticks (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 60
+  jump.cooldown.min = 60
+  # <Integer> Range: ≥ 0, Default: 100
+  jump.cooldown.max = 100
+
+  # The horizontal speed given to the entity in its target's direction when this AI activates, in blocks per second
+  #   (m/s).
+  # <Number> Range: Any Value, Default: 28.0
+  jump.jump_speed.forward = 28.0
+  # The vertical speed given to the entity when this AI activates, in blocks per second (m/s). For reference, normal
+  #   jumping speed is 8.4 m/s.
+  # <Number> Range: Any Value, Default: 20.0
+  jump.jump_speed.upward = 20.0
+
+  # The drop chance for Feather Boots (0 to 1). The item will drop damaged randomly, like normal equipment. A negative
+  #   value disables the item entirely, while a value over 1 prevents the item from being damaged on drop.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.085
+  jump.feather_boots.drop_chance = 0.085
+  # Level of the feather falling enchantment on Feather Boots. 0 disables the enchant.
+  # <Integer> Range: ≥ 0, Default: 4
+  jump.feather_boots.enchant = 4
+
+
+# Category: sprint
+# Options for customizing the Sprint elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  sprint.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  sprint.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  sprint.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  sprint.modifier.added_follow_range = 0.0
+  sprint.modifier.added_max_health = 0.0
+  sprint.modifier.increased_max_health = 0.0
+  sprint.modifier.added_knockback_resistance = 0.0
+  sprint.modifier.added_armor = 0.0
+  sprint.modifier.added_armor_toughness = 0.0
+  sprint.modifier.added_damage = 0.0
+  sprint.modifier.increased_damage = 0.0
+  sprint.modifier.added_knockback = 0.0
+  sprint.modifier.increased_speed = 0.0
+
+  # The minimum distance the entity must be from its target for this AI to activate, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 12.0
+  sprint.range.min = 12.0
+
+  # The speed multiplier while this AI is active. For reference, sprint-jumping gives players about a 1.65 speed multi.
+  # <Number> Range: ≥ 0.0, Default: 1.7
+  sprint.run_speed = 1.7
+
+  # This AI will deactivate when the entity is between the minimum and maximum distance from its target, in blocks
+  #   (meters).
+  # <Number> Range: ≥ 0.0, Default: 3.0
+  sprint.end_range.min = 3.0
+  # <Number> Range: ≥ 0.0, Default: 6.0
+  sprint.end_range.max = 6.0
+
+  # The drop chance for Running Boots (0 to 1). The item will drop damaged randomly, like normal equipment. A negative
+  #   value disables the item entirely, while a value over 1 prevents the item from being damaged on drop.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.085
+  sprint.running_boots.drop_chance = 0.085
+  # The movement speed modifier on Running Boots (uses 'multiply base' operation). 0 disables the modifier.
+  # <Number> Range: Any Value, Default: 0.15
+  sprint.running_boots.modifier = 0.15
+
+
+# Category: slam
+# Options for customizing the Slam elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  slam.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  slam.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  slam.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  slam.modifier.added_follow_range = 0.0
+  slam.modifier.added_max_health = 0.0
+  slam.modifier.increased_max_health = 0.0
+  slam.modifier.added_knockback_resistance = 0.5
+  slam.modifier.added_armor = 10.0
+  slam.modifier.added_armor_toughness = 0.0
+  slam.modifier.added_damage = 0.0
+  slam.modifier.increased_damage = 0.0
+  slam.modifier.added_knockback = 0.0
+  slam.modifier.increased_speed = 0.0
+
+  # The minimum and maximum distance the entity must be from its target for this AI to activate, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 0.0
+  slam.range.min = 0.0
+  # <Number> Range: ≥ 0.0, Default: 4.0
+  slam.range.max = 4.0
+
+  # The minimum and maximum (inclusive) time this AI is disabled for after activation, in ticks (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 60
+  slam.cooldown.min = 60
+  # <Integer> Range: ≥ 0, Default: 100
+  slam.cooldown.max = 100
+
+  # The explosion power of the slam. The entity-damaging radius for an explosion is double its power.
+  # For reference, ghast fireballs have a power of 1, creepers have a power of 3, and TNT has a power of 4.
+  # <Number> Range: ≥ 0.0, Default: 2.25
+  slam.slam_power = 2.25
+
+  # The time the entity pauses for after this AI activates before starting the slam attack (20 ticks = 1 second).
+  # <Integer> Range: ≥ 1, Default: 20
+  slam.charge_up_duration = 20
+
+  # The drop chance for the held axe (0 to 1). The item will drop damaged randomly, like normal equipment. A negative
+  #   value disables the item entirely, while a value over 1 prevents the item from being damaged on drop.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.085
+  slam.axe.drop_chance = 0.085
+  # The type of axe (material) the entity will have equipped.
+  # <Enum> Valid Values: { "gold", "wood", "stone", "iron", "diamond", "netherite" }, Default: "iron"
+  slam.axe.type = "iron"
+  # The chance for the held axe to be enchanted (0 to 1).
+  # <Number> Range: 0.0 ~ 1.0, Default: 0.1
+  slam.axe.enchant_chance = 0.1
+  # Levels to enchant the held axe. 0 disables the enchant.
+  # <Integer> Range: ≥ 0, Default: 30
+  slam.axe.enchant_level = 30
+  # If true, treasure enchantments will be able to appear on the held axe.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  slam.axe.allow_treasure_enchants = true
+
+
+# Category: barrage
+# Options for customizing the Barrage elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  barrage.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  barrage.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  barrage.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  barrage.modifier.added_follow_range = 0.0
+  barrage.modifier.added_max_health = 20.0
+  barrage.modifier.increased_max_health = 0.0
+  barrage.modifier.added_knockback_resistance = 0.0
+  barrage.modifier.added_armor = 0.0
+  barrage.modifier.added_armor_toughness = 0.0
+  barrage.modifier.added_damage = 0.0
+  barrage.modifier.increased_damage = 0.0
+  barrage.modifier.added_knockback = 0.0
+  barrage.modifier.increased_speed = 0.0
+
+  # The minimum and maximum distance the entity must be from its target for this AI to activate, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 5.0
+  barrage.range.min = 5.0
+  # <Number> Range: ≥ 0.0, Default: 16.0
+  barrage.range.max = 16.0
+
+  # The minimum and maximum (inclusive) time this AI is disabled for after completion, in ticks (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 100
+  barrage.cooldown.min = 100
+  # <Integer> Range: ≥ 0, Default: 160
+  barrage.cooldown.max = 160
+
+  # The base damage dealt by arrows. Note this varies ±0.25, gains +0.11 per difficulty level, and final damage is
+  #   scaled by total velocity (this is the normal behavior for monster-fired arrows).
+  # <Number> Range: ≥ 0.25, Default: 3.0
+  barrage.arrow_damage = 3.0
+  # The direction variance for fired arrows. The higher this value, the less accurate arrows are.
+  # <Number> Range: ≥ 0.0, Default: 20.0
+  barrage.arrow_variance = 20.0
+  # The time between each arrow shot during the barrage (20 ticks = 1 second).
+  # <Integer> Range: ≥ 1, Default: 5
+  barrage.shot_time = 5
+
+  # The time the entity pauses for after this AI activates before starting the barrage (20 ticks = 1 second).
+  # <Integer> Range: ≥ 1, Default: 30
+  barrage.charge_up_duration = 30
+  # The time the entity fires the barrage of arrows for (20 ticks = 1 second).
+  # <Integer> Range: ≥ 1, Default: 60
+  barrage.shooting_duration = 60
+
+  # The drop chance for the dispenser 'hat' (0 to 1). A negative value disables the item entirely.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.0
+  barrage.dispenser.drop_chance = 0.0
+
+
+# Category: charge
+# Options for customizing the Charge elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  charge.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  charge.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  charge.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  charge.modifier.added_follow_range = 0.0
+  charge.modifier.added_max_health = 20.0
+  charge.modifier.increased_max_health = 0.0
+  charge.modifier.added_knockback_resistance = 0.5
+  charge.modifier.added_armor = 0.0
+  charge.modifier.added_armor_toughness = 0.0
+  charge.modifier.added_damage = 0.0
+  charge.modifier.increased_damage = 0.0
+  charge.modifier.added_knockback = 0.0
+  charge.modifier.increased_speed = 0.0
+
+  # The minimum and maximum distance the entity must be from its target for this AI to activate, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 6.0
+  charge.range.min = 6.0
+  # <Number> Range: ≥ 0.0, Default: 16.0
+  charge.range.max = 16.0
+
+  # The minimum and maximum (inclusive) time this AI is disabled for after activation, in ticks (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 80
+  charge.cooldown.min = 80
+  # <Integer> Range: ≥ 0, Default: 140
+  charge.cooldown.max = 140
+
+  # The horizontal speed given to the entity in its target's direction while charging, in blocks per second (m/s).
+  # <Number> Range: ≥ 0.0, Default: 28.0
+  charge.charging_speed = 28.0
+  # The horizontal speed given to the target on hit while charging, in blocks per second (m/s).
+  # <Number> Range: ≥ 0.0, Default: 120.0
+  charge.knockback_speed = 120.0
+  # The horizontal speed given to the entity in its target's direction while charging, in blocks per second (m/s).
+  # <Number> Range: ≥ 0.0, Default: 5.0
+  charge.self_damage = 5.0
+
+  # The time the entity pauses for after this AI activates before starting the charge attack (20 ticks = 1 second).
+  # <Integer> Range: ≥ 1, Default: 30
+  charge.charge_up_duration = 30
+  # The time the entity rapidly moves forward for during the charge attack (20 ticks = 1 second).
+  # <Integer> Range: ≥ 1, Default: 20
+  charge.charging_duration = 20
+  # The time the entity is inactive for if it hits a wall during the charge attack (20 ticks = 1 second).
+  # <Integer> Range: ≥ 1, Default: 60
+  charge.stunned_duration = 60
+
+  # The drop chance for Charger's Helmets (0 to 1). The item will drop damaged randomly, like normal equipment. A
+  #   negative value disables the item entirely, while a value over 1 prevents the item from being damaged on drop.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.085
+  charge.charger_helmet.drop_chance = 0.085
+  # Levels to enchant Charger's Helmets. 0 disables the enchant.
+  # <Integer> Range: ≥ 0, Default: 30
+  charge.charger_helmet.enchant_level = 30
+  # If true, treasure enchantments will be able to appear on Charger's Helmets.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  charge.charger_helmet.allow_treasure_enchants = true
+
+
+# Category: thief
+# Options for customizing the Thief elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  thief.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  thief.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  thief.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  thief.modifier.added_follow_range = 0.0
+  thief.modifier.added_max_health = 0.0
+  thief.modifier.increased_max_health = 0.0
+  thief.modifier.added_knockback_resistance = 0.0
+  thief.modifier.added_armor = 0.0
+  thief.modifier.added_armor_toughness = 0.0
+  thief.modifier.added_damage = 0.0
+  thief.modifier.increased_damage = 0.0
+  thief.modifier.added_knockback = 0.0
+  thief.modifier.increased_speed = 0.1
+
+  # The speed multiplier while moving to the target player to steal an item.
+  # <Number> Range: ≥ 0.0, Default: 1.2
+  thief.move_speed = 1.2
+
+  # The maximum range to avoid players in. Note that all changes to the avoidance behavior require reload to take
+  #   effect on existing entities.
+  # <Number> Range: ≥ 0.0, Default: 16.0
+  thief.avoid_range = 16.0
+  # The speed multiplier while avoiding far away players (≥ 7 blocks away).
+  # <Number> Range: ≥ 0.0, Default: 1.0
+  thief.avoid_speed.walk = 1.0
+  # The speed multiplier while avoiding nearby players (< 7 blocks away).
+  # <Number> Range: ≥ 0.0, Default: 1.2
+  thief.avoid_speed.run = 1.2
+
+  # The inventory slots that can be stolen from by entities with this AI.
+  # For this purpose, the armor inventory is your head, chest, legs, and feet slots, the main inventory is the big 3x9
+  #   inventory space, and the hotbar inventory is everything else (bottom 9 + offhand slots).
+  # <Enum> Valid Values: { "any", "hotbar_only", "main_only", "armor_only", "hotbar_and_main", "hotbar_and_armor",
+  #   "main_and_armor" }, Default: "hotbar_and_armor"
+  thief.valid_slots = "hotbar_and_armor"
+  # The damage dealt to the player when stealing an item.
+  # <Number> Range: ≥ 0.0, Default: 1.0
+  thief.steal_damage = 1.0
+  # The time the entity turns invisible for after stealing an item (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 60
+  thief.invisibility_duration = 60
+
+  # When true, the mob will always have its main hand item cleared when given this AI. Keep in mind, if this is
+  #   disabled and the mob spawns with a held item, it will just avoid players.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  thief.empty_hand = true
+  # The drop chance for Thief's Caps (0 to 1). The item will drop damaged randomly, like normal equipment. A negative
+  #   value disables the item entirely, while a value over 1 prevents the item from being damaged on drop.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.085
+  thief.thief_helmet.drop_chance = 0.085
+  # The movement speed modifier on Thief's Caps (uses 'multiply base' operation). 0 disables the modifier.
+  # <Number> Range: Any Value, Default: 0.15
+  thief.thief_helmet.modifier = 0.15
+
+
+# Category: shaman
+# Options for customizing the Shaman elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  shaman.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  shaman.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  shaman.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  shaman.modifier.added_follow_range = 0.0
+  shaman.modifier.added_max_health = 0.0
+  shaman.modifier.increased_max_health = 0.0
+  shaman.modifier.added_knockback_resistance = 0.0
+  shaman.modifier.added_armor = 0.0
+  shaman.modifier.added_armor_toughness = 0.0
+  shaman.modifier.added_damage = 0.0
+  shaman.modifier.increased_damage = 0.0
+  shaman.modifier.added_knockback = 0.0
+  shaman.modifier.increased_speed = 0.0
+
+  # The range for the entity's aura (in blocks), which pulses healing and effects every two seconds to allies.
+  # <Number> Range: ≥ 0.0, Default: 16.0
+  shaman.aura_range = 16.0
+  # The amount of health restored with each aura pulse (in half-hearts).
+  # <Number> Range: ≥ 0.0, Default: 2.0
+  shaman.heal_amount = 2.0
+  # If true, the entity will extinguish burning with each aura pulse.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  shaman.extinguish = true
+
+  # The potency of the Strength effect to apply with each aura pulse. A negative value disables the effect entirely.
+  # <Integer> Range: ≥ -1, Default: 0
+  shaman.strength_potency = 0
+  # The potency of the Resistance effect to apply with each aura pulse. A negative value disables the effect entirely.
+  # <Integer> Range: ≥ -1, Default: 0
+  shaman.resistance_potency = 0
+  # The potency of the Speed effect to apply with each aura pulse. A negative value disables the effect entirely.
+  # <Integer> Range: ≥ -1, Default: -1
+  shaman.speed_potency = -1
+  # If true, the entity will apply the Slow Falling effect with each aura pulse.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  shaman.slow_falling = false
+  # If true, the entity will apply the Fire Resistance effect with each aura pulse.
+  # <Boolean> Valid Values: { true, false }, Default: true
+  shaman.fire_resistance = true
+  # If true, the entity will apply the Water Breathing effect with each aura pulse.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  shaman.water_breathing = false
+
+  # The drop chance for the bone 'club' (0 to 1). A negative value disables the item entirely.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.085
+  shaman.bone.drop_chance = 0.085
+  # The drop chance for the jack o lantern 'hat' (0 to 1). A negative value disables the item entirely.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.085
+  shaman.jack_o_lantern.drop_chance = 0.085
+
+
+# Category: spawner
+# Options for customizing the Spawner elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  spawner.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  spawner.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  spawner.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  spawner.modifier.added_follow_range = 0.0
+  spawner.modifier.added_max_health = 20.0
+  spawner.modifier.increased_max_health = 0.0
+  spawner.modifier.added_knockback_resistance = 0.5
+  spawner.modifier.added_armor = 10.0
+  spawner.modifier.added_armor_toughness = 10.0
+  spawner.modifier.added_damage = 0.0
+  spawner.modifier.increased_damage = 0.0
+  spawner.modifier.added_knockback = 0.0
+  spawner.modifier.increased_speed = -0.3
+
+  # NOTE: Changes to this particular AI will NOT update existing entities (even on reload)!
+  # These config options are saved as NBT to mobs with the same structure as vanilla spawner NBT.
+
+  # The maximum distance the entity can be from its target for this AI to activate, in blocks (meters).
+  # <Integer> Range: ≥ 1, Default: 16
+  spawner.range = 16
+
+  # Time before the first spawn 'wave', in ticks. If set to -1, the initial cooldown is randomized between the min and
+  #   max.
+  # <Integer> Range: ≥ -1, Default: 20
+  spawner.cooldown.initial = 20
+  # The minimum and maximum (inclusive) time between spawn 'waves', in ticks (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 200
+  spawner.cooldown.min = 200
+  # <Integer> Range: ≥ 0, Default: 800
+  spawner.cooldown.max = 800
+
+  # The number of entities to try to spawn with each spawn 'wave'.
+  # <Integer> Range: ≥ 1, Default: 4
+  spawner.spawn_count = 4
+  # The maximum distance entities can spawn from the spawner entity, in blocks (meters).
+  # <Integer> Range: ≥ 0, Default: 4
+  spawner.spawn_range = 4
+  # The spawner will not create any new entities while the number of similar entities within spawn range is at or
+  #   above this limit.
+  # <Integer> Range: ≥ 1, Default: 6
+  spawner.max_nearby_entities = 6
+
+  # If true, the entity will have a spawner equipped on its head (does not have a drop chance).
+  # <Boolean> Valid Values: { true, false }, Default: true
+  spawner.spawner_helmet = true
+
+
+# Category: throw_ally
+# Options for customizing the Throw Ally elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  throw_ally.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  throw_ally.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  throw_ally.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  throw_ally.modifier.added_follow_range = 0.0
+  throw_ally.modifier.added_max_health = 0.0
+  throw_ally.modifier.increased_max_health = 0.0
+  throw_ally.modifier.added_knockback_resistance = 0.0
+  throw_ally.modifier.added_armor = 0.0
+  throw_ally.modifier.added_armor_toughness = 0.0
+  throw_ally.modifier.added_damage = 0.0
+  throw_ally.modifier.increased_damage = 0.0
+  throw_ally.modifier.added_knockback = 0.0
+  throw_ally.modifier.increased_speed = 0.1
+
+  # The minimum and maximum distance the entity must be from its target for this AI to activate, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 3.0
+  throw_ally.throw_range.min = 3.0
+  # <Number> Range: ≥ 0.0, Default: 10.0
+  throw_ally.throw_range.max = 10.0
+
+  # This AI will only attempt to throw allies farther than this distance from the target, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 6.0
+  throw_ally.ally_range.min = 6.0
+
+  # The minimum and maximum (inclusive) time this AI is disabled for after activation, in ticks (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 60
+  throw_ally.cooldown.min = 60
+  # <Integer> Range: ≥ 0, Default: 100
+  throw_ally.cooldown.max = 100
+
+  # The speed multiplier while moving to pick up the ally to throw.
+  # <Number> Range: ≥ 0.0, Default: 1.3
+  throw_ally.speed_to_ally = 1.3
+  # The speed multiplier while moving to the target (carrying the ally to throw).
+  # <Number> Range: ≥ 0.0, Default: 1.1
+  throw_ally.speed_to_target = 1.1
+
+  # The horizontal speed given to the thrown entity in its target's direction, in blocks per second (m/s).
+  # <Number> Range: Any Value, Default: 20.0
+  throw_ally.throw_speed.forward = 20.0
+  # The vertical speed given to the thrown entity, in blocks per second (m/s). For reference, normal jumping speed is
+  #   8.4 m/s.
+  # <Number> Range: Any Value, Default: 8.4
+  throw_ally.throw_speed.upward = 8.4
+
+
+# Category: throw_enemy
+# Options for customizing the Throw Enemy elite AI pattern.
+
+  # List of mobs (by entity type registry id) that are given this AI directly (separate from the general entity list
+  #   chances and AI weights).
+  # Additional value after the entity type is the chance (0.0 to 1.0) for entities of that type to spawn with this AI.
+  # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: []
+  #    Range for Values: 0.0 ~ 1.0
+  throw_enemy.entities.whitelist = []
+  # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
+  throw_enemy.entities.blacklist = []
+
+  # When true, entities given this AI will prefer melee weapons. See the general category for more info.
+  # <Boolean> Valid Values: { true, false }, Default: false
+  throw_enemy.prefer_melee = false
+
+  # Attribute Modifiers:
+  # Attribute modifiers applied to entities with this AI on spawn, if possible. Modifiers are disabled if set to 0.
+  #   Notably, most passive mobs do not have damage or knockback attributes, so those modifiers cannot apply to them.
+  #   Added modifiers use the 'addition' operation and increased modifiers use the 'multiply base' operation.
+  # <Number> Range: Any Value
+  throw_enemy.modifier.added_follow_range = 0.0
+  throw_enemy.modifier.added_max_health = 0.0
+  throw_enemy.modifier.increased_max_health = 0.0
+  throw_enemy.modifier.added_knockback_resistance = 0.5
+  throw_enemy.modifier.added_armor = 0.0
+  throw_enemy.modifier.added_armor_toughness = 0.0
+  throw_enemy.modifier.added_damage = 0.0
+  throw_enemy.modifier.increased_damage = 0.0
+  throw_enemy.modifier.added_knockback = 0.0
+  throw_enemy.modifier.increased_speed = 0.0
+
+  # The minimum and maximum distance the entity must be from its target for this AI to activate, in blocks (meters).
+  # <Number> Range: ≥ 0.0, Default: 3.0
+  throw_enemy.throw_range.min = 3.0
+  # <Number> Range: ≥ 0.0, Default: 10.0
+  throw_enemy.throw_range.max = 10.0
+  # The maximum range the entity will plan on carrying its target before throwing. Note that this only affects the
+  #   search radius when finding allies to throw to.
+  # <Number> Range: ≥ 0.0, Default: 8.0
+  throw_enemy.carry_range = 8.0
+
+  # The minimum and maximum (inclusive) time this AI is disabled for after activation, in ticks (20 ticks = 1 second).
+  # <Integer> Range: ≥ 0, Default: 100
+  throw_enemy.cooldown.min = 100
+  # <Integer> Range: ≥ 0, Default: 160
+  throw_enemy.cooldown.max = 160
+
+  # The speed multiplier while moving to pick up the enemy/player to throw.
+  # <Number> Range: ≥ 0.0, Default: 1.3
+  throw_enemy.speed_to_target = 1.3
+  # The speed multiplier while moving to allies (carrying the enemy/player to throw).
+  # <Number> Range: ≥ 0.0, Default: 1.1
+  throw_enemy.speed_to_ally = 1.1
+
+  # The minimum and maximum (inclusive) number of times an entity will attempt to re-grab its target if it escapes the
+  #   grab before being thrown. Re-rolls each time the AI activates.
+  # This AI goes into cooldown if the target escapes and the entity has no remaining re-grabs.
+  # <Integer> Range: ≥ 0, Default: 0
+  throw_enemy.re_grabs.min = 0
+  # <Integer> Range: ≥ 0, Default: 3
+  throw_enemy.re_grabs.max = 3
+
+  # The horizontal speed given to the thrown entity in its target's direction, in blocks per second (m/s).
+  # <Number> Range: Any Value, Default: 20.0
+  throw_enemy.throw_speed.forward = 20.0
+  # The vertical speed given to the thrown entity, in blocks per second (m/s). For reference, normal jumping speed is
+  #   8.4 m/s.
+  # <Number> Range: Any Value, Default: 8.4
+  throw_enemy.throw_speed.upward = 8.4
+
+  # The drop chance for Helmets of Strength (0 to 1). The item will drop damaged randomly, like normal equipment. A
+  #   negative value disables the item entirely, while a value over 1 prevents the item from being damaged on drop.
+  # <Number> Range: -1.0 ~ 2.0, Default: 0.085
+  throw_enemy.helmet_of_strength.drop_chance = 0.085
+  # The attack damage modifier on Helmets of Strength (uses 'addition' operation). 0 disables the modifier.
+  # <Number> Range: Any Value, Default: 1.0
+  throw_enemy.helmet_of_strength.modifier = 1.0
+
+
+# Appendix:
+# Below is a description for each elite AI pattern.
+# Note that the qualitative descriptions (high, low, etc.) are based on default values and therefore may not be valid
+#   in an edited config. All equipment and attribute modifiers can be disabled and all attribute modifiers can be
+#   changed. Other values that can be changed by config are noted with an asterisk (*).
+
+  # leap:
+  # The Leap elite AI causes an entity to make short, quick jumps at their target, similar to a spider.
+  # Activation Range: Short*, Cooldown: Short*, Jump Power: Low*
+  # Attributes: Added Knockback, Increased Movement Speed
+  # Equipment: Prefer Melee
+
+  # jump:
+  # The Jump elite AI causes an entity to make long, high jumps at their target when at range.
+  # Activation Range: Medium*, Cooldown: Medium*, Jump Power: High* (ignores fall damage)
+  # Attributes: n/a
+  # Equipment: Feather Boots (lavender leather boots enchanted with Feather Falling IV*)
+
+  # sprint:
+  # The Sprint elite AI causes an entity to sprint to their target when far away.
+  # Activation Range: Long*, Cooldown: Equal to Time Active, Deactivation Range: Short*
+  # Attributes: n/a (though boots grant increased movement speed*)
+  # Equipment: Running Boots (red leather boots with increased movement speed*)
+
+  # slam:
+  # The Slam elite AI causes an entity to periodically retaliate with an explosive slam attack.
+  # Activation Range: Short*, Cooldown: Medium*, Damage: Explosion
+  # Attributes: Added Knockback Resistance, Added Armor
+  # Equipment: Axe
+
+  # barrage:
+  # The Barrage elite AI causes an entity to periodically charge up and fire a stream of arrows.
+  # Activation Range: Medium*, Cooldown: Long*, Damage: Low*, Fire Rate: High*, Duration: Medium*
+  # Attributes: Added Max Health
+  # Equipment: Dispenser Head
+
+  # charge:
+  # The Charge elite AI causes an entity to periodically charge up and then quickly run forward, dealing attack damage
+  #   with bonus knockback. If an entity hits a wall while charging, they will take damage and enter a 'stunned' state
+  #   for a short time, rendering them unable to act.
+  # Activation Range: Medium*, Cooldown: Long*, Damage: Melee Attack Damage, Knockback: High*
+  # Attributes: Added Max Health, Added Knockback Resistance
+  # Equipment: Charger's Helmet (yellow leather helmet with random enchantments*)
+
+  # thief:
+  # The Thief elite AI causes an entity to steal a random item from a player, briefly turn invisible, and then just
+  #   run away. Overrides most normal mob behavior.
+  # Damage: Very Low*, Invisibility Duration: Short*, Avoid Speed: Medium*
+  # Attributes: Increased Movement Speed
+  # Equipment: No Held Item, Thief's Cap (black leather helmet with increased movement speed*)
+
+  # shaman:
+  # The Shaman elite AI causes an entity to heal and buff nearby allies, and prefer to follow allies in the back-lines
+  #   instead of attacking.
+  # Aura Range: Short-Long*, Aura Pulse Cooldown: 2 seconds
+  # Aura Healing: Low*, Aura Effects*: Strength, Resistance, Fire Resistance
+  # Attributes: n/a
+  # Equipment: Bone 'Club', Jack o'Lantern Mask
+
+  # spawner:
+  # The Spawner elite AI causes an entity to act like a dungeon spawner block.
+  # Entities spawned by this elite AI will never get any elite AIs of their own.
+  # Entity Spawned: Same Entity Type, Spawner Stats: Vanilla* (can be NBT edited)
+  # Attributes: Added Max Health, Added Knockback Resistance, Added Armor/Toughness, Reduced Movement Speed
+  # Equipment: Spawner Head
+
+  # throw_ally:
+  # The Throw Ally elite AI causes an entity to throw nearby allies at its target when at range.
+  # Activation Range: Long*, Cooldown: Medium*, Throw Power: Medium*
+  # Attributes: Increased Movement Speed
+  # Equipment: n/a
+
+  # throw_enemy:
+  # The Throw Enemy elite AI causes an entity to throw its target at nearby allies if they are far.
+  # Activation Range: Short-Long*, Cooldown: Long*, Throw Power: Medium*
+  # Attributes: Added Knockback Resistance
+  # Equipment: Helmet of Strength (red leather helmet with added attack damage*)
+
+
+  # Environment conditions (for Environment List entries):
+  #   Many environment conditions can be inverted by using "!"; these are shown with (!) in the appropriate location.
+  #   Other environment conditions are numerical comparisons; these use the operators (shown as op) <, >, =, <=, >=,
+  #     or != to compare value.
+  # 
+  # Valid environment conditions are:
+  # 
+  #   "dimension_property (!)property":
+  #     Valid property values: "ultrawarm", "natural", "has_skylight", "has_ceiling", "fixed_time", "piglin_safe",
+  #       "bed_works", "respawn_anchor_works", "has_raids"
+  #     Dimension properties are the true/false values available to dimension types in data packs. See the wiki for
+  #       more info: [https://minecraft.fandom.com/wiki/Custom_dimension#Syntax].
+  # 
+  #   "dimension_type (!)namespace:dimension_type_name":
+  #     The world's dimension type. In vanilla, these are only "minecraft:overworld", "minecraft:the_nether", or
+  #       "minecraft:the_end".
+  # 
+  #   "rainfall op value":
+  #     Biome's rainfall parameter. If this is "= 0", it checks that rain is disabled. For reference, rainfall > 0.85
+  #       suppresses fire.
+  # 
+  #   "biome_temp op value OR (!)freezing":
+  #     Biome's temperature parameter. For reference, freezing is < 0.15 and hot is generally considered > 0.95.
+  # 
+  #   "temp op value OR (!)freezing":
+  #     Height-adjusted temperature. For reference, freezing is < 0.15 and hot is generally considered > 0.95.
+  # 
+  #   "biome_category (!)category":
+  #     Deprecated, use "biome_tag" instead!
+  # 
+  #   "biome_tag (!)#namespace:biome_tag":
+  #     The biome tag. See the wiki for vanilla biome tags (resource locations)
+  #       [https://minecraft.wiki/w/Biome_tag_(Java_Edition)].
+  # 
+  #   "biome (!)namespace:biome_name":
+  #     The biome. See the wiki for vanilla biome names (resource locations)
+  #       [https://minecraft.fandom.com/wiki/Biome#Biome_IDs].
+  # 
+  #   "structure (!)namespace:structure_name":
+  #     The structure. See the wiki for vanilla structure names [https://minecraft.fandom.com/wiki/Structure#ID].
+  # 
+  #   "y op value":
+  #     The y-value. For reference, sea level is normally 63 and lava level is normally -54.
+  # 
+  #   "y_from_sea op value":
+  #     The y-value from sea level. Expect the only air < 0 to be in caves/ravines (which may still have direct view
+  #       of the sky).
+  # 
+  #   "position (!)state":
+  #     Valid state values: "can_see_sky", "is_in_village", "is_near_village", "is_near_raid", "is_in_water",
+  #       "is_in_lava", "is_in_fluid", "has_redstone_power"
+  #     Miscellaneous conditions that generally do what you expect. For reference, 'near' a village is ~3 chunks, and
+  #       redstone checks weak power.
+  # 
+  #   "difficulty op value":
+  #     The regional difficulty (0 to 6.75). This is based on many factors such as difficulty setting, moon
+  #       brightness, chunk inhabited time, and world time.
+  #     For reference, this scales up to the max after 63 days in the world and 150 days in a particular chunk, and
+  #       peaks during full moons. On Peaceful this is always 0, on Easy this is 0.75 to 1.5, on Normal this is 1.5 to
+  #       4.0, and on Hard this is 2.25 to 6.75.
+  # 
+  #   "special_difficulty op value":
+  #     The 'special multiplier' for regional difficulty (0 to 1). For reference, this is 0 when difficulty <= 2 and 1
+  #       when difficulty >= 4.
+  #     This is always 0 in Easy and below. In Normal, it maxes at absolute peak regional difficulty. In Hard, it
+  #       starts at 0.125 and maxes out in ~50 days.
+  # 
+  #   "weather (!)type":
+  #     Valid type values: "clear", "rain", "thunder"
+  # 
+  #   "moon_brightness op value":
+  #     The moon brightness (0 to 1). New moon has 0 brightness, full moon has 1 brightness. Intermediate phases are
+  #       0.25, 0.5, or 0.75.
+  # 
+  #   "moon_phase (!)phase":
+  #     Valid phase values: "full", "waning_gibbous", "last_quarter", "waning_crescent", "new", "waxing_crescent",
+  #       "first_quarter", "waxing_gibbous"
+  #     For reference, the first day in a new world is always a full moon.
+  # 
+  #   "day_time (!)time":
+  #     Valid time values: "day", "sunset", "night", "sunrise"
+  #     Note that the transition periods, sunset & sunrise, are considered as part of day & night, respectively.
+  # 
+  #   "time_from_midnight op value":
+  #     The absolute time in ticks away from midnight. Value must be 0 to 12000.
+  # 
+  #   "world_time op value":
+  #     The total time the world has existed, in ticks. For reference, each day cycle is 24000 ticks and each lunar
+  #       cycle is 192000 ticks.
+  # 
+  #   "chunk_time op value":
+  #     The total time the chunk has been loaded, in ticks. For reference, each day cycle is 24000 ticks and each
+  #       lunar cycle is 192000 ticks.
+  # 
+  #   "apocalypse_difficulty op value":
+  #     The Apocalypse Rebooted mod's difficulty (scale depends on your config). This is based on the nearest player's
+  #       current difficulty level. If no player exists, or the mod is not installed, it will never match any condition.
+  # 
+  #   "apocalypse_difficulty_or_time op value":
+  #     The Apocalypse Rebooted mod's difficulty (scale depends on your config). If the mod is not installed, this is
+  #       instead treated like a "world_time" condition.
