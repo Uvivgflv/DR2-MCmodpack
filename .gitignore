@@ -36,6 +36,7 @@ config/**/*.bak
 config/jei/
 config/enchdesc/
 config/entity_model_features/
+config/**/*.properties
 
 #=======TEMP&SCREENS========
 screenshots/
