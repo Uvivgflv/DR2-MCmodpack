@@ -1,4 +1,6 @@
 const RegisterOreVariants = event =>{
+    //const MOD_IDS = global.MOD_IDS;
+    const ORE_VARIANTS = global.ORE_VARIANTS;
     //#region registry ore types
     const ORE_TYPE_METAL = Object.freeze([
         {name: 'iron'}, {name: 'copper'}, {name: 'gold'}, {name: 'magnesite'}, {name: 'magnetite'},
@@ -34,30 +36,31 @@ const RegisterOreVariants = event =>{
         {name: 'rock_salt'}, {name: 'diatomite'}, {name: 'tricalcium_phosphate'},{name: 'realgar'}, {name: 'opal'},
         {name: 'calcite'}, {name: 'grossular'}, {name: 'trona'}, {name: 'pyrope'}, {name: 'sodalite'}, {name: 'salt'}
     ]);
+try
+{
+    ORE_VARIANTS.forEach(variant => {
+        const color = variant.color;
+        const name = variant.name;
 
-    ORE_TYPE_METAL.forEach(element => {
-        event.create(`tiny_${element.name}_raw_ore`)
-        .translationKey(`item.kubejs.tiny_${element.name}_raw_ore`);
-
-        event.create(`small_${element.name}_raw_ore`)
-        .translationKey(`item.kubejs.small_${element.name}_raw_ore`);
-
-        event.create(`large_${element.name}_raw_ore`)
-        .translationKey(`item.kubejs.large_${element.name}_raw_ore`);
+        if (variant.type === 'metal') {
+            event.create(`tiny_${name}_raw_ore`)
+                .translationKey(`item.kubejs.tiny_${name}_raw_ore`)
+                .texture('layer0', 'kubejs:item/raw_metal_ore_base')
+                .color(0, color);
+        } else if (variant.type === 'gem'){
+            event.create(`tiny_${name}_raw_ore`)
+                .translationKey(`item.kubejs.tiny_${name}_raw_ore`)
+                .texture('layer0', 'kubejs:item/raw_gem_ore_base')
+                .color(0, color);
+        }else
+        {
+            console.log("Ore type is undefined for: "+ variant.name);
+        }
     });
-    console.log("Registered ore variants for metals");
-    console.log("Total: "+ORE_TYPE_METAL.length);
-
-    ORE_TYPE_GEMS.forEach(element => {
-        event.create(`tiny_${element.name}_raw_ore`)
-        .translationKey(`item.kubejs.tiny_${element.name}_raw_ore`);
-
-        event.create(`small_${element.name}_raw_ore`)
-        .translationKey(`item.kubejs.small_${element.name}_raw_ore`);
-
-        event.create(`large_${element.name}_raw_ore`)
-        .translationKey(`item.kubejs.large_${element.name}_raw_ore`);
-    });
-    console.log("Registered ore variants for gems");
-    console.log("Total: "+ORE_TYPE_GEMS.length);
+}catch(error){
+    console.log(error.message);
 }
+}
+/*TODO: регистрация всех предметов-дропов, регистрация блоков
+1. добавление текстуры для видов, добавление тегов для руд типа #forge:raw_materials & #forge:raw_materials/name
+*/

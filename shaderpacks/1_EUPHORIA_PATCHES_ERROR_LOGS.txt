@@ -26,3 +26,27 @@ Restart happened
 2025-12-27 21:55:00 [WARNING] EuphoriaPatcher: [UPDATE CHECKER] Download it from Modrinth: https://euphoriapatches.com/download
 2025-12-27 21:55:08 [ERROR] EuphoriaPatcher: You need to have ComplementaryShaders_r5.5.1 installed!
 2025-12-27 21:55:08 [ERROR] EuphoriaPatcher: Please download it from https://www.complementary.dev/ and place it into your shaderpacks folder.
+
+--------------------------------------
+Restart happened
+--------------------------------------
+2025-12-28 17:07:03 [WARNING] EuphoriaPatcher: [UPDATE CHECKER] A new version of the EuphoriaPatcher Mod is available: 1.7.2
+2025-12-28 17:07:03 [WARNING] EuphoriaPatcher: [UPDATE CHECKER] Download it from Modrinth: https://euphoriapatches.com/download
+2025-12-28 17:07:14 [ERROR] EuphoriaPatcher: You need to have ComplementaryShaders_r5.5.1 installed!
+2025-12-28 17:07:14 [ERROR] EuphoriaPatcher: Please download it from https://www.complementary.dev/ and place it into your shaderpacks folder.
+
+--------------------------------------
+Restart happened
+--------------------------------------
+2025-12-28 17:10:09 [WARNING] EuphoriaPatcher: [UPDATE CHECKER] A new version of the EuphoriaPatcher Mod is available: 1.7.2
+2025-12-28 17:10:09 [WARNING] EuphoriaPatcher: [UPDATE CHECKER] Download it from Modrinth: https://euphoriapatches.com/download
+2025-12-28 17:10:13 [ERROR] EuphoriaPatcher: You need to have ComplementaryShaders_r5.5.1 installed!
+2025-12-28 17:10:13 [ERROR] EuphoriaPatcher: Please download it from https://www.complementary.dev/ and place it into your shaderpacks folder.
+
+--------------------------------------
+Restart happened
+--------------------------------------
+2025-12-28 21:17:23 [WARNING] EuphoriaPatcher: [UPDATE CHECKER] A new version of the EuphoriaPatcher Mod is available: 1.7.2
+2025-12-28 21:17:23 [WARNING] EuphoriaPatcher: [UPDATE CHECKER] Download it from Modrinth: https://euphoriapatches.com/download
+2025-12-28 21:17:28 [ERROR] EuphoriaPatcher: You need to have ComplementaryShaders_r5.5.1 installed!
+2025-12-28 21:17:28 [ERROR] EuphoriaPatcher: Please download it from https://www.complementary.dev/ and place it into your shaderpacks folder.
