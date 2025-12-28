@@ -1,3 +1,4 @@
+//Этот файл будет удален и заменен на 2-3 новых файла 
 const RegistryStartUpItems = (event) => {
   //#region mobDrop
   event
