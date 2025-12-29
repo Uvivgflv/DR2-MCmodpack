@@ -1,0 +1,1 @@
+//global custom recipes patterns&constants
