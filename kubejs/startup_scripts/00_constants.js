@@ -22,6 +22,7 @@ global.MOD_IDS = {
     BM: 'bloodmagic',
     KJ: 'kubejs'
 };
+//discontined in kubejs delete after developed mod
 /**
  * @type {Object} ORE_VARIANTS
  * @property {string} name - The name of the ore variant
