@@ -1,4 +1,10 @@
 const RegisterCreateRecipes = (event) => {
+  /**
+   * 
+   create & greate recipes here
+   */
+  var CT = 'create';
+  var GC = 'greate';
   //#region remove recipes
   event.remove({ id: "create:item_application/andesite_casing_from_log" });
   event.remove({ id: "create:item_application/andesite_casing_from_wood" });

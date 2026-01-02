@@ -11,4 +11,13 @@ excludeRandomLearntSpells = ["irons_spellbooks:abyssal_shroud", "irons_spellbook
 #The chance for an Unfinished Manuscript to fail
 #Range: 0.0 ~ 1.0
 failChance = 0.3
+#The spells listed in the defaultLearntSpells, will instead be the only spells that are not learnt by default
+invertDefaultSpells = false
+#The spells listed in the excludeRandomLearntSpells, will instead be the only spells that can be learnt from the Unfinished Manuscript
+invertUnfinishedManuscript = false
+#A list of spells that will not be able to be learnt through Manuscripts
+excludeLearnSpells = ["irons_spellbooks:heartstop"]
+#The default starting rarity, only applies to new players
+#Allowed Values: NONE, COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+startingRarity = "RARE"
 

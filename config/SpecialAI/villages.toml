@@ -132,12 +132,7 @@
 
   # A list of name components to pick from when generating a random name for a villager.
   # <String List> Format: [ "string1", "string2", ... ], Default: [ "grab", "thar", "ger", "ald", "mas", "on", "o",
-  #   "din", "thor", "jon", "ath", "an", "burb", "en", "a", "e", "i", "u", "hab", "bloo", "ena", "dit", "aph", "ern",
-  #   "bor", "dav", "id", "toast", "son", "dottir", "for", "wen", "lob", "ed", "die", "van", "y", "zap", "ear", "ben",
-  #   "don", "bran", "gro", "jen", "bob", "ette", "ere", "man", "qua", "bro", "cree", "per", "skel", "ton", "zom",
-  #   "bie", "wolf", "end", "er", "pig", "sil", "ver", "fish", "cow", "chic", "ken", "sheep", "lla", "rab", "bit",
-  #   "squid", "hell", "scrub", "loaf", "bonk", "clonk", "bink", "guy", "gal", "wool", "flo", "fee", "fi", "fo", "fum",
-  #   "green", "blue", "red", "seed", "wheat", "boat", "rod", "poke", "bow" ]
+  #   "din", "thor", ... ]
   villager_names.base_name_components = [
     "grab",
     "thar",
@@ -275,14 +270,7 @@
   #   Cartographer Mapmaker Mapmaker Explorer Explorer Mapvendor Mapvendor Topographer Mapper Adventurer Pathfinder
   #   Pioneer Mapmonger Wayfinder", "minecraft:fletcher Fletcher Fletcher Bowyer Bowyer Arrowvendor Arrowvendor Arrowman
   #   Bowman Arrowcrafter Bowcrafter Bowvendor Arrowmonger Bowmonger", "minecraft:farmer Farmer Farmer Gardener Gardener
-  #   Seedmonger Seedmonger Cropper Greenskeeper Agriculturalist Horticulturist Seedsman Landscaper Seedvendor",
-  #   "minecraft:toolsmith Toolsmith Toolsmith Toolmaker Toolmaker Toolvendor Toolvendor Toolworker Toolcrafter Toolman
-  #   Toolmaster Tooler Artisan Toolmonger", "minecraft:shepherd Shepherd Shepherd Rancher Rancher Herder Herder Cowhand
-  #   Herdsman Cowpuncher Sheepsman Sheeper Cooper Stockman", "minecraft:armorer Armorsmith Armorsmith Armorer Armorer
-  #   Armorworker Armorworker Armorvendor Armorvendor Armormaster Armorman Armorcrafter Plateworker Platesmith
-  #   Platecrafter Shieldworker Shieldsmith Shieldcrafter Armormonger Platemonger Platevendor Shieldmonger
-  #   Shieldvendor", "minecraft:leatherworker Tanner Tanner Leathermaker Leathermaker Leathermonger Leathermonger
-  #   Leatherman Skinner Cowskinner Sheepskinner Hidetanner Leathertanner Leathervendor" ]
+  #   Seedmonger Seedmonger Cropper Greenskeeper Agriculturalist Horticulturist Seedsman Landscaper Seedvendor", ... ]
   villager_names.villager_job_titles = [
     "minecraft:cleric Cleric Cleric Cleric Priest Priest Priest Father Mother Preacher Reverend Rabbi Chaplain Minister Churchman Healer Storyteller Mystic Enchanter Diviner Oracle Augur Prophet Seer Holyman Sage Wiseman Elder",
     "minecraft:butcher Butcher Butcher Meatman Meatman Meatmonger Meatmonger Meatvendor Cowslayer Sheepslayer Chickenslayer Rabbitslayer",

@@ -51,6 +51,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "greate": {
+    "belt_icon": true
+  },
   "lightmanscurrency": {
     "model_variant": true,
     "model_variant.locked": false,

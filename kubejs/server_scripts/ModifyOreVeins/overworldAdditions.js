@@ -117,4 +117,30 @@ const OverworldOreVeins = (event) => {
       ),
     );
   });
+//add coal to mountains
+  event.add('kubejs:add_coal', vein => {
+    vein.weight(30)
+    vein.clusterSize(50)
+    vein.density(0.33)
+    vein.discardChanceOnAirExposure(1)
+
+    vein.biomes('#forge:is_peak')
+
+    vein.layer("overworld")
+
+    vein.heightRangeUniform(65, 200)
+
+    vein.veinedVeinGenerator((generator) =>
+      generator
+        .oreBlock(GTMaterials.Coal, 16)
+        .rareBlock(GTMaterials.Graphite, 10)
+        .rareBlockChance(0.3)
+        .veininessThreshold(0.1)
+        .maxRichnessThreshold(0.3)
+        .minRichness(0.4)
+        .maxRichness(0.9)
+        .edgeRoundoffBegin(10)
+        .maxEdgeRoundoff(0.2),
+    );
+  })
 };

@@ -275,7 +275,7 @@ const RegisterIncomplItems = event => {
 }
 
 const RegisterAllCustomItems = event => {
-    RegisterOreVariants(event);
+    //RegisterOreVariants(event); //develop mod for add tagprefix for this
     RegisterModDropItems(event);
     RegisterMaterialItems(event);
     RegisterUtilityItems(event);

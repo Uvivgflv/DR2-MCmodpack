@@ -12,7 +12,7 @@
 	can_Dodge = true
 	can_FastRun = true
 	can_FastSwim = true
-	can_Flipping = true
+	can_Flipping = false
 	can_HangDown = true
 	can_HorizontalWallRun = true
 	can_JumpFromBar = true

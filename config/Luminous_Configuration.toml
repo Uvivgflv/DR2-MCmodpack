@@ -15,13 +15,13 @@
 	#5 is greatest/normal, 0 is disabled
 	"Baobab tree spawnrate" = 5.0
 	#true means enabled, false means disabled
-	"Savannah Additions" = true
-	#true means enabled, false means disabled
 	"Snowy plant spawns" = true
 	#true means enabled, false means disabled
 	"Boulder spawns" = true
 	#true means enabled, false means disabled
 	"Decorative Mushroom Spawns" = true
+	#true means enabled, false means disabled
+	"Savanna Additions" = true
 
 ["Legendary Beasts"]
 	#0 means disabled 1 means enabled
@@ -71,6 +71,8 @@
 [Other]
 	#true means enabled, false means disabled
 	Startup_message = true
+	#determines if Tree Ents will grief leaves
+	Disable_Treeent_Griefing = true
 
 ["Rare Legendary Beasts"]
 	#0 means disabled 1 means enabled
