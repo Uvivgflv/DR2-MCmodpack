@@ -37,6 +37,7 @@
 
     "terminal.integrated.cursorBlinking": false,
     "terminal.integrated.fontSize": 13,
+    "terminal.integrated.cwd":"D:\\prismlauncher\\instances\\CCT04\\minecraft",
 
     "git.enabled": true,
     "git.autorefresh": true,

@@ -66,6 +66,7 @@ LootJS.modifiers((event) => {
  * исполнение после тэгов и датапаков
  */
 ServerEvents.recipes((event) => {
+  RegistryTweaksRecipes(event);
   RegisterVanillaRecipes(event);
   RegisterTFMGRecipes(event);
   RegistryCCTRecipes(event);

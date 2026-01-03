@@ -7,7 +7,7 @@ enableHardCreateRecipes: false
 
 # Should certain Create items that have a GTCEu counterpart be used in recipes?
 # If false, GTCEu items will be used instead.
-useCreateItemsInRecipes: true
+useCreateItemsInRecipes: false
 
 # Recipe types that should not be copied to Greate machines. Ex. 'gtceu:macerator' for macerator recipes
 ignoredRecipeTypes:
