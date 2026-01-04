@@ -43,7 +43,7 @@ const RegistryTweaksRecipes = event => {
     //#endregion
 
 
-    //#region remove smelting recipes for ores
+    //#region remove smelting recipes for raw ores
     //--copper raw
     event.remove({id:'minecraft:copper_ingot_from_smelting_raw_copper'}); //replace to nuggets 20*30 ticks
     event.remove({id:'minecraft:copper_ingot_from_blasting_raw_copper'}); //replace to nuggets 20*15 ticks
@@ -57,6 +57,17 @@ const RegistryTweaksRecipes = event => {
     event.remove({id:/^gtceu:smelting\/smelt_raw_.*_ore_to_ingot/});
     event.remove({id:/^gtceu:blasting\/smelt_raw_.*_ore_to_ingot/});
     //#endregion
+
+    //#region remove smelting recipes for crushed and impure ores
+    //--gtceu reg ex crushed ores
+    event.remove({id:/^gtceu:smelting\/smelt_crushed_.*_ore_to_ingot/});
+    event.remove({id:/^gtceu:blasting\/smelt_crushed_.*_ore_to_ingot/});
+    //--gtceu reg ex impure ores
+    event.remove({id:/^gtceu:smelting\/smelt_impure_.*_ore_to_ingot/});
+    event.remove({id:/^gtceu:blasting\/smelt_impure_.*_ore_to_ingot/});
+    //#endregion
+
+    
     
     //#region add smelting recipes for raw ores
     
