@@ -39,6 +39,7 @@ config/entity_model_features/
 config/**/*.properties
 
 #=======TEMP&SCREENS========
+shaderpacks/
 screenshots/
 *.tmp
 *.temp
@@ -81,6 +82,13 @@ config/packetfixer.properties
 config/worldedit/worldedit.properties
 config/xaerominimap_entities.json
 supportercache.json
+xaerominimap.txt
+xaeroworldmap.txt
+packetfixer.properties
+oculus.properties
+worldedit/worldedit.properties
+xaerominimap_entities.json
+
 
 #scripts/
 

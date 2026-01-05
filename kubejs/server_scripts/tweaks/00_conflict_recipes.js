@@ -60,11 +60,11 @@ const RegistryTweaksRecipes = event => {
 
     //#region remove smelting recipes for crushed and impure ores
     //--gtceu reg ex crushed ores
-    event.remove({id:/^gtceu:smelting\/smelt_crushed_.*_ore_to_ingot/});
-    event.remove({id:/^gtceu:blasting\/smelt_crushed_.*_ore_to_ingot/});
+    event.remove({id:/^gtceu:smelting\/smelt_crushed_ore.*_to_ingot/});
+    event.remove({id:/^gtceu:blasting\/smelt_crushed_ore.*_to_ingot/});
     //--gtceu reg ex impure ores
-    event.remove({id:/^gtceu:smelting\/smelt_impure_.*_ore_to_ingot/});
-    event.remove({id:/^gtceu:blasting\/smelt_impure_.*_ore_to_ingot/});
+    event.remove({id:/^gtceu:smelting\/smelt_impure_dust.*_to_ingot/});
+    event.remove({id:/^gtceu:blasting\/smelt_impure_dust.*_to_ingot/});
     //#endregion
 
     
