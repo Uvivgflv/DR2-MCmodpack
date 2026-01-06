@@ -13,6 +13,16 @@ global.RawOreVariants = [
     {name: 'copper', type: 'metal', namespace: 'minecraft', quality: 3, element: 'copper'},
     {name: 'tin', type: 'metal', namespace: 'gtceu', quality: 3, element: 'tin'},
     {name: 'lead', type: 'metal', namespace: 'gtceu', quality: 3, element: 'lead'},
-    {name: 'silver', type: 'metal', namespace: 'gtceu', quality: 4, element: 'silver'}
+    {name: 'silver', type: 'metal', namespace: 'gtceu', quality: 4, element: 'silver'},
+    {name: 'magnetite', type: 'metal', namespace: 'gtceu', quality: 5, element: 'iron'},
+    {name: 'malachite', type: 'metal', namespace: 'gtceu', quality: 3, element: 'copper'},
+    {name: 'molybdenite', type: 'metal', namespace: 'gtceu', quality: 4, element: 'molybdenum'},
+    {name: 'molybdenum', type: 'metal', namespace: 'gtceu', quality: 4, element: 'molybdenum'},
+    {name: 'naquadah', type: 'metal', namespace: 'gtceu', quality: 6, element: 'naquadah'},
+    {name: 'neodymium', type: 'metal', namespace: 'gtceu', quality: 5, element: 'neodymium'},
+    {name: 'nickel', type: 'metal', namespace: 'gtceu', quality: 4, element: 'nickel'},
+    {name: 'aluminium', type: 'metal', namespace: 'gtceu', quality: 3, element: 'aluminium'},
+    {name: 'bauxite', type: 'metal', namespace: 'gtceu', quality: 3, element: 'aluminium'}
+    
 ];
 //#endregion

@@ -117,7 +117,7 @@ const OverworldOreVeins = (event) => {
       ),
     );
   });
-//add coal to mountains
+//add coal to mountains заменить графит на блок рудного угля после патча
   event.add('kubejs:add_coal', vein => {
     vein.weight(30)
     vein.clusterSize(50)

@@ -68,6 +68,7 @@ LootJS.modifiers((event) => {
 ServerEvents.recipes((event) => {
   RegistryTweaksRecipes(event);
   RegisterVanillaRecipes(event);
+  CustomOreProcessing(event);
   RegisterTFMGRecipes(event);
   RegistryCCTRecipes(event);
   RegistryTconstructResipes(event);

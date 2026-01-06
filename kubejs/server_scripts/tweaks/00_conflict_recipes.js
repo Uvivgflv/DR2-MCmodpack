@@ -1,4 +1,4 @@
-const RegistryTweaksRecipes = event => {
+const RegistryTweaksRecipes = event => { //scriped by @UviV from G.flv
     var IE = 'immersiveengineering'
     //#region ingots from nuggets
     //--copper
@@ -48,8 +48,8 @@ const RegistryTweaksRecipes = event => {
     event.remove({id:'minecraft:copper_ingot_from_smelting_raw_copper'}); //replace to nuggets 20*30 ticks
     event.remove({id:'minecraft:copper_ingot_from_blasting_raw_copper'}); //replace to nuggets 20*15 ticks
     //--iron raw
-    event.remove({id:'minecraft:iron_igot_from_smelting_raw_iron'});
-    event.remove({id:'minecraft:iron_igot_from_blasting_raw_iron'});
+    event.remove({id:'minecraft:iron_ingot_from_smelting_raw_iron'});
+    event.remove({id:'minecraft:iron_ingot_from_blasting_raw_iron'});
     //--gold raw 
     event.remove({id:'minecraft:gold_ingot_from_smelting_raw_gold'});
     event.remove({id:'minecraft:gold_ingot_from_blasting_raw_gold'});
@@ -66,6 +66,27 @@ const RegistryTweaksRecipes = event => {
     event.remove({id:/^gtceu:smelting\/smelt_impure_dust.*_to_ingot/});
     event.remove({id:/^gtceu:blasting\/smelt_impure_dust.*_to_ingot/});
     //#endregion
+
+    //#region remove smelting in tconstruct smeltery for raw ores
+    //--vanilla metals
+    event.remove({id:'tconstruct:smeltery/melting/metal/iron/raw'});
+    event.remove({id:'tconstruct:smeltery/melting/metal/copper/raw'});
+    event.remove({id:'tconstruct:smeltery/melting/metal/gold/raw'});
+    //--gtceu metals idk how many there are 
+    event.remove({id:'tconstruct:smeltery/melting/metal/tin/raw'});
+    event.remove({id:'tconstruct:smeltery/melting/metal/cobalt/raw'});
+    event.remove({id:'tconstruct:smeltery/melting/metal/nickel/raw'});
+    event.remove({id:'tconstruct:smeltery/melting/metal/silver/raw'});
+    event.remove({id:'tconstruct:smeltery/melting/metal/lead/raw'});
+    event.remove({id:'tconstruct:smeltery/melting/metal/zinc/raw'});
+    //#endregion
+
+    //#region remove смешные рецепты
+    event.remove({id:/^bloodmagic:smelting\/ingot_.*/});
+    event.remove({id:/^bloodmagic:smelting\/blasting_ingot_.*/});
+    //--gtceu
+    event.remove({id:/^gtceu:smelting\/smelt_dust_.*_to_ingot/}); //удаляет переалавку всей пвыли надо будет исключить некоторые
+
 
     
     

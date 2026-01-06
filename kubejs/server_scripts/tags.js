@@ -288,7 +288,7 @@ const UnearthedTagsRegolite = (event) => {
   event.add("dr2:regolite", regoliteBlocks);
   event.add("dr2:grass_regolite", regoliteGrassBlocks);
 };
-//templates
+//templates удалить потом
 const CopperOreSpawnBiomes = (event) => {
   var BiomeList = ["minecraft:forest", "minecraft:dark_forest"];
 
