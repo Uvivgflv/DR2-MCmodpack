@@ -119,20 +119,7 @@ const RegisterCreateRecipes = (event) => {
 
   //#region kinetic recipes
 
-  event
-    .shaped("create:cogwheel", [" A ", "ABA", " A "], {
-      A: "tconstruct:nahuatl",
-      B: "create:shaft",
-    })
-    .id("cct:create/cogwheel");
-
-  event
-    .shaped("create:large_cogwheel", [" A ", "ABA", " A "], {
-      A: "tconstruct:nahuatl",
-      B: "create:cogwheel",
-    })
-    .id("cct:create/large_cogwheel");
-
+  
   event
     .shaped("create:fluid_tank", ["ABA", "CDC", "ABA"], {
       A: "#forge:screws/copper",
@@ -155,16 +142,6 @@ const RegisterCreateRecipes = (event) => {
       F: "#forge:tools/files",
     })
     .id("dr2:create/brass_hand");
-
-  event
-    .stonecutting(
-      "16x create:shaft",
-      Item.of(
-        "tconstruct:large_plate",
-        '{Material:"tconstruct:steel"}',
-      ).strongNBT(),
-    )
-    .id("cct:create/stonecutting/shafts");
 
   //#endregion
   //#region add materials recipes
@@ -197,7 +174,7 @@ const RegisterCreateRecipes = (event) => {
       G: "#forge:tools/wrenches",
     })
     .id("cct:create/copper_backtank");
-
+// ! переместить в другой файл
   event
     .custom({
       type: "create:filling",
@@ -219,16 +196,6 @@ const RegisterCreateRecipes = (event) => {
     .id("dr2:create/materials/rose_quartz_from_quartzite");
   //#endregion
   //#region add machines
-  event
-    .shaped("create:millstone", ["ABC", "DBD", "EFE"], {
-      A: "#forge:tools/hammers",
-      B: "#dr2:millstone_polished_granite",
-      C: "#forge:tools/files",
-      D: "create:cogwheel",
-      E: "#forge:bolts/iron",
-      F: "create:andesite_casing",
-    })
-    .id("dr2:create/crafting/kinetics/millstone");
 
   event
     .shaped("create:mechanical_drill", ["ABC", "DED", "FFF"], {
@@ -255,30 +222,6 @@ const RegisterCreateRecipes = (event) => {
     .id("dr2:create/crafting/kinetics/deployer");
 
   event
-    .shaped("create:mechanical_press", ["ABC", "DEF", "GKG"], {
-      A: "#forge:tools/files",
-      B: "create:shaft",
-      C: "create:cogwheel",
-      D: "create:large_cogwheel",
-      E: "minecraft:anvil",
-      F: "#forge:tools/hammers",
-      G: "#forge:bolts/iron",
-      K: "create:andesite_casing",
-    })
-    .id("dr2:create/crafting/kinetics/mechanical_press");
-
-  event
-    .shaped("create:mechanical_mixer", ["ABA", "CDE", " F "], {
-      A: "#forge:screws/iron",
-      B: "create:andesite_casing",
-      C: "#forge:tools/screwdrivers",
-      D: "create:shaft",
-      E: "#forge:tools/files",
-      F: "#dr2:mechanical_mixer_rotors",
-    })
-    .id("dr2:create/crafting/kinetics/mechanical_mixer");
-
-  event
     .shaped("create:spout", [" A ", " B ", " C "], {
       A: "create:copper_casing",
       B: "#forge:rings/rubber",
@@ -298,17 +241,6 @@ const RegisterCreateRecipes = (event) => {
     .id("dr2:create/crafting/kinetics/basin");
 
   event
-    .shaped("create:mechanical_saw", [" A ", "BCD", "EFE"], {
-      A: "#dr2:mechanical_saw_saw_blades",
-      B: "#forge:tools/files",
-      C: "create:cogwheel",
-      D: "#forge:tools/screwdrivers",
-      E: "#forge:screws/iron",
-      F: "create:andesite_casing",
-    })
-    .id("dr2:create/crafting/kinetics/mechanical_saw");
-
-  event
     .shaped("2x create:mechanical_crafter", ["ABA", "CDC", "AEA"], {
       A: "create:cogwheel",
       B: "create:electron_tube",
@@ -326,21 +258,5 @@ const RegisterCreateRecipes = (event) => {
       '{Material:"tconstruct:steel"}',
     ).strongNBT(),
   });
-
-  event.recipes
-    .createMechanicalCrafting(
-      "2x create:crushing_wheel",
-      [" ABA ", "ABCBA", "BCDCB", "ABCBA", " ABA "],
-      {
-        A: Item.of(
-          "tconstruct:large_plate",
-          '{Material:"tconstruct:steel"}',
-        ).strongNBT(),
-        B: "#dr2:millstone_polished_granite",
-        C: "gtceu:steel_brick_casing",
-        D: "create:radial_chassis",
-      },
-    )
-    .id("dr2:create/mechanical_crafting/crushing_wheel");
   //#endregion
 };

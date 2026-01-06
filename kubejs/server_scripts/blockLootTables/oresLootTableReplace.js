@@ -6,6 +6,8 @@ const BlockLootTableReplace = (event) => {
     .addBlockLootModifier(malum_quartz)
     .replaceLoot("malum:natural_quartz", "gtceu:small_quartzite_dust", true);
 
+  event.addBlockLootModifier('tconstruct:cobalt_ore').replaceLoot('tconstruct:raw_cobalt', 'gtceu:raw_cobalt');
+
   function regoliteRemoveLoot(event) {
     Ingredient.of("#dr2:regolite").stacks.forEach((element) => {
       const itemId = element.id;
@@ -15,7 +17,7 @@ const BlockLootTableReplace = (event) => {
 
   // regoliteRemoveLoot(event)
 };
-//replaced with datapack
+//replaced with datapack удалить перед началом 1.2а
 function regoliteLootTableReplace(event) {
   Ingredient.of("#dr2:regolite").stacks.forEach((element) => {
     const itemId = element.id;

@@ -191,6 +191,7 @@ const RegisterRealisticStepsBlockTags = (event) => {
     "biomeswevegone:white_sandstone_stairs",
     "biomeswevegone:white_sandstone",
     "alexscaves:limestone",
+    "quark:jasper"
   ];
 
   var grassBlockList = [
