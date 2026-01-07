@@ -1,0 +1,105 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "twilightforest"
+	}],
+	"weight": 5,
+	"quality": 1.5,
+	"dimensions": [
+		"twilightforest:twilight_forest"
+	],
+	"unique": true,
+	"min_rarity": "rare",
+	"bonuses": [{
+			"type": "apotheosis:twilight_fortification",
+			"gem_class": {
+				"key": "chestplate",
+				"types": [
+					"chestplate"
+				]
+			},
+			"values": {
+				"rare": {
+					"chance": 0.025,
+					"cooldown": 6000
+				},
+				"epic": {
+					"chance": 0.05,
+					"cooldown": 5400
+				},
+				"mythic": {
+					"chance": 0.0625,
+					"cooldown": 5100
+				},
+				"ancient": {
+					"chance": 0.075,
+					"cooldown": 4800
+				}
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "helmet",
+				"types": [
+					"helmet"
+				]
+			},
+			"attribute": "attributeslib:cold_damage",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"rare": 0.10,
+				"epic": 0.125,
+				"mythic": 0.15,
+				"ancient": 0.18
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "heavy_weapon",
+				"types": [
+					"heavy_weapon"
+				]
+			},
+			"attribute": "attributeslib:cold_damage",
+			"operation": "ADDITION",
+			"values": {
+				"rare": 1.2,
+				"epic": 1.6,
+				"mythic": 2,
+				"ancient": 2.5
+			}
+		},
+		{
+			"type": "apotheosis:mob_effect",
+			"gem_class": {
+				"key": "ranged_weapon",
+				"types": [
+					"bow",
+					"crossbow",
+					"trident"
+				]
+			},
+			"mob_effect": "twilightforest:frosted",
+			"target": "arrow_target",
+			"values": {
+				"epic": {
+					"duration": 100,
+					"amplifier": 0,
+					"cooldown": 500
+				},
+				"mythic": {
+					"duration": 180,
+					"amplifier": 1,
+					"cooldown": 500
+				},
+				"ancient": {
+					"duration": 240,
+					"amplifier": 2,
+					"cooldown": 500
+				}
+			}
+		}
+	]
+}

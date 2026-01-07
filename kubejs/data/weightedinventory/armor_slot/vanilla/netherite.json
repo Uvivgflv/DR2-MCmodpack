@@ -1,0 +1,9 @@
+{
+  "armorItems": [
+    "minecraft:netherite_boots",
+    "minecraft:netherite_leggings",
+    "minecraft:netherite_chestplate",
+    "minecraft:netherite_helmet"
+  ],
+  "slotsPerPiece": 2.0
+}

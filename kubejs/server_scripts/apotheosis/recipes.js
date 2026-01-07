@@ -1,5 +1,6 @@
 const RegisterApothRecipes = (event) => {
   //#region remove recipes
+  //? удалить рецепты станций перековки и утилизаций 
 
   //#endregion
   //#region add rarity recipes

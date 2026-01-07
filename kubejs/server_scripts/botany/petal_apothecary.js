@@ -60,5 +60,5 @@ const RegisterPetalApothecaryRecipes = (event) => {
       },
     })
     .id("dr2:botania/petal_apothecary/endoflame");
-  //todo: all recipes for flowers in v0.4.2
+  //todo: all recipes for flowers in v1.2a
 };

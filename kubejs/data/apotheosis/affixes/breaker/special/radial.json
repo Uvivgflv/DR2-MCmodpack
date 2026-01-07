@@ -1,0 +1,80 @@
+{
+	"_comment": "Area Break - x/y are the area, offsets can move the center.",
+	"type": "apotheosis:radial",
+	"values": {		
+		"rare": [
+			{
+				"x": 1,
+				"y": 2,
+				"xOff": 0,
+				"yOff": 1
+			},
+			{
+				"x": 1,
+				"y": 3,
+				"xOff": 0,
+				"yOff": 0
+			},
+			{
+				"x": 3,
+				"y": 2,
+				"xOff": 0,
+				"yOff": 1
+			}
+		],
+		"epic": [
+			{
+				"x": 1,
+				"y": 3,
+				"xOff": 0,
+				"yOff": 0
+			},
+			{
+				"x": 3,
+				"y": 2,
+				"xOff": 0,
+				"yOff": 1
+			}
+		],
+		"mythic": [
+			{
+				"x": 3,
+				"y": 2,
+				"xOff": 0,
+				"yOff": 1
+			},
+			{
+				"x": 3,
+				"y": 3,
+				"xOff": 0,
+				"yOff": 0
+			},
+			{
+				"x": 5,
+				"y": 3,
+				"xOff": 0,
+				"yOff": 0
+			}
+		],
+		"ancient": [
+			{
+				"x": 3,
+				"y": 3,
+				"xOff": 0,
+				"yOff": 0
+			},
+			{
+				"x": 5,
+				"y": 3,
+				"xOff": 0,
+				"yOff": 0
+			},
+			{
+				"x": 5,
+				"y": 5,
+				"xOff": 0,
+				"yOff": 0
+			}
+		]
+	}
+}

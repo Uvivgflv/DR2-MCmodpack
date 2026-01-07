@@ -1,0 +1,9 @@
+{
+  "armorItems": [
+    "minecraft:golden_boots",
+    "minecraft:golden_leggings",
+    "minecraft:golden_chestplate",
+    "minecraft:golden_helmet"
+  ],
+  "slotsPerPiece": 1.5
+}

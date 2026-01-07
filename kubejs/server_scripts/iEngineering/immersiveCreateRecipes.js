@@ -1,4 +1,5 @@
 const RegisterIESequenseAssemblyRecipes = (event) => {
+  //! переместить в create/03_sequense_assembly_create_recipes.js данный файл удалить
   //#region components
   //IRON
   event.recipes

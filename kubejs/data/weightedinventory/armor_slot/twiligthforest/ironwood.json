@@ -1,0 +1,9 @@
+{
+    "armor_items" :[
+        "twilightforest:ironwood_helmet",
+        "twilightforest:ironwood_chestplate",
+        "twilightforest:ironwood_leggings",
+        "twilightforest:ironwood_boots"
+    ],
+    "slotsPerPiece": 1.25
+}

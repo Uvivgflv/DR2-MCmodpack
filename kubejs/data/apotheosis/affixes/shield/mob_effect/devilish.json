@@ -1,0 +1,51 @@
+{
+	"type": "apotheosis:mob_effect",
+	"mob_effect": "attributeslib:bleeding",
+	"target": "BLOCK_ATTACKER",
+	"stack_on_reapply": true,
+	"values": {
+		"rare": {
+			"duration": {
+				"min": 100,
+				"steps": 1,
+				"step": 10
+			},
+			"amplifier": 0,
+			"cooldown": 300
+		},
+		"epic": {
+			"duration": {
+				"min": 100,
+				"steps": 2,
+				"step": 10
+			},
+			"amplifier": 0,
+			"cooldown": 300
+		},
+		"mythic": {
+			"duration": {
+				"min": 100,
+				"steps": 2,
+				"step": 10
+			},
+			"amplifier": {
+				"min": 0,
+				"steps": 4,
+				"step": 0.26
+			},
+			"cooldown": 300
+		},
+		"ancient": {
+			"duration": {
+				"min": 100,
+				"steps": 2,
+				"step": 10
+			},
+			"amplifier": 1,
+			"cooldown": 300
+		}
+	},
+	"types": [
+		"shield"
+	]
+}

@@ -1,0 +1,9 @@
+{
+    "armor_items" :[
+        "twilightforest:knightmetal_helmet",
+        "twilightforest:knightmetal_chestplate",
+        "twilightforest:knightmetal_leggings",
+        "twilightforest:knightmetal_boots"
+    ],
+    "slotsPerPiece": 1.5
+}

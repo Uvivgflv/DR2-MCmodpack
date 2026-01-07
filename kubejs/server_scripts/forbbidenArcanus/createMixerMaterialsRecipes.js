@@ -1,3 +1,3 @@
 const RegistryFACreateMixerRecipes = (event) => {
-  //#region ???
+  //! перенести в create/02_compat.js данный файл удалить
 };

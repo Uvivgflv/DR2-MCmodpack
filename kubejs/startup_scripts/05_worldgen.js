@@ -120,6 +120,7 @@ const RemoveOres = (event) => {
     "immersiveengineering:deepslate_ore_silver",
     "immersiveengineering:deepslate_ore_uranium",
   ];
+  //! Добавить Кобальт из Tconctruct и пылающий кварц из Malum
   //#endregion
 
   //#region ores remove

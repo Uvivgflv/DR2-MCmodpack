@@ -1,4 +1,5 @@
 const RegisterTFMGRecipes = (event) => {
+  //! Замена креозота и двуокиси углерода из gtceu
   //#region remove aluminum&steel
 
   event.remove({ output: "tfmg:aluminum_ingot" });

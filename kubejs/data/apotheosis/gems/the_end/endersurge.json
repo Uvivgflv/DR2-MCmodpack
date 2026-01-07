@@ -1,0 +1,49 @@
+{
+	"weight": 5,
+	"quality": 1.5,
+	"min_rarity": "epic",
+	"dimensions": [
+		"the_end"
+	],
+	"unique": true,
+	"bonuses": [
+		{
+			"type": "apotheosis:enchantment",
+			"gem_class": {
+				"key": "armor",
+				"types": [
+					"helmet", 
+					"chestplate",
+					"leggings",
+					"boots"
+				]
+			},
+			"enchantment": "projectile_protection",
+			"_comment": "The enchantment field is unused when global=true, but still must be a valid name",
+			"global": false,
+			"values": {
+				"epic": 1,
+				"mythic": 2,
+				"ancient": 3
+			}
+		},
+		{
+			"type": "apotheosis:enchantment",
+			"gem_class": {
+				"key": "melee_weapon",
+				"types": [
+					"heavy_weapon", 
+					"trident", "sword"
+				]
+			},
+			"enchantment": "impaling",
+			"_comment": "The enchantment field is unused when global=true, but still must be a valid name",
+			"global": false,
+			"values": {
+				"epic": 1,
+				"mythic": 2,
+				"ancient": 3
+			}
+		}
+	]
+}

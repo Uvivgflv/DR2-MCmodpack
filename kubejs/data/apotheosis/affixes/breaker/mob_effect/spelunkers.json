@@ -1,0 +1,58 @@
+{
+	"type": "apotheosis:mob_effect",
+	"mob_effect": "minecraft:speed",
+	"target": "BREAK_SELF",
+	"values": {
+		"rare": {
+			"duration": {
+				"min": 300,
+				"steps": 5,
+				"step": 10
+			},
+			"amplifier": 0,
+			"cooldown": 1500
+		},
+		"epic": {
+			"duration": {
+				"min": 300,
+				"steps": 6,
+				"step": 10
+			},
+			"amplifier": {
+				"min": 0,
+				"steps": 12,
+				"step": 0.16
+			},
+			"cooldown": 1500
+		},
+		"mythic": {
+			"duration": {
+				"min": 300,
+				"steps": 6,
+				"step": 10
+			},
+			"amplifier": {
+				"min": 0,
+				"steps": 12,
+				"step": 0.16
+			},
+			"cooldown": 1500
+		},
+		"ancient": {
+			"duration": {
+				"min": 300,
+				"steps": 8,
+				"step": 10
+			},
+			"amplifier": {
+				"min": 1,
+				"steps": 12,
+				"step": 0.16
+			},
+			"cooldown": 1350
+		}
+	},
+	"types": [
+		"pickaxe", "shovel"
+	]
+}

@@ -1,4 +1,4 @@
-//rewrite in patch 1.1a
+//!rewrite in patch 1.1a по id всех gtceu руд удалить и заменить их кастомными с блоками рудных руд (Raw Ore Blocks)
 //remove midifyAll
 
 GTCEuServerEvents.oreVeins((event) => {

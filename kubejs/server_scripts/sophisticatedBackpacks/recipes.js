@@ -1,4 +1,5 @@
 const RegisterSophisBackpacksRecipes = (event) => {
+  //! Доработать русурспак и крафты 
   //#region remove backpacks recipes
   event.remove({ id: "sophisticatedbackpacks:backpack" });
   event.remove({ output: /^sophisticatedbackpacks:.*_backpack/ });
