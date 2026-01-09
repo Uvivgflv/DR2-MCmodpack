@@ -233,6 +233,7 @@ const RegisterRealisticStepsBlockTags = (event) => {
     "unearthed:cobbled_grey_limestone",
     "unearthed:cobbled_beige_limestone",
     "unearthed:cobbled_limestone",
+    "unearthed:weathered_rhyolite"
   ];
 
   var rewriteStoneTag = ["minecraft:warped_nylium", "minecraft:crimson_nylium"];

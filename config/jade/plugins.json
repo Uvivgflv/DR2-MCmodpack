@@ -51,9 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "greate": {
-    "belt_icon": true
-  },
   "lightmanscurrency": {
     "model_variant": true,
     "model_variant.locked": false,
@@ -127,6 +124,9 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "cslcrops": {
+    "temp_data": true
   },
   "autoleveling": {
     "level": true

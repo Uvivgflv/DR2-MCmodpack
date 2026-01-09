@@ -1,0 +1,112 @@
+
+[performance]
+	#Force use of shared executor for all async tasks, regardless of CPU count
+	forceSharedExecutor = false
+	#Maximum distance in blocks to render clouds; higher values impact performance
+	#Range: > 100
+	cloudRenderDistance = 2000
+
+[display]
+	#Display values in imperial units (F, mph, inHg) instead of metric (C, m/s, hPa)
+	imperialUnits = false
+
+[storms]
+	#Global multiplier for storm severity calculations
+	#Range: 0.5 ~ 8.0
+	stormSeverityBooster = 3.2
+	#Enable tornado spawning and commands
+	enableTornadoes = true
+	#Enable random debris spawning during storms
+	enableStormDebris = false
+	#Maximum number of storm debris items allowed per chunk
+	#Range: > 0
+	maxStormDebrisPerChunk = 10
+	#Automatically repair tornado-damaged glass after 5 minutes of no new damage
+	autoRepairGlass = true
+	#Enable glass damage when a tornado passes over it
+	damageGlassOnTornado = true
+
+	[storms.tornado]
+		#Seconds between tornado spawn checks
+		#Range: 1.0 ~ 3600.0
+		checkIntervalSec = 60.0
+		#Base radius around a biome center to spawn a tornado
+		#Range: 1.0 ~ 512.0
+		baseSpawnRadiusM = 64.0
+		#Minimum surface vs aloft temperature contrast for risk
+		#Range: 0.0 ~ 100.0
+		minTempContrastC = 6.0
+		#Minimum humidity percentage for risk
+		#Range: 0.0 ~ 100.0
+		humidityMinPercent = 65.0
+		#Multiplier for pressure gradient contribution
+		#Range: 0.0 ~ 100.0
+		pressureGradientGain = 10.0
+		#Maximum pressure gradient contribution
+		#Range: 0.0 ~ 100.0
+		pressureGradientCap = 3.0
+		#Minimum wind speed difference for shear
+		#Range: 0.0 ~ 100.0
+		shearMinSpeedDiffMps = 5.0
+		#Minimum wind direction difference for shear
+		#Range: 0.0 ~ 360.0
+		shearMinDirDiffDeg = 45.0
+		#Risk multiplier during storms
+		#Range: 0.0 ~ 10.0
+		stormMultiplier = 1.5
+		#Minimum computed risk to consider spawning
+		#Range: 0.0 ~ 100.0
+		riskMinToConsider = 4.0
+		#Base chance per risk point to trigger a tornado
+		#Range: 0.0 ~ 1.0
+		baseTriggerChance = 0.05
+		#Temperature lapse rate per 100m for aloft proxy
+		#Range: 0.0 ~ 10.0
+		lapseRateCPer100m = 0.65
+		#Height difference in meters for aloft temperature proxy
+		#Range: 0.0 ~ 10000.0
+		aloftDeltaHM = 1500.0
+		#Minimum tornado intensity
+		#Range: 0.0 ~ 1.0
+		intensityMin = 0.4
+		#Maximum tornado intensity
+		#Range: 0.0 ~ 1.0
+		intensityMax = 1.0
+		#Cooldown in minutes before a cell can spawn another tornado
+		#Range: > 0
+		cellCooldownMinutes = 20
+		#Allow falling back to the legacy mesh tornado when the SimpleClouds shader pack lacks the CloudTornadoes SSBO. Leave false to require the shader-driven funnel.
+		allowLegacyTornadoFallback = false
+		#Enable verbose tornado logging (SSBO detection, fallback decisions, command outcomes).
+		debugTornadoLogging = false
+
+[wind]
+	#Seconds between base wind retarget
+	#Range: 1.0 ~ 600.0
+	baseRetargetSec = 60.0
+	#Seconds between direction retarget
+	#Range: 1.0 ~ 600.0
+	dirRetargetSec = 90.0
+	#Average gust duration in seconds
+	#Range: 1.0 ~ 600.0
+	gustMeanSec = 15.0
+	#Gust decay speed in m/s per second
+	#Range: 0.0 ~ 100.0
+	gustDecayMps = 1.0
+	#Multiplier for gust speed during storms
+	#Range: 0.0 ~ 10.0
+	stormGustMult = 2.0
+	#Minimum wind speed to push entities
+	#Range: 0.0 ~ 100.0
+	pushThresholdMps = 6.0
+	#Push scale applied to players
+	#Range: 0.0 ~ 1.0
+	playerPushScale = 0.04
+	#Push scale applied to other entities
+	#Range: 0.0 ~ 1.0
+	entityPushScale = 0.03
+
+[debug]
+	#Enable debug mode for verbose logging and diagnostics
+	debugMode = false
+

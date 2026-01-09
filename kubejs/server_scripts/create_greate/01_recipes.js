@@ -239,4 +239,14 @@ const RegisterCreateRecipes = (event) => {
     ).strongNBT(),
   });
   //#endregion
+  //#region rails and train blocks recipes
+    //sequence assembly recipe нужно сдлелать жидкий бетон и арматуру 
+    //бетон = в миксере 4 любой сухой бетон + 1000mb вода = 2000 жидкий бетон (можно взять из TFMG)
+    //арматура = в прессе тег стержня металла шанс 90% на арматуру (#dr2:rebar_rod) 
+    //железнодорожный путь = в последовательной сборке на каменную плиту выставить арматуру => вылить жидкий бетон => пресс == 16 путей
+    //id = dr2:create/railways/steel_railway
+  //#endregion
+  //#region greate mod recipes
+  //todo: унификация рецептов сплавов удалить андезитовый сплав и заменить его на стальной, стальной заменить коррундом
+  //#endregion
 };

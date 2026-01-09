@@ -4,7 +4,7 @@
 
 	[gamerules.updates]
 		#Whether the daylight cycle and moon phases progress.
-		do_daylight_cycle = false
+		do_daylight_cycle = true
 		#Whether fire should spread and naturally extinguish
 		do_fire_tick = true
 		#Whether vines can spread to other blocks. Cave vines, weeping vines, and twisting vines are not affected.
@@ -18,7 +18,7 @@
 		random_tick_speed = 3
 		#The maximum number of snow layers that can be accumulated on each block.
 		#Range: > -2147483648
-		snow_accumulation_height = 1
+		snow_accumulation_height = 24
 		#Whether new sources of water are allowed to form.
 		water_source_conversion = true
 
@@ -121,6 +121,7 @@
 			coinDropPercent = 0
 			dazzledopacity = 1
 			keepWallet = false
+			slushSourceConversion = false
 
 			[gamerules.modded.player.accessories]
 				keepAccessoryInventory = false
@@ -303,6 +304,7 @@
 			netherPortalOnlyInRuins = true
 			realTimeSync = false
 			tfEnforcedProgression = true
+			doSeasonCycle = true
 
 		[gamerules.modded.mobs]
 			doLimitedTimeBeasts = true

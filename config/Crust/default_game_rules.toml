@@ -108,6 +108,7 @@ config_enabled = false
   player.keep_inventory = false
   player.natural_regeneration = true
   player.players_sleeping_percentage = 100
+  player.slush_source_conversion = false
   player.spawn_radius = 10
   player.spectators_generate_chunks = true
 
@@ -150,14 +151,13 @@ config_enabled = false
 # Default game rule settings for the 'updates' category.
 
   updates.ageing_spawners = true
-  updates.custom_day_length = 1200
   updates.do_daylight_cycle = true
   updates.do_fire_tick = true
+  updates.do_season_cycle = true
   updates.do_vines_spread = true
   updates.do_weather_cycle = true
   updates.lava_source_conversion = false
   updates.random_tick_speed = 3
-  updates.real_time_sync = false
   updates.snow_accumulation_height = 1
   updates.tf_enforced_progression = true
   updates.water_source_conversion = true

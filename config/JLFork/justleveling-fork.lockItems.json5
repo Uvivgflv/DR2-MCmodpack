@@ -1017,58 +1017,6 @@
 			]
 		},
 		{
-			item: "minecraft:chainmail_helmet",
-			aptitudes: [
-				{
-					aptitude: "Defense",
-					level: 14
-				},
-				{
-					aptitude: "Constitution",
-					level: 10
-				}
-			]
-		},
-		{
-			item: "minecraft:chainmail_chestplate",
-			aptitudes: [
-				{
-					aptitude: "Defense",
-					level: 14
-				},
-				{
-					aptitude: "Constitution",
-					level: 10
-				}
-			]
-		},
-		{
-			item: "minecraft:chainmail_leggings",
-			aptitudes: [
-				{
-					aptitude: "Defense",
-					level: 14
-				},
-				{
-					aptitude: "Constitution",
-					level: 10
-				}
-			]
-		},
-		{
-			item: "minecraft:chainmail_boots",
-			aptitudes: [
-				{
-					aptitude: "Defense",
-					level: 14
-				},
-				{
-					aptitude: "Constitution",
-					level: 10
-				}
-			]
-		},
-		{
 			item: "minecraft:iron_helmet",
 			aptitudes: [
 				{

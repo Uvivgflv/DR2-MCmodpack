@@ -57,6 +57,7 @@ automodpack/
 automessage_data/
 coremods/
 data/
+!kubejs/data
 fancymenu_data/
 global_packs/
 minecraft/gtceu
@@ -79,7 +80,7 @@ rhino.local.properties
 ops.json
 config/oculus.properties
 config/packetfixer.properties
-config/worldedit/worldedit.properties
+config/worldedit/*
 config/xaerominimap_entities.json
 supportercache.json
 xaerominimap.txt
