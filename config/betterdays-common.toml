@@ -5,13 +5,13 @@
 	#This is the RATIO of time passing relative to vanilla.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	daySpeed = 1.09
+	daySpeed = 0.87
 	#The speed at which time passes during the night.
 	#Night is defined as any time between dayStart (see below) and nightStart (see below).
 	#This is the RATIO of time passing relative to vanilla.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	nightSpeed = 0.92
+	nightSpeed = 1.11
 	#An alternative way to set day speed. This setting is mutually exclusive with daySpeed.
 	#If both are set, speedMethod (see below) determines which setting is used.
 	#This setting defines the length of the day in real-world minutes.

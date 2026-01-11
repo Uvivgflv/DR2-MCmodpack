@@ -45,15 +45,14 @@ GTCEuServerEvents.oreVeins((event) => {
   console.log("Register GTCEU custom oreVeins");
 });
 GTCEuServerEvents.fluidVeins((event) => {
-  BedrokFluidOverworld(event); //created v1.0a
-  BedrokFluidUndergarden(event); //created v1.0a
-  BedrokFluidFirstLayer(event); //created v1.0a
+  BedrokFluidOverworld(event);                              //created v1.0a
+  BedrokFluidUndergarden(event);                            //created v1.0a
+  BedrokFluidFirstLayer(event);                             //created v1.0a
 
   console.log("Register GTCEU custom fluidVeins");
 });
 LootJS.modifiers((event) => {
   ModifyVanillaMobLootTable(event);
-  //regoliteLootTableReplace(event)
   grassRegoliteLootTableReplace(event);
   BlockLootTableReplace(event);
   UndeadsMobDrops(event);
@@ -75,8 +74,8 @@ ServerEvents.recipes((event) => {
   RegistrySmelteryRecipes(event);
   RegisterAE2Recipes(event);
   RegistryTGCEURecipes(event);
-  RegisterGTCEUComponentsRecipes(event); //created v1.0a
-  RegisterBotaniaRecipes(event); //change v0.4.0
+  RegisterGTCEUComponentsRecipes(event);                  //created v1.0a
+  RegisterBotaniaRecipes(event);                          //change v0.4.0
   RegisterSophisBackpacksRecipes(event);
   RegistrySophiStorageRecipes(event);
   RegisterCreateRecipes(event);
@@ -85,7 +84,7 @@ ServerEvents.recipes((event) => {
   RegisterCreateCompatRecipes(event);
   RegisterCBSRecipes(event);
   RegistryCreateGTMCrafterRecipes(event);
-  RegistryBMRecipes(event); //change v0.4.0
+  RegistryBMRecipes(event);                               //change v0.4.0
   RegistrySeqAssembleGTPartsRecipes(event);
   RegisterApothCreateTicCompat(event);
   RegisterMalumRecipes(event);
@@ -96,19 +95,18 @@ ServerEvents.recipes((event) => {
   RegistrySeqAssemblyTFMGRecipes(event);
   RegistryMechCrafterTFMGRecipes(event);
   registerMechanicalPressPlatesRecipes(event);
-  RegisterIESequenseAssemblyRecipes(event);
-  RegisterIEMechanicalCrafterRecipes(event);
+  RegistrySeqAssemblyCreateRecipes(event);
+  RegisterMechanicalCrafterRecipes(event);
   RegisterGefestForgeBlocksRecipes(event);
   GTCEUMachineCraftingRegistry(event);
   RegisterApotheosisInfusionResipes(event);
   RegistryIronsSpellbooksRecipes(event);
   RegistryWayStoneRecipes(event);
-  //v0.4.0
-  RegisterIEAlloysmelterRecipes(event); //created v0.4.0
-  RegisterPetalApothecaryRecipes(event); //created v0.4.0
-  //RegisterAE2Recipes(event) //use magic materials
-  //RegisterTwilightforestRecipes(event) //twilightKey recipes from Hefest forge
-  //RegisterBloodMagicRecipes //progress into magic mods malum -> bloodmagic -> f&a ->
+  RegisterIEAlloysmelterRecipes(event);                    //created v0.4.0
+  RegisterPetalApothecaryRecipes(event);                   //created v0.4.0
+  //RegisterAE2Recipes(event)                              //use magic materials
+  //RegisterTwilightforestRecipes(event)                   //twilightKey recipes from Hefest forge
+  //RegisterBloodMagicRecipes                              //progress into magic mods malum -> bloodmagic -> f&a ->
 
   console.log("Register DR2 custom recipes");
 });

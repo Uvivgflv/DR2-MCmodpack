@@ -12,6 +12,7 @@ const RegisterCreateRecipes = (event) => {
   event.remove({ id: "create:item_application/brass_casing_from_log" });
   event.remove({ id: "create:item_application/copper_casing_from_wood" });
   event.remove({ id: "create:item_application/copper_casing_from_log" });
+  event.remove({ id: /^greate:item_application\/brass_casing_from_.*/})
   //--
   event.remove({ output: "create:cogwheel" });
   event.remove({ output: "create:large_cogwheel" });
@@ -34,6 +35,8 @@ const RegisterCreateRecipes = (event) => {
   event.remove({ id: "create:crafting/kinetics/mechanical_saw" });
   event.remove({ id: "create:crafting/kinetics/mechanical_arm" });
   event.remove({ id: "create:crafting/kinetics/radial_chassis" });
+  //--rails
+  event.remove({ id: 'create:sequenced_assmly/track'});
 
   //#endregion
 
@@ -52,12 +55,9 @@ const RegisterCreateRecipes = (event) => {
 
   event
     .shaped("kubejs:iron_casing_parts", ["ABC", "BDB", "CBA"], {
-      A: "#forge:bolts/iron",
-      B: Item.of(
-        "tconstruct:large_plate",
-        '{Material:"tconstruct:iron"}',
-      ).strongNBT(),
-      C: "#forge:rods/iron",
+      A: "#forge:bolts/wrought_iron",
+      B: '#forge:plates/wrought_iron',
+      C: "#forge:rods/wrought_iron",
       D: "#forge:tools/wrench",
     })
     .id("cct:create/casing_parts/iron");
@@ -99,7 +99,7 @@ const RegisterCreateRecipes = (event) => {
       ],
     })
     .id("cct:item_application/brass_casing");
-
+  //?tconstruct recipe 
   event
     .custom({
       type: "tconstruct:casting_basin",
@@ -182,7 +182,7 @@ const RegisterCreateRecipes = (event) => {
       A: "#forge:tools/hammers",
       B: "#dr2:mechanical_drill_drill_heads",
       C: "#forge:tools/files",
-      D: "#forge:bolts/iron",
+      D: "#forge:bolts/wrought_iron",
       E: "create:cogwheel",
       F: "create:andesite_casing",
     })
@@ -193,7 +193,7 @@ const RegisterCreateRecipes = (event) => {
       A: "create:electron_tube",
       B: "create:brass_hand",
       C: "#forge:tools/files",
-      D: "#forge:bolts/iron",
+      D: "#forge:bolts/wrought_iron",
       E: "create:cogwheel",
       F: "create:shaft",
       G: "#forge:tools/hammers",
@@ -239,12 +239,25 @@ const RegisterCreateRecipes = (event) => {
     ).strongNBT(),
   });
   //#endregion
+  //#region add press recipes
+  event.recipes.createPressing(
+    '2x kubejs:rebar',
+    '#dr2:rebared_rod_two'
+  )
+  .id('dr2:create/pressing/rebar_2');
+  event.recipes.createPressing(
+    '4x kubejs:rebar',
+    '#dr2:rebared_rod_four'
+  )
+  .id('dr2:create/pressing/rebar_4');
+  event.recipes.createPressing(
+    '6x kubejs:rebar',
+    '#dr2:rebared_rod_six'
+  )
+  .id('dr2:create/pressing/rebar_6');
+  //#endregion
   //#region rails and train blocks recipes
-    //sequence assembly recipe нужно сдлелать жидкий бетон и арматуру 
-    //бетон = в миксере 4 любой сухой бетон + 1000mb вода = 2000 жидкий бетон (можно взять из TFMG)
-    //арматура = в прессе тег стержня металла шанс 90% на арматуру (#dr2:rebar_rod) 
-    //железнодорожный путь = в последовательной сборке на каменную плиту выставить арматуру => вылить жидкий бетон => пресс == 16 путей
-    //id = dr2:create/railways/steel_railway
+  
   //#endregion
   //#region greate mod recipes
   //todo: унификация рецептов сплавов удалить андезитовый сплав и заменить его на стальной, стальной заменить коррундом

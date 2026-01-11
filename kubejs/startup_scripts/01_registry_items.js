@@ -170,6 +170,9 @@ const RegisterMaterialItems = event => {
         .translationKey(`item.kubejs.netherite_spellbook_blank`);
     event.create("dragon_spellbook_blank")
         .translationKey(`item.kubejs.dragon_spellbook_blank`);
+    event.create('rebar')
+        .maxStackSize(16)
+        .translationKey(`item.kubejs.rebar`);
     //#endregion
 }
 
