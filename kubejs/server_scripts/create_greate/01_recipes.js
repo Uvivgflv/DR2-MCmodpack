@@ -37,6 +37,10 @@ const RegisterCreateRecipes = (event) => {
   event.remove({ id: "create:crafting/kinetics/radial_chassis" });
   //--rails
   event.remove({ id: 'create:sequenced_assmly/track'});
+  //--vault
+  event.remove({ id: 'create:crafting/kinetics/item_vault'});
+  event.remove({ id: 'greate:assembler/item_vault_iron'});
+
 
   //#endregion
 
@@ -261,5 +265,18 @@ const RegisterCreateRecipes = (event) => {
   //#endregion
   //#region greate mod recipes
   //todo: унификация рецептов сплавов удалить андезитовый сплав и заменить его на стальной, стальной заменить коррундом
+  //#endregion
+  //v1.2a or v1.1.01a
+  //#region storrage system recipes
+  event.shaped('2x create:item_vault',[
+    'AB ',
+    'CDC',
+    ' B '
+  ],{
+    A:'#forge:tools/screwdrivers',
+    B:'#forge:plates/wrought_iron',
+    C:'#forge:screws/wrought_iron',
+    D:'gtceu:wood_crate'
+  }).id('dr2:create/item_vault');
   //#endregion
 };
