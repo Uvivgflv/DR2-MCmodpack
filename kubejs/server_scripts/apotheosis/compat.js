@@ -1,5 +1,5 @@
 const RegisterApothCreateTicCompat = (event) => {
-  //#region mechanical crafter ???
+  //? нет ^ реристрации в main.js
   event
     .custom({
       type: "create:mechanical_crafting",

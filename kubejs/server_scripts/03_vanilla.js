@@ -1,107 +1,107 @@
 const RegisterVanillaRecipes = (event) => {
   //#region remove recipes
-  event.remove({ id: /^minecraft:.*_pickaxe/ });
-  event.remove({ id: /^minecraft:.*_axe/ });
-  event.remove({ id: /^minecraft:.*_sword/ });
-  event.remove({ id: /^minecraft:.*_hoe/ });
-  event.remove({ id: /^minecraft:.*_shovel/ });
+  // event.remove({ id: /^minecraft:.*_pickaxe/ });
+  // event.remove({ id: /^minecraft:.*_axe/ });
+  // event.remove({ id: /^minecraft:.*_sword/ });
+  // event.remove({ id: /^minecraft:.*_hoe/ });
+  // event.remove({ id: /^minecraft:.*_shovel/ });
   //--
-  event.remove({ output: /^minecraft:.*_helmet/ });
-  event.remove({ output: /^minecraft:.*_chestplate/ });
-  event.remove({ output: /^minecraft:.*_leggings/ });
-  event.remove({ output: /^minecraft:.*_boots/ });
+  // event.remove({ output: /^minecraft:.*_helmet/ });
+  // event.remove({ output: /^minecraft:.*_chestplate/ });
+  // event.remove({ output: /^minecraft:.*_leggings/ });
+  // event.remove({ output: /^minecraft:.*_boots/ });
   //--
-  event.remove({ id: "minecraft:fishing_rod" });
-  event.remove({ output: "minecraft:lead" });
-  event.remove({ output: "minecraft:map" });
-  event.remove({ id: "minecraft:compass" });
-  event.remove({ id: "minecraft:clock" });
-  event.remove({ id: "gtceu:shaped/flint_and_steel" });
-  event.remove({ id: "minecraft:brush" });
-  event.remove({ id: "betterarcheology:iron_brush" });
-  event.remove({ id: "betterarcheology:diamond_brush" });
-  event.remove({ id: "quark:tools/crafting/trowel" });
-  event.remove({ id: "minecraft:shears" });
-  event.remove({ id: "minecraft:spyglass" });
+  // event.remove({ id: "minecraft:fishing_rod" });
+  // event.remove({ output: "minecraft:lead" });
+  // event.remove({ output: "minecraft:map" });
+  // event.remove({ id: "minecraft:compass" });
+  // event.remove({ id: "minecraft:clock" });
+  // event.remove({ id: "gtceu:shaped/flint_and_steel" });
+  // event.remove({ id: "minecraft:brush" });
+  // event.remove({ id: "betterarcheology:iron_brush" });
+  // event.remove({ id: "betterarcheology:diamond_brush" });
+  // event.remove({ id: "quark:tools/crafting/trowel" });
+  // event.remove({ id: "minecraft:shears" });
+  // event.remove({ id: "minecraft:spyglass" });
   //--
-  event.remove({ output: "minecraft:crafting_table" });
-  event.remove({ id: /^biomeswevegone:.*_crafting_table/ });
-  event.remove({ output: "minecraft:furnace" });
-  event.remove({ id: "quark:building/crafting/furnaces/deepslate_furnace" });
-  event.remove({ id: "quark:building/crafting/furnaces/blackstone_furnace" });
-  event.remove({ output: "minecraft:enchanting_table" });
-  event.remove({ id: "luminousworld:smelt_white_oak" });
-  event.remove({ id: "luminousworld:smelt_palm" });
-  event.remove({ id: "luminousworld:smelt_auburn" });
-  event.remove({ id: "luminousworld:smelt_baobab" });
-  event.remove({ id: "luminousworld:smelt_soft_birch" });
+  // event.remove({ output: "minecraft:crafting_table" });
+  // event.remove({ id: /^biomeswevegone:.*_crafting_table/ });
+  // event.remove({ output: "minecraft:furnace" });
+  // event.remove({ id: "quark:building/crafting/furnaces/deepslate_furnace" });
+  // event.remove({ id: "quark:building/crafting/furnaces/blackstone_furnace" });
+  // event.remove({ output: "minecraft:enchanting_table" });
+  // event.remove({ id: "luminousworld:smelt_white_oak" });
+  // event.remove({ id: "luminousworld:smelt_palm" });
+  // event.remove({ id: "luminousworld:smelt_auburn" });
+  // event.remove({ id: "luminousworld:smelt_baobab" });
+  // event.remove({ id: "luminousworld:smelt_soft_birch" });
 
   //--
-  event.remove({ id: "minecraft:netherite_ingot" });
-  event.remove({
-    id: "tconstruct:common/materials/netherite_ingot_from_nuggets",
-  });
+  // event.remove({ id: "minecraft:netherite_ingot" });
+  // event.remove({
+  //   id: "tconstruct:common/materials/netherite_ingot_from_nuggets",
+  //  });
   //--
-  event.remove({ output: "minecraft:paper" });
+  // event.remove({ output: "minecraft:paper" });
   //--
-  event.remove({ id: "minecraft:lectern" });
-  event.remove({ id: "minecraft:dispenser" });
-  event.remove({ id: "minecraft:dropper" });
-  event.remove({ id: "minecraft:piston" });
-  event.remove({ id: "tconstruct:common/slime/sticky_piston" });
-  event.remove({ id: "undergarden:sticky_piston_from_goo_ball" });
-  event.remove({ id: "minecraft:sticky_piston" });
-  event.remove({ id: "minecraft:brewing_stand" });
-  event.remove({ output: "minecraft:anvil" });
-  event.remove({ id: "minecraft:smoker" });
-  event.remove({ id: "minecraft:blast_furnace" });
-  event.remove({ output: "minecraft:grindstone" });
-  event.remove({ id: "minecraft:smithing_table" });
-  event.remove({ output: "minecraft:stonecutter" });
-  event.remove({ output: /^minecraft:.*_bed/ });
-  event.remove({ id: "quark:building/crafting/furnaces/blackstone_smoker" });
-  event.remove({ id: "quark:building/crafting/furnaces/deepslate_smoker" });
-  event.remove({
-    id: "quark:building/crafting/furnaces/blackstone_blast_furnace",
-  });
-  event.remove({
-    id: "quark:building/crafting/furnaces/deepslate_blast_furnace",
-  });
-  event.remove({ id: "tconstruct:common/basalt_blast_furnace" });
-  event.remove({ id: "minecraft:barrel" });
-  event.remove({ id: "quark:oddities/crafting/crate" });
-  event.remove({ id: "quark:automation/crafting/crafter" });
+  // event.remove({ id: "minecraft:lectern" });
+  // event.remove({ id: "minecraft:dispenser" });
+  // event.remove({ id: "minecraft:dropper" });
+  // event.remove({ id: "minecraft:piston" });
+  // event.remove({ id: "tconstruct:common/slime/sticky_piston" });
+  // event.remove({ id: "undergarden:sticky_piston_from_goo_ball" });
+  // event.remove({ id: "minecraft:sticky_piston" });
+  // event.remove({ id: "minecraft:brewing_stand" });
+  // event.remove({ output: "minecraft:anvil" });
+  // event.remove({ id: "minecraft:smoker" });
+  // event.remove({ id: "minecraft:blast_furnace" });
+  // event.remove({ output: "minecraft:grindstone" });
+  // event.remove({ id: "minecraft:smithing_table" });
+  // event.remove({ output: "minecraft:stonecutter" });
+  // event.remove({ output: /^minecraft:.*_bed/ });
+  // event.remove({ id: "quark:building/crafting/furnaces/blackstone_smoker" });
+  // event.remove({ id: "quark:building/crafting/furnaces/deepslate_smoker" });
+  // event.remove({
+  //   id: "quark:building/crafting/furnaces/blackstone_blast_furnace",
+  // });
+  // event.remove({
+  //   id: "quark:building/crafting/furnaces/deepslate_blast_furnace",
+  // });
+  // event.remove({ id: "tconstruct:common/basalt_blast_furnace" });
+  // event.remove({ id: "minecraft:barrel" });
+  // event.remove({ id: "quark:oddities/crafting/crate" });
+  // event.remove({ id: "quark:automation/crafting/crafter" });
   //--
-  event.remove({ id: "tfmg:mixing/cast_iron_ingot" });
-  event.remove({ id: "tfmg:smelting/fireclay_brick" });
-  event.remove({ id: "gtceu:shapeless/fireclay_dust" });
-  event.remove({ id: "quark:oddities/crafting/backpack" });
-  event.remove({ id: "tconstruct:tables/crafting_station_from_logs" });
-  event.remove({ id: "supplementaties:slime_ball" });
-  event.remove({ id: "tfmg:filling/hardened_wood_creosote" });
+  // event.remove({ id: "tfmg:mixing/cast_iron_ingot" });
+  // event.remove({ id: "tfmg:smelting/fireclay_brick" });
+  // event.remove({ id: "gtceu:shapeless/fireclay_dust" });
+  // event.remove({ id: "quark:oddities/crafting/backpack" });
+  // event.remove({ id: "tconstruct:tables/crafting_station_from_logs" });
+  // event.remove({ id: "supplementaties:slime_ball" });
+  // event.remove({ id: "tfmg:filling/hardened_wood_creosote" });
   //--
-  event.remove({ output: "#kubejs:disabled_items" });
+  // event.remove({ output: "#kubejs:disabled_items" });
   //#endregion
 
   //#region Add recipes for stage 1
   //#region remove chest recipes
-  event.remove({ id: "quark:world/crafting/woodsets/ancient/chest" });
-  event.remove({ id: "quark:world/crafting/woodsets/azalea/chest" });
-  event.remove({ id: "quark:world/crafting/woodsets/blossom/chest" });
-  event.remove({ id: "quark:building/crafting/chests/oak_chest" });
-  event.remove({ id: "quark:building/crafting/chests/spruce_chest" });
-  event.remove({ id: "quark:building/crafting/chests/acacia_chest" });
-  event.remove({ id: "quark:building/crafting/chests/birch_chest" });
-  event.remove({ id: "quark:building/crafting/chests/jungle_chest" });
-  event.remove({ id: "quark:building/crafting/chests/mangrove_chest" });
-  event.remove({ id: "quark:building/crafting/chests/dark_oak_chest" });
-  event.remove({ id: "quark:building/crafting/chests/crimson_chest" });
-  event.remove({ id: "quark:building/crafting/chests/warped_chest" });
-  event.remove({ id: "quark:building/crafting/chests/bamboo_chest" });
-  event.remove({ id: "quark:building/crafting/chests/cherry_chest" });
-  event.remove({ id: "quark:building/crafting/chests/nether_brick_chest" });
-  event.remove({ id: "quark:building/crafting/chests/purpur_chest" });
-  event.remove({ id: "quark:building/crafting/chests/prismarine_chest" });
+  // event.remove({ id: "quark:world/crafting/woodsets/ancient/chest" });
+  // event.remove({ id: "quark:world/crafting/woodsets/azalea/chest" });
+  // event.remove({ id: "quark:world/crafting/woodsets/blossom/chest" });
+  // event.remove({ id: "quark:building/crafting/chests/oak_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/spruce_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/acacia_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/birch_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/jungle_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/mangrove_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/dark_oak_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/crimson_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/warped_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/bamboo_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/cherry_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/nether_brick_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/purpur_chest" });
+  // event.remove({ id: "quark:building/crafting/chests/prismarine_chest" });
   //#endregion
 
   //#region add chest recipes

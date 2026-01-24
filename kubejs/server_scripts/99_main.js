@@ -65,6 +65,9 @@ LootJS.modifiers((event) => {
  * исполнение после тэгов и датапаков
  */
 ServerEvents.recipes((event) => {
+  RemoveRecipesByMods(event);                           //REMOVE RECIPES USING GLOBAL CONSTS
+
+
   RegistryTweaksRecipes(event);
   RegisterVanillaRecipes(event);
   CustomOreProcessing(event);
