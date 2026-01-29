@@ -1,8 +1,14 @@
 const RemoveRecipesByMods = event => {
     var RecipesVanilla = global.REMOVE_RECIPES_MINECRAFT;
     var RecipesApoheosis = global.REMOVE_RECIPES_APOTHEOSIS;
+    var RecipesIE = global.REMOVE_RECIPES_IMMERSIVEENGINEERING;
     //vanilla
     RecipesVanilla.forEach(element => {
+       const recipes_id = element;
+       event.remove({id:recipes_id}); 
+    });
+    //immersive engineering
+    RecipesIE.forEach(element => {
        const recipes_id = element;
        event.remove({id:recipes_id}); 
     });

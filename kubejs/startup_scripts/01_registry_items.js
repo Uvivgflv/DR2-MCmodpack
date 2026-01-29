@@ -144,6 +144,26 @@ const RegisterModDropItems = event => {
     event.create("legendary_fragment")
         .translationKey(`item.kubejs.legendary_fragment`);
     //#endregion
+
+    //#region zombies drops minecraft:zombie
+    event.create("zombie_heart")//on lvl 2-15
+        .translationKey(`item.kubejs.zombie_heart`);
+    event.create("zombie_brain")//on lvl 5-10
+        .translationKey('item.kubejs.zombie_brain');
+    event.create("zombie_infected_flesh")//on lvl 5-10
+        .translationKey(`item.kubejs.zombie_infected_flesh`);
+    event.create("decayed_samples")//on lvl 10-15
+        .translationKey(`item.kubejs.decayed_samples`);
+    //#endregion
+
+    //#region husk drops minecraft:husk
+    event.create("dryed_flesh")//on lvl 1-15
+        .translationKey(`item.kubejs.dryed_flesh`);
+    event.create("dryed_tendons")//on lvl 2-15
+        .translationKey(`item.kubejs.dryed_tendons`);
+    event.create("husk_leather")//on lvl 5-10
+        .translationKey(`item.kubejs.husk_leather`);
+    //#endregion
 }
 
 const RegisterMaterialItems = event => {

@@ -67,7 +67,7 @@ LootJS.modifiers((event) => {
 ServerEvents.recipes((event) => {
   RemoveRecipesByMods(event);                           //REMOVE RECIPES USING GLOBAL CONSTS
 
-
+  ProgressModuleRecipesRegistry(event);                 //progress tweak v1.2a
   RegistryTweaksRecipes(event);
   RegisterVanillaRecipes(event);
   CustomOreProcessing(event);

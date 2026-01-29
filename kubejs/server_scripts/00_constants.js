@@ -130,4 +130,15 @@ global.REMOVE_RECIPES_MINECRAFT = [
 global.REMOVE_RECIPES_APOTHEOSIS = [
     
 ];
+
+/**
+ * @type {Array}
+ */
+global.REMOVE_RECIPES_IMMERSIVEENGINEERING = [
+    /^immersiveengineering:crafting\/hummercrushing_.*/,
+    /^immersiveengineering:crafting\/coil_.*/,
+    /^immersiveengineering:crafting\/.*_engineering/,
+    "immersiveengineering:crafting/radiator",
+    "", 
+];
 //#endregion

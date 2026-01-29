@@ -35,7 +35,8 @@ const RegistryTGCEURecipes = (event) => {
   event.remove({ id: "gtceu:shaped/steam_miner_steel" });
   //--
   event.remove({ output: "#forge:ingots/aluminium" });
-  event.remove({ id: "gtceu:shapeless/dust_bronze" });
+  //! удаление данного было ошибкой
+  // event.remove({ id: "gtceu:shapeless/dust_bronze" }); 
   event.remove({ id: "gtceu:smelting/sticky_resin_from_slime" });
   //--
   event.remove({ id: "gtceu:shaped/knife_flint" });
