@@ -67,6 +67,7 @@ const RegisterGTCEUToCreateCompatTags = (event) => {
 };
 
 //регистрация крафта механического пресса "мягкие" металлы
+//! event.recipes.greatePressing().LS или как оно там
 function registerMechanicalPressPlatesRecipes(event) {
   Ingredient.of("#dr2:mechanical_press_allow").stacks.forEach((element) => {
     const itemId = element.id;

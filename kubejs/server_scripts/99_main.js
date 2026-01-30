@@ -94,7 +94,7 @@ ServerEvents.recipes((event) => {
   RegistryInfAbyssRecipes(event);
   RegistryTCONTweaks(event);
   RegistryAdAstraRecipes(event);
-  RegisterIERecipes(event);
+  //RegisterIERecipes(event);                             //moved to 00_constants.js
   RegistrySeqAssemblyTFMGRecipes(event);
   RegistryMechCrafterTFMGRecipes(event);
   registerMechanicalPressPlatesRecipes(event);

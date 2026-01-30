@@ -44,6 +44,9 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
     "minecraft:grindstone",
     "minecraft:stonecutter",
     /^minecraft:.*_bed/,
+    "immersiveengineering:component_iron",
+    "immersiveengineering:component_steel",
+    /^immersiveengineering:plate.*/,
     //dr2:tag_remove
     "#kubejs:disabled_items"
 ];
@@ -139,6 +142,6 @@ global.REMOVE_RECIPES_IMMERSIVEENGINEERING = [
     /^immersiveengineering:crafting\/coil_.*/,
     /^immersiveengineering:crafting\/.*_engineering/,
     "immersiveengineering:crafting/radiator",
-    "", 
+    "immersiveengineering:crafting/generator"
 ];
 //#endregion
