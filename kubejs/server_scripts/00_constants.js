@@ -25,6 +25,60 @@ global.RawOreVariants = [
     {name: 'bauxite', type: 'metal', namespace: 'gtceu', quality: 3, element: 'aluminium'}
     
 ];
+//woods
+global.WoodTypes = [
+    {name: 'oak', planks: 'minecraft:oak_planks', log: 'minecraft:oak_log'},
+    {name: 'spruce', planks: 'minecraft:spruce_planks', log: 'minecraft:spruce_log'},
+    {name: 'birch', planks: 'minecraft:birch_planks', log: 'minecraft:birch_log'},
+    {name: 'jungle', planks: 'minecraft:jungle_planks', log: 'minecraft:jungle_log'},
+    {name: 'acacia', planks: 'minecraft:acacia_planks', log: 'minecraft:acacia_log'},
+    {name: 'dark_oak', planks: 'minecraft:dark_oak_planks', log: 'minecraft:dark_oak_log'},
+    {name: 'mangrove', planks: 'minecraft:mangrove_planks', log: 'minecraft:mangrove_log'},
+    {name: 'crimson', planks: 'minecraft:crimson_planks', log: 'minecraft:crimson_stem'},
+    {name: 'warped', planks: 'minecraft:warped_planks', log: 'minecraft:warped_stem'},
+    {name: 'bamboo', planks: 'minecraft:bamboo_planks', log: 'minecraft:bamboo_block'},
+    {name: 'cherry', planks: 'minecraft:cherry_planks', log: 'minecraft:cherry_log'},
+    //biomes o' plenty
+    {name: 'fir', planks: 'biomesoplenty:fir_planks', log: 'biomesoplenty:fir_log'},
+    {name: 'pine', planks: 'biomesoplenty:pine_planks', log: 'biomesoplenty:pine_log'},
+    {name: 'maple', planks: 'biomesoplenty:maple_planks', log: 'biomesoplenty:maple_log'},
+    {name: 'willow', planks: 'biomesoplenty:willow_planks', log: 'biomesoplenty:willow_log'},
+    {name: 'dead', planks: 'biomesoplenty:dead_planks', log: 'biomesoplenty:dead_log'},
+    {name: 'magic', planks: 'biomesoplenty:magic_planks', log: 'biomesoplenty:magic_log'},
+    {name: 'redwood', planks: 'biomesoplenty:redwood_planks', log: 'biomesoplenty:redwood_log'},
+    {name: 'mahogany', planks: 'biomesoplenty:mahogany_planks', log: 'biomesoplenty:mahogany_log'},
+    {name: 'jacaranda', planks: 'biomesoplenty:jacaranda_planks', log: 'biomesoplenty:jacaranda_log'},
+    {name: 'palm', planks: 'biomesoplenty:palm_planks', log: 'biomesoplenty:palm_log'},
+    {name: 'umbran', planks: 'biomesoplenty:umbran_planks', log: 'biomesoplenty:umbran_log'},
+    {name: 'hellbark', planks: 'biomesoplenty:hellbark_planks', log: 'biomesoplenty:hellbark_log'},
+    {name: 'empyreal', planks: 'biomesoplenty:empyreal_planks', log: 'biomesoplenty:empyreal_log'},
+    //biomeswevegone
+    {name: 'aspen', planks: 'biomeswevegone:aspen_planks', log: 'biomeswevegone:aspen_log'},
+    {name: 'blue_enchanted', planks: 'biomeswevegone:blue_enchanted_planks', log: 'biomeswevegone:blue_enchanted_log'},
+    {name: 'cika', planks: 'biomeswevegone:cika_planks', log: 'biomeswevegone:cika_log'},
+    {name: 'cypress', planks: 'biomeswevegone:cypress_planks', log: 'biomeswevegone:cypress_log'},
+    {name: 'ebony', planks: 'biomeswevegone:ebony_planks', log: 'biomeswevegone:ebony_log'},
+    {name: 'fir', planks: 'biomeswevegone:fir_planks', log: 'biomeswevegone:fir_log'},
+    {name: 'florus', planks: 'biomeswevegone:florus_planks', log: 'biomeswevegone:florus_stem'},
+    {name: 'green_enchanted', planks: 'biomeswevegone:green_enchanted_planks', log: 'biomeswevegone:green_enchanted_log'},
+    {name: 'holly', planks: 'biomeswevegone:holly_planks', log: 'biomeswevegone:holly_log'},
+    {name: 'mahogany', planks: 'biomeswevegone:mahogany_planks', log: 'biomeswevegone:mahogany_log'},
+    {name: 'ironwood', planks: 'biomeswevegone:ironwood_planks', log: 'biomeswevegone:ironwood_log'},
+    {name: 'jacaranda', planks: 'biomeswevegone:jacaranda_planks', log: 'biomeswevegone:jacaranda_log'},
+    {name: 'maple', planks: 'biomeswevegone:maple_planks', log: 'biomeswevegone:maple_log'},
+    {name: 'palm', planks: 'biomeswevegone:palm_planks', log: 'biomeswevegone:palm_log'},
+    {name: 'pine', planks: 'biomeswevegone:pine_planks', log: 'biomeswevegone:pine_log'},
+    {name: 'rainbow_eucalyptus', planks: 'biomeswevegone:rainbow_eucalyptus_planks', log: 'biomeswevegone:rainbow_eucalyptus_log'},
+    {name: 'redwood', planks: 'biomeswevegone:redwood_planks', log: 'biomeswevegone:redwood_log'},
+    {name: 'sakura', planks: 'biomeswevegone:sakura_planks', log: 'biomeswevegone:sakura_log'},
+    {name: 'skyris', planks: 'biomeswevegone:skyris_planks', log: 'biomeswevegone:skyris_log'},
+    {name: 'white_mangrove', planks: 'biomeswevegone:white_mangrove_planks', log: 'biomeswevegone:white_mangrove_log'},
+    {name: 'willow', planks: 'biomeswevegone:willow_planks', log: 'biomeswevegone:willow_log'},
+    {name: 'witch_hazel', planks: 'biomeswevegone:witch_hazel_planks', log: 'biomeswevegone:witch_hazel_log'},
+    {name: 'zelkova', planks: 'biomeswevegone:zelkova_planks', log: 'biomeswevegone:zelkova_log'},
+    //jadens nether expansion
+    {name: 'claret', planks: 'netherexp:claret_planks', log: 'netherexp:claret_stem'}
+]
 //можно весь список указать в itemObliterator
 global.DISABLED_ITEMS = [];
 
@@ -47,6 +101,7 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
     "immersiveengineering:component_iron",
     "immersiveengineering:component_steel",
     /^immersiveengineering:plate.*/,
+    "#forge:ingots/aluminium",
     //dr2:tag_remove
     "#kubejs:disabled_items"
 ];
@@ -54,7 +109,7 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
 //string array с id рецептов 
 ///^create:crafting\/*/ 
 /**
- * @type {Array} REMOVE_RECIPES_MINECRAFT
+ * @type {Array} REMOVE_RECIPES_MINECRAFT/Quark/
  */
 global.REMOVE_RECIPES_MINECRAFT = [
     /^minecraft:.*_pickaxe/,
@@ -73,8 +128,7 @@ global.REMOVE_RECIPES_MINECRAFT = [
     "minecraft:shears",
     "minecraft:spyglass",
     /^biomeswevegone:.*_crafting_table/,
-    "quark:building/crafting/furnaces/deepslate_furnace",
-    "quark:building/crafting/furnaces/blackstone_furnace",
+    /^quark:building\/crafting\/furnaces\/.*/,
     "luminousworld:smelt_white_oak",
     "luminousworld:smelt_palm",
     "luminousworld:smelt_auburn",
@@ -93,10 +147,6 @@ global.REMOVE_RECIPES_MINECRAFT = [
     "minecraft:smoker",
     "minecraft:blast_furnace",
     "minecraft:smithing_table",
-    "quark:building/crafting/furnaces/blackstone_smoker",
-    "quark:building/crafting/furnaces/deepslate_smoker",
-    "quark:building/crafting/furnaces/blackstone_blast_furnace",
-    "quark:building/crafting/furnaces/deepslate_blast_furnace",
     "tconstruct:common/basalt_blast_furnace",
     "minecraft:barrel",
     "quark:oddities/crafting/crate",
@@ -111,20 +161,8 @@ global.REMOVE_RECIPES_MINECRAFT = [
     "quark:world/crafting/woodsets/ancient/chest",
     "quark:world/crafting/woodsets/azalea/chest",
     "quark:world/crafting/woodsets/blossom/chest",
-    "quark:building/crafting/chests/oak_chest",
-    "quark:building/crafting/chests/spruce_chest",
-    "quark:building/crafting/chests/acacia_chest",
-    "quark:building/crafting/chests/birch_chest",
-    "quark:building/crafting/chests/jungle_chest",
-    "quark:building/crafting/chests/mangrove_chest",
-    "quark:building/crafting/chests/dark_oak_chest",
-    "quark:building/crafting/chests/crimson_chest",
-    "quark:building/crafting/chests/warped_chest",
-    "quark:building/crafting/chests/bamboo_chest",
-    "quark:building/crafting/chests/cherry_chest",
-    "quark:building/crafting/chests/nether_brick_chest",
-    "quark:building/crafting/chests/purpur_chest",
-    "quark:building/crafting/chests/prismarine_chest"
+    /^quark:building\/crafting\/chests\/.*/
+
 ];
 
 /**
@@ -143,5 +181,75 @@ global.REMOVE_RECIPES_IMMERSIVEENGINEERING = [
     /^immersiveengineering:crafting\/.*_engineering/,
     "immersiveengineering:crafting/radiator",
     "immersiveengineering:crafting/generator"
+];
+
+/**
+ * @type {Array}
+ */
+global.REMOVE_RECIPES_GTCUE = [
+    "gtceu:shaped/casing_coke_bricks",
+    "gtceu:shaped/coke_oven",
+    "gtceu:smelting/coke_oven_brick",
+    "gtceu:compressor/coke_bricks",
+    "gtceu:shaped/casing_primitive_bricks",
+    "gtceu:shaped/bronze_primitive_blast_furnace",
+    "gtceu:shaped/casing_bronze_bricks",
+    "gtceu:shaped/steel_bricks_hull",
+    //--
+    "gtceu:shaped/steam_miner_bronze",
+    "gtceu:shaped/steam_boiler_coal_bronze",
+    "gtceu:shaped/steam_compressor_bronze",
+    "gtceu:shaped/steam_boiler_lava_bronze",
+    "gtceu:shaped/steam_boiler_solar_bronze",
+    "gtceu:shaped/steam_extractor_bronze",
+    "gtceu:shaped/steam_macerator_bronze",
+    "gtceu:shaped/steam_hammer_bronze",
+    "gtceu:shaped/steam_furnace_bronze",
+    "gtceu:shaped/steam_alloy_smelter_bronze",
+    "gtceu:shaped/steam_rock_breaker_bronze",
+    //--
+    "gtceu:shaped/steel_hull",
+    "gtceu:shaped/steam_boiler_coal_steel",
+    "gtceu:shaped/steam_boiler_lava_steel",
+    "gtceu:shaped/steam_boiler_solar_steel",
+    "gtceu:shaped/steam_extractor_steel",
+    "gtceu:shaped/steam_macerator_steel",
+    "gtceu:shaped/steam_compressor_steel",
+    "gtceu:shaped/steam_hammer_steel",
+    "gtceu:shaped/steam_furnace_steel",
+    "gtceu:shaped/steam_alloy_smelter_steel",
+    "gtceu:shaped/steam_rock_breaker_steel",
+    "gtceu:shaped/steam_miner_steel",
+    //--
+    "gtceu:smelting/sticky_resin_from_slime",
+    "gtceu:shaped/knife_flint",
+    /^gtceu:shaped\/lv_.*/,
+    "gtceu:shaped/casing_bronze_firebox",
+    "gtceu:assembler/casing_bronze_firebox",
+    /^gtceu:shaped\/mv_.*/,
+    /^gtceu:shaped\/hv_.*/,
+    /^gtceu:shaped\/ev_.*/,
+    /^gtceu:shaped\/iv_.*/,
+    /^gtceu:shaped\/luv_.*/,
+    /^gtceu:shaped\/zpm_.*/,
+    /^gtceu:shaped\/uv_.*/,
+    //--
+    "gtceu:shaped/furnace",
+    "gtceu:shaped/crafting_table",
+    "gtceu:shaped/chest"
+
+];
+/**
+ * @type {Array}
+ */
+global.REMOVE_RECIPES_LUMINOUS = [
+    "luminous_depths:aulit_oak_crafting_table_recipe",
+
+];
+/**
+ * @type {Array} CreateRecipesToRemove
+ */
+global.REMOVE_RECIPES_CREATE = [
+    "create:crafting/appliances/chain_from_zinc"
 ];
 //#endregion

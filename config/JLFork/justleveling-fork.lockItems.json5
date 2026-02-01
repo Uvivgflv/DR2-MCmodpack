@@ -948,23 +948,6 @@
 			]
 		},
 		{
-			item: "minecraft:sugar_cane",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 5
-				},
-				{
-					aptitude: "Building",
-					level: 5
-				},
-				{
-					aptitude: "Constitution",
-					level: 5
-				}
-			]
-		},
-		{
 			item: "minecraft:cactus",
 			aptitudes: [
 				{
@@ -1021,11 +1004,11 @@
 			aptitudes: [
 				{
 					aptitude: "Defense",
-					level: 18
+					level: 4
 				},
 				{
 					aptitude: "Constitution",
-					level: 15
+					level: 3
 				}
 			]
 		},
@@ -1034,11 +1017,11 @@
 			aptitudes: [
 				{
 					aptitude: "Defense",
-					level: 18
+					level: 4
 				},
 				{
 					aptitude: "Constitution",
-					level: 15
+					level: 3
 				}
 			]
 		},
@@ -1047,11 +1030,11 @@
 			aptitudes: [
 				{
 					aptitude: "Defense",
-					level: 18
+					level: 4
 				},
 				{
 					aptitude: "Constitution",
-					level: 15
+					level: 3
 				}
 			]
 		},
@@ -1060,11 +1043,11 @@
 			aptitudes: [
 				{
 					aptitude: "Defense",
-					level: 18
+					level: 4
 				},
 				{
 					aptitude: "Constitution",
-					level: 15
+					level: 3
 				}
 			]
 		},
@@ -1311,7 +1294,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 8
+					level: 4
 				}
 			]
 		},
@@ -1320,7 +1303,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 8
+					level: 4
 				}
 			]
 		},
@@ -1329,7 +1312,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 8
+					level: 4
 				}
 			]
 		},
@@ -1338,11 +1321,11 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 8
+					level: 3
 				},
 				{
 					aptitude: "Building",
-					level: 8
+					level: 4
 				}
 			]
 		},
@@ -1351,7 +1334,7 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 8
+					level: 3
 				}
 			]
 		},
@@ -2014,11 +1997,11 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 10
+					level: 5
 				},
 				{
 					aptitude: "Constitution",
-					level: 10
+					level: 5
 				}
 			]
 		},

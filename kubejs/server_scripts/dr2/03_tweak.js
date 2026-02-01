@@ -20,5 +20,19 @@ const ProgressModuleRecipesRegistry = (event) => {
   }
   //#endregion
   processMetalls(MetallsForHands);
+  //#region for wood
+  function removePlanksrecipes(event) {
+    var planksTag = '#minecraft:planks';
+    Ingredient.of(planksTag).stacks.forEach((element) => {
+      const itemId = element.id;
+      event.remove({ output: itemId, type: 'minecraft:crafting_shaped', not: { id: /^gtceu:shaped\/.*/} });
+      event.remove({ output: itemId, type: 'minecraft:crafting_shapeless'});
 
+    });
+  }
+
+  removePlanksrecipes(event);
+  
+  
+  //#endregion
 };
