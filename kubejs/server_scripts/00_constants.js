@@ -77,7 +77,7 @@ global.WoodTypes = [
     {name: 'witch_hazel', planks: 'biomeswevegone:witch_hazel_planks', log: 'biomeswevegone:witch_hazel_log'},
     {name: 'zelkova', planks: 'biomeswevegone:zelkova_planks', log: 'biomeswevegone:zelkova_log'},
     //jadens nether expansion
-    {name: 'claret', planks: 'netherexp:claret_planks', log: 'netherexp:claret_stem'}
+    {name: 'claret', planks: 'netherexp:claret_planks', log: 'netherexp:cerebrage_claret_stem'}
 ]
 //можно весь список указать в itemObliterator
 global.DISABLED_ITEMS = [];
@@ -176,11 +176,16 @@ global.REMOVE_RECIPES_APOTHEOSIS = [
  * @type {Array}
  */
 global.REMOVE_RECIPES_IMMERSIVEENGINEERING = [
-    /^immersiveengineering:crafting\/hummercrushing_.*/,
+    /^immersiveengineering:crafting\/hammercrushing_.*/,
     /^immersiveengineering:crafting\/coil_.*/,
     /^immersiveengineering:crafting\/.*_engineering/,
     "immersiveengineering:crafting/radiator",
-    "immersiveengineering:crafting/generator"
+    "immersiveengineering:crafting/generator",
+    "immersiveengineering:crafting/hammer",
+    "immersiveengineering:alloysmelter/manyullyn",
+    "immersiveengineering:crafting/alloybrick",
+    "immersiveengineering:crafting/blastbrick",
+    "immersiveengineering:crafting/cokebrick",
 ];
 
 /**
@@ -236,8 +241,16 @@ global.REMOVE_RECIPES_GTCUE = [
     //--
     "gtceu:shaped/furnace",
     "gtceu:shaped/crafting_table",
-    "gtceu:shaped/chest"
-
+    "gtceu:shaped/chest",
+    "gtceu:shaped/blast_furnace",
+    "gtceu:shaped/enchanting_table",
+    "tconstruct:common/glass/vanilla/beacon", //!replace to tconstruct array
+    "gtceu:shaped/stonecutter",
+    "gtceu:shaped/smithing_table",
+    "gtceu:shaped/grindstone",
+    "gtceu:shaped/smoker",
+    "gtceu:shaped/anvil",
+    "gtceu:shaped/brewing_stand"
 ];
 /**
  * @type {Array}
@@ -250,6 +263,41 @@ global.REMOVE_RECIPES_LUMINOUS = [
  * @type {Array} CreateRecipesToRemove
  */
 global.REMOVE_RECIPES_CREATE = [
-    "create:crafting/appliances/chain_from_zinc"
+    "create:crafting/appliances/chain_from_zinc",
+    "greate:shaped/mechanical_crafter"
+];
+/**
+ * @type {Array} TFMGRecipesToRemove
+ */
+global.REMOVE_RECIPES_TFMG = [
+    "tfmg:item_application/steel_casing",
+    "tfmg:item_application/steel_casing_using_deploer",
+    "tfmg:item_application/heavy_machinery_casing",
+    "tfmg:item_application/heavy_machinery_casing_using_deploer",
+    "tfmg:crafting/kinetics/cast_iron_fluid_tank",
+    "tfmg:crafting/kinetics/steel_fluid_tank",
+    "tfmg:filling/hardened_planks",
+    "tfmg:smelting/fireproof_brick"
+];
+/**
+ * @type {Array} undergarden RecipesToRemove
+ */
+global.REMOVE_RECIPES_UNDERGARDEN = [
+    "undergarden:stonecutter_from_depthrock",
+    "undergarden:stonecutter_from_shiverstone",
+    "undergarden:stonecutter_from_tremblecrust"
+];
+/**
+ * @type {Array} Irons SpellBooks To Remove
+ */
+global.REMOVE_IRONS_SPELLBOOKS = [
+    /^irons_spellbooks:.*_spell_book/,
+    "irons_spellbooks:graybeard_staff",
+    "irons_spellbooks:inscription_table",
+    /^irons_spellbooks:wandering_magician_.*/,
+    /^irons_spellbooks:pumpkin_.*/,
+
+    
+
 ];
 //#endregion

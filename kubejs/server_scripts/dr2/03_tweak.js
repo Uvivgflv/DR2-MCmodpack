@@ -6,6 +6,18 @@ const ProgressModuleRecipesRegistry = (event) => {
     {item: 'minecraft:gold_nugget', output: 'gtceu:tiny_gold_dust'},
     {item: 'gtceu:tin_nugget', output: 'gtceu:tiny_tin_dust'}
   ];
+
+  let woodSawing = (output, input) => {
+    event.shaped(output, [
+      'A ',
+      'B '
+    ],{
+        A: '#forge:tools/saws',
+        B: input
+      }).id(`dr2:progress_module/hand/${output.split(':')[1]}`);
+  };
+
+  const WoodTypes = global.WoodTypes;
   //#endregion
 
   //#region functions for metalls
@@ -20,7 +32,7 @@ const ProgressModuleRecipesRegistry = (event) => {
   }
   //#endregion
   processMetalls(MetallsForHands);
-  //#region for wood
+  //#region for wood replace output?
   function removePlanksrecipes(event) {
     var planksTag = '#minecraft:planks';
     Ingredient.of(planksTag).stacks.forEach((element) => {
@@ -34,5 +46,39 @@ const ProgressModuleRecipesRegistry = (event) => {
   removePlanksrecipes(event);
   
   
+  function registerWoodSawingRecipes(event) {
+    WoodTypes.forEach(element => {
+      const itemId = element.log;
+      const planksId = element.planks;
+      event.shaped('4x '+planksId, [
+      'A ',
+      'B '
+    ],{
+        A: '#forge:tools/saws',
+        B: itemId
+      }).id(`dr2:progress_module/hand_saws/${planksId.split(':')[1]}/${itemId.replace(':', '/')}`);
+    })};
+  
+  registerWoodSawingRecipes(event);
+  //#endregion
+  
+  //#region for add recipes manually Wood Metall Tools and Ores
+  event.smelting('minecraft:copper_ingot', '#forge:dusts/copper').id('dr2:progress_module/smelting/copper_from_dust');
+  event.smelting('gtceu:tin_ingot', '#forge:dusts/tin').id('dr2:progress_module/smelting/tin_from_dust');
+  event.smelting('gtceu:bronze_ingot', '#forge:dusts/bronze').id('dr2:progress_module/smelting/bronze_from_dust');
+  event.smelting('minecraft:gold_ingot', '#forge:dusts/gold').id('dr2:progress_module/smelting/gold_from_dust');
+
+  woodSawing('2x forbidden_arcanus:edelwood_planks', '#forbidden_arcanus:edelwood_logs');
+  
+  event.shaped('gtceu:flint_saw', [
+    'AAA',
+    'BBA',
+    '   '
+  ],{
+    B: 'minecraft:flint',
+    A: '#forge:rods/wooden'
+  }).id('dr2:progress_module/shaped/flint_saw');
+
+  event.shapeless('minecraft:coal', ['gtceu:raw_coal', '#forge:tools/hammers']).id('dr2:progress_module/hand/coal_from_hammer');
   //#endregion
 };

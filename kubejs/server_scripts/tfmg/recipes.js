@@ -7,16 +7,14 @@ const RegisterTFMGRecipes = (event) => {
 
   //#endregion
   //#region remove casing recipes
-  event.remove({ id: "tfmg:item_application/steel_casing" });
-  event.remove({ id: "tfmg:item_application/steel_casing_using_deploer" });
-  event.remove({ id: "tfmg:item_application/heavy_machinery_casing" });
-  event.remove({
-    id: "tfmg:item_application/heavy_machinery_casing_using_deploer",
-  });
-  event.remove({ id: "tfmg:crafting/kinetics/cast_iron_fluid_tank" });
-  event.remove({ id: "tfmg:crafting/kinetics/steel_fluid_tank" });
+  //event.remove({ id: "tfmg:item_application/steel_casing" });
+  //event.remove({ id: "tfmg:item_application/steel_casing_using_deploer" });
+  //event.remove({ id: "tfmg:item_application/heavy_machinery_casing" });
+  //event.remove({id: "tfmg:item_application/heavy_machinery_casing_using_deploer",});
+  //event.remove({ id: "tfmg:crafting/kinetics/cast_iron_fluid_tank" });
+  //event.remove({ id: "tfmg:crafting/kinetics/steel_fluid_tank" });
   //--remove materials
-  event.remove({ id: "tfmg:filling/hardened_planks" });
+  //event.remove({ id: "tfmg:filling/hardened_planks" });
   event.remove({ output: "tfmg:cast_iron_ingot" });
   event.remove({ output: "tfmg:cast_iron_nugget" });
   event.remove({ output: /^tfmg:.*_sheet/ });

@@ -291,11 +291,11 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 20
+					level: 8
 				},
 				{
 					aptitude: "Intelligence",
-					level: 16
+					level: 5
 				}
 			]
 		},
@@ -304,11 +304,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 16
-				},
-				{
-					aptitude: "Intelligence",
-					level: 16
+					level: 3
 				}
 			]
 		},
@@ -317,11 +313,11 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 12
+					level: 4
 				},
 				{
 					aptitude: "Intelligence",
-					level: 12
+					level: 5
 				}
 			]
 		},
@@ -330,11 +326,11 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 6
+					level: 2
 				},
 				{
 					aptitude: "Strength",
-					level: 6
+					level: 2
 				}
 			]
 		},
@@ -343,7 +339,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 8
+					level: 3
 				}
 			]
 		},
@@ -352,7 +348,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 6
+					level: 3
 				}
 			]
 		},
@@ -2191,7 +2187,7 @@
 			aptitudes: [
 				{
 					aptitude: "Dexterity",
-					level: 1
+					level: 2
 				},
 				{
 					aptitude: "Strength",
@@ -5421,6 +5417,136 @@
 				{
 					aptitude: "Building",
 					level: 4
+				}
+			]
+		},
+		{
+			item: 'traveloptics:aqua_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'traveloptics:blood_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Strength",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'traveloptics:eldritch_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 20
+				},
+				{
+					aptitude: "Intelligence",
+					level: 18
+				}
+			]
+		},
+		{
+			item: 'traveloptics:ender_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Intelligence",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'traveloptics:evocation_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 20
+				},
+				{
+					aptitude: "Constitution",
+					level: 12
+				}
+			]
+		},
+		{
+			item: 'traveloptics:fire_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Strength",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'traveloptics:holy_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Luck",
+					level: 15
+				}
+			]
+		},
+		{
+			item: 'traveloptics:ice_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Intelligence",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'traveloptics:lightning_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Intelligence",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'traveloptics:nature_echo',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
 				}
 			]
 		}

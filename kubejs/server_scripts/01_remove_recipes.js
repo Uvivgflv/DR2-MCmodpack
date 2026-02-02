@@ -4,6 +4,10 @@ const RemoveRecipesByMods = event => {
     var RecipesIE = global.REMOVE_RECIPES_IMMERSIVEENGINEERING;
     var RecipesGTCEu = global.REMOVE_RECIPES_GTCUE;
     var RecipesLuminous = global.REMOVE_RECIPES_LUMINOUS;
+    var RecipesTFMG = global.REMOVE_RECIPES_TFMG;
+    var RecipesCreate = global.REMOVE_RECIPES_CREATE;
+    var RecipesUndergarden = global.REMOVE_RECIPES_UNDERGARDEN;
+    var RecipesIronsSpellbooks = global.REMOVE_IRONS_SPELLBOOKS;
     //vanilla
     RecipesVanilla.forEach(element => {
        const recipes_id = element;
@@ -24,6 +28,26 @@ const RemoveRecipesByMods = event => {
        const recipes_id = element;
        event.remove({id:recipes_id}); 
     }); 
+    //tfmg
+    RecipesTFMG.forEach(element => {
+       const recipes_id = element;
+       event.remove({id:recipes_id}); 
+    });
+    //create
+    RecipesCreate.forEach(element => {
+       const recipes_id = element;
+       event.remove({id:recipes_id}); 
+    });
+    //undergarden
+    RecipesUndergarden.forEach(element => {
+       const recipes_id = element;
+       event.remove({id:recipes_id}); 
+    });
+    //irons spellbooks
+    RecipesIronsSpellbooks.forEach(element => {
+       const recipes_id = element;
+       event.remove({id:recipes_id}); 
+    });
 
 };
 

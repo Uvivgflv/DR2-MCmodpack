@@ -93,6 +93,10 @@ const RegisterItemsTagsMain = (event) => {
     "gtceu:treated_wood_planks",
     "immersiveengineering:treated_wood_horizontal",
   ]);
+  event.add('dr2:cloth_low_quality', [
+    'forbidden_arcanus:cloth',
+    'kubejs:old_fabric'
+  ]);
   //#endregion
   //#region remove tags
   event.removeAllTagsFrom("tfmg:heavy_plate");

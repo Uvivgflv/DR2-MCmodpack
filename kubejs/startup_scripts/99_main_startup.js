@@ -23,6 +23,7 @@ GTCEuStartupEvents.materialModification((event) => {
   //v0.1.14092025 0:25
   //крашит из-за отсутствия материалов крафта (слитков)
   //GTCEuMatMod(event)
+  GTToolsCreation(event);
 });
 
 GTCEuStartupEvents.registry("gtceu:material", (event) => {

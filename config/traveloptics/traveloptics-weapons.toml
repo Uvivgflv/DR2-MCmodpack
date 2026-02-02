@@ -4,7 +4,7 @@
 
 	[current_weapons.general]
 		#Should End-game weapons be breakable || Default: false
-		breakable_end_game_weapons = false
+		breakable_end_game_weapons = true
 
 	[current_weapons.abyssal_tidecaller]
 		#Durability || Default 2250

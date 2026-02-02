@@ -52,6 +52,7 @@ GTCEuServerEvents.fluidVeins((event) => {
   console.log("Register GTCEU custom fluidVeins");
 });
 LootJS.modifiers((event) => {
+  SkeletonsDropsCloth(event);
   ModifyVanillaMobLootTable(event);
   grassRegoliteLootTableReplace(event);
   BlockLootTableReplace(event);
@@ -94,7 +95,7 @@ ServerEvents.recipes((event) => {
   RegistryInfAbyssRecipes(event);
   RegistryTCONTweaks(event);
   RegistryAdAstraRecipes(event);
-  //RegisterIERecipes(event);                             //moved to 00_constants.js
+  RegisterIERecipes(event);                             //moved to 00_constants.js
   RegistrySeqAssemblyTFMGRecipes(event);
   RegistryMechCrafterTFMGRecipes(event);
   registerMechanicalPressPlatesRecipes(event);

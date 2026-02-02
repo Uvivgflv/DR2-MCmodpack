@@ -4,7 +4,7 @@
 
 	[armors.general]
 		#Should End-game armors be breakable || Default: false
-		breakable_end_game_armors = false
+		breakable_end_game_armors = true
 
 	[armors.abyssal_hide]
 		#Armor value of Abyssal Hide armor helmet || Default 6

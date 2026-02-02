@@ -17,6 +17,7 @@ const ItemDescRegistry = (event) => {
     ],
     "Дроп с существ Сумеречного леса 1-30 уровня!",
   );
+  event.add('kubejs:old_fabric', 'Низкокачественная ткань. Дроп со Скелетов 2-10 уровня!');
 };
 
 const RegistryItemModification = (event) => {

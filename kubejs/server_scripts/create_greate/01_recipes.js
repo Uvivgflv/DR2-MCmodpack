@@ -12,7 +12,7 @@ const RegisterCreateRecipes = (event) => {
   event.remove({ id: "create:item_application/brass_casing_from_log" });
   event.remove({ id: "create:item_application/copper_casing_from_wood" });
   event.remove({ id: "create:item_application/copper_casing_from_log" });
-  event.remove({ id: /^greate:item_application\/brass_casing_from_.*/})
+  event.remove({ id: /^greate:item_application\/.*_casing_from_.*/})
   //--
   event.remove({ output: "create:cogwheel" });
   event.remove({ output: "create:large_cogwheel" });
