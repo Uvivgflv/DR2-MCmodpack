@@ -1,4 +1,4 @@
-const RegisterTConSmelteryCompat = (event) => {
+const TconstructSmelteryCompatRegister = (event) => {
   //!!!! Переписавть для TconJS в v1.2a
   //#region alloys compat
   //#region sterling silver

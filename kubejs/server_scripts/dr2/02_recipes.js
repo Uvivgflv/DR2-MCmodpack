@@ -1,4 +1,4 @@
-const RegistryCCTRecipes = (event) => {
+const DR2RecipesRegistry = (event) => {
   //#region add recipes for custon items
   event
     .shaped("kubejs:prim_glass_mix", ["ABA", "BCB", "ABA"], {

@@ -161,7 +161,8 @@ global.REMOVE_RECIPES_MINECRAFT = [
     "quark:world/crafting/woodsets/ancient/chest",
     "quark:world/crafting/woodsets/azalea/chest",
     "quark:world/crafting/woodsets/blossom/chest",
-    /^quark:building\/crafting\/chests\/.*/
+    /^quark:building\/crafting\/chests\/.*/,
+    "minecraft:torch",
 
 ];
 
@@ -186,6 +187,7 @@ global.REMOVE_RECIPES_IMMERSIVEENGINEERING = [
     "immersiveengineering:crafting/alloybrick",
     "immersiveengineering:crafting/blastbrick",
     "immersiveengineering:crafting/cokebrick",
+    "immersiveengineering:crafting/torch"
 ];
 
 /**
@@ -238,19 +240,39 @@ global.REMOVE_RECIPES_GTCUE = [
     /^gtceu:shaped\/luv_.*/,
     /^gtceu:shaped\/zpm_.*/,
     /^gtceu:shaped\/uv_.*/,
-    //--
+    //--func blocks
     "gtceu:shaped/furnace",
     "gtceu:shaped/crafting_table",
     "gtceu:shaped/chest",
     "gtceu:shaped/blast_furnace",
     "gtceu:shaped/enchanting_table",
     "tconstruct:common/glass/vanilla/beacon", //!replace to tconstruct array
+    "tconstruct:common/glass/vanilla/daylight_detector",
     "gtceu:shaped/stonecutter",
     "gtceu:shaped/smithing_table",
     "gtceu:shaped/grindstone",
     "gtceu:shaped/smoker",
     "gtceu:shaped/anvil",
-    "gtceu:shaped/brewing_stand"
+    "gtceu:shaped/brewing_stand",
+    "gtceu:shaped/dispenser",
+    "gtceu:shaped/dropper",
+    "gtceu:shaped/lectern",
+    //--decor module add recipes
+    "gtceu:shaped/lantern",
+    "gtceu:shaped/soul_lantern",
+    "gtceu:shaped/torch_creosote",
+    "gtceu:shaped/sticky_resin_torch",
+    "gtceu:shaped/torch_coke",
+    "gtceu:shaped/torch_charcoal_dust",
+    "gtceu:shaped/torch_coke_dust",
+    "gtceu:shaped/torch_coal_dust",
+    "gtceu:shaped/torch_sulfur",
+    "gtceu:shaped/redstone_torch",
+    "gtceu:shaped/stone_pressure_plate"
+
+
+
+
 ];
 /**
  * @type {Array}
@@ -285,7 +307,8 @@ global.REMOVE_RECIPES_TFMG = [
 global.REMOVE_RECIPES_UNDERGARDEN = [
     "undergarden:stonecutter_from_depthrock",
     "undergarden:stonecutter_from_shiverstone",
-    "undergarden:stonecutter_from_tremblecrust"
+    "undergarden:stonecutter_from_tremblecrust",
+    "undergarden:torch_ditchbulb_paste"
 ];
 /**
  * @type {Array} Irons SpellBooks To Remove
@@ -296,8 +319,29 @@ global.REMOVE_IRONS_SPELLBOOKS = [
     "irons_spellbooks:inscription_table",
     /^irons_spellbooks:wandering_magician_.*/,
     /^irons_spellbooks:pumpkin_.*/,
-
-    
+];
+/**
+ * @type {Array} Supplementaries Recipes To Remove
+ */
+global.REMOVE_SUPPLEMENTARIES = [
+    "supplementaries:sconce",
+    "netherexp:torch_from_fossil_fuel",
+    "twilightforest:berry_torch",
+    "supplementaries:goblet",
+    "supplementaries:hat_stand",
 
 ];
+/**
+ * @type {Array} Malum recipes to remove
+ */
+global.REMOVE_RECIPES_MALUM = [
+    "malum:torch_from_blazing_quartz"
+];
+/**
+ * @type {Array} Tconstruct recipes to remove
+ */
+global.REMOVE_RECIPES_TCONSTRUCT = [
+    "tconstruct:common/materials/copper_ingot_from_nuggets",
+    
+]
 //#endregion

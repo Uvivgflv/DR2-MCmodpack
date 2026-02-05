@@ -171,11 +171,15 @@ const RegisterMaterialItems = event => {
     event.create("ash_compound")
         .translationKey(`item.kubejs.ash_compound`);
     event.create("prim_glass_mix")
-        .translationKey(`item.kubejs.prim_glass_mix`);
+        .translationKey(`item.kubejs.prim_glass_mix`)
+        .texture('layer0', 'kubejs:item/compound_base')
+        .color(0, 0xddf5f7);
     event.create("tinned_leather")
         .translationKey(`item.kubejs.tinned_leather`);
     event.create("aluminum_casting_compound")
-        .translationKey(`item.kubejs.aluminum_casting_compound`);
+        .translationKey(`item.kubejs.aluminum_casting_compound`)
+        .texture('layer0', 'kubejs:item/compound_base')
+        .color(0, 0x0accdc);
     event.create("inert_dust")
         .translationKey(`item.kubejs.inert_dust`);
     event.create("large_plate_black_bronze")

@@ -1,0 +1,9 @@
+{
+  "enableItemBorderRendering": true,
+  "itemBorderStyle": 1,
+  "useTextureBorder": true,
+  "enableItemNameColor": true,
+  "enableTooltipInsert": true,
+  "checkVanillaRarity": true,
+  "skipUnconfiguredItems": false
+}

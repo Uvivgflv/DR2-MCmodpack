@@ -1,4 +1,4 @@
-const RegistrySmelteryRecipes = (event) => {
+const TconstructSmelteryRecipesRegistry = (event) => {
   event
     .custom({
       type: "tconstruct:casting_basin",
@@ -24,8 +24,8 @@ const RegistrySmelteryRecipes = (event) => {
       cast_consumed: true,
       cooling_time: 400,
       fluid: {
-        amount: 90,
-        tag: "tconstruct:molten_clay",
+        amount: 144,
+        id: "tconstruct:clay",
       },
       result: "gtceu:coke_oven_bricks",
     })

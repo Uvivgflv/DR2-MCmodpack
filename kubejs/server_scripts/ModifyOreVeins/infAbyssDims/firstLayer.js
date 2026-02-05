@@ -125,7 +125,7 @@ const InfAbyssFirstLayer = (event) => {
         .minRichness(0.3)
         .maxRichness(0.5)
         .edgeRoundoffBegin(10)
-        .maxEdgeRoundoff(0.2),
+        .maxEdgeRoundoff(0.2)
     );
   });
 };

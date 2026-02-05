@@ -1,4 +1,4 @@
-const RegistryTCONTweaks = (event) => {
+const TconstructTweaksRegistry = (event) => {
   event.remove({ id: "twilight_construct:smeltery/alloying/fiery_essence" });
   //fixed it
   event

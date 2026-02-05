@@ -62,11 +62,20 @@
     "item.kubejs.hellstone_nugget":"Кусочек адского камня",
     "item.kubejs.hellstone_shard":"Осколок адского камня",
     "item.kubejs.hellstone_chunk":"Кусок адского камня",
+    "item.kubejs.twilight_core":"Ядро Сумеречного леса",
+    "item.kubejs.twilight_space_component":"Пространственный компонент Сумеречного леса",
 
     "item.kubejs.gold_spellbook_blank":"Ненаполненная золотая книга заклинаний",
     "item.kubejs.diamond_spellbook_blank":"Ненаполненная алмазная книга заклинаний",
     "item.kubejs.netherite_spellbook_blank":"Ненаполненная незеритовая книга заклинаний",
     "item.kubejs.dragon_spellbook_blank":"Ненаполненная драконья книга заклинаний",
+    "item.kubejs.rebar":"Арматура",
+    "item.kubejs.zombie_brain":"Мозг зомби",
+    "item.kubejs.zombie_infected_flesh":"Зараженная плоть зомби",
+    "item.kubejs.decayed_samples":"Разложенные образцы",
+    "item.kubejs.dryed_flesh":"Высушенная плоть",
+    "item.kubejs.dryed_tendons":"Высушенные сухожилия",
+    "item.kubejs.husk_leather":"Кожа хаска",
 
     "__comment__":"В дальнейших патчах изменить на настоящие большие пластины из tconstruct",
     "item.kubejs.large_plate_black_bronze":"Черная бронза большая пластина",
@@ -78,6 +87,7 @@
     "block.kubejs.unfired_coke_bricks":"Необоженные коксовые кирпичи",
     "block.kubejs.lead_molded_bricks":"Залитые свинцом кирпичи",
     "block.kubejs.double_copper_block":"2x Медный блок",
+    
 
     "tooltip.kubejs.twforest_activator_tooltip":"Исползуется для активации портала в Сумеречный лес",
     "tooltip.kubejs.large_plate_black_bronze":"Исчезнет после обновления модпака!",

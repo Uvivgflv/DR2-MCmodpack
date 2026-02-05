@@ -1,4 +1,4 @@
-const RegistryTGCEURecipes = (event) => {
+const GTCEUecipesRegistry = (event) => {
   // //#region remove recipes
   // event.remove({ id: "gtceu:shaped/casing_coke_bricks" });
   // event.remove({ id: "gtceu:shaped/coke_oven" });

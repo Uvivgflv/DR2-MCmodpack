@@ -1,4 +1,4 @@
-const RegisterAE2Recipes = (event) => {
+const AE2RecipesRegister = (event) => {
   //? v1.2a начать добавлять рецепты AE2
   //#region remove recipes
   event.remove({ mod: "ae2" });

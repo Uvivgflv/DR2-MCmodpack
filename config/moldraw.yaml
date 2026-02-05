@@ -1,13 +1,13 @@
 enabled: true
 
-onlyShowOnShift: false
+onlyShowOnShift: true
 
 color:
   colors: true
 
   useMaterialColors: true
 
-  defaultColor: §e
+  defaultColor: ï¿½e
 
   minimumBrightness: 0.1
 

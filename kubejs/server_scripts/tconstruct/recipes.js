@@ -1,4 +1,4 @@
-const RegistryTconstructResipes = (event) => {
+const TconstructResipesRegistry = (event) => {
   //#region remove recipes misc
   event.remove({ id: "tconstruct:tables/modifier_worktable" });
   event.remove({ id: "tconstruct:tables/tinkers_chest" });

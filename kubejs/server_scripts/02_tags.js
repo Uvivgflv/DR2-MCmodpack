@@ -97,6 +97,15 @@ const RegisterItemsTagsMain = (event) => {
     'forbidden_arcanus:cloth',
     'kubejs:old_fabric'
   ]);
+  event.add('dr2:lantern_fuel',[
+    'twilightforest:torchberries',
+    '#forge:dusts/sulfur',
+    'gtceu:coke_gem',
+    'netherexp:fossil_fuel',
+    'minecraft:charcoal',
+    'minecraft:coal',
+    'gtceu:sticky_resin'
+  ]);
   //#endregion
   //#region remove tags
   event.removeAllTagsFrom("tfmg:heavy_plate");

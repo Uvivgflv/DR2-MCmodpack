@@ -5,6 +5,9 @@
 //
 //
 //
+ServerEvents.highPriorityData((event) => {
+  TconstructDataRegistry(event);
+})
 
 ServerEvents.tags("item", (event) => {
   RegisterItemsTagsMain(event);
@@ -14,7 +17,7 @@ ServerEvents.tags("item", (event) => {
   RegistryAdAstraItemTags(event);
   RegisterTFMGItemTags(event);
   RegisterGTCEUToCreateCompatTags(event);
-  RegisterForbiddenArcanusItemTags(event);
+  //RegisterForbiddenArcanusItemTags(event);
   UnearthedTagsRegolite(event);
   RegistryUnearthedRecipesTags(event);
 
@@ -69,21 +72,27 @@ ServerEvents.recipes((event) => {
   RemoveRecipesByMods(event);                           //REMOVE RECIPES USING GLOBAL CONSTS
 
   ProgressModuleRecipesRegistry(event);                 //progress tweak v1.2a
+  RegisterDecorModule(event);                           //decor module v1.0a
+
   RegistryTweaksRecipes(event);
   RegisterVanillaRecipes(event);
   CustomOreProcessing(event);
   RegisterTFMGRecipes(event);
-  RegistryCCTRecipes(event);
-  RegistryTconstructResipes(event);
-  RegistrySmelteryRecipes(event);
-  RegisterAE2Recipes(event);
-  RegistryTGCEURecipes(event);
+  DR2RecipesRegistry(event);
+  //--Tconstruct
+  TconstructResipesRegistry(event);
+  TconstructSmelteryRecipesRegistry(event);
+  TconstructTweaksRegistry(event);
+  TconstructSmelteryCompatRegister(event);
+  //--Ae2
+  AE2RecipesRegister(event);
+  //--GTCEU
+  GTCEUecipesRegistry(event);
   RegisterGTCEUComponentsRecipes(event);                  //created v1.0a
   RegisterBotaniaRecipes(event);                          //change v0.4.0
   RegisterSophisBackpacksRecipes(event);
   RegistrySophiStorageRecipes(event);
   RegisterCreateRecipes(event);
-  RegisterTConSmelteryCompat(event);
   RegisterApothRecipes(event);
   RegisterCreateCompatRecipes(event);
   RegisterCBSRecipes(event);
@@ -93,7 +102,6 @@ ServerEvents.recipes((event) => {
   RegisterApothCreateTicCompat(event);
   RegisterMalumRecipes(event);
   RegistryInfAbyssRecipes(event);
-  RegistryTCONTweaks(event);
   RegistryAdAstraRecipes(event);
   RegisterIERecipes(event);                             //moved to 00_constants.js
   RegistrySeqAssemblyTFMGRecipes(event);
@@ -101,7 +109,7 @@ ServerEvents.recipes((event) => {
   registerMechanicalPressPlatesRecipes(event);
   RegistrySeqAssemblyCreateRecipes(event);
   RegisterMechanicalCrafterRecipes(event);
-  RegisterGefestForgeBlocksRecipes(event);
+  //RegisterGefestForgeBlocksRecipes(event);            //mod deleted in v1.3.3 причина хардкодинг
   GTCEUMachineCraftingRegistry(event);
   RegisterApotheosisInfusionResipes(event);
   RegistryIronsSpellbooksRecipes(event);

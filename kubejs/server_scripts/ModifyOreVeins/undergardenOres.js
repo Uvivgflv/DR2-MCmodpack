@@ -217,4 +217,28 @@ const UndergardenOreVeins = (event) => {
       ),
     );
   });
+  //#region deorum
+  event.add("kubejs:under_deorum_veined", vein => {
+    vein.weight(9);
+    vein.clusterSize(28);
+    vein.density(0.9);
+    vein.discardChanceOnAirExposure(1);
+
+    vein.layer("undergarden");
+
+    vein.heightRangeUniform(0, 65);
+
+    vein.veinedVeinGenerator((generator) =>
+      generator
+        .oreBlock(GTMaterials.Gold, 16)
+        .rareBlock(GTMaterials.get("deorum"), 10)
+        .rareBlockChance(0.3)
+        .veininessThreshold(0.1)
+        .maxRichnessThreshold(0.3)
+        .minRichness(0.3)
+        .maxRichness(0.5)
+        .edgeRoundoffBegin(10)
+        .maxEdgeRoundoff(0.2)
+    );
+  })
 };

@@ -68,7 +68,7 @@ const ProgressModuleRecipesRegistry = (event) => {
   event.smelting('gtceu:bronze_ingot', '#forge:dusts/bronze').id('dr2:progress_module/smelting/bronze_from_dust');
   event.smelting('minecraft:gold_ingot', '#forge:dusts/gold').id('dr2:progress_module/smelting/gold_from_dust');
 
-  woodSawing('2x forbidden_arcanus:edelwood_planks', '#forbidden_arcanus:edelwood_logs');
+  //woodSawing('2x forbidden_arcanus:edelwood_planks', '#forbidden_arcanus:edelwood_logs');
   
   event.shaped('gtceu:flint_saw', [
     'AAA',
