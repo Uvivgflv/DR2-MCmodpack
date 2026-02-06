@@ -28,12 +28,18 @@ kubejs/temp/
 kubejs/client_scripts/cache
 kubejs/server_scripts/cache
 kubejs/*.log
+!kubejs/assets
 
 #========CONFIGS============
 config/**/*.cfg.cache
 config/**/*.json.tmp
 config/**/*.bak
 config/jei/
+config/nei/
+config/oculus.properties
+config/packetfixer.properties
+config/worldedit/*
+config/xaerominimap_entities.json
 config/enchdesc/
 config/entity_model_features/
 config/**/*.properties
@@ -78,10 +84,7 @@ emi.json
 patchouli_data.json
 rhino.local.properties
 ops.json
-config/oculus.properties
-config/packetfixer.properties
-config/worldedit/*
-config/xaerominimap_entities.json
+
 supportercache.json
 xaerominimap.txt
 xaeroworldmap.txt
@@ -100,6 +103,9 @@ desktop.ini
 *.log
 *.7z
 *.dat_old
+*.zip
+*.rar
+*.jar
 
 #========VSCODE=============
 .vscode/workspaceStorage/

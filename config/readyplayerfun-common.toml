@@ -1,0 +1,8 @@
+
+[Server]
+	#Show status message on first player login after server unpaused.
+	enableWelcomeMessage = true
+	#Number of seconds before server pauses. Backport of pause-when-empty-seconds from 1.21.2+
+	#Range: 1 ~ 360
+	pauseWhileEmptySeconds = 60
+

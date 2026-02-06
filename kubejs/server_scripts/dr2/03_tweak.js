@@ -71,9 +71,8 @@ const ProgressModuleRecipesRegistry = (event) => {
   //woodSawing('2x forbidden_arcanus:edelwood_planks', '#forbidden_arcanus:edelwood_logs');
   
   event.shaped('gtceu:flint_saw', [
-    'AAA',
-    'BBA',
-    '   '
+    'AA',
+    'BA'
   ],{
     B: 'minecraft:flint',
     A: '#forge:rods/wooden'
