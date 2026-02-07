@@ -79,6 +79,8 @@ ServerEvents.recipes((event) => {
   CustomOreProcessing(event);
   RegisterTFMGRecipes(event);
   DR2RecipesRegistry(event);
+  //--FarmersDelight
+  FarmersDelightRecipesRegistry(event);
   //--Tconstruct
   TconstructResipesRegistry(event);
   TconstructSmelteryRecipesRegistry(event);

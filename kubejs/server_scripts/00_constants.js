@@ -388,7 +388,8 @@ global.REMOVE_RECIPES_LUMINOUS = [
  */
 global.REMOVE_RECIPES_CREATE = [
     "create:crafting/appliances/chain_from_zinc",
-    "greate:shaped/mechanical_crafter"
+    "greate:shaped/mechanical_crafter",
+    "greate:shaped/wrought_iron_alloy"
 ];
 /**
  * @type {Array} TFMGRecipesToRemove
@@ -445,5 +446,14 @@ global.REMOVE_RECIPES_MALUM = [
 global.REMOVE_RECIPES_TCONSTRUCT = [
     "tconstruct:common/materials/copper_ingot_from_nuggets",
     
+]
+/**
+ * @type {Array} Farmers Deligth recipes to remove
+ */
+global.REMOVE_RECIPES_FARMERSDELIGHT = [
+    "farmersdelight:cooking_pot",
+    "farmersdelight:stove",
+    "farmersdelight:skillet",
+    /^farmersdelight:.*_cabinet/
 ]
 //#endregion

@@ -53,7 +53,28 @@ const RegisterIEAlloysmelterRecipes = (event) => {
       count: 2,
     },
     time: 1800,
-  }).id("dr2:ie_alloysmelter/wrought_iron_ingot");
+  }).id("dr2:ie_alloysmelter/wrought_iron_ingot_tricalcium");
+
+  event.custom({
+    type: "immersiveengineering:alloy",
+    input0: {
+      base_ingredient: {
+        item: "gtceu:calcite_dust",
+      },
+      count: 1,
+    },
+    input1: {
+      base_ingredient: {
+        item: 'gtceu:iron_dust',
+      },
+      count: 4,
+    },
+    result: {
+      item: 'gtceu:wrought_iron_ingot',
+      count: 2,
+    },
+    time: 1800,
+  }).id("dr2:ie_alloysmelter/wrought_iron_ingot_calcium");
 
 
 };

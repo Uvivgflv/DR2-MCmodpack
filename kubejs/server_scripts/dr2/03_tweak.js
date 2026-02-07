@@ -16,6 +16,7 @@ const ProgressModuleRecipesRegistry = (event) => {
         B: input
       }).id(`dr2:progress_module/hand/${output.split(':')[1]}`);
   };
+  //!trapdoors doors sings and other tnigs
 
   const WoodTypes = global.WoodTypes;
   //#endregion
@@ -79,5 +80,6 @@ const ProgressModuleRecipesRegistry = (event) => {
   }).id('dr2:progress_module/shaped/flint_saw');
 
   event.shapeless('minecraft:coal', ['gtceu:raw_coal', '#forge:tools/hammers']).id('dr2:progress_module/hand/coal_from_hammer');
+  event.shapeless('2x gtceu:fullers_earth_dust', ['gtceu:raw_fullers_earth', '#forge:tools/hammers', ]).id('dr2:progress_module/hand/fullers_earht_from_hammer');
   //#endregion
 };
