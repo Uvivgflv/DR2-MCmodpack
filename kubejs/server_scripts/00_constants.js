@@ -455,5 +455,32 @@ global.REMOVE_RECIPES_FARMERSDELIGHT = [
     "farmersdelight:stove",
     "farmersdelight:skillet",
     /^farmersdelight:.*_cabinet/
-]
+];
+/**
+ * @type {Array} Biomesoplenty and biomeswevegone recipes to remove
+ */
+global.REMOVE_RECIPES_BIOMES = [
+    /^biomesoplenty:.*_door/,
+    /^biomeswevegone:.*_door/,
+    /^biomesoplenty:.*_trapdoor/,
+    /^biomeswevegone:.*_trapdoor/,
+    /^biomesoplenty:.*_fence/,
+    /^biomeswevegone:.*_fence/,
+    /^biomesoplenty:.*_fence_gate/,
+    /^biomeswevegone:.*_fence_gate/,
+    /^biomesoplenty:.*_pressure_plate/,
+    /^biomeswevegone:.*_pressure_plate/,
+    /^biomesoplenty:.*_button/,
+    /^biomeswevegone:.*_button/,
+    /^biomesoplenty:.*_sign/,
+    /^biomeswevegone:.*_sign/,
+    /^biomesoplenty:.*_hanging_sign/,
+    /^biomeswevegone:.*_hanging_sign/,
+    /^biomesoplenty:.*_boat/,
+    /^biomeswevegone:.*_boat/,
+    /^biomesoplenty:.*_chest_boat/,
+    /^biomeswevegone:.*_chest_boat/,
+    /^biomesoplenty:.*_slab/,
+    /^biomeswevegone:.*_slab/
+];
 //#endregion
