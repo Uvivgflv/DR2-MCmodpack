@@ -37,7 +37,8 @@
     "immersiveengineering:ingot_steel",
     "ad_astra:steel_ingot",
     "tfmg:steel_ingot",
-    "ad_astra:steel_plate"
+    "ad_astra:steel_plate",
+    "botania:mana_bottle"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

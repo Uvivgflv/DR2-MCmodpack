@@ -52,11 +52,11 @@
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
 	# • *waterTemp: The temperature of water in the biome
 	"Biome Temperatures" = [
-	    ["minecraft:plains", 59, 82, "F"],
+	    ["minecraft:plains", 15, 28, "C"],
 	    ["minecraft:soul_sand_valley", 53, 53, "F"],
-	    ["minecraft:old_growth_birch_forest", 58, 72, "F"],
-	    ["minecraft:river", 59, 82, "F"],
-	    ["minecraft:swamp", 72, 84, "F", -5],
+	    ["minecraft:old_growth_birch_forest", 15, 22, "C"],
+	    ["minecraft:river", 15, 28, "C"],
+	    ["minecraft:swamp", 22, 28, "C", -5],
 	    ["minecraft:savanna", 70, 95, "F"],
 	    ["minecraft:savanna_plateau", 76, 98, "F"],
 	    ["minecraft:windswept_savanna", 67, 90, "F"],
@@ -64,7 +64,7 @@
 	    ["minecraft:snowy_taiga", 8, 38, "F", -15],
 	    ["minecraft:old_growth_pine_taiga", 48, 62, "F"],
 	    ["minecraft:old_growth_spruce_taiga", 48, 62, "F"],
-	    ["minecraft:desert", 48, 115, "F"],
+	    ["minecraft:desert", 8, 45, "C"],
 	    ["minecraft:stony_shore", 50, 64, "F"],
 	    ["minecraft:snowy_beach", 8, 38, "F", -15],
 	    ["minecraft:snowy_slopes", 24, 32, "F", -15],

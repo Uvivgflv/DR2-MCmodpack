@@ -12,6 +12,7 @@ const RemoveRecipesByMods = event => {
     var RecipesMalum = global.REMOVE_RECIPES_MALUM;
     var RecipesFarmersdeligth = global.REMOVE_RECIPES_FARMERSDELIGHT;
     var RecipesBiomes = global.REMOVE_RECIPES_BIOMES;
+    var RecipesColdSweet = global.REMOVE_RECIPES_COLDSWEET;
     //vanilla
     RecipesVanilla.forEach(element => {
        const recipes_id = element;
@@ -71,6 +72,11 @@ const RemoveRecipesByMods = event => {
       RecipesBiomes.forEach(element => {
          const recipe_id = element;
          event.remove({id:recipe_id});
+      });
+   //coldsweet
+      RecipesColdSweet.forEach(element => {
+         const recipe_id = element;
+         event.remove({id: recipe_id});
       });
 };
 

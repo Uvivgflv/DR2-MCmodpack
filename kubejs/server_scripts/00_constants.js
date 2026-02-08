@@ -107,6 +107,7 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
     /^immersiveengineering:ingot_.*/,
     /^immersiveengineering:storage_.*/,
     /^immersiveengineering:stick_.*/,
+    //'botania:mana_bottle',
     //dr2:tag_remove
     "#kubejs:disabled_items"
 ];
@@ -370,7 +371,9 @@ global.REMOVE_RECIPES_GTCUE = [
     "gtceu:shaped/torch_coal_dust",
     "gtceu:shaped/torch_sulfur",
     "gtceu:shaped/redstone_torch",
-    "gtceu:shaped/stone_pressure_plate"
+    "gtceu:shaped/stone_pressure_plate",
+    //--some broken recipes
+    "gtceu:shaped_fluid_container/casing_primitive_bricks",
 
 
 
@@ -482,5 +485,18 @@ global.REMOVE_RECIPES_BIOMES = [
     /^biomeswevegone:.*_chest_boat/,
     /^biomesoplenty:.*_slab/,
     /^biomeswevegone:.*_slab/
+];
+/**
+ * @type {Array} ColdSweet recipes to remove
+ */
+global.REMOVE_RECIPES_COLDSWEET = [
+    "cold_sweat:sewing_table",
+    "cold_sweat:hearth",
+    "cold_sweat:thermolith",
+    "cold_sweat:boiler",
+    "cold_sweat:icebox",
+    "cold_sweat:thermometer",
+    "cold_sweat:soulspring_lamp",
+    "cold_sweat:smokestack"
 ];
 //#endregion

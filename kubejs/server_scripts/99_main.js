@@ -81,6 +81,8 @@ ServerEvents.recipes((event) => {
   DR2RecipesRegistry(event);
   //--FarmersDelight
   FarmersDelightRecipesRegistry(event);
+  //--ColdSweat
+  ColdSweetRecipesRegistry(event);
   //--Tconstruct
   TconstructResipesRegistry(event);
   TconstructSmelteryRecipesRegistry(event);

@@ -619,52 +619,7 @@
 			]
 		},
 		{
-			item: "minecraft:wheat_seeds",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 6
-				}
-			]
-		},
-		{
 			item: "minecraft:cocoa_beans",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 6
-				}
-			]
-		},
-		{
-			item: "minecraft:pumpkin_seeds",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 6
-				}
-			]
-		},
-		{
-			item: "minecraft:melon_seeds",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 6
-				}
-			]
-		},
-		{
-			item: "minecraft:beetroot_seeds",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 6
-				}
-			]
-		},
-		{
-			item: "minecraft:torchflower_seeds",
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
@@ -765,11 +720,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -778,11 +733,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -791,11 +746,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -804,11 +759,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -817,11 +772,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -830,11 +785,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -843,11 +798,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -856,11 +811,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -869,7 +824,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -2417,11 +2372,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		}
