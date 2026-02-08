@@ -101,7 +101,7 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
     "immersiveengineering:component_iron",
     "immersiveengineering:component_steel",
     /^immersiveengineering:plate.*/,
-    "#forge:ingots/aluminium",
+    //"#forge:ingots/aluminium",
     /^immersiveengineering:nugget_.*/,
     /^immersiveengineering:plate_.*/,
     /^immersiveengineering:ingot_.*/,
@@ -374,6 +374,8 @@ global.REMOVE_RECIPES_GTCUE = [
     "gtceu:shaped/stone_pressure_plate",
     //--some broken recipes
     "gtceu:shaped_fluid_container/casing_primitive_bricks",
+    "gtceu:electric_blast_furnace/blast_aluminium_gas",
+    "gtceu:electric_blast_furnace/blast_aluminium"
 
 
 

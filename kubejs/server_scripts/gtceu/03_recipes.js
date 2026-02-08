@@ -1,75 +1,30 @@
 const GTCEUecipesRegistry = (event) => {
-  // //#region remove recipes
-  // event.remove({ id: "gtceu:shaped/casing_coke_bricks" });
-  // event.remove({ id: "gtceu:shaped/coke_oven" });
-  // event.remove({ id: "gtceu:smelting/coke_oven_brick" });
-  // event.remove({ id: "gtceu:compressor/coke_bricks" });
-  // event.remove({ id: "gtceu:shaped/casing_primitive_bricks" });
-  // event.remove({ id: "gtceu:shaped/bronze_primitive_blast_furnace" });
-  // event.remove({ id: "gtceu:shaped/casing_bronze_bricks" });
-  // event.remove({ id: "gtceu:shaped/steel_bricks_hull" });
-  // //--
-  // event.remove({ id: "gtceu:shaped/steam_miner_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_boiler_coal_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_compressor_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_boiler_lava_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_boiler_solar_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_extractor_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_macerator_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_hammer_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_furnace_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_alloy_smelter_bronze" });
-  // event.remove({ id: "gtceu:shaped/steam_rock_breaker_bronze" });
-  // //--
-  // event.remove({ id: "gtceu:shaped/steel_hull" });
-  // event.remove({ id: "gtceu:shaped/steam_boiler_coal_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_boiler_lava_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_boiler_solar_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_extractor_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_macerator_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_compressor_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_hammer_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_furnace_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_alloy_smelter_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_rock_breaker_steel" });
-  // event.remove({ id: "gtceu:shaped/steam_miner_steel" });
-  // //--
-  // event.remove({ output: "#forge:ingots/aluminium" });
-  // //! удаление данного было ошибкой
-  // // event.remove({ id: "gtceu:shapeless/dust_bronze" }); 
-  // event.remove({ id: "gtceu:smelting/sticky_resin_from_slime" });
-  // //--
-  // event.remove({ id: "gtceu:shaped/knife_flint" });
-  // //remove lv machines uncomment for nuke
-  // event.remove({ id: /^gtceu:shaped\/lv_.*/ });
-  // //--
-  // event.remove({ id: "gtceu:shaped/casing_bronze_firebox" });
-  // event.remove({ id: "gtceu:assembler/casing_bronze_firebox" }); //add assembler liquid fiery
+  //#region add materials recipes
+  //bismuth bronze
 
-  // //nuke for progress
-  // event.remove({ id: /^gtceu:shaped\/mv_.*/ }); //MV recipes
-  // event.remove({ id: /^gtceu:shaped\/hv_.*/ }); //HV recipes
-  // event.remove({ id: /^gtceu:shaped\/ev_.*/ }); //EV recipes
-  // event.remove({ id: /^gtceu:shaped\/iv_.*/ }); //IV recipes
-  // event.remove({ id: /^gtceu:shaped\/luv_.*/ }); //LuV recipes
-  // event.remove({ id: /^gtceu:shaped\/zpm_.*/ }); //ZPM recipes
-  // event.remove({ id: /^gtceu:shaped\/uv_.*/ }); //UV recipes
-
-  // //#endregion
+  //#endregion
 
   //#region electric blast furnace
+
+  event.recipes.gtceu
+    .electric_blast_furnace("gtceu:aluminium_ingot_nitrogen")
+    .itemInputs("kubejs:aluminum_casting_compound")
+    .itemOutputs("gtceu:aluminium_ingot")
+    .inputFluids(GTMaterials.Nitrogen.getFluid(250))
+    .duration(1200)
+    .blastFurnaceTemp(1700)
+    .circuit(2)
+    .EUt(128);
+  //nitrogen
 
   event.recipes.gtceu
     .electric_blast_furnace("gtceu:aluminium_ingot")
     .itemInputs("kubejs:aluminum_casting_compound")
     .itemOutputs("gtceu:aluminium_ingot")
-    .inputFluids(GTMaterials.Nitrogen.getFluid(250))
-    .duration(1200)
-    .blastFurnaceTemp(1200)
+    .duration(1900)
+    .blastFurnaceTemp(1700)
+    .circuit(1)
     .EUt(128);
-  //nitrogen
-
-  //event.recipes.gtceu.electric_blast_furnace('')
 
   //#endregion
 

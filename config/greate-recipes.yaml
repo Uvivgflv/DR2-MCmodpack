@@ -5,9 +5,20 @@ enableGTWireCoatingRecipes: true
 # Enable/Disable harder recipes for various Create blocks & items.
 enableHardCreateRecipes: false
 
-# Should certain Create items that have a GTCEu counterpart be used in recipes?
-# If false, GTCEu items will be used instead.
+# Should certain Create items that have a GTCEu counterpart also be used in recipes?
+# If false, GTCEu items will only be used.
+# REQUIRES MINECRAFT RESTART
 useCreateItemsInRecipes: false
+
+# Should recipes from create that conflict with GTCEu recipes be disabled?
+# [WARNING]: This will not cover every single recipe conflict, only common conflicts (like components (plates/sheets)), or ore processing conflicts.
+disableConflictingRecipes: false
+
+# Should tiered encased fans process item entities?
+processItemEntitiesWithFan: true
+
+# Should recipes that cannot be removed be logged?
+logUnremovableRecipes: true
 
 # Recipe types that should not be copied to Greate machines. Ex. 'gtceu:macerator' for macerator recipes
 ignoredRecipeTypes:

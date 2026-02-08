@@ -19,5 +19,14 @@ const DR2RecipesRegistry = (event) => {
     })
     .id("dr2:tinned_leather");
 
+  event.shaped('minecraft:clay', [
+    ' A ',
+    'BBB',
+    'BBB'
+  ],{
+    A:"#forge:tools/hammers",
+    B:'minecraft:clay_ball'
+  }).id('dr2:clay_block');
+
   //#endregion
 };

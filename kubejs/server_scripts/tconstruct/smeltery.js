@@ -25,7 +25,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cooling_time: 400,
       fluid: {
         amount: 144,
-        id: "tconstruct:clay",
+        tag: "tconstruct:molten_clay",
       },
       result: "gtceu:coke_oven_bricks",
     })
