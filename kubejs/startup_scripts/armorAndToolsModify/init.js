@@ -4,4 +4,5 @@ const ArmorModify = (event) => {
 
 const ToolsModify = (event) => {
   MidnightTools(event);
+  AllToolsModifocation(event);
 };

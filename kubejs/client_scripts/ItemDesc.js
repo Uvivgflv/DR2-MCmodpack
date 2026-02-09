@@ -1,4 +1,23 @@
 const ItemDescRegistry = (event) => {
+  const ListToolsDescr = [
+    /^minecraft:.*_pickaxe/,
+    /^minecraft:.*_hoe/,
+    /^minecraft:.*_shovel/,
+    /^immersiveengineering:pickaxe_.*/,
+    /^immersiveengineering:axe_.*/,
+    /^immersiveengineering:sword_.*/,
+    /^immersiveengineering:hoe_.*/,
+    /^immersiveengineering:shovel_.*/,
+    /^twilightforest:(?!giant_pickaxe).*_pickaxe/,
+    /^twilightforest:(?!(gold_minotaur_axe|diamond_minotaur_axe)).*_axe/,
+    /^twilightforest:.*_shovel/,
+    /^twilightforest:.*_hoe/
+  ];
+
+  ListToolsDescr.forEach(element => {
+    const item_id = element;
+    event.add(item_id, Text.of("Данный инструмент удален из игры,\nно может использоватся в рецептах или переработке!!!").darkRed());
+  });
   event.add("kubejs:inert_dust", "Дроп с Криперов 10-15 уровня!");
   event.add("kubejs:catalyst", "Дроп с Криперов 5-10 уровня!");
   event.add("kubejs:forgotter_mechanism_fragment", "Дроп с Зомби 5-10 уровня!");

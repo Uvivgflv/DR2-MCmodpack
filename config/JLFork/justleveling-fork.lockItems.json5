@@ -446,11 +446,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 16
+					level: 4
 				},
 				{
 					aptitude: "Strength",
-					level: 5
+					level: 2
 				}
 			]
 		},
@@ -504,7 +504,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 6
+					level: 2
 				}
 			]
 		},
@@ -522,7 +522,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 18
+					level: 10
 				},
 				{
 					aptitude: "Building",
@@ -619,34 +619,7 @@
 			]
 		},
 		{
-			item: "minecraft:cocoa_beans",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 6
-				}
-			]
-		},
-		{
 			item: "minecraft:pitcher_pod",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 6
-				}
-			]
-		},
-		{
-			item: "minecraft:glow_berries",
-			aptitudes: [
-				{
-					aptitude: "Intelligence",
-					level: 6
-				}
-			]
-		},
-		{
-			item: "minecraft:sweet_berries",
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
@@ -659,7 +632,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 12
+					level: 8
 				},
 				{
 					aptitude: "Magic",
@@ -2103,11 +2076,11 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 15
+					level: 10
 				},
 				{
 					aptitude: "Building",
-					level: 15
+					level: 5
 				}
 			]
 		},
@@ -5502,6 +5475,97 @@
 				{
 					aptitude: "Constitution",
 					level: 8
+				}
+			]
+		},
+		{
+			item: 'tconstruct:scorched_anvil',
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 10
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'tconstruct:tinkers_anvil',
+			aptitudes: [
+				{
+					aptitude: "Building",
+					level: 10
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'tconstruct:sledge_hammer',
+			aptitudes: [
+				{
+					aptitude: "Constitution",
+					level: 5
+				},
+				{
+					aptitude: "Building",
+					level: 5
+				}
+			]
+		},
+		{
+			item: 'tconstruct:excavator',
+			aptitudes: [
+				{
+					aptitude: "Constitution",
+					level: 5
+				},
+				{
+					aptitude: "Building",
+					level: 5
+				}
+			]
+		},
+		{
+			item: 'tconstruct:vein_hammer',
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 12
+				},
+				{
+					aptitude: "Strength",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'tconstruct:cleaver',
+			aptitudes: [
+				{
+					aptitude: "Constitution",
+					level: 10
+				},
+				{
+					aptitude: "Strength",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'tconstruct:scythe',
+			aptitudes: [
+				{
+					aptitude: "Constitution",
+					level: 5
+				},
+				{
+					aptitude: "Strength",
+					level: 5
 				}
 			]
 		}

@@ -124,5 +124,43 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       result: "gtceu:bronze_firebox_casing",
     })
     .id("dr2:casting/bronze_firebox_casing");
+
+  event.custom({
+    type:"tconstruct:casting_table",
+    cast: {
+      item: 'tfmg:fireproof_brick'
+    },
+    cast_consumed: true,
+    cooling_time: 120,
+    fluid: {
+      amount: 144,
+      tag: "tconstruct:molten_clay"
+    },
+    result: 'tconstruct:seared_brick'
+  }).id('dr2:casting_table/seared_brick_from_fireproof_brick');
+
+  event.custom({
+    type: "tconstruct:casting_basin",
+    cast: {item: 'tfmg:fireproof_bricks'},
+    cast_consumed: true,
+    cooling_time: 1080,
+    fluid: {
+      amount: 576,
+      tag: 'tconstruct:molten_clay'
+    },
+    result: 'tconstruct:seared_bricks'
+  }).id('dr2:casting/seared_bricks_from_fireproof_bricks');
+
+  event.custom({
+    type: "tconstruct:casting_basin",
+    cast: {item: 'tfmg:fireclay'},
+    cast_consumed: true,
+    cooling_time: 1080,
+    fluid: {
+      amount: 576,
+      tag: 'tconstruct:molten_clay'
+    },
+    result: 'tconstruct:seared_cobble'
+  }).id('dr2:casting/seared_cobble_from_fireproof_clay');
   //#region v0.2 08102025
 };

@@ -47,8 +47,52 @@ const TconstructDataRegistry = event => {
         "tconstruct:common/materials/queens_slime_nugget_from_ingot",
         "tconstruct:common/materials/manyullyn_nugget_from_ingot",
         "tconstruct:common/materials/hepatizon_nugget_from_ingot",
-        "tconstruct:common/materials/knightmetal_nugget_from_ingot"
+        "tconstruct:common/materials/knightmetal_nugget_from_ingot" 
     ];
+
+    const customRecipesToDisableCastingBasin = [
+        "tconstruct:smeltery/casting/seared/stone/block_from_clay",
+        "tconstruct:smeltery/casting/seared/cobble/block",
+        "tconstruct:smeltery/casting/seared/cobble/slab",
+        "tconstruct:smeltery/casting/seared/cobble/stairs",
+        "tconstruct:smeltery/casting/seared/cobble/wall",
+        "tconstruct:smeltery/casting/seared/paver",
+        "tconstruct:smeltery/casting/seared/bricks/block",
+        "tconstruct:smeltery/casting/seared/bricks/slab",
+        "tconstruct:smeltery/casting/seared/bricks/stairs",
+        "tconstruct:smeltery/casting/seared/bricks/wall",
+        "tconstruct:smeltery/casting/seared/cracked",
+        "tconstruct:smeltery/casting/seared/chiseled",
+        "tconstruct:smeltery/casting/seared/stone/slab",
+        "tconstruct:smeltery/casting/seared/stone/stairs"
+    
+    ];
+
+    const customRecipesToDisableCastingTable = [
+        "tconstruct:smeltery/casting/seared/brick_composite"
+    ];
+
+    customRecipesToDisableCastingBasin.forEach(recipeId => {
+        const [namespace, path] = recipeId.split(':');
+        event.addJson(`${namespace}:recipes/${path}.json`, {
+            type: 'tconstruct:casting_basin',
+            cast: {item: 'minecraft:air'},
+            cast_consumed: true,
+            fluid: {},
+            result: 'minecraft:air'
+        });
+    });
+
+    customRecipesToDisableCastingTable.forEach(recipeId => {
+        const [namespace, path] = recipeId.split(':');
+        event.addJson(`${namespace}:recipes/${path}.json`, {
+            type: 'tconstruct:casting_table',
+            cast: {item: 'minecraft:air'},
+            cast_consumed: true,
+            fluid: {},
+            result: 'minecraft:air'
+        });
+    });
 
     recipesToDisable.forEach(recipeId => {
         const [namespace, path] = recipeId.split(':');

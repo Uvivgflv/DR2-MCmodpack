@@ -1,10 +1,4 @@
 const MidnightArmmor = (event) => {
-  //#region REMOVE AFTER RELEASE
-  event.modify("minecraft:wooden_sword", (item) => {
-    item.attackDamage = 481;
-    item.maxDamage = 1;
-    item.rarity = "EPIC";
-  });
   //#endregion
   //#region shadowroot tools durability & dig speed
   var ShadowrootTools = [

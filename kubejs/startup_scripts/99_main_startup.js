@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
 
 ItemEvents.modification((event) => {
   ArmorModify(event);
-  ToolsModify(event);
+  ToolsModify(event);             //edit in v1.3.5 patch 2
 });
 
 WorldgenEvents.remove((event) => {

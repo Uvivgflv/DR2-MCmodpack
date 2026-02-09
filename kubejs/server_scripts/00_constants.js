@@ -375,7 +375,10 @@ global.REMOVE_RECIPES_GTCUE = [
     //--some broken recipes
     "gtceu:shaped_fluid_container/casing_primitive_bricks",
     "gtceu:electric_blast_furnace/blast_aluminium_gas",
-    "gtceu:electric_blast_furnace/blast_aluminium"
+    "gtceu:electric_blast_furnace/blast_aluminium",
+    
+    
+
 
 
 
@@ -449,8 +452,17 @@ global.REMOVE_RECIPES_MALUM = [
  * @type {Array} Tconstruct recipes to remove
  */
 global.REMOVE_RECIPES_TCONSTRUCT = [
-    "tconstruct:common/materials/copper_ingot_from_nuggets",
     
+    //--smeltery
+    
+    "tconstruct:smeltery/seared/seared_bricks_slab",
+    "tconstruct:smeltery/seared/seared_bricks_stairs",
+    "tconstruct:smeltery/seared/seared_bricks_wall",
+    "tconstruct:smeltery/seared/seared_stone_slab",
+    "tconstruct:smeltery/seared/seared_stone_stairs",
+    "tconstruct:smeltery/seared/seared_cobble_slab",
+    "tconstruct:smeltery/seared/seared_cobble_stairs",
+    "tconstruct:smeltery/seared/seared_cobble_wall"
 ]
 /**
  * @type {Array} Farmers Deligth recipes to remove
