@@ -130,4 +130,46 @@ const RegistryIronsSpellbooksRecipes = (event) => {
     E:'#supplementaries:straw'
   }).id('dr2:irons_spellbooks/pumpkin_boots');
   //#endregion
+
+  //#region add recipes for crafting stations
+  event.shaped('irons_spellbooks:inscription_table', [
+    'ABC',
+    'DEE',
+    'FGF'
+  ],{
+    A:'#forge:feathers',
+    B:'#forge:gems/diamond',
+    C:'minecraft:book',
+    D:'supplementaries:antique_ink',
+    E:'gtceu:treated_wood_slab',
+    F:'gtceu:treated_wood_fence',
+    G:'#forge:tools/saws'
+  }).id('dr2:irons_spellbooks/inscription_table');
+
+  event.shaped('irons_spellbooks:arcane_anvil', [
+    'ABA',
+    'CDE',
+    'DFD'
+  ],{
+    A:'#forge:rods/diamond',
+    B:'#forge:storage_blocks/amethyst_bronze',
+    C:'#forge:tools/hammers',
+    D:'#tconstruct:scorched_blocks',
+    E:'#forge:tools/crowbars',
+    F:'#minecraft:anvil'
+  }).id('dr2:irons_spellbooks/arcane_anvil');
+
+  event.shaped('irons_spellbooks:scroll_forge', [
+    'ABA',
+    'CDE',
+    'FFF'
+  ],{
+    A:'#forge:plates/obsidian',
+    B:'irons_spellbooks:arcane_essence',
+    C:'#forge:tools/crowbars',
+    D:'#forge:plates/black_steel',
+    E:'#forge:tools/hammers',
+    F:'#tconstruct:scorched_blocks'
+  }).id('dr2:irons_spellbooks/scroll_anvil');
+  //#endregion
 };

@@ -5568,6 +5568,32 @@
 					level: 5
 				}
 			]
+		},
+		{
+			item: 'irons_spellbooks:arcane_anvil',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 15
+				},
+				{
+					aptitude: "Strength",
+					level: 12
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:scroll_forge',
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 10
+				},
+				{
+					aptitude: "Building",
+					level: 12
+				}
+			]
 		}
 	]
 }

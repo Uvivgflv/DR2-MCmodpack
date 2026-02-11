@@ -81,5 +81,6 @@ const ProgressModuleRecipesRegistry = (event) => {
 
   event.shapeless('minecraft:coal', ['gtceu:raw_coal', '#forge:tools/hammers']).id('dr2:progress_module/hand/coal_from_hammer');
   event.shapeless('2x gtceu:fullers_earth_dust', ['gtceu:raw_fullers_earth', '#forge:tools/hammers', ]).id('dr2:progress_module/hand/fullers_earht_from_hammer');
+  event.shapeless('minecraft:diamond', ['gtceu:raw_diamond', '#forge:tools/hammers']).id('dr2:progress_module/hand/diamond_from_hammer');
   //#endregion
 };

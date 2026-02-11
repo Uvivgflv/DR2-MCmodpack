@@ -63,10 +63,7 @@
   # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: [ "minecraft:zombie 1.0",
   #   "minecraft:creeper 1.0" ]
   #    Range for Values: 0.0 ~ 1.0
-  idle_griefing.entities.whitelist = [
-    "minecraft:zombie 1.0",
-    "minecraft:creeper 1.0"
-  ]
+  idle_griefing.entities.whitelist = []
   # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
   idle_griefing.entities.blacklist = []
 
@@ -376,13 +373,7 @@
   # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: [ "minecraft:skeleton 1.0",
   #   "minecraft:stray 1.0", "minecraft:wither_skeleton 1.0", "minecraft:zombified_piglin 1.0", "minecraft:piglin 1.0" ]
   #    Range for Values: 0.0 ~ 1.0
-  idle_fiddling.entities.whitelist = [
-    "minecraft:skeleton 1.0",
-    "minecraft:stray 1.0",
-    "minecraft:wither_skeleton 1.0",
-    "minecraft:zombified_piglin 1.0",
-    "minecraft:piglin 1.0"
-  ]
+  idle_fiddling.entities.whitelist = []
   # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
   idle_fiddling.entities.blacklist = []
 
@@ -416,10 +407,7 @@
   # <Entity List> Format: [ "namespace:entity_type value", ... ], Default: [ "minecraft:creeper 1.0",
   #   "minecraft:spider 1.0" ]
   #    Range for Values: 0.0 ~ 1.0
-  idle_hiding.entities.whitelist = [
-    "minecraft:creeper 1.0",
-    "minecraft:spider 1.0"
-  ]
+  idle_hiding.entities.whitelist = []
   # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
   idle_hiding.entities.blacklist = []
 

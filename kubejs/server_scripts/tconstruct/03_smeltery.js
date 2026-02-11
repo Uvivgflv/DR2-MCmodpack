@@ -41,7 +41,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cooling_time: 900,
       fluid: {
         amount: 1080,
-        tag: "tconstruct:molten_amethyst_bronze",
+        tag: "tconstruct:molten_copper",
       },
       result: "gtceu:coke_oven",
     })
@@ -163,4 +163,17 @@ const TconstructSmelteryRecipesRegistry = (event) => {
     result: 'tconstruct:seared_cobble'
   }).id('dr2:casting/seared_cobble_from_fireproof_clay');
   //#region v0.2 08102025
+  //#region Greate/Create compat
+  event.custom({
+    type: "tconstruct:casting_basin",
+    cast: {item: 'minecraft:polished_andesite'},
+    cast_consumed: true,
+    cooling_time: 120,
+    fluid: {
+      amount: 288,
+      tag: 'tconstruct:molten_iron'
+    },
+    result: 'create:andesite_alloy'
+  }).id('dr2:casting/compat/create/andesite_alloy_from_iron');
+  //#endregion
 };

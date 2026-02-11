@@ -16,11 +16,7 @@
     },
     {
       "item_id_regex": ".*scythe.*",
-      "weapon_attributes": "bettercombat:scythe",
-      "exclude_items": [
-        "tconstruct:scythe",
-        "tconstruct:*scythe*"
-      ]
+      "weapon_attributes": "bettercombat:scythe"
     },
     {
       "item_id_regex": "halberd",

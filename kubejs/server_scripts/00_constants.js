@@ -107,6 +107,7 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
     /^immersiveengineering:ingot_.*/,
     /^immersiveengineering:storage_.*/,
     /^immersiveengineering:stick_.*/,
+    /^ad_astra:.*_rod/,
     //'botania:mana_bottle',
     //dr2:tag_remove
     "#kubejs:disabled_items"
@@ -187,6 +188,7 @@ global.REMOVE_RECIPES_IMMERSIVEENGINEERING = [
     /^immersiveengineering:crafting\/raw_hammercrushing_.*/,
     /^immersiveengineering:crafting\/coil_.*/,
     /^immersiveengineering:crafting\/.*_engineering/,
+    /^immersiveengineering:crafting\/component_.*/,
     "immersiveengineering:crafting/radiator",
     "immersiveengineering:crafting/generator",
     "immersiveengineering:crafting/hammer",
@@ -195,6 +197,7 @@ global.REMOVE_RECIPES_IMMERSIVEENGINEERING = [
     "immersiveengineering:crafting/blastbrick",
     "immersiveengineering:crafting/cokebrick",
     "immersiveengineering:crafting/torch",
+    "immersiveengineering:crafting/treated_wood_horizontal",
     //--nugget from ingot
     "immersiveengineering:crafting/nugget_aluminum_to_ingot_aluminum",
     "immersiveengineering:crafting/nugget_lead_to_ingot_lead",
@@ -376,12 +379,15 @@ global.REMOVE_RECIPES_GTCUE = [
     "gtceu:shaped_fluid_container/casing_primitive_bricks",
     "gtceu:electric_blast_furnace/blast_aluminium_gas",
     "gtceu:electric_blast_furnace/blast_aluminium",
-    
-    
-
-
-
-
+    //--tools
+    /^gtceu:shaped\/shovel_.*/,
+    /^gtceu:shaped\/spade_.*/,
+    /^gtceu:shaped\/pickaxe_.*/,
+    /^gtceu:shaped\/axe_.*/,
+    /^gtceu:shaped\/hoe_.*/,
+    /^gtceu:shaped\/mining_hammer_.*/,
+    /^gtceu:shaped\/scythe_.*/,
+    /^gtceu:shaped\/shovel_.*/,
 
 ];
 /**
@@ -430,6 +436,8 @@ global.REMOVE_IRONS_SPELLBOOKS = [
     "irons_spellbooks:inscription_table",
     /^irons_spellbooks:wandering_magician_.*/,
     /^irons_spellbooks:pumpkin_.*/,
+    "irons_spellbooks:arcane_anvil",
+    "irons_spellbooks:scroll_forge"
 ];
 /**
  * @type {Array} Supplementaries Recipes To Remove
@@ -513,4 +521,7 @@ global.REMOVE_RECIPES_COLDSWEET = [
     "cold_sweat:soulspring_lamp",
     "cold_sweat:smokestack"
 ];
+/**
+ * @type {Array} Ad astra recipes to remove
+ */
 //#endregion

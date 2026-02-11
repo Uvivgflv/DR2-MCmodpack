@@ -64,7 +64,9 @@ const TconstructDataRegistry = event => {
         "tconstruct:smeltery/casting/seared/cracked",
         "tconstruct:smeltery/casting/seared/chiseled",
         "tconstruct:smeltery/casting/seared/stone/slab",
-        "tconstruct:smeltery/casting/seared/stone/stairs"
+        "tconstruct:smeltery/casting/seared/stone/stairs",
+        "tconstruct:compat/create/andesite_alloy_iron",
+        "tconstruct:compat/create/andesite_alloy_zinc"
     
     ];
 
@@ -78,7 +80,10 @@ const TconstructDataRegistry = event => {
             type: 'tconstruct:casting_basin',
             cast: {item: 'minecraft:air'},
             cast_consumed: true,
-            fluid: {},
+            fluid: {
+                tag: 'minecraft:empty',
+                amount: 1
+            },
             result: 'minecraft:air'
         });
     });
@@ -89,7 +94,10 @@ const TconstructDataRegistry = event => {
             type: 'tconstruct:casting_table',
             cast: {item: 'minecraft:air'},
             cast_consumed: true,
-            fluid: {},
+            fluid: {
+                tag: 'minecraft:empty',
+                amount: 1
+            },
             result: 'minecraft:air'
         });
     });
