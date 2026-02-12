@@ -74,6 +74,11 @@ const TconstructDataRegistry = event => {
         "tconstruct:smeltery/casting/seared/brick_composite"
     ];
 
+    const customRecipesToDisableSmelting = [
+        "tconstruct:melting/ironwood/raw",
+        "twilight_construct:smeltery/melting/metal/knightmetal/cluster"
+    ];
+
     customRecipesToDisableCastingBasin.forEach(recipeId => {
         const [namespace, path] = recipeId.split(':');
         event.addJson(`${namespace}:recipes/${path}.json`, {
@@ -116,4 +121,23 @@ const TconstructDataRegistry = event => {
             }]
         });
     });
+
+    customRecipesToDisableSmelting.forEach(recipeId => {
+        const [namespace, path] = recipeId.split(':');
+        event.addJson(`${namespace}:recipes/${path}.jaon`,{
+            type: 'tconstruct:melting',
+            conditions: [{
+                type: 'forge:false'
+        }],
+        Ingredient: {
+            item: 'minecraft:air'
+        },
+        result: {
+            amount: 1,
+            tag: 'minecraft:empty'
+        },
+        temperature: 0,
+        time: 0
+        });
+    })
 };

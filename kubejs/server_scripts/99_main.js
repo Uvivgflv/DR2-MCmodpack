@@ -7,6 +7,7 @@
 //
 ServerEvents.highPriorityData((event) => {
   TconstructDataRegistry(event);
+  //GTConstructDataRegistry(event);
 })
 
 ServerEvents.tags("item", (event) => {

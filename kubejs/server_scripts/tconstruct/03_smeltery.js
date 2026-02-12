@@ -1,4 +1,10 @@
 const TconstructSmelteryRecipesRegistry = (event) => {
+//#region unit consts
+  const ingot = global.IngotUnit;
+  const nugget = global.NuggetUnit;
+  const block = global.BlockUnit;
+//#endregion
+
   event
     .custom({
       type: "tconstruct:casting_basin",
@@ -8,8 +14,8 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cast_consumed: true,
       cooling_time: 400,
       fluid: {
-        amount: 1080,
-        tag: "forge:molten_copper",
+        amount: block,
+        fluid: "gtceu:copper",
       },
       result: "tconstruct:smeltery_controller",
     })
@@ -24,7 +30,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cast_consumed: true,
       cooling_time: 400,
       fluid: {
-        amount: 144,
+        amount: ingot,
         tag: "tconstruct:molten_clay",
       },
       result: "gtceu:coke_oven_bricks",
@@ -40,8 +46,8 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cast_consumed: true,
       cooling_time: 900,
       fluid: {
-        amount: 1080,
-        tag: "tconstruct:molten_copper",
+        amount: block,
+        fluid: "gtceu:copper",
       },
       result: "gtceu:coke_oven",
     })
@@ -56,7 +62,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cast_consumed: true,
       cooling_time: 1200,
       fluid: {
-        amount: 1080,
+        amount: block,
         tag: "tconstruct:molten_slimesteel",
       },
       result: "gtceu:primitive_blast_furnace",
@@ -72,8 +78,8 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cast_consumed: true,
       cooling_time: 1200,
       fluid: {
-        amount: 540,
-        tag: "tconstruct:molten_bronze",
+        amount: ingot*6,
+        fluid: "gtceu:bronze",
       },
       result: "gtceu:steam_machine_casing",
     })
@@ -88,8 +94,8 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cast_consumed: true,
       cooling_time: 1200,
       fluid: {
-        amount: 540,
-        tag: "tconstruct:molten_lead",
+        amount: ingot*6,
+        fluid: "frceu:lead",
       },
       result: "kubejs:lead_molded_bricks",
     })
@@ -104,8 +110,8 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cast_consumed: true,
       cooling_time: 2200,
       fluid: {
-        amount: 540,
-        tag: "tconstruct:molten_steel",
+        amount: ingot*6,
+        fluid: "gtceu:steel",
       },
       result: "gtceu:steel_brick_casing",
     })
@@ -118,7 +124,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
       cast_consumed: true,
       cooling_time: 3200,
       fluid: {
-        amount: 1080,
+        amount: block,
         fluid: "twilight_construct:fiery_blood",
       },
       result: "gtceu:bronze_firebox_casing",
@@ -133,7 +139,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
     cast_consumed: true,
     cooling_time: 120,
     fluid: {
-      amount: 144,
+      amount: ingot,
       tag: "tconstruct:molten_clay"
     },
     result: 'tconstruct:seared_brick'
@@ -145,7 +151,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
     cast_consumed: true,
     cooling_time: 1080,
     fluid: {
-      amount: 576,
+      amount: ingot*6,
       tag: 'tconstruct:molten_clay'
     },
     result: 'tconstruct:seared_bricks'
@@ -157,7 +163,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
     cast_consumed: true,
     cooling_time: 1080,
     fluid: {
-      amount: 576,
+      amount: block,
       tag: 'tconstruct:molten_clay'
     },
     result: 'tconstruct:seared_cobble'
@@ -170,8 +176,8 @@ const TconstructSmelteryRecipesRegistry = (event) => {
     cast_consumed: true,
     cooling_time: 120,
     fluid: {
-      amount: 288,
-      tag: 'tconstruct:molten_iron'
+      amount: ingot*2,
+      tag: 'gtceu:iron'
     },
     result: 'create:andesite_alloy'
   }).id('dr2:casting/compat/create/andesite_alloy_from_iron');

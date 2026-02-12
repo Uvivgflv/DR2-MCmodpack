@@ -78,7 +78,64 @@ global.WoodTypes = [
     {name: 'zelkova', planks: 'biomeswevegone:zelkova_planks', log: 'biomeswevegone:zelkova_log'},
     //jadens nether expansion
     {name: 'claret', planks: 'netherexp:claret_planks', log: 'netherexp:cerebrage_claret_stem'}
-]
+];
+//ores
+/**
+ * @type {Object} CopperOreType
+ * @property {string}  name - id raw ore item
+ * @property {int} countRaw - count of output from smelting in furnace/balst furnace
+ * @property {int} countSmelt - count in mb molten metall from smelting in smeltery
+ */
+const ingot = 144;
+const nugget = ingot/9;
+const block = ingot*9;
+
+global.IngotUnit = 144;
+global.BlockUnit = 144*9;
+global.NuggetUnit = 144/9;
+
+global.CopperOreTypes = [
+    {name:'minecraft:raw_copper', countRaw: 1, countSmeltRaw: nugget*2},
+    {name:'gtceu:raw_chalcopyrite', countRaw: 1, countSmelt: nugget*2},
+    {name:'gtceu:raw_tetrahedrite', countRaw: 2, countSmeltRaw: nugget*4},
+    {name:'gtceu:raw_malachite', countRaw: 1, countSmeltRaw: nugget*2},
+    {name:'gtceu:raw_chalcocite', countRaw: 2, countSmeltRaw: nugget*4},
+    {name:'gtceu:raw_bornite', countRaw: 2, countSmeltRaw: nugget*4}
+];
+global.IronOreTypes = [
+    {name: 'minecraft:raw_iron', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_pyrite', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_basaltic_mineral_sand', countRaw: 2, countSmeltRaw: nugget*4},
+    {name: 'gtceu:raw_magnetite', countRaw: 2, countSmeltRaw: nugget*4},
+    {name: 'gtceu:raw_yellow_limonite', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_hematite', countRaw: 2, countSmeltRaw: nugget*4},
+    {name: 'gtceu:raw_goethite', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_granitic_mineral_sand', countRaw: 2, countSmeltRaw: nugget*4}
+];
+global.TinOreTypes = [
+    {name: 'gtceu:raw_tin', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_cassiterite', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_cassiterite_sand', countRaw: 2, countSmeltRaw: nugget*4}
+];
+global.CobaltOreTypes = [
+    {name: 'gtceu:raw_cobalt', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_cobaltite', countRaw: 1, countSmeltRaw: nugget*2}
+];
+global.NickelOreTypes = [
+    {name: 'gtceu:raw_nickel', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_garnierite', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_pentlandite', countRaw: 5, countSmeltRaw: ingot+nugget}
+];
+global.LeadOreTypes = [
+    {name: 'gtceu:raw_lead', countRaw: 1, countSmeltRaw: nugget*2},
+    {name: 'gtceu:raw_galena', countRaw: 1, countSmeltRaw: nugget*2}
+];
+global.GoldOreTypes = [
+    {name: 'minecraft:raw_gold', countRaw: 1, countSmeltRaw: nugget*2}
+];
+global.SilverOreTypes = [
+    {name: 'gtceu:raw_silver', countRaw: 1, countSmeltRaw: nugget*2}
+];
 //можно весь список указать в itemObliterator
 global.DISABLED_ITEMS = [];
 
@@ -460,9 +517,7 @@ global.REMOVE_RECIPES_MALUM = [
  * @type {Array} Tconstruct recipes to remove
  */
 global.REMOVE_RECIPES_TCONSTRUCT = [
-    
     //--smeltery
-    
     "tconstruct:smeltery/seared/seared_bricks_slab",
     "tconstruct:smeltery/seared/seared_bricks_stairs",
     "tconstruct:smeltery/seared/seared_bricks_wall",
@@ -471,7 +526,13 @@ global.REMOVE_RECIPES_TCONSTRUCT = [
     "tconstruct:smeltery/seared/seared_cobble_slab",
     "tconstruct:smeltery/seared/seared_cobble_stairs",
     "tconstruct:smeltery/seared/seared_cobble_wall"
-]
+];
+/**
+ * @type {Array} GTconstruct recipes to remove
+ */
+global.REMOVE_RECIPES_GTCONSTRUCT = [
+    /^gm_construct:recipes\/smeltery\/melting\/metal\/.*\/raw/
+];
 /**
  * @type {Array} Farmers Deligth recipes to remove
  */

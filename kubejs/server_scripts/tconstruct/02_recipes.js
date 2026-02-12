@@ -175,7 +175,7 @@ const TconstructResipesRegistry = (event) => {
         },
         {
           amount: 90,
-          tag: "forge:molten_gold",
+          fluid: "gtceu:gold",
         },
       ],
       result: {

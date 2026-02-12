@@ -1,23 +1,27 @@
 const TconstructSmelteryCompatRegister = (event) => {
-  //!!!! Переписавть для TconJS в v1.2a
+  //#region unit consts
+  const ingot = global.IngotUnit;
+  const nugget = global.NuggetUnit;
+  const block = global.BlockUnit;
+  const second = 20;
+//#endregion
   //#region alloys compat
   //#region sterling silver
-
   event
     .custom({
       type: "tconstruct:alloy",
       inputs: [
         {
-          amount: 90,
+          amount: ingot,
           tag: "forge:molten_copper",
         },
         {
-          amount: 360,
+          amount: ingot*4,
           tag: "tconstruct:molten_silver",
         },
       ],
       result: {
-        amount: 450,
+        amount: ingot*5,
         tag: "forge:sterling_silver",
       },
       temperature: 820,
@@ -37,7 +41,7 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:storage_blocks/sterling_silver",
       },
       result: {
-        amount: 810,
+        amount: block,
         tag: "forge:sterling_silver",
       },
       temperature: 425,
@@ -58,11 +62,11 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:ingots/sterling_silver",
       },
       result: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:sterling_silver",
       },
       temperature: 425,
-      time: 23,
+      time: second*4,
     })
     .id("cct:compat/alloying/sterling_silver/melting_ingot");
 
@@ -78,9 +82,9 @@ const TconstructSmelteryCompatRegister = (event) => {
           tag: "forge:plates/sterling_silver",
         },
       ],
-      cooling_time: 57,
+      cooling_time: second*4,
       fluid: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:sterling_silver",
       },
       result: {
@@ -101,9 +105,9 @@ const TconstructSmelteryCompatRegister = (event) => {
           tag: "forge:ingots/sterling_silver",
         },
       ],
-      cooling_time: 57,
+      cooling_time: second*4,
       fluid: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:sterling_silver",
       },
       result: {
@@ -121,9 +125,9 @@ const TconstructSmelteryCompatRegister = (event) => {
           tag: "#forge:storage_blocks/sterling_silver",
         },
       ],
-      cooling_time: 200,
+      cooling_time: second*10,
       fluid: {
-        amount: 810,
+        amount: block,
         tag: "forge:sterling_silver",
       },
       result: {
@@ -138,16 +142,16 @@ const TconstructSmelteryCompatRegister = (event) => {
       type: "tconstruct:alloy",
       inputs: [
         {
-          amount: 90,
+          amount: ingot,
           tag: "forge:molten_iron",
         },
         {
-          amount: 90,
+          amount: ingot,
           tag: "tconstruct:molten_tin",
         },
       ],
       result: {
-        amount: 180,
+        amount: ingot*2,
         tag: "forge:tin_alloy",
       },
       temperature: 820,
@@ -167,11 +171,11 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:storage_blocks/tin_alloy",
       },
       result: {
-        amount: 810,
+        amount: block,
         tag: "forge:tin_alloy",
       },
       temperature: 600,
-      time: 141,
+      time: second*9,
     })
     .id("cct:compat/alloying/tin_alloy/melting_block");
 
@@ -188,11 +192,11 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:ingots/tin_alloy",
       },
       result: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:tin_alloy",
       },
       temperature: 600,
-      time: 23,
+      time: second,
     })
     .id("cct:compat/alloying/tin_alloy/melting_ingot");
 
@@ -208,9 +212,9 @@ const TconstructSmelteryCompatRegister = (event) => {
           tag: "forge:plates/tin_alloy",
         },
       ],
-      cooling_time: 57,
+      cooling_time: second*2,
       fluid: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:tin_alloy",
       },
       result: {
@@ -231,9 +235,9 @@ const TconstructSmelteryCompatRegister = (event) => {
           tag: "forge:ingots/tin_alloy",
         },
       ],
-      cooling_time: 57,
+      cooling_time: second*2,
       fluid: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:tin_alloy",
       },
       result: {
@@ -251,9 +255,9 @@ const TconstructSmelteryCompatRegister = (event) => {
           tag: "#forge:storage_blocks/tin_alloy",
         },
       ],
-      cooling_time: 200,
+      cooling_time: second*10,
       fluid: {
-        amount: 810,
+        amount: block,
         tag: "forge:tin_alloy",
       },
       result: {
@@ -277,7 +281,7 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:dusts/redstone",
       },
       result: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:redstone",
       },
       temperature: 300,
@@ -298,7 +302,7 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:storage_blocks/redstone",
       },
       result: {
-        amount: 810,
+        amount: block,
         tag: "forge:redstone",
       },
       temperature: 300,
@@ -321,7 +325,7 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:dusts/venomius",
       },
       result: {
-        amount: 90,
+        amount: ingot,
         fluid: "gtceu:venomius",
       },
       temperature: 1300,
@@ -342,7 +346,7 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:ingots/venomius",
       },
       result: {
-        amount: 90,
+        amount: ingot,
         fluid: "gtceu:venomius",
       },
       temperature: 1300,
@@ -363,7 +367,7 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:dusts/relict",
       },
       result: {
-        amount: 90,
+        amount: ingot,
         fluid: "gtceu:relict",
       },
       temperature: 1300,
@@ -384,7 +388,7 @@ const TconstructSmelteryCompatRegister = (event) => {
         tag: "forge:ingots/relict",
       },
       result: {
-        amount: 90,
+        amount: ingot,
         fluid: "gtceu:relict",
       },
       temperature: 1300,
@@ -402,20 +406,20 @@ const TconstructSmelteryCompatRegister = (event) => {
           fluid: "undergarden:virulent_mix_source",
         },
         {
-          amount: 90,
+          amount: ingot,
           fluid: "tcintegrations:molten_soul_stained_steel",
         },
         {
-          amount: 180,
+          amount: ingot*2,
           fluid: "tcintegrations:molten_manasteel",
         },
         {
-          amount: 360,
+          amount: ingot*4,
           tag: "forge:relict",
         },
       ],
       result: {
-        amount: 3600,
+        amount: ingot*8,
         tag: "forge:venomius",
       },
       temperature: 1300,
@@ -436,7 +440,7 @@ const TconstructSmelteryCompatRegister = (event) => {
       ],
       cooling_time: 77,
       fluid: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:relict",
       },
       result: {
@@ -459,7 +463,7 @@ const TconstructSmelteryCompatRegister = (event) => {
       ],
       cooling_time: 80,
       fluid: {
-        amount: 90,
+        amount: ingot,
         tag: "forge:venomius",
       },
       result: {
@@ -467,214 +471,5 @@ const TconstructSmelteryCompatRegister = (event) => {
       },
     })
     .id("dr2:tconstruct/casting/venomius_ingot");
-  //#endregion
-  //#region black_bronze v0.3.2
-  //alloying
-  event
-    .custom({
-      type: "tconstruct:alloy",
-      inputs: [
-        {
-          amount: 270,
-          tag: "forge:molten_copper",
-        },
-        {
-          amount: 180,
-          tag: "tconstruct:molten_electrum",
-        },
-      ],
-      result: {
-        amount: 450,
-        tag: "forge:black_bronze",
-      },
-      temperature: 800,
-    })
-    .id("cct:compat/alloying/black_bronze");
-  //melting block
-  event
-    .custom({
-      type: "tconstruct:melting",
-      conditions: [
-        {
-          type: "mantle:tag_filled",
-          tag: "forge:storage_blocks/black_bronze",
-        },
-      ],
-      ingredient: {
-        tag: "forge:storage_blocks/black_bronze",
-      },
-      result: {
-        amount: 810,
-        tag: "forge:black_bronze",
-      },
-      temperature: 850,
-      time: 141,
-    })
-    .id("cct:compat/alloying/black_bronze/melting_block");
-  //melting ingot
-  event
-    .custom({
-      type: "tconstruct:melting",
-      conditions: [
-        {
-          type: "mantle:tag_filled",
-          tag: "forge:ingots/black_bronze",
-        },
-      ],
-      ingredient: {
-        tag: "forge:ingots/black_bronze",
-      },
-      result: {
-        amount: 90,
-        tag: "forge:black_bronze",
-      },
-      temperature: 800,
-      time: 23,
-    })
-    .id("cct:compat/alloying/black_bronze/melting_ingot");
-  //casting plate
-  event
-    .custom({
-      type: "tconstruct:casting_table",
-      cast: {
-        tag: "tconstruct:casts/multi_use/plate",
-      },
-      conditions: [
-        {
-          type: "mantle:tag_filled",
-          tag: "forge:plates/black_bronze",
-        },
-      ],
-      cooling_time: 57,
-      fluid: {
-        amount: 90,
-        tag: "forge:black_bronze",
-      },
-      result: {
-        tag: "forge:plates/black_bronze",
-      },
-    })
-    .id("cct:compat/alloyng/black_bronze/plate");
-  //casting ingot
-  event
-    .custom({
-      type: "tconstruct:casting_table",
-      cast: {
-        tag: "tconstruct:casts/multi_use/ingot",
-      },
-      conditions: [
-        {
-          type: "mantle:tag_filled",
-          tag: "forge:ingots/black_bronze",
-        },
-      ],
-      cooling_time: 57,
-      fluid: {
-        amount: 90,
-        tag: "forge:black_bronze",
-      },
-      result: {
-        tag: "forge:ingots/black_bronze",
-      },
-    })
-    .id("cct:compat/alloyng/black_bronze/ingot");
-  //casting block
-  event
-    .custom({
-      type: "tconstruct:casting_basin",
-      conditions: [
-        {
-          type: "mantle:tag_filled",
-          tag: "#forge:storage_blocks/black_bronze",
-        },
-      ],
-      cooling_time: 200,
-      fluid: {
-        amount: 810,
-        tag: "forge:black_bronze",
-      },
-      result: {
-        tag: "forge:storage_blocks/black_bronze",
-      },
-    })
-    .id("cct:compat/alloyng/black_bronze/block");
-  //#endregion
-  //#region large plate black bronze
-  event
-    .custom({
-      type: "tconstruct:casting_table",
-      cast: {
-        tag: "tconstruct:casts/multi_use/large_plate",
-      },
-      conditions: [
-        {
-          type: "mantle:tag_filled",
-          tag: "forge:ingots/black_bronze",
-        },
-      ],
-      cooling_time: 350,
-      fluid: {
-        amount: 720,
-        tag: "forge:black_bronze",
-      },
-      result: {
-        item: "kubejs:large_plate_black_bronze",
-      },
-    })
-    .id("dr2:compat/alloyng/black_bronze/large_plate");
-  //melting this
-  event
-    .custom({
-      type: "tconstruct:melting",
-      ingredient: {
-        item: "kubejs:large_plate_black_bronze",
-      },
-      result: {
-        amount: 720,
-        tag: "forge:black_bronze",
-      },
-      temperature: 800,
-      time: 20,
-    })
-    .id("dr2:compat/alloying/black_bronze/melting_large_plate");
-  //#endregion
-  //#region large plate deorum
-  event
-    .custom({
-      type: "tconstruct:casting_table",
-      cast: {
-        tag: "tconstruct:casts/multi_use/large_plate",
-      },
-      conditions: [
-        {
-          type: "mantle:tag_filled",
-          tag: "forge:ingots/deorum",
-        },
-      ],
-      cooling_time: 350,
-      fluid: {
-        amount: 720,
-        tag: "forge:deorum",
-      },
-      result: {
-        item: "kubejs:large_plate_deorum",
-      },
-    })
-    .id("dr2:compat/alloyng/deorum/large_plate");
-  //melting this
-  event
-    .custom({
-      type: "tconstruct:melting",
-      ingredient: {
-        item: "kubejs:large_plate_deorum",
-      },
-      result: {
-        amount: 720,
-        tag: "forge:deorum",
-      },
-      temperature: 800,
-      time: 20,
-    })
-    .id("dr2:compat/alloying/deorum/melting_large_plate");
   //#endregion
 };
