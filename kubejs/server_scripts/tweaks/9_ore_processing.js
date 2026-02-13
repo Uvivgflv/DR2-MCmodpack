@@ -1,11 +1,12 @@
-const CopperRawMaterials = global.CopperOreTypes;
-const IronRawMaterials = global.IronOreTypes;
-const TinRawMaterials = global.TinOreTypes;
-const CobaltRawMaterials = global.CobaltOreTypes;
-const NickelRawMaterials = global.NickelOreTypes;
-const LeadRawMaterials = global.LeadOreTypes;
-const GoldRawMaterial = global.GoldOreTypes;
-const SilverRawMaterial = global.SilverOreTypes;
+//priority 500
+var CopperRawMaterials = global.CopperOreTypes;
+var IronRawMaterials = global.IronOreTypes;
+var TinRawMaterials = global.TinOreTypes;
+var CobaltRawMaterials = global.CobaltOreTypes;
+var NickelRawMaterials = global.NickelOreTypes;
+var LeadRawMaterials = global.LeadOreTypes;
+var GoldRawMaterial = global.GoldOreTypes;
+var SilverRawMaterial = global.SilverOreTypes;
 
 function rawCopperOreProcessing(event) {
     CopperRawMaterials.forEach((item) => {

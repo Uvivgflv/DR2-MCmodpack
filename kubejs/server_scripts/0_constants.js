@@ -1,3 +1,4 @@
+//priority 1000
 //#region global custom recipes patterns&constants
 /**
  * @type {Object} RawOreVariant
@@ -80,12 +81,7 @@ global.WoodTypes = [
     {name: 'claret', planks: 'netherexp:claret_planks', log: 'netherexp:cerebrage_claret_stem'}
 ];
 //ores
-/**
- * @type {Object} CopperOreType
- * @property {string}  name - id raw ore item
- * @property {int} countRaw - count of output from smelting in furnace/balst furnace
- * @property {int} countSmelt - count in mb molten metall from smelting in smeltery
- */
+
 const ingot = 144;
 const nugget = ingot/9;
 const block = ingot*9;
@@ -93,7 +89,12 @@ const block = ingot*9;
 global.IngotUnit = 144;
 global.BlockUnit = 144*9;
 global.NuggetUnit = 144/9;
-
+/**
+ * @type {Object} CopperOreType
+ * @property {string}  name - id raw ore item
+ * @property {int} countRaw - count of output from smelting in furnace/balst furnace
+ * @property {int} countSmelt - count in mb molten metall from smelting in smeltery
+ */
 global.CopperOreTypes = [
     {name:'minecraft:raw_copper', countRaw: 1, countSmeltRaw: nugget*2},
     {name:'gtceu:raw_chalcopyrite', countRaw: 1, countSmelt: nugget*2},

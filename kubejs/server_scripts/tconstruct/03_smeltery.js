@@ -177,7 +177,7 @@ const TconstructSmelteryRecipesRegistry = (event) => {
     cooling_time: 120,
     fluid: {
       amount: ingot*2,
-      tag: 'gtceu:iron'
+      fluid: 'gtceu:iron'
     },
     result: 'create:andesite_alloy'
   }).id('dr2:casting/compat/create/andesite_alloy_from_iron');
