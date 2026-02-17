@@ -47,7 +47,14 @@ const GTCEuMaterialRegistry = (event) => {
     .components("2x lead", "4x oxygen", "coal", "water")
     .color(0x540124)
     .iconSet(GTMaterialIconSet.BRIGHT)
-    .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE);
+    .flags(
+      GTMaterialFlags.GENERATE_PLATE,
+      GTMaterialFlags.GENERATE_DENSE,
+      GTMaterialFlags.GENERATE_SMALL_GEAR,
+      GTMaterialFlags.GENERATE_BOLT_SCREW,
+      GTMaterialFlags.GENERATE_ROD,
+      GTMaterialFlags.GENERATE_LONG_ROD,
+    );
   event
     .create("queens_slime") //metall??
     .components("gold", "2x iron")
@@ -428,7 +435,12 @@ const GTCEuMaterialRegistry = (event) => {
       GTMaterialFlags.GENERATE_LONG_ROD,
       GTMaterialFlags.GENERATE_GEAR,
       GTMaterialFlags.GENERATE_SMALL_GEAR,
+      GTMaterialFlags.GENERATE_BOLT_SCREW,
+      GTMaterialFlags.GENERATE_FRAME
     );
+
+
+
   //#region mobdrop materials
   event
     .create("undemetall") // ALL CREATE & LV == steel

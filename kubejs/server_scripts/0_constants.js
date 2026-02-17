@@ -80,6 +80,20 @@ global.WoodTypes = [
     //jadens nether expansion
     {name: 'claret', planks: 'netherexp:claret_planks', log: 'netherexp:cerebrage_claret_stem'}
 ];
+
+global.VanillaWoodTypes = [
+        {name: 'oak', log: 'oak_log', trapdoor: 'minecraft:oak_trapdoor', slab: 'minecraft:oak_slab', cabinet: 'farmersdelight:oak_cabinet', drawer: 'storagedelight:oak_drawer'},
+        {name: 'spruce', log: 'spruce_log', trapdoor: 'minecraft:spruce_trapdoor', slab: 'minecraft:spruce_slab', cabinet: 'farmersdelight:spruce_cabinet', drawer: 'storagedelight:spruce_drawer'},
+        {name: 'birch', log: 'birch_log', trapdoor: 'minecraft:birch_trapdoor', slab: 'minecraft:birch_slab', cabinet: 'farmersdelight:birch_cabinet', drawer: 'storagedelight:birch_drawer'},
+        {name: 'jungle', log: 'jungle_log', trapdoor: 'minecraft:jungle_trapdoor', slab: 'minecraft:jungle_slab', cabinet: 'farmersdelight:jungle_cabinet', drawer: 'storagedelight:jungle_drawer'},
+        {name: 'acacia', log: 'acacia_log', trapdoor: 'minecraft:acacia_trapdoor', slab: 'minecraft:acacia_slab', cabinet: 'farmersdelight:acacia_cabinet', drawer: 'storagedelight:acacia_drawer'},
+        {name: 'cherry', log: 'cherry_log', trapdoor: 'minecraft:cherry_trapdoor', slab: 'minecraft:cherry_slab', cabinet: 'farmersdelight:cherry_cabinet', drawer: 'storagedelight:cherry_drawer'},
+        {name: 'dark_oak', log: 'dark_oak_log', trapdoor: 'minecraft:dark_oak_trapdoor', slab: 'minecraft:dark_oak_slab', cabinet: 'farmersdelight:dark_oak_cabinet', drawer: 'storagedelight:dark_oak_drawer'},
+        {name: 'mangrove', log: 'mangrove_log', trapdoor: 'minecraft:mangrove_trapdoor', slab: 'minecraft:mangrove_slab', cabinet: 'farmersdelight:mangrove_cabinet', drawer: 'storagedelight:mangrove_drawer'},
+        {name: 'bamboo', log: 'bamboo_block', trapdoor: 'minecraft:bamboo_trapdoor', slab: 'minecraft:bamboo_slab', cabinet: 'farmersdelight:bamboo_cabinet', drawer: 'storagedelight:bamboo_drawer'}, 
+        {name: 'crimson', log: 'crimson_stem', trapdoor: 'minecraft:crimson_trapdoor', slab: 'minecraft:crimson_slab', cabinet: 'farmersdelight:crimson_cabinet', drawer: 'storagedelight:crimson_drawer'},
+        {name: 'warped', log: 'warped_stem', trapdoor: 'minecraft:warped_trapdoor', slab: 'minecraft:warped_slab', cabinet: 'farmersdelight:warped_cabinet', drawer: 'storagedelight:warped_drawer'}
+    ];
 //ores
 
 const ingot = 144;
@@ -166,6 +180,7 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
     /^immersiveengineering:storage_.*/,
     /^immersiveengineering:stick_.*/,
     /^ad_astra:.*_rod/,
+    /^aquaculture:.*_fillet_knife/,
     //'botania:mana_bottle',
     //dr2:tag_remove
     "#kubejs:disabled_items"
@@ -349,7 +364,9 @@ global.REMOVE_RECIPES_IMMERSIVEENGINEERING = [
     "immersiveengineering:smelting/ingot_nickel_from_dust_from_blasting",
     "immersiveengineering:smelting/ingot_nickel_from_blasting",
     "immersiveengineering:smelting/ingot_nickel_from_blasting2",
-
+    //--crates
+    "immersiveengineering:crafting/crate",
+    "immersiveengineering:crafting/reinforced_crate"
 
 
 ];
@@ -474,7 +491,8 @@ global.REMOVE_RECIPES_TFMG = [
     "tfmg:crafting/kinetics/cast_iron_fluid_tank",
     "tfmg:crafting/kinetics/steel_fluid_tank",
     "tfmg:filling/hardened_planks",
-    "tfmg:smelting/fireproof_brick"
+    "tfmg:smelting/fireproof_brick",
+    "tfmg:crafting/kinetics/steel_nugget_from_decompacting"
 ];
 /**
  * @type {Array} undergarden RecipesToRemove
@@ -541,7 +559,18 @@ global.REMOVE_RECIPES_FARMERSDELIGHT = [
     "farmersdelight:cooking_pot",
     "farmersdelight:stove",
     "farmersdelight:skillet",
-    /^farmersdelight:.*_cabinet/
+    /^farmersdelight:.*_cabinet/,
+    "farmersdelight:cutting_board",
+    /^storagedelight:.*_drawer_with_door/,
+    /^storagedelight:.*_drawer/,
+    /^storagedelight:.*_drawer_with_books/,
+    /^storagedelight:small_.*_drawers/,
+    /^storagedelight:.*_bookshelf_with_door/,
+    /^storagedelight:glass_.*_cabinet/,
+    /^storagedelight:.*_cabinet_with_glass_doors/,
+    /^storagedelight:.*_single_door_cabinet/,
+    /^storagedelight:.*_cabinet_with_polished_deepslate_countertop/,
+    /^storagedelight:.*_cabinet_with_polished_andesite_countertop/
 ];
 /**
  * @type {Array} Biomesoplenty and biomeswevegone recipes to remove
@@ -586,4 +615,19 @@ global.REMOVE_RECIPES_COLDSWEET = [
 /**
  * @type {Array} Ad astra recipes to remove
  */
+global.REMOVE_RECIPES_ADASTRA = [
+    "ad_astra:iron_rod",
+    "ad_astra:steel_rod"
+];
+/**
+ * @type {Array} Sophisticated storage/backpacks recipes to remove
+ */
+global.REMOVE_RECIPES_SOPHISTICATED = [
+    /^sophisticatedstorage:.*_barrel/,
+    /^sophisticatedstorage:.*_chest/,
+    "sophisticatedstorage:generic_chest",
+    "sophisticatedstorage:oak_chest_from_vanilla_chest",
+    /^sophisticatedstorage:.*_chest_from_quark_.*_chest/,
+    /^sophisticatedstorage:\/tier_upgrade_chest_woodname_.*_doublechest_false_to_.*_chest_woodname_.*_doublechest_false/,
+];
 //#endregion

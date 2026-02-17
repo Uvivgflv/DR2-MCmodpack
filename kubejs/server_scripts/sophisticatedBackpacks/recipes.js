@@ -1,4 +1,4 @@
-const RegisterSophisBackpacksRecipes = (event) => {
+const SophisBackpacksRecipesRegistry = (event) => {
   //! Доработать русурспак и крафты 
   //#region remove backpacks recipes
   event.remove({ id: "sophisticatedbackpacks:backpack" });

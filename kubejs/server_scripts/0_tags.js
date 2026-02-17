@@ -1,3 +1,4 @@
+//priority 500
 const RegisterItemsTagsMain = (event) => {
   //#region disabled items LIST
   var disabledItemList = [
@@ -124,6 +125,18 @@ const RegisterItemsTagsMain = (event) => {
     "gtceu:bronze_nugget",
     "gtceu:invar_nugget",
     "gtceu:steel_nugget",
+    "gtceu:wrought_iron_nugget",
+    //--
+  ];
+
+  var chestRingsList = [
+    "gtceu:iron_ring",
+    "gtceu:wrought_iron_ring",
+    "gtceu:steel_ring",
+    "gtceu:copper_ring",
+    "gtceu:zinc_ring",
+    "gtceu:aluminium_ring",
+    "gtceu:bronze_ring"
   ];
   //#endregion
   //#region resin items LIST
@@ -141,7 +154,8 @@ const RegisterItemsTagsMain = (event) => {
   //#endregion
   //#region adding tags
   event.add("kubejs:disabled_items", disabledItemList);
-  event.add("cct:chest_nugget", chestItemList);
+  event.add("dr2:chest_nugget", chestItemList);
+  event.add('dr2:chest_rings', chestRingsList);
   event.add("cct:resin", resinItemList);
 
   event.add("cct:stonecuter_saw_blades", [
@@ -196,6 +210,23 @@ const RegisterItemsTagsMain = (event) => {
   event.removeAllTagsFrom("immersiveehineering:plate_steel");
   event.remove("twilightforest:portal/activator", "minecraft:diamond");
   //#endregion
+  //#region derorTags
+  event.add('dr2:decor_screws/iron', [
+    'gtceu:iron_screw',
+    'gtceu:wrought_iron_screw'
+  ]);
+
+  event.add('dr2:decor_screws/bronze', [
+    'gtceu:black_bronze_screw',
+    'gtceu:bronze_screw',
+    'gtceu:bismuth_bronze_screw'
+  ]);
+
+  event.add('dr2:decor_screws/copper', [
+    'gtceu:annealed_copper_screw',
+    'gtceu:copper_screw'
+  ]);
+  //#endregion
 };
 const RegisterBlocksTagsMain = (event) => {
   //#region adding tags
@@ -205,31 +236,6 @@ const RegisterBlocksTagsMain = (event) => {
     "immersiveengineering:treated_wood_horizontal",
   ]);
   //#endregion
-};
-
-const RegisterUnearthedTags = (event) => {
-  var unearthedStonesList = [
-    "unearthed:rhyolite",
-    "unearthed:grey_limestone",
-    "unearthed:siltstone",
-    "unearthed:mudstone",
-    "unearthed:conglomerate",
-    "unearthed:quartzite",
-    "unearthed:dolerite",
-    "unearthed:pillow_basalt",
-    "unearthed:dacite",
-    "unearthed:beige_limestone",
-    "unearthed:limestone",
-    "unearthed:white_granite",
-    "unearthed:granodiorite_regolith",
-    "unearthed:granodiorite",
-    "unearthed:gabbro_regolith",
-    "unearthed:gabbro",
-    "unearthed:phyllite",
-    "unearthed:slate",
-  ];
-
-  event.add("minecraft:stone_ore_replaceables", unearthedStonesList);
 };
 
 const RegisterRealisticStepsBlockTags = (event) => {
@@ -307,30 +313,30 @@ const RegisterRealisticStepsBlockTags = (event) => {
     "quark:jasper",
   ];
 
-  var unearthedStonesList = [
-    "unearthed:rhyolite",
-    "unearthed:grey_limestone",
-    "unearthed:siltstone",
-    "unearthed:mudstone",
-    "unearthed:conglomerate",
-    "unearthed:quartzite",
-    "unearthed:dolerite",
-    "unearthed:pillow_basalt",
-    "unearthed:dacite",
-    "unearthed:beige_limestone",
-    "unearthed:limestone",
-    "unearthed:white_granite",
-    "unearthed:granodiorite_regolith",
-    "unearthed:granodiorite",
-    "unearthed:gabbro_regolith",
-    "unearthed:gabbro",
-    "unearthed:phyllite",
-    "unearthed:slate",
-    "unearthed:cobbled_grey_limestone",
-    "unearthed:cobbled_beige_limestone",
-    "unearthed:cobbled_limestone",
-    "unearthed:weathered_rhyolite"
-  ];
+  // var unearthedStonesList = [
+  //   "unearthed:rhyolite",
+  //   "unearthed:grey_limestone",
+  //   "unearthed:siltstone",
+  //   "unearthed:mudstone",
+  //   "unearthed:conglomerate",
+  //   "unearthed:quartzite",
+  //   "unearthed:dolerite",
+  //   "unearthed:pillow_basalt",
+  //   "unearthed:dacite",
+  //   "unearthed:beige_limestone",
+  //   "unearthed:limestone",
+  //   "unearthed:white_granite",
+  //   "unearthed:granodiorite_regolith",
+  //   "unearthed:granodiorite",
+  //   "unearthed:gabbro_regolith",
+  //   "unearthed:gabbro",
+  //   "unearthed:phyllite",
+  //   "unearthed:slate",
+  //   "unearthed:cobbled_grey_limestone",
+  //   "unearthed:cobbled_beige_limestone",
+  //   "unearthed:cobbled_limestone",
+  //   "unearthed:weathered_rhyolite"
+  // ];
 
   var rewriteStoneTag = ["minecraft:warped_nylium", "minecraft:crimson_nylium"];
   //#region sandTag
@@ -338,7 +344,6 @@ const RegisterRealisticStepsBlockTags = (event) => {
   event.add("realistic_steps:sand_tag", "#chipped:sand");
   //#endregion
   //#region stoneTag
-  event.add("realistic_steps:stone_tag", unearthedStonesList);
   event.add("realistic_steps:stone_tag", stoneBlockList);
   event.remove("realistic_steps:stone_tag", rewriteStoneTag);
 
@@ -346,80 +351,7 @@ const RegisterRealisticStepsBlockTags = (event) => {
   //#region grassTag
   event.add("realistic_steps:grass_tag", grassBlockList);
   event.add("realistic_steps:grass_tag", "#dr2:grass_regolite");
-};
+  //#endregion
 
-const UnearthedTagsRegolite = (event) => {
-  var regoliteBlocks = [
-    "unearthed:conglomerate_regolith",
-    "unearthed:sandstone_regolith",
-    "unearthed:stone_regolith",
-    "unearthed:siltstone_regolith",
-    "unearthed:grey_limestone_regolith",
-    "unearthed:beige_limestone_regolith",
-    "unearthed:limestone_regolith",
-    "unearthed:white_granite_regolith",
-    "unearthed:rhyolite_regolith",
-    "unearthed:granodiorite_regolith",
-    "unearthed:gabbro_regolith",
-    "unearthed:slate_regolith",
-    "unearthed:phyllite_regolith",
-    "unearthed:mudstone_regolith",
-  ];
-
-  var regoliteGrassBlocks = [
-    "unearthed:white_granite_grassy_regolith",
-    "unearthed:limestone_grassy_regolith",
-    "unearthed:conglomerate_grassy_regolith",
-    "unearthed:mudstone_grassy_regolith",
-    "unearthed:phyllite_grassy_regolith",
-    "unearthed:slate_grassy_regolith",
-    "unearthed:gabbro_grassy_regolith",
-    "unearthed:granodiorite_grassy_regolith",
-    "unearthed:rhyolite_grassy_regolith",
-    "unearthed:beige_limestone_grassy_regolith",
-    "unearthed:grey_limestone_grassy_regolith",
-    "unearthed:siltstone_grassy_regolith",
-    "unearthed:stone_grassy_regolith",
-    "unearthed:sandstone_grassy_regolith",
-  ];
-
-  event.add("dr2:regolite", regoliteBlocks);
-  event.add("dr2:grass_regolite", regoliteGrassBlocks);
-};
-//templates удалить потом
-const CopperOreSpawnBiomes = (event) => {
-  var BiomeList = ["minecraft:forest", "minecraft:dark_forest"];
-
-  event.add("dr2:copper_ore_spawn_biome", BiomeList);
-};
-
-const IronOreSpawnBiomes = (event) => {
-  var BiomeList = [
-    "minecraft:taiga",
-    "minecraft:old_growth_spruce_taiga",
-    "minecraft:old_growth_pine_taiga",
-  ];
-
-  event.add("dr2:iron_ore_spawn_biome", BiomeList);
-};
-
-const CoalOreSpawnBiomes = (event) => {
-  var BiomeList = ["minecraft:stony_shore"];
-
-  event.add("dr2:coal_ore_spawn_biome", BiomeList);
-};
-
-const TinOreSpawnBiomes = (event) => {
-  var BiomeList = ["biomesoplenty:forested_field", "biomesoplenty:grassland"];
-
-  event.add("dr2:tin_ore_spawn_biome", BiomeList);
-};
-
-const GemsOreSpawnBiomes = (event) => {
-  var BiomeList = [
-    "biomesoplenty:weeping_witch_forest",
-    "biomesoplenty:fragment_jungle",
-  ];
-
-  event.add("dr2:gems_ore_spawn_biome", BiomeList);
+  
 };

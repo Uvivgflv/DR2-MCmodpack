@@ -19,16 +19,13 @@ ServerEvents.tags("item", (event) => {
   RegisterTFMGItemTags(event);
   RegisterGTCEUToCreateCompatTags(event);
   //RegisterForbiddenArcanusItemTags(event);
-  UnearthedTagsRegolite(event);
-  RegistryUnearthedRecipesTags(event);
-
+  
   console.log("Register DR2 custom itemTags");
 });
 ServerEvents.tags("block", (event) => {
   RegisterBotaniaTagsBlock(event);
   RegisterGTTagsBlocks(event);
   RegisterBlocksTagsMain(event);
-  RegisterUnearthedTags(event);
   RegisterRealisticStepsBlockTags(event);
 
   console.log("Register DR2 custom blockTags");
@@ -95,8 +92,10 @@ ServerEvents.recipes((event) => {
   GTCEUecipesRegistry(event);
   RegisterGTCEUComponentsRecipes(event);                  //created v1.0a
   RegisterBotaniaRecipes(event);                          //change v0.4.0
-  RegisterSophisBackpacksRecipes(event);
-  RegistrySophiStorageRecipes(event);
+  //--sophisticated
+  SophisBackpacksRecipesRegistry(event);
+  SophiStorageRecipesRegistry(event);
+
   RegisterCreateRecipes(event);
   RegisterApothRecipes(event);
   RegisterCreateCompatRecipes(event);

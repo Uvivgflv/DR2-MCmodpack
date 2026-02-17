@@ -1,0 +1,14 @@
+{
+    "parent": "sophisticatedstorage:chest",
+    "textures": {
+        "single": {
+            "base": "sophisticatedstorage:entity/chest/mangrove"
+        },
+        "left": {
+            "base": "sophisticatedstorage:entity/chest/left_mangrove"
+        },
+        "right": {
+            "base": "sophisticatedstorage:entity/chest/right_mangrove"
+        }
+    }
+}

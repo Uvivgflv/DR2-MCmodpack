@@ -127,6 +127,10 @@
   "cslcrops": {
     "temp_data": true
   },
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
+  },
   "autoleveling": {
     "level": true
   },

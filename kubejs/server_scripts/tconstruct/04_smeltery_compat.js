@@ -472,4 +472,62 @@ const TconstructSmelteryCompatRegister = (event) => {
     })
     .id("dr2:tconstruct/casting/venomius_ingot");
   //#endregion
+  //#region vanilla raw ores
+  event.custom({
+    type: "tconstruct:melting",
+      conditions: [
+        {
+          type: "mantle:tag_filled",
+          tag: "forge:raw_materials/gold",
+        },
+      ],
+      ingredient: {
+        tag: "forge:raw_materials/gold",
+      },
+      result: {
+        amount: ingot,
+        fluid: "gtceu:gold",
+      },
+      temperature: 700,
+      time: second*2,
+    }).id('dr2:tconstruct/melting/raw_gold');
+
+    event.custom({
+    type: "tconstruct:melting",
+      conditions: [
+        {
+          type: "mantle:tag_filled",
+          tag: "forge:raw_materials/copper",
+        },
+      ],
+      ingredient: {
+        tag: "forge:raw_materials/copper",
+      },
+      result: {
+        amount: ingot,
+        fluid: "gtceu:copper",
+      },
+      temperature: 500,
+      time: second*2,
+    }).id('dr2:tconstruct/melting/raw_copper');
+
+    event.custom({
+    type: "tconstruct:melting",
+      conditions: [
+        {
+          type: "mantle:tag_filled",
+          tag: "forge:raw_materials/tin",
+        },
+      ],
+      ingredient: {
+        tag: "forge:raw_materials/tin",
+      },
+      result: {
+        amount: ingot,
+        fluid: "gtceu:tin",
+      },
+      temperature: 300,
+      time: second*2,
+    }).id('dr2:tconstruct/melting/raw_tin');
+  //#endregion 
 };
