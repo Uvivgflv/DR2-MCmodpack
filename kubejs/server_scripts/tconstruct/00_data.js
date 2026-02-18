@@ -66,12 +66,16 @@ const TconstructDataRegistry = event => {
         "tconstruct:smeltery/casting/seared/stone/slab",
         "tconstruct:smeltery/casting/seared/stone/stairs",
         "tconstruct:compat/create/andesite_alloy_iron",
-        "tconstruct:compat/create/andesite_alloy_zinc"
+        "tconstruct:compat/create/andesite_alloy_zinc",
+        "gm_construct:smeltery/casting/metal/malachite/block",
+        "tconstruct:smeltery/casting/scorched/polished_from_magma",
+        "tconstruct:smeltery/casting/scorched/stone_from_magma"
     
     ];
 
     const customRecipesToDisableCastingTable = [
-        "tconstruct:smeltery/casting/seared/brick_composite"
+        "tconstruct:smeltery/casting/seared/brick_composite",
+        "tconstruct:smeltery/casting/scorched/brick_composite"
     ];
 
     const customRecipesToDisableSmelting = [

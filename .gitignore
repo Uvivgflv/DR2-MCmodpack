@@ -84,7 +84,7 @@ emi.json
 patchouli_data.json
 rhino.local.properties
 ops.json
-
+!backups/*
 supportercache.json
 xaerominimap.txt
 xaeroworldmap.txt

@@ -38,6 +38,8 @@ const ItemDescRegistry = (event) => {
     "Дроп с существ Сумеречного леса 1-30 уровня!",
   );
   event.add('kubejs:old_fabric', 'Низкокачественная ткань. Дроп со Скелетов 2-10 уровня!');
+  event.add('kubejs:black_ash_dust', 'Выпадает из тёмного пепла, разрушаемого кувалдой');
+  event.add('gtceu:calcite_dust', 'Выпадает из кальцита, разрушаемого кувалдой')
 };
 
 const RegistryItemModification = (event) => {

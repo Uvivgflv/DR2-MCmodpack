@@ -17,6 +17,13 @@ const RegisterCrafingBlocks = event => {
         .soundType("stone")
         .tagBlock("minecraft:mineable/pickaxe")
         .tagBlock("forge:mineable/wrench");
+
+    event.create("dry_scorched_grout")
+        .translationKey(`block.kubejs.dry_scorched_grout`)
+        .requiresTool(true)
+        .soundType("gravel")
+        .tagBlock("forge:mineable/wrench")
+        .tagBlock("minecraft:mineable.pickaxe")
     //#endregion
 }
 

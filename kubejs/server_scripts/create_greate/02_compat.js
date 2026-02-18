@@ -7,10 +7,28 @@ const RegisterCreateCompatRecipes = (event) => {
     '#forge:dusts/borax',
     '#forge:dusts/borax',
     '#forge:dusts/basalt',
-    'kubejs:inert_dust'])
-    .heated()
-    .id('kubejs:create/compat/aluminum_compound')
-    .recipeTier(0);
+    'kubejs:inert_dust'
+  ])
+  .heated()
+  .id('kubejs:create/compat/aluminum_compound')
+  .recipeTier(0);
+
+  event.recipes.greate.mixing('6x kubejs:dry_scorched_grout', [
+    'minecraft:soul_sand',
+    'minecraft:soul_sand',
+    'minecraft:soul_sand',
+    'minecraft:soul_sand',
+    'kubejs:black_ash_dust',
+    'kubejs:black_ash_dust',
+    'kubejs:black_ash_dust',
+    'kubejs:black_ash_dust',
+    '#forge:dusts/netherrack',
+    '#forge:dusts/netherrack',
+    '#forge:dusts/netherrack',
+    '#forge:dusts/netherrack'
+  ])
+  .id('dr2:creata/compat/dry_scorched_grout')
+  .recipeTier(1);
   //#endregion
 
   //#regin filling recipes

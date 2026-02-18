@@ -197,6 +197,8 @@ const RegisterMaterialItems = event => {
     event.create('rebar')
         .maxStackSize(16)
         .translationKey(`item.kubejs.rebar`);
+    event.create('black_ash_dust')
+        .translationKey(`item.kubejs.black_ash_dust`)
     //#endregion
 }
 

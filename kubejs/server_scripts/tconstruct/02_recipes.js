@@ -4,8 +4,8 @@ const TconstructResipesRegistry = (event) => {
   event.remove({ id: "tconstruct:tables/tinkers_chest" });
   event.remove({ id: "tconstruct:tables/part_chest" });
   event.remove({ id: "tconstruct:tables/cast_chest" });
-  event.remove({ id: "tconstruct:tables/tinkers_forge" });
-  event.remove({ id: "tconstruct:tables/tinkers_anvil" });
+  //event.remove({ id: "tconstruct:tables/tinkers_forge" });
+  //event.remove({ id: "tconstruct:tables/tinkers_anvil" });
   event.remove({ id: "tconstruct:tools/building/flint_and_brick" });
   //#endregion
 
@@ -50,6 +50,30 @@ const TconstructResipesRegistry = (event) => {
       F: "#forge:dusts/brick",
     })
     .id("cct:smeltery/grout");
+  
+  event.custom({
+    type: "tconstruct:casting_basin",
+    cast: {item: 'kubejs:dry_scorched_grout'},
+    cast_consumed: true,
+    cooling_time: 1080,
+    fluid: {
+      amount: 144,
+      fluid: 'tconstruct:magma'
+    },
+    result: 'tconstruct:nether_grout'
+  }).id('dr2:smeltery/nether_grout');
+
+  event.custom({
+    type: "tconstruct:casting_basin",
+    cast: {item: 'minecraft:anvil'},
+    cast_consumed: true,
+    cooling_time: 300,
+    fluid: {
+      amount: 1296,
+      fluid: 'tconstruct:scorched_stone'
+    },
+    result: 'tconstruct:scorched_anvil'
+  }).id('dr2:smeltery/scorched_anvil');
 
   event
     .smelting("tconstruct:seared_brick", "tconstruct:grout")
@@ -57,6 +81,15 @@ const TconstructResipesRegistry = (event) => {
     .cookingTime(800)
     .id("cct:smeltery/smelting/seared_brick");
 
+  event.smelting('tconstruct:scorched_brick', 'tconstruct:nether_grout')
+    .xp(1.0)
+    .cookingTime(1800)
+    .id('dr2:smeltery/smelting/scorched_brick');
+
+  event.blasting('2x tconstruct:scorched_brick', 'tconstruct:nether_grout')
+    .xp(1.5)
+    .cookingTime(800)
+    .id('dr2:smeltery/blasting/scorched_brick');
   // event.shaped('tconstruct:seared_bricks',[
   //     'AA',
   //     'AA'

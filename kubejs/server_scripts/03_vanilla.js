@@ -374,15 +374,6 @@ const RegisterVanillaRecipes = (event) => {
     .id("dr2:shears");
 
   event
-    .shaped("minecraft:spyglass", [" AB", " C ", "DC "], {
-      A: "#forge:lenses/amethyst",
-      B: "#forge:tools/mallets",
-      C: "#forge:plates/copper",
-      D: "#forge:tools/hammers",
-    })
-    .id("dr2:spyglass");
-
-  event
     .shaped("minecraft:fishing_rod", ["  A", " BA", "C D"], {
       A: "#forge:string",
       B: "minecraft:stick",

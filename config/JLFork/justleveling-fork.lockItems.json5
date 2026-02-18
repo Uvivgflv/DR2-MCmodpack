@@ -6,7 +6,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 12
+					level: 8
 				}
 			]
 		},
@@ -15,7 +15,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 12
+					level: 8
 				}
 			]
 		},
@@ -24,7 +24,7 @@
 			aptitudes: [
 				{
 					aptitude: "Building",
-					level: 12
+					level: 8
 				}
 			]
 		},

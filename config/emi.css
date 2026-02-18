@@ -66,7 +66,7 @@
 	/**
 	 * Whether to add mod name to item tooltips, in case another mod provides behavior
 	 */
-	append-item-mod-id: false;
+	append-item-mod-id: true;
 
 	/**
 	 * Prevents recipes being quick crafted from shifting around under the cursor.
@@ -98,7 +98,7 @@
 	/**
 	 * Which sidebar type to focus when the search is empty.
 	 */
-	empty-search-sidebar-focus: none;
+	empty-search-sidebar-focus: craftables;
 
 	/**
 	 * Whether the EMI config button should be visible.

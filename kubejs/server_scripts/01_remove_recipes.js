@@ -16,6 +16,7 @@ const RemoveRecipesByMods = event => {
     var RecipesGTconstruct = global.REMOVE_RECIPES_GTCONSTRUCT;
     var RecipesSophisticated = global.REMOVE_RECIPES_SOPHISTICATED;
     var RecipesAdAstra = global.REMOVE_RECIPES_ADASTRA;
+    var RecipesTconstruct = global.REMOVE_RECIPES_TCONSTRUCT;
     //vanilla
     RecipesVanilla.forEach(element => {
        const recipes_id = element;
@@ -95,6 +96,11 @@ const RemoveRecipesByMods = event => {
       RecipesAdAstra.forEach(element => {
          const recipe_id = element;
          event.remove({id: recipe_id});
+      });
+   //tconstruct
+      RecipesTconstruct.forEach(element => {
+         const recipes_id = element;
+         event.remove({id: recipes_id});
       });
 };
 
