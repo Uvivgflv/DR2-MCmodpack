@@ -716,7 +716,20 @@ global.REMOVE_IRONS_SPELLBOOKS = [
     /^irons_spellbooks:wandering_magician_.*/,
     /^irons_spellbooks:pumpkin_.*/,
     "irons_spellbooks:arcane_anvil",
-    "irons_spellbooks:scroll_forge"
+    "irons_spellbooks:scroll_forge",
+    /^irons_spellbooks:pyromancer_.*/,
+    /^irons_spellbooks:electromancer_.*/,
+    /^irons_spellbooks:archevoker_.*/,
+    /^irons_spellbooks:cultist_.*/,
+    /^irons_spellbooks:cryomancer_.*/,
+    /^irons_spellbooks:shadowwalker_.*/,
+    /^irons_spellbooks:priest_.*/,
+    /^irons_spellbooks:plagued_.*/,
+    /^irons_spellbooks:netherite_mage_.*/,
+    "irons_spellbooks:ice_staff",
+    "irons_spellbooks:artificer_cane",
+    "irons_spellbooks:magic_cloth",
+    "irons_spellbooks:energized_core"
 ];
 /**
  * @type {Array} Supplementaries Recipes To Remove

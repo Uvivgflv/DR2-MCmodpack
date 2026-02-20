@@ -98,7 +98,7 @@
 	/**
 	 * Which sidebar type to focus when the search is empty.
 	 */
-	empty-search-sidebar-focus: craftables;
+	empty-search-sidebar-focus: none;
 
 	/**
 	 * Whether the EMI config button should be visible.

@@ -50,7 +50,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 20
+					level: 12
 				},
 				{
 					aptitude: "Building",
@@ -862,12 +862,8 @@
 			item: "minecraft:bamboo",
 			aptitudes: [
 				{
-					aptitude: "Intelligence",
-					level: 8
-				},
-				{
 					aptitude: "Building",
-					level: 5
+					level: 2
 				}
 			]
 		},
@@ -875,12 +871,8 @@
 			item: "minecraft:cactus",
 			aptitudes: [
 				{
-					aptitude: "Intelligence",
-					level: 8
-				},
-				{
 					aptitude: "Constitution",
-					level: 8
+					level: 4
 				}
 			]
 		},
@@ -1894,12 +1886,12 @@
 			item: "quark:backpack",
 			aptitudes: [
 				{
-					aptitude: "Dexterity",
+					aptitude: "Strength",
 					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 5
+					level: 2
 				}
 			]
 		},
@@ -5592,6 +5584,898 @@
 				{
 					aptitude: "Building",
 					level: 12
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:wandering_magician_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Defense",
+					level: 2
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:wandering_magician_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Defense",
+					level: 2
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:wandering_magician_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Defense",
+					level: 2
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:wandering_magician_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Defense",
+					level: 2
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:pumpkin_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Defense",
+					level: 2
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:pumpkin_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Defense",
+					level: 2
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:pumpkin_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Defense",
+					level: 2
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:pumpkin_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Defense",
+					level: 2
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:pyromancer_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:pyromancer_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:pyromancer_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:pyromancer_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:electromancer_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:electromancer_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:electromancer_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:electromancer_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:archevoker_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:archevoker_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:archevoker_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:archevoker_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:cultist_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:cultist_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:cultist_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:cultist_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:cryomancer_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:cryomancer_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:cryomancer_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:cryomancer_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:shadowwalker_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:shadowwalker_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:shadowwalker_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:shadowwalker_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:priest_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:priest_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:priest_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:priest_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Constitution",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:plagued_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:plagued_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:plagued_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:plagued_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Defense",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:netherite_mage_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 20
+				},
+				{
+					aptitude: "Defense",
+					level: 18
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:netherite_mage_chestplate',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 20
+				},
+				{
+					aptitude: "Defense",
+					level: 18
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:netherite_mage_leggings',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 20
+				},
+				{
+					aptitude: "Defense",
+					level: 18
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:netherite_mage_boots',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 20
+				},
+				{
+					aptitude: "Defense",
+					level: 18
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:tarnished_helmet',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 4
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:iron_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 4
+				},
+				{
+					aptitude: "Intelligence",
+					level: 3
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:rotten_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 6
+				},
+				{
+					aptitude: "Constitution",
+					level: 5
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:gold_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Intelligence",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:diamond_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 24
+				},
+				{
+					aptitude: "Strength",
+					level: 20
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:netherite_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Intelligence",
+					level: 25
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:evoker_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Constitution",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:necronomicon_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Dexterity",
+					level: 27
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:blaze_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Luck",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:dragonskin_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Defense",
+					level: 34
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:villager_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Constitution",
+					level: 16
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:druidic_spell_book',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 10
+				},
+				{
+					aptitude: "Luck",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:blood_staff',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 30
+				},
+				{
+					aptitude: "Dexterity",
+					level: 27
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:graybeard_staff',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 2
+				},
+				{
+					aptitude: "Dexterity",
+					level: 4
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:ice_staff',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 5
+				},
+				{
+					aptitude: "Dexterity",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:artificer_cane',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 5
+				},
+				{
+					aptitude: "Dexterity",
+					level: 8
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:lightning_rod',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 8
+				},
+				{
+					aptitude: "Dexterity",
+					level: 10
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:keeper_flamberge',
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 12
+				},
+				{
+					aptitude: "Strength",
+					level: 24
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:spellbreaker',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 15
+				},
+				{
+					aptitude: "Strength",
+					level: 28
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:amethyst_rapier',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 12
+				},
+				{
+					aptitude: "Strength",
+					level: 24
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:claymore',
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 12
+				},
+				{
+					aptitude: "Strength",
+					level: 12
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:misery',
+			aptitudes: [
+				{
+					aptitude: "Magic",
+					level: 25
+				},
+				{
+					aptitude: "Dexterity",
+					level: 20
+				}
+			]
+		},
+		{
+			item: 'irons_spellbooks:eldrich_manuscript',
+			aptitudes: [
+				{
+					aptitude: "Intelligence",
+					level: 20
+				},
+				{
+					aptitude: "Magic",
+					level: 30
+				}
+			]
+		},
+		{
+			item: 'apotheosis:potion_charm',
+			aptitudes: [
+				{
+					aptitude: "Luck",
+					level: 8
 				}
 			]
 		}

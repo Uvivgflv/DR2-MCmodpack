@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "appearAnimation": "FADE",
   "idleAnimation": "NONE",
   "appearDelayMs": 250,

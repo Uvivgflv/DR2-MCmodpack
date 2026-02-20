@@ -1,4 +1,21 @@
 const RegistryIronsSpellbooksRecipes = (event) => {
+  //#region materials
+  event.shaped('irons_spellbooks:magic_cloth', [
+    ' AC',
+    'ABA',
+    'CA '
+  ],{
+    A:'botania:manaweave_cloth',
+    B:'irons_spellbooks:arcane_essence',
+    C:'gtceu:treated_wood_rod'
+  }).id('dr2:irons_spellbooks/materials/magic_cloth');
+
+  //#endregion
+
+  //#region runes
+  
+  //#endregion
+
   //#region add recipes for staffs
   event.shaped('irons_spellbooks:graybeard_staff', [
     ' AB',
@@ -129,6 +146,58 @@ const RegistryIronsSpellbooksRecipes = (event) => {
     D:'kubejs:tinned_leather',
     E:'#supplementaries:straw'
   }).id('dr2:irons_spellbooks/pumpkin_boots');
+  //pyromancer armor
+  event.shaped('irons_spellbooks:pyromancer_helmet', [
+    'ABA',
+    'CDC',
+    'AEA'
+  ],{
+    A:'kubejs:tinned_leather',
+    B:'irons_spellbooks:magic_cloth',
+    C:'kubejs:modest_silk_fabric',
+    D:'irons_spellbooks:fire_rune',
+    E:Item.of('tconstruct:bowstring', '{Material:"tconstruct:weeping_vine"}').strongNBT()
+  }).id('dr2:irons_spellsbooks/armor/pyromancer_helmet');
+
+  event.shaped('irons_spellbooks:pyromancer_chestplate',[
+    'ABC',
+    'DED',
+    'FGG'
+  ],{
+    A:Item.of('tconstruct:bowstring', '{Material:"tconstruct:weeping_vine"}').strongNBT(),
+    B:'irons_spellbooks:fire_rune',
+    C:'#forge:foils/gold',
+    D:'kubejs:modest_silk_fabric',
+    E:'irons_spellbooks:magic_cloth',
+    F:'#forge:rings/gold',
+    G:'kubejs:tinned_leather'
+  }).id('dr2:irons_spellbooks/armor/pyromancer_chestplate');
+
+  event.shaped('irons_spellbooks:pyromancer_leggings', [
+    'ABA',
+    'CDC',
+    'E E'
+  ],{
+    A:Item.of('tconstruct:bowstring', '{Material:"tconstruct:weeping_vine"}').strongNBT(),
+    B:'kubejs:modest_silk_fabric',
+    C:'kubejs:tinned_leather',
+    D:'irons_spellbooks:fire_rune',
+    E:'irons_spellbooks:magic_cloth'
+  }).id('dr2:irons_spellbooks/armor/pyromancer_leggings');
+
+  event.shaped('irons_spellbooks:pyromancer_boots', [
+    'ABA',
+    'CDC',
+    'CEC'
+  ],{
+    A:'kubejs:modest_silk_fabric',
+    B:'irons_spellbooks:magic_cloth',
+    C:'kubejs:tinned_leather',
+    D:'irons_spellbooks:fire_rune',
+    E:'#forge:rings/gold'
+  }).id('dr2:irons_spellbooks/armor/pyromancer_boots');
+
+  
   //#endregion
 
   //#region add recipes for crafting stations

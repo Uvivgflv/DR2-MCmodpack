@@ -4,8 +4,8 @@ const TconstructResipesRegistry = (event) => {
   event.remove({ id: "tconstruct:tables/tinkers_chest" });
   event.remove({ id: "tconstruct:tables/part_chest" });
   event.remove({ id: "tconstruct:tables/cast_chest" });
-  //event.remove({ id: "tconstruct:tables/tinkers_forge" });
-  //event.remove({ id: "tconstruct:tables/tinkers_anvil" });
+  event.remove({ id: "tconstruct:tables/tinkers_forge" });
+  event.remove({ id: "tconstruct:tables/tinkers_anvil" });
   event.remove({ id: "tconstruct:tools/building/flint_and_brick" });
   //#endregion
 

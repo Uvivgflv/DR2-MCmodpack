@@ -90,10 +90,26 @@ const RegisterModDropItems = event => {
         .translationKey(`item.kubejs.corrupted_flesh`);
     event.create("old_fabric")
         .translationKey(`item.kubejs.old_fabric`);
+    event.create("modest_silk_fabric")
+        .translationKey(`item.kubejs.modest_silk_fabric`);
+    event.create("composite_carbon_fabric")
+        .translationKey(`item.kubejs.composite_carbon_fabric`);
+    event.create("amethyst_gilded_fabric")
+        .translationKey(`item.kubejs.amethyst_gilded_fabric`);
+    event.create("enchanted_amethyst_gilded_fabric")
+        .texture('kubejs:item/amethyst_gilded_fabric')
+        .glow(true)
+        .translationKey(`item.kubejs.enchanted_amethyst_gilded_fabric`);
+    event.create("heatproof_fabric")
+        .translationKey(`item.kubejs.heatproof_fabric`);
     event.create("fermanted_warp")
         .translationKey(`item.kubejs.fermanted_warp`);
     event.create("under_shards")
         .translationKey(`item.kubejs.under_shards`);
+    event.create("strudy_fiber")
+        .translationKey(`item.kubejs.strudy_fiber`);
+    event.create("old_fibers")
+        .translationKey(`item.kubejs.old_fibers`);
     //#endregion
 
     //#region undead drops

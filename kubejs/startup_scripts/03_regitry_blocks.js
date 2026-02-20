@@ -28,6 +28,7 @@ const RegisterCrafingBlocks = event => {
 }
 
 const RegisterCompressedBlocks = event => {
+    
     //#region storage blocks or structure
     event.create("double_copper_block")
         .translationKey(`block.kubejs.double_copper_block`)
@@ -35,6 +36,46 @@ const RegisterCompressedBlocks = event => {
         .soundType("wood")
         .tagBlock("minecraft:mineable/pickaxe")
         .tagBlock("forge:mineable/wrench");
+    
+    event.create("resin_crate", 'cardinal')
+        .material('wood')
+        .hardness(2.0)
+        .requiresTool(true)
+        .soundType('wood')
+        .texture('top', 'kubejs:block/resin_crate_top')
+        .texture('side', 'kubejs:block/resin_crate_side')
+        .texture('front', 'kubejs:block/resin_crate_side')
+        .texture('bottom', 'kubejs:block/crate_bottom')
+        .translationKey(`block.kubejs.resin_crate`)
+        .tagBlock('forge:storage_blocks/resin')
+        .tagBlock('minecraft:mineable/axe');
+
+    event.create("hemp_fiber_block", 'cardinal')
+        .material('grass')
+        .hardness(0.5)
+        .requiresTool(true)
+        .soundType('grass')
+        .texture('top', 'kubejs:block/hemp_fiber_block_top')
+        .texture('bottom', 'kubejs:block/hemp_fiber_block_top')
+        .texture('side', 'kubejs:block/hemp_fiber_block')
+        .texture('front', 'kubejs:block/hemp_fiber_block')
+        .translationKey(`block.kubejs.hemp_fiber_block`)
+        .tagBlock('forge:storage_blocks/hemp_fiber')
+        .tagBlock('minecraft:mineable/hoe');
+    
+    event.create("magic_essence_crate", 'cardinal')
+        .material('wood')
+        .hardness(2.0)
+        .requiresTool(true)
+        .soundType('wood')
+        .texture('top', 'kubejs:block/magic_essence_block_top')
+        .texture('side', 'kubejs:block/magic_essence_block_side')
+        .texture('front', 'kubejs:block/magic_essence_block_side')
+        .texture('bottom', 'kubejs:block/crate_bottom')
+        .translationKey(`block.kubejs.magic_essence_crate`)
+        .tagBlock('forge:storage_blocks/magic_essence')
+        .tagBlock('minecraft:mineable/axe');
+    
 }
 
 const RegisterTestBlocks = event => {
