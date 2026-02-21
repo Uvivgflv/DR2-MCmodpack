@@ -8,6 +8,10 @@ StartupEvents.registry("block", (event) => {
   RegisterAllCustomBlocks(event);
 });
 
+BlockEvents.modification((event) => {
+  RegisterBlockModify(event);
+})
+
 ItemEvents.modification((event) => {
   ArmorModify(event);
   ToolsModify(event);             //edit in v1.3.5 patch 2

@@ -56,6 +56,16 @@
     },
     {
       "from": "infinite_abyss:second_layer",
+      "to": "undergarden:undergarden",
+      "teleporttype": {
+        "teleporttype": "CAVE",
+        "teleport_to_y": 5
+      },
+      "abovey": 120,
+      "slowfallticks": 400
+    },
+    {
+      "from": "infinite_abyss:second_layer",
       "to": "minecraft:the_nether",
       "teleporttype": {
         "teleporttype": "CAVE",

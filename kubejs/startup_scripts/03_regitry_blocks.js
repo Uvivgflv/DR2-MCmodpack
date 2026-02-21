@@ -40,7 +40,7 @@ const RegisterCompressedBlocks = event => {
     event.create("resin_crate", 'cardinal')
         .material('wood')
         .hardness(2.0)
-        .requiresTool(true)
+        .requiresTool(false)
         .soundType('wood')
         .texture('top', 'kubejs:block/resin_crate_top')
         .texture('side', 'kubejs:block/resin_crate_side')
@@ -53,7 +53,7 @@ const RegisterCompressedBlocks = event => {
     event.create("hemp_fiber_block", 'cardinal')
         .material('grass')
         .hardness(0.5)
-        .requiresTool(true)
+        .requiresTool(false)
         .soundType('grass')
         .texture('top', 'kubejs:block/hemp_fiber_block_top')
         .texture('bottom', 'kubejs:block/hemp_fiber_block_top')
@@ -66,7 +66,7 @@ const RegisterCompressedBlocks = event => {
     event.create("magic_essence_crate", 'cardinal')
         .material('wood')
         .hardness(2.0)
-        .requiresTool(true)
+        .requiresTool(false)
         .soundType('wood')
         .texture('top', 'kubejs:block/magic_essence_block_top')
         .texture('side', 'kubejs:block/magic_essence_block_side')
@@ -81,10 +81,32 @@ const RegisterCompressedBlocks = event => {
 const RegisterTestBlocks = event => {
     event.create("thick_fuel_oil")
         .translationKey(`block.kubejs.thick_fuel_oil`)
-        .requiresTool(true)
+        .requiresTool(false)
         .soundType("mud")
         .tagBlock("minecraft:mineable/shovel");
-}
+
+    event.create('pressure_stone')
+        .hardness(5.0)
+        .requiresTool(true)
+        .translationKey(`block.kubejs.pressure_stone`)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('forge:stone');
+
+    event.create('semimelted_stone')
+        .hardness(8.0)
+        .requiresTool(true)
+        .translationKey(`block.kubejs.semimelted_stone`)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('forge:stone');
+
+    
+};
+
+const RegisterBlockModify = event => {
+    event.modify('undergarden:depthrock', block => {
+        block.destroySpeed = 6.0
+    });
+};
 
 const RegisterAllCustomBlocks = event => {
     RegistrySimpleBlocks(event);
