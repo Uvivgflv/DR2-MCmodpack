@@ -96,4 +96,25 @@ const RegisterIEAlloysmelterRecipes = (event) => {
     },
     time: 1800,
   }).id("dr2:ie_alloysmelter/iron_ingot_calcium");
+
+  event.custom({
+    type: "immersiveengineering:alloy",
+    input0: {
+      base_ingredient: {
+        item: "gtceu:sulfur_dust",
+      },
+      count: 1,
+    },
+    input1: {
+      base_ingredient: {
+        item: 'gtceu:raw_rubber_dust',
+      },
+      count: 4,
+    },
+    result: {
+      item: 'gtceu:rubber_ingot',
+      count: 1,
+    },
+    time: 200,
+  }).id("dr2:ie_alloysmelter/rubber_from_sulfur");
 };

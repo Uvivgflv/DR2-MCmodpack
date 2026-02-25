@@ -16,29 +16,7 @@
   // Items here will be unusable completely
   //    Example: minecraft:diamond
   "blacklisted_items": [
-    "malum:copper_nugget",
-    "immersiveengineering:nugget_copper",
-    "create:copper_nugget",
-    "tconstruct:copper_nugget",
-    "create:zinc_nugget",
-    "create:brass_nugget",
-    "tcintegrations:bronze_nugget",
-    "tconstruct:cobalt_nugget",
-    "immersiveengineering:nugget_nickel",
-    "tfmg:nickel_nugget",
-    "immersiveengineering:plate_copper",
-    "create:copper_sheet",
-    "immersiveengineering:plate_iron",
-    "ad_astra:iron_plate",
-    "create:iron_sheet",
-    "immersiveengineering:plate_gold",
-    "create:golden_sheet",
-    "immersiveengineering:plate_steel",
-    "immersiveengineering:ingot_steel",
-    "ad_astra:steel_ingot",
-    "tfmg:steel_ingot",
-    "ad_astra:steel_plate",
-    "botania:mana_bottle"
+    
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

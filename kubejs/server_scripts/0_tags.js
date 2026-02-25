@@ -313,31 +313,6 @@ const RegisterRealisticStepsBlockTags = (event) => {
     "quark:jasper",
   ];
 
-  // var unearthedStonesList = [
-  //   "unearthed:rhyolite",
-  //   "unearthed:grey_limestone",
-  //   "unearthed:siltstone",
-  //   "unearthed:mudstone",
-  //   "unearthed:conglomerate",
-  //   "unearthed:quartzite",
-  //   "unearthed:dolerite",
-  //   "unearthed:pillow_basalt",
-  //   "unearthed:dacite",
-  //   "unearthed:beige_limestone",
-  //   "unearthed:limestone",
-  //   "unearthed:white_granite",
-  //   "unearthed:granodiorite_regolith",
-  //   "unearthed:granodiorite",
-  //   "unearthed:gabbro_regolith",
-  //   "unearthed:gabbro",
-  //   "unearthed:phyllite",
-  //   "unearthed:slate",
-  //   "unearthed:cobbled_grey_limestone",
-  //   "unearthed:cobbled_beige_limestone",
-  //   "unearthed:cobbled_limestone",
-  //   "unearthed:weathered_rhyolite"
-  // ];
-
   var rewriteStoneTag = ["minecraft:warped_nylium", "minecraft:crimson_nylium"];
   //#region sandTag
   event.add("realistic_steps:sand_tag", sandBlockList);
@@ -347,6 +322,17 @@ const RegisterRealisticStepsBlockTags = (event) => {
   event.add("realistic_steps:stone_tag", stoneBlockList);
   event.remove("realistic_steps:stone_tag", rewriteStoneTag);
 
+  //--remove some tag for balance
+  const RemovePlanksTag = [
+    /^minecraft:.*_planks/,
+  ];
+
+  const RemoveStoneTag = [
+    "minecraft:smooth_stone"
+  ];
+
+  event.remove('realistic_steps:stone_tag', RemoveStoneTag);
+  event.remove('realistic_steps:planks_tag', RemovePlanksTag);
   //#endregion
   //#region grassTag
   event.add("realistic_steps:grass_tag", grassBlockList);

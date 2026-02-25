@@ -36,6 +36,27 @@ const RegisterCompressedBlocks = event => {
         .soundType("wood")
         .tagBlock("minecraft:mineable/pickaxe")
         .tagBlock("forge:mineable/wrench");
+
+    event.create("double_bronze_block")
+        .translationKey(`block.kubejs.double_bronze_block`)
+        .requiresTool(true)
+        .soundType("wood")
+        .tagBlock("minecraft:mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench");
+
+    event.create("double_cloggrum_steel_block")
+        .translationKey(`block.kubejs.double_cloggrum_steel_block`)
+        .requiresTool(true)
+        .soundType("wood")
+        .tagBlock("minecraft:mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench");
+
+    event.create("double_relict_block")
+        .translationKey(`block.kubejs.double_relict_block`)
+        .requiresTool(true)
+        .soundType("wood")
+        .tagBlock("minecraft:mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench");
     
     event.create("resin_crate", 'cardinal')
         .material('wood')

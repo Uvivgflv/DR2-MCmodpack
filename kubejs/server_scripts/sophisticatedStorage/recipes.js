@@ -538,5 +538,129 @@ const SophiStorageRecipesRegistry = (event) => {
   });
   //#endregion
   //#region upgrades recipes
+  event.shaped('2x sophisticatedstorage:upgrade_base', [
+    'ABA',
+    'BCB',
+    'ABA'
+  ],{
+    A:'#minecraft:planks',
+    B:'#forge:plates/iron',
+    C:'#forge:tools/saws'
+  }).id('dr2:sophisticatestorage/uprgades/upgrade_base');
+
+  event.shaped('sophisticatedstorage:stack_upgrade_tier_1', [
+    'ABA',
+    'BCB',
+    'ABA'
+  ],{
+    A:'#forge:plates/iron',
+    B:Item.of('tconstruct:large_plate', '{Material:"tconstruct:treated_wood"}').strongNBT(),
+    C:'sophisticatedstorage:upgrade_base'
+  }).id('dr2:sophisticatestorage/uprgades/stack_upgrade_tier_1');
+
+  event.shaped('sophisticatedstorage:stack_upgrade_tier_1_plus',[
+    'ABA',
+    'CDC',
+    'ECE'
+  ],{
+    A:'#forge:screws/copper',
+    B:'gtceu:storage_cover',
+    C:Item.of('tconstruct:large_plate', '{Material:"tconstruct:copper"}').strongNBT(),
+    D:'sophisticatedstorage:stack_upgrade_tier_1',
+    E:'kubejs:double_copper_block',
+  }).id('dr2:sophisticatedstorage/uprgades/stack_uprgade_tier_1_plus');
+
+  //--дальше 2 тира в мех крафтере LS HS 1,2
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_2', [
+    'ABBA',
+    'BCDB',
+    'BEFB',
+    'ABBA'
+  ],{
+    A:'gtceu:double_bronze_plate',
+    B:'kubejs:double_bronze_block',
+    C:'gtceu:storage_cover',
+    D:'gtceu:lv_robot_arm',
+    E:'gtceu:lv_conveyor_module',
+    F:'sophisticatedstorage:stack_upgrade_tier_1_plus'
+  }).id('dr2:sophisticatedstorage/upgrades/stack_upgrage_tier_2');
+
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_3', [
+    'ABBA',
+    'BCDB',
+    'BEFB',
+    'ABBA'
+  ],{
+    A:'gtceu:dense_cloggrum_steel_plate',
+    B:'kubejs:double_cloggrum_steel_block',
+    C:'gtceu:storage_cover',
+    D:'gtceu:mv_robot_arm',
+    E:'gtceu:mv_conveyor_module',
+    F:'sophisticatedstorage:stack_upgrade_tier_2'
+  }).id('dr2:sophisticatedstorage/upgrades/stack_upgrage_tier_3');
+//дальше два в сборщике HV?
+
+  //улучшения контейнеров
+  event.shaped('sophisticatedstorage:basic_to_copper_tier_upgrade', [
+    'ABC',
+    'BDB',
+    'EBA'
+  ],{
+    A:'#forge:rods/long/copper',
+    B:Item.of('tconstruct:large_plate', '{Material:"tconstruct:copper"}').strongNBT(),
+    C:'#forge:tools/hammers',
+    D:'minecraft:redstone_torch',
+    E:'#forge:tools/crowbars'
+  }).id('dr2:sophisticatedstorage/upgrades/basic_to_copper');
+
+  event.shaped('sophisticatedstorage:basic_to_iron_tier_upgrade', [
+    'ABC',
+    'BDB',
+    'EBA'
+  ],{
+    A:'#forge:rods/long/bronze',
+    B:Item.of('tconstruct:large_plate', '{Material:"tconstruct:bronze"}').strongNBT(),
+    C:'#forge:tools/hammers',
+    D:'minecraft:redstone_torch',
+    E:'#forge:tools/crowbars'
+  }).id('dr2:sophisticatedstorage/upgrades/basic_to_bronze');
+
+  event.shaped('sophisticatedstorage:basic_to_gold_tier_upgrade', [
+    'ABC',
+    'BDB',
+    'EBA'
+  ],{
+    A:'#forge:rods/long/cloggrum_steel',
+    B:'#forge:double_plates/cloggrum_steel',
+    D:'minecraft:redstone_torch',
+    C:'#forge:tools/hammers',
+    E:'#forge:tools/crowbars',
+  }).id('dr2:sophisticatedstorage/upgrades/basic_to_cloggrum_steel');
+
+  event.shaped('sophisticatedstorage:basic_to_diamond_tier_upgrade', [
+    'ABC',
+    'BDB',
+    'EBA'
+  ],{
+    A:'#forge:rods/long/relict',
+    B:'#forge:double_plates/relict',
+    C:'#forge:tools/hammers',
+    D:'minecraft:redstone_torch',
+    E:'#forge:tools/crowbars'
+  }).id('dr2:sophisticatedstorage/upgrades/basic_to_relict');
+
+  event.shaped('sophisticatedstorage:basic_to_netherite_tier_upgrade', [
+    'ABC',
+    'BDB',
+    'EBA'
+  ],{
+    A:'#forge:rods/long/desh',
+    B:'#forge:double_plates/desh',
+    C:'#forge:tools/hammers',
+    D:'minecraft:redstone_torch',
+    E:'#forge:tools/crowbars'
+  }).id('dr2:sophisticatedstorage/upgrades/basic_to_dash');
+
+  
   //#endregion
 };

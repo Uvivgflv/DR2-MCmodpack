@@ -9,7 +9,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "infinite_abbys:red_deepstone",
+              "name": "infinite_abyss:red_deepstone",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -28,7 +28,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "infinite_abbys:red_cobbled_deepstone",
+              "name": "infinite_abyss:red_cobbled_deepstone",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"

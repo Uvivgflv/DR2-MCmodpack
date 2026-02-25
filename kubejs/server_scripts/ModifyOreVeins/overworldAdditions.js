@@ -117,18 +117,18 @@ const OverworldOreVeins = (event) => {
       ),
     );
   });
-//add coal to mountains заменить графит на блок рудного угля после патча
-  event.add('kubejs:add_coal', vein => {
-    vein.weight(30)
-    vein.clusterSize(50)
-    vein.density(0.33)
-    vein.discardChanceOnAirExposure(1)
+  //add coal to mountains заменить графит на блок рудного угля после патча
+  event.add("kubejs:add_coal", (vein) => {
+    vein.weight(30);
+    vein.clusterSize(50);
+    vein.density(0.33);
+    vein.discardChanceOnAirExposure(1);
 
-    vein.biomes('#forge:is_peak')
+    vein.biomes("#forge:is_peak");
 
-    vein.layer("overworld")
+    vein.layer("overworld");
 
-    vein.heightRangeUniform(65, 200)
+    vein.heightRangeUniform(65, 200);
 
     vein.veinedVeinGenerator((generator) =>
       generator
@@ -142,5 +142,5 @@ const OverworldOreVeins = (event) => {
         .edgeRoundoffBegin(10)
         .maxEdgeRoundoff(0.2),
     );
-  })
+  });
 };

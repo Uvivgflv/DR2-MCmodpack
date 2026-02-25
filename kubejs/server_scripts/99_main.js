@@ -59,6 +59,7 @@ LootJS.modifiers((event) => {
   BlockLootTableReplace(event);
   UndeadsMobDrops(event);
   MagicMobDrops(event);
+  GlobalLootTablesRegistry(event);
 
   console.log("Register DR2 custom loottables");
 });

@@ -80,6 +80,18 @@ global.WoodTypes = [
     //jadens nether expansion
     {name: 'claret', planks: 'netherexp:claret_planks', log: 'netherexp:cerebrage_claret_stem'}
 ];
+//nbt not work with spirit infusion
+global.RestrictionsCrating = [
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"traveloptics:aqua"}'), spirit1: 'aqueous', spirit2: 'arcane', id: 'aqua'},
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"irons_spellbooks:fire"}'), spirit1: 'infernal', spirit2: 'arcane', id: 'fire'},
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"irons_spellbooks:ice"}'), spirit1: 'aerial', spirit2: 'arcane', id: 'ice'},
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"irons_spellbooks:lightning"}'), spirit1: 'wicked', spirit2: 'arcane', id: 'lightning'},
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"irons_spellbooks:holy"}'), spirit1: 'infernal', spirit2: 'scared', id: 'holy'},
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"irons_spellbooks:ender"}'), spirit1: 'wicked', spirit2: 'scared', id: 'ender'},
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"irons_spellbooks:nature"}'), spirit1: 'earthen', spirit2: 'arcane', id: 'nature'},
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"irons_spellbooks:blood"}'), spirit1: 'eldrich', spirit2: 'scared', id: 'blood'},
+    {name: Item.of('irons_restrictions:manuscript', '{SchoolId:"irons_spellbooks:evocation"}'), spirit1: 'earthen', spirit2: 'wicked', id: 'evocation'}
+];
 
 global.VanillaWoodTypes = [
         {name: 'oak', log: 'oak_log', trapdoor: 'minecraft:oak_trapdoor', slab: 'minecraft:oak_slab', cabinet: 'farmersdelight:oak_cabinet', drawer: 'storagedelight:oak_drawer'},
@@ -729,7 +741,11 @@ global.REMOVE_IRONS_SPELLBOOKS = [
     "irons_spellbooks:ice_staff",
     "irons_spellbooks:artificer_cane",
     "irons_spellbooks:magic_cloth",
-    "irons_spellbooks:energized_core"
+    "irons_spellbooks:energized_core",
+    //--materials
+    //--research
+    /^irons_restrictions:.*_manuscript/
+    
 ];
 /**
  * @type {Array} Supplementaries Recipes To Remove
@@ -797,7 +813,21 @@ global.REMOVE_RECIPES_FARMERSDELIGHT = [
     /^storagedelight:.*_cabinet_with_glass_doors/,
     /^storagedelight:.*_single_door_cabinet/,
     /^storagedelight:.*_cabinet_with_polished_deepslate_countertop/,
-    /^storagedelight:.*_cabinet_with_polished_andesite_countertop/
+    /^storagedelight:.*_cabinet_with_polished_andesite_countertop/,
+    "sophisticatedstorage:basic_tier_upgrade",
+    "sophisticatedstorage:basic_to_copper_tier_upgrade",
+    "sophisticatedstorage:basic_to_iron_tier_from_basic_to_copper_tier",
+    "sophisticatedstorage:basic_to_iron_tier_upgrade",
+    "sophisticatedstorage:basic_to_gold_tier_upgrade",
+    "sophisticatedstorage:basic_to_diamond_tier_upgrade",
+    "sophisticatedstorage:basic_to_netherite_tier_upgrade",
+    "sophisticatedstorage:copper_to_iron_tier_upgrade",
+    "sophisticatedstorage:copper_to_gold_tier_upgrade",
+    "sophisticatedstorage:copper_to_diamond_tier_upgrade",
+    "sophisticatedstorage:copper_to_netherite_tier_upgrade",
+    "sophisticatedstorage:gold_to_diamond_tier_upgrade",
+    "sophisticatedstorage:gold_to_netherite_tier_upgrade",
+    "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
 ];
 /**
  * @type {Array} Biomesoplenty and biomeswevegone recipes to remove
@@ -856,5 +886,10 @@ global.REMOVE_RECIPES_SOPHISTICATED = [
     "sophisticatedstorage:oak_chest_from_vanilla_chest",
     /^sophisticatedstorage:.*_chest_from_quark_.*_chest/,
     /^sophisticatedstorage:\/tier_upgrade_chest_woodname_.*_doublechest_false_to_.*_chest_woodname_.*_doublechest_false/,
+    "sophisticatedstorage:upgrade_base",
+    /^sophisticatedstorage:stack_upgrade_tier_.*/,
+    /^sophisticatedstorage:storage_stack_upgrade_tier_.*_from_backpack_stack_upgrade_tier_.*/,
+    "sophisticatedstorage:storage_stack_upgrade_tier_1_plus_from_backpack_stack_upgrade_starter_tier",
+    
 ];
 //#endregion

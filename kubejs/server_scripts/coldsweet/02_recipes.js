@@ -81,16 +81,16 @@ const ColdSweetRecipesRegistry = (event) => {
         G:'#forge:tools/mallets'
     }).id('dr2:cold_sweat/thermometer');
 
-    event.shaped('cold_sweat:soulspring_lamp', [
+    event.shaped(Item.of('cold_sweat:soulspring_lamp', '{Fuel:64.0d}'), [
         'ABC',
         'DED',
-        'FGF'
+        'F F'
     ],{
         A:'#forge:tools/screwdrivers',
         B:'#forge:plates/gold',
         C:'#forge:plates/steel',
-        D:'minecraft:heart_of_the_sea',
-        E:'#forge:screws/steel',
+        E:'minecraft:heart_of_the_sea',
+        D:'#forge:screws/steel',
         F:'minecraft:chain'
     }).id('dr2:cold_sweat/soulspring_lamp');
     //#endregion

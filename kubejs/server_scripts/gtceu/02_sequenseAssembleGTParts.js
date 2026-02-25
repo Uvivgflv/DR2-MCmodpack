@@ -674,7 +674,7 @@ const RegistrySeqAssembleGTPartsRecipes = (event) => {
         { chance: 120.0, item: "gtceu:lv_conveyor_module" },
         { chance: 8.0, item: "gtceu:iron_rod" },
         { chance: 8.0, item: "gtceu:iron_plate" },
-        { chance: 5.0, item: "gtceu:belt_connector" },
+        { chance: 5.0, item: 'greate:rubber_belt_connector' },
         { chance: 3.0, item: "gtceu:tin_single_wire" },
       ],
       sequence: [
@@ -682,7 +682,7 @@ const RegistrySeqAssembleGTPartsRecipes = (event) => {
           type: "create:deploying",
           ingredients: [
             { item: "kubejs:incomplete_lv_conveyor_module" },
-            { item: "create:belt_connector" },
+            { item: 'greate:rubber_belt_connector' },
           ],
           results: [{ item: "kubejs:incomplete_lv_conveyor_module" }],
         },
@@ -732,7 +732,7 @@ const RegistrySeqAssembleGTPartsRecipes = (event) => {
         { chance: 120.0, item: "gtceu:lv_conveyor_module" },
         { chance: 8.0, item: "gtceu:steel_rod" },
         { chance: 8.0, item: "gtceu:steel_plate" },
-        { chance: 5.0, item: "gtceu:belt_connector" },
+        { chance: 5.0, item: 'greate:rubber_belt_connector' },
         { chance: 3.0, item: "gtceu:tin_single_wire" },
       ],
       sequence: [
@@ -740,7 +740,7 @@ const RegistrySeqAssembleGTPartsRecipes = (event) => {
           type: "create:deploying",
           ingredients: [
             { item: "kubejs:incomplete_lv_conveyor_module" },
-            { item: "create:belt_connector" },
+            { item: 'greate:rubber_belt_connector' },
           ],
           results: [{ item: "kubejs:incomplete_lv_conveyor_module" }],
         },
