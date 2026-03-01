@@ -151,12 +151,25 @@ const RegisterItemsTagsMain = (event) => {
     "malum:cursed_sapball",
     "malum:runic_sapball",
   ];
+
+  var andesiteAlloyBlocks = [
+    'quark:shale',
+    'minecraft:andesite',
+    'minecraft:granite',
+    'minecraft:diorite',
+    'minecraft:tuff',
+    'quark:limestone',
+    'quark:jasper',
+    'minecraft:dripstone_block'
+  ];
   //#endregion
   //#region adding tags
   event.add("kubejs:disabled_items", disabledItemList);
   event.add("dr2:chest_nugget", chestItemList);
   event.add('dr2:chest_rings', chestRingsList);
   event.add("cct:resin", resinItemList);
+
+  event.add('dr2:andesite_alloy_stones', andesiteAlloyBlocks);
 
   event.add("cct:stonecuter_saw_blades", [
     "gtceu:bronze_buzz_saw_blade",
@@ -324,7 +337,7 @@ const RegisterRealisticStepsBlockTags = (event) => {
 
   //--remove some tag for balance
   const RemovePlanksTag = [
-    /^minecraft:.*_planks/,
+    "#minecraft:planks",
   ];
 
   const RemoveStoneTag = [

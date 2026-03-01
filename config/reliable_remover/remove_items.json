@@ -26,7 +26,16 @@
             "ad_astra:steel_plate",
             "botania:mana_bottle",
             "immersiveengineering:stick_iron",
-            "ad_astra:iron_rod"
+            "ad_astra:iron_rod",
+            "immersiveengineering:treated_wood_horizontal",
+            "immersiveengineering:ingot_electrum",
+            "immersiveengineering:nugget_electrum",
+            "immersiveengineering:plate_electrum",
+            "undergarden:cloggrum_ingot",
+            "undergarden:raw_cloggrum",
+            "undergarden:raw_cloggrum_block",
+            "undergarden:cloggrum_block",
+            "undergarden:cloggrum_nugget"
         ]
     }
 ]

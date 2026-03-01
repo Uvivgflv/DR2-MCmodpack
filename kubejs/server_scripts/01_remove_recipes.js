@@ -1,3 +1,4 @@
+//priority 900
 const RemoveRecipesByMods = event => {
     var RecipesVanilla = global.REMOVE_RECIPES_MINECRAFT;
     var RecipesApoheosis = global.REMOVE_RECIPES_APOTHEOSIS;

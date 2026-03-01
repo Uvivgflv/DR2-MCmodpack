@@ -406,7 +406,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 5
+					level: 2
 				}
 			]
 		},
@@ -415,11 +415,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 4
+					level: 2
 				},
 				{
 					aptitude: "Dexterity",
-					level: 4
+					level: 3
 				}
 			]
 		},
@@ -428,7 +428,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 12
+					level: 4
 				}
 			]
 		},
@@ -579,7 +579,7 @@
 			aptitudes: [
 				{
 					aptitude: "Dexterity",
-					level: 6
+					level: 3
 				}
 			]
 		},
@@ -597,11 +597,11 @@
 			aptitudes: [
 				{
 					aptitude: "Dexterity",
-					level: 20
+					level: 2
 				},
 				{
 					aptitude: "Intelligence",
-					level: 20
+					level: 5
 				}
 			]
 		},
@@ -610,11 +610,11 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 18
+					level: 8
 				},
 				{
 					aptitude: "Luck",
-					level: 16
+					level: 12
 				}
 			]
 		},
@@ -806,11 +806,11 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 2
 				},
 				{
 					aptitude: "Constitution",
-					level: 8
+					level: 2
 				}
 			]
 		},
@@ -819,7 +819,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 9
+					level: 3
 				}
 			]
 		},
@@ -828,7 +828,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 9
+					level: 3
 				}
 			]
 		},
@@ -837,7 +837,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 5
 				},
 				{
 					aptitude: "Constitution",
@@ -850,7 +850,7 @@
 			aptitudes: [
 				{
 					aptitude: "Intelligence",
-					level: 8
+					level: 5
 				},
 				{
 					aptitude: "Constitution",
@@ -1197,7 +1197,7 @@
 			aptitudes: [
 				{
 					aptitude: "Strength",
-					level: 20
+					level: 12
 				},
 				{
 					aptitude: "Dexterity",
@@ -1406,11 +1406,7 @@
 			aptitudes: [
 				{
 					aptitude: "Constitution",
-					level: 8
-				},
-				{
-					aptitude: "Dexterity",
-					level: 5
+					level: 4
 				}
 			]
 		},
@@ -2016,7 +2012,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 8
+					level: 4
 				},
 				{
 					aptitude: "Strength",
@@ -2029,7 +2025,7 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 8
+					level: 4
 				},
 				{
 					aptitude: "Strength",
@@ -2081,11 +2077,11 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 30
+					level: 12
 				},
 				{
 					aptitude: "Strength",
-					level: 20
+					level: 15
 				}
 			]
 		},

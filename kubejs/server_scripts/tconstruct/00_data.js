@@ -69,18 +69,50 @@ const TconstructDataRegistry = event => {
         "tconstruct:compat/create/andesite_alloy_zinc",
         "gm_construct:smeltery/casting/metal/malachite/block",
         "tconstruct:smeltery/casting/scorched/polished_from_magma",
-        "tconstruct:smeltery/casting/scorched/stone_from_magma"
+        "tconstruct:smeltery/casting/scorched/stone_from_magma",
+        "tconstruct:compat/treated_wood"
     
     ];
 
     const customRecipesToDisableCastingTable = [
         "tconstruct:smeltery/casting/seared/brick_composite",
-        "tconstruct:smeltery/casting/scorched/brick_composite"
+        "tconstruct:smeltery/casting/scorched/brick_composite",
+        "tconstruct:smeltery/casting/metal/brass/plate_gold_cast",
+        "tconstruct:smeltery/casting/metal/brass/plate_sand_cast",
+        "tcintegrations:smeltery/casting/metal/cloggrum/ingot_gold_cast",
+        "tcintegrations:smeltery/casting/metal/cloggrum/ingot_sand_cast",
+        "tcintegrations:smeltery/casting/metal/cloggrum/block",
+        "tconstruct:smeltery/casting/filling/scorched_fuel_gauge",
+        "tconstruct:smeltery/casting/filling/scorched_fuel_tank",
+        "tconstruct:smeltery/casting/filling/scorched_ingot_gauge",
+        "tconstruct:smeltery/casting/filling/scorched_ingot_tank",
+        "tconstruct:smeltery/casting/filling/scorched_lantern_full",
+        "tconstruct:smeltery/casting/filling/seared_fuel_gauge",
+        "tconstruct:smeltery/casting/filling/seared_fuel_tank",
+        "tconstruct:smeltery/casting/filling/seared_ingot_gauge",
+        "tconstruct:smeltery/casting/filling/seared_ingot_tank",
+        "tconstruct:smeltery/casting/filling/seared_lantern_full",
+        "tcintegrations:smeltery/casting/metal/cloggrum/ingot_gold_cast",
+        "tcintegrations:smeltery/casting/metal/cloggrum/ingot_sand_cast",
+        "tcintegrations:smeltery/casting/metal/cloggrum/nugget_gold_cast",
+        "tcintegrations:smeltery/casting/metal/cloggrum/nugget_sand_cast",
+        "tconstruct:smeltery/casting/filling/bucket",
+        "tconstruct:smeltery/casting/filling/copper_can",
+        "tconstruct:smeltery/casting/filling/scorched_lantern_pixel",
+        "tconstruct:smeltery/casting/filling/seared_lantern_pixel",
+        
+
     ];
 
     const customRecipesToDisableSmelting = [
         "tconstruct:melting/ironwood/raw",
-        "twilight_construct:smeltery/melting/metal/knightmetal/cluster"
+        "twilight_construct:smeltery/melting/metal/knightmetal/cluster",
+        "tcintegrations:smeltery/melting/metal/cloggrum/ingot",
+        "tcintegrations:smeltery/melting/metal/cloggrum/raw",
+        "tcintegrations:smeltery/melting/metal/cloggrum/block",
+        "tcintegrations:smeltery/melting/metal/cloggrum/nugget",
+        "tcintegrations:smeltery/melting/metal/cloggrum/block",
+ 
     ];
 
     customRecipesToDisableCastingBasin.forEach(recipeId => {

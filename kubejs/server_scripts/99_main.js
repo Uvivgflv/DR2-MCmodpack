@@ -1,10 +1,6 @@
 // priority: 0
 // Все в верстаке сложнее верстака делать с инструментами из gtceu
-//
-//
-//
-//
-//
+
 ServerEvents.highPriorityData((event) => {
   TconstructDataRegistry(event);
   //GTConstructDataRegistry(event);
@@ -84,7 +80,7 @@ ServerEvents.recipes((event) => {
   ColdSweetRecipesRegistry(event);
   //--Tconstruct
   TconstructResipesRegistry(event);
-  TconstructSmelteryRecipesRegistry(event);
+  TconstructMeltingRecipesRegistry(event);
   TconstructTweaksRegistry(event);
   TconstructSmelteryCompatRegister(event);
   //--Ae2

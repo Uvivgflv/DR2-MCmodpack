@@ -1,47 +1,35 @@
 const RegisterCreateRecipes = (event) => {
-  /**
-   * 
-   create & greate recipes here
-   */
-  var CT = 'create';
-  var GC = 'greate';
-  //#region remove recipes
-  event.remove({ id: "create:item_application/andesite_casing_from_log" });
-  event.remove({ id: "create:item_application/andesite_casing_from_wood" });
-  event.remove({ id: "create:item_application/brass_casing_from_wood" });
-  event.remove({ id: "create:item_application/brass_casing_from_log" });
-  event.remove({ id: "create:item_application/copper_casing_from_wood" });
-  event.remove({ id: "create:item_application/copper_casing_from_log" });
-  event.remove({ id: /^greate:item_application\/.*_casing_from_.*/})
-  //--
-  event.remove({ output: "create:cogwheel" });
-  event.remove({ output: "create:large_cogwheel" });
-  event.remove({ output: "create:shaft" });
-  //--
-  event.remove({ id: "create:crafting/materials/electron_tube" });
-  event.remove({ id: "create:crafting/appliances/copper_backtank" });
-  //--machines
-  event.remove({ id: "create:crafting/kinetics/fluid_tank" });
-  event.remove({ id: "create:crafting/kinetics/brass_hand" });
-  event.remove({ id: "create:crafting/kinetics/mechanical_press" });
-  event.remove({ id: "create:crafting/kinetics/deployer" });
-  event.remove({ id: "create:crafting/kinetics/spout" });
-  event.remove({ id: "create:crafting/kinetics/mechanical_crafter" });
-  event.remove({ id: "create:crafting/kinetics/mechanical_mixer" });
-  event.remove({ id: "create:crafting/kinetics/basin" });
-  event.remove({ id: "create:crafting/kinetics/millstone" });
-  event.remove({ id: "create:mechanical_crafting/crushing_wheel" });
-  event.remove({ id: "create:crafting/kinetics/mechanical_drill" });
-  event.remove({ id: "create:crafting/kinetics/mechanical_saw" });
-  event.remove({ id: "create:crafting/kinetics/mechanical_arm" });
-  event.remove({ id: "create:crafting/kinetics/radial_chassis" });
-  //--rails
-  event.remove({ id: 'create:sequenced_assmly/track'});
-  //--vault
-  event.remove({ id: 'create:crafting/kinetics/item_vault'});
-  event.remove({ id: 'greate:assembler/item_vault_iron'});
+  //#region add basic recipes
+  event.shaped('gtceu:wood_dust', [
+    ' A ',
+    ' B '
+  ],{
+    A:'#forge:tools/saws',
+    B:'#minecraft:planks'
+  }).id('dr2:greate/util/wood_dust_manual');
 
+  event.shaped('gtceu:wood_plate', [
+    'ABB',
+    'CBB',
+    ' D '
+  ],{
+    A:'gtceu:sticky_resin',
+    B:'gtceu:wood_dust',
+    C:'#forge:tools/mallets',
+    D:'gtceu:brick_wooden_form'
+  }).keepIngredient('gtceu:brick_wooden_form').id('dr2:greate/util/wood_plate_manual');
 
+  event.custom({
+    type: "tconstruct:casting_basin",
+    cast: {tag: 'dr2:andesite_alloy_stones'},
+    cast_consumed: true,
+    cooling_time: 120,
+    fluid: {
+      amount: ingot*2,
+      fluid: 'gtceu:wrought_iron'
+    },
+    result: 'create:andesite_alloy'
+  }).id('dr2:casting/compat/create/andesite_alloy_from_wrought_iron');
   //#endregion
 
   //#region add casing recipes using other

@@ -105,7 +105,7 @@ global.VanillaWoodTypes = [
         {name: 'bamboo', log: 'bamboo_block', trapdoor: 'minecraft:bamboo_trapdoor', slab: 'minecraft:bamboo_slab', cabinet: 'farmersdelight:bamboo_cabinet', drawer: 'storagedelight:bamboo_drawer'}, 
         {name: 'crimson', log: 'crimson_stem', trapdoor: 'minecraft:crimson_trapdoor', slab: 'minecraft:crimson_slab', cabinet: 'farmersdelight:crimson_cabinet', drawer: 'storagedelight:crimson_drawer'},
         {name: 'warped', log: 'warped_stem', trapdoor: 'minecraft:warped_trapdoor', slab: 'minecraft:warped_slab', cabinet: 'farmersdelight:warped_cabinet', drawer: 'storagedelight:warped_drawer'}
-    ];
+];
 //ores
 
 const ingot = 144;
@@ -191,8 +191,12 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
     /^immersiveengineering:ingot_.*/,
     /^immersiveengineering:storage_.*/,
     /^immersiveengineering:stick_.*/,
+    /^immersiveengineering:treated_wood_.*/,
     /^ad_astra:.*_rod/,
     /^aquaculture:.*_fillet_knife/,
+    "create:cogwheel",
+    "create:large_cogwheel",
+    "create:shaft",
     //'botania:mana_bottle',
     //dr2:tag_remove
     "#kubejs:disabled_items"
@@ -693,7 +697,33 @@ global.REMOVE_RECIPES_CREATE = [
     "create:crafting/appliances/chain_from_zinc",
     "greate:shaped/mechanical_crafter",
     "greate:shaped/wrought_iron_alloy",
-    "create:crafting/palettes/scorchia"
+    "create:crafting/palettes/scorchia",
+    "create:item_application/andesite_casing_from_log",
+    "create:item_application/andesite_casing_from_wood",
+    "create:item_application/brass_casing_from_wood",
+    "create:item_application/brass_casing_from_log",
+    "create:item_application/copper_casing_from_wood",
+    "create:item_application/copper_casing_from_log",
+    /^greate:item_application\/.*_casing_from_.*/,
+    "create:crafting/materials/electron_tube",
+    "create:crafting/appliances/copper_backtank",
+    "create:crafting/kinetics/fluid_tank",
+    "create:crafting/kinetics/brass_hand",
+    "create:crafting/kinetics/mechanical_press",
+    "create:crafting/kinetics/deployer",
+    "create:crafting/kinetics/spout",
+    "create:crafting/kinetics/mechanical_crafter",
+    "create:crafting/kinetics/mechanical_mixer",
+    "create:crafting/kinetics/basin",
+    "create:crafting/kinetics/millstone",
+    "create:mechanical_crafting/crushing_wheel",
+    "create:crafting/kinetics/mechanical_drill",
+    "create:crafting/kinetics/mechanical_saw",
+    "create:crafting/kinetics/mechanical_arm",
+    "create:crafting/kinetics/radial_chassis",
+    'create:sequenced_assmly/track',
+    'create:crafting/kinetics/item_vault',
+    'greate:assembler/item_vault_iron'
 ];
 /**
  * @type {Array} TFMGRecipesToRemove
@@ -786,7 +816,10 @@ global.REMOVE_RECIPES_TCONSTRUCT = [
     //--smelting recipes
     "gm_construct:recipes/smeltery/casting/metal/malachite/block",
     "tconstruct:smeltery/scorched/scorched_brick",
-    "tconstruct:smeltery/scorched/scorched_brick_kiln"
+    "tconstruct:smeltery/scorched/scorched_brick_kiln",
+    //--try to disable
+    /^tcintegrations:smeltery\/melting\/metal\/cloggrum\/.*/,
+        
 
 ];
 /**
@@ -814,20 +847,7 @@ global.REMOVE_RECIPES_FARMERSDELIGHT = [
     /^storagedelight:.*_single_door_cabinet/,
     /^storagedelight:.*_cabinet_with_polished_deepslate_countertop/,
     /^storagedelight:.*_cabinet_with_polished_andesite_countertop/,
-    "sophisticatedstorage:basic_tier_upgrade",
-    "sophisticatedstorage:basic_to_copper_tier_upgrade",
-    "sophisticatedstorage:basic_to_iron_tier_from_basic_to_copper_tier",
-    "sophisticatedstorage:basic_to_iron_tier_upgrade",
-    "sophisticatedstorage:basic_to_gold_tier_upgrade",
-    "sophisticatedstorage:basic_to_diamond_tier_upgrade",
-    "sophisticatedstorage:basic_to_netherite_tier_upgrade",
-    "sophisticatedstorage:copper_to_iron_tier_upgrade",
-    "sophisticatedstorage:copper_to_gold_tier_upgrade",
-    "sophisticatedstorage:copper_to_diamond_tier_upgrade",
-    "sophisticatedstorage:copper_to_netherite_tier_upgrade",
-    "sophisticatedstorage:gold_to_diamond_tier_upgrade",
-    "sophisticatedstorage:gold_to_netherite_tier_upgrade",
-    "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+   
 ];
 /**
  * @type {Array} Biomesoplenty and biomeswevegone recipes to remove
@@ -890,6 +910,21 @@ global.REMOVE_RECIPES_SOPHISTICATED = [
     /^sophisticatedstorage:stack_upgrade_tier_.*/,
     /^sophisticatedstorage:storage_stack_upgrade_tier_.*_from_backpack_stack_upgrade_tier_.*/,
     "sophisticatedstorage:storage_stack_upgrade_tier_1_plus_from_backpack_stack_upgrade_starter_tier",
+     "sophisticatedstorage:basic_tier_upgrade",
+    "sophisticatedstorage:basic_to_copper_tier_upgrade",
+    "sophisticatedstorage:basic_to_iron_tier_from_basic_to_copper_tier",
+    "sophisticatedstorage:basic_to_iron_tier_upgrade",
+    "sophisticatedstorage:basic_to_gold_tier_upgrade",
+    "sophisticatedstorage:basic_to_diamond_tier_upgrade",
+    "sophisticatedstorage:basic_to_netherite_tier_upgrade",
+    "sophisticatedstorage:copper_to_iron_tier_upgrade",
+    "sophisticatedstorage:copper_to_gold_tier_upgrade",
+    "sophisticatedstorage:copper_to_diamond_tier_upgrade",
+    "sophisticatedstorage:copper_to_netherite_tier_upgrade",
+    "sophisticatedstorage:gold_to_diamond_tier_upgrade",
+    "sophisticatedstorage:gold_to_netherite_tier_upgrade",
+    "sophisticatedstorage:diamond_to_netherite_tier_upgrade",
+    "sophisticatedstorage:iron_to_gold_tier_upgrade"
     
 ];
 //#endregion

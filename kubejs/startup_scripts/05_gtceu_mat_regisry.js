@@ -74,6 +74,7 @@ const GTCEuMaterialRegistry = (event) => {
     .create("cloggrum") //just compact
     .components("ammonia", "2x copper")
     .ingot()
+    .liquid()
     .ore()
     .color(0xb59f70)
     .iconSet(GTMaterialIconSet.METALLIC)
@@ -96,6 +97,7 @@ const GTCEuMaterialRegistry = (event) => {
   event
     .create("soul_stained_steel")
     .components("iron")
+    .liquid()
     .ingot()
     .color(0xd136f7)
     .iconSet(GTMaterialIconSet.METALLIC)
@@ -112,6 +114,7 @@ const GTCEuMaterialRegistry = (event) => {
     .create("manasteel")
     .components("iron", "2x coal")
     .ingot()
+    .liquid()
     .color(0x07a0f2)
     .iconSet(GTMaterialIconSet.METALLIC)
     .flags(
@@ -127,6 +130,7 @@ const GTCEuMaterialRegistry = (event) => {
     .create("terrasteel")
     .components("iron", "ender_pearl", "2x coal")
     .ingot()
+    .liquid()
     .color(0x07f207)
     .iconSet(GTMaterialIconSet.METALLIC)
     .flags(
