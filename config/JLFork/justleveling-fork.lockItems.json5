@@ -2077,11 +2077,11 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 12
+					level: 10
 				},
 				{
 					aptitude: "Strength",
-					level: 15
+					level: 10
 				}
 			]
 		},
@@ -3803,11 +3803,11 @@
 			aptitudes: [
 				{
 					aptitude: "Magic",
-					level: 30
+					level: 10
 				},
 				{
 					aptitude: "Strength",
-					level: 20
+					level: 10
 				}
 			]
 		},

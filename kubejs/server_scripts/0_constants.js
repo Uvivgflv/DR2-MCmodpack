@@ -819,7 +819,7 @@ global.REMOVE_RECIPES_TCONSTRUCT = [
     "tconstruct:smeltery/scorched/scorched_brick_kiln",
     //--try to disable
     /^tcintegrations:smeltery\/melting\/metal\/cloggrum\/.*/,
-        
+    //"tconstruct:smeltery/alloys/molten_amethyst_bronze"   
 
 ];
 /**

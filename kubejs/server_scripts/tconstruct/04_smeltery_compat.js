@@ -72,7 +72,47 @@ const TconstructSmelteryCompatRegister = (event) => {
       temperature: 900
   }).id('dr2:tconstruct/compat/alloy/tin_alloy');
 
-  
+  //redstone smelting 
+
+  event.custom({
+    type: "tconstruct:melting",
+    conditions: [
+        {
+          type: "mantle:tag_filled",
+          tag: "forge:raw_materials/redstone",
+        },
+      ],
+      ingredient: {
+        tag: "forge:raw_materials/redstone",
+      },
+      result: {
+        amount: ingot,
+        fluid: "gtceu:redstone",
+      },
+      temperature: 900,
+      time: second*4
+  }).id('dr2:tconstruct/compat/melting/redstone');
+
+
+  event.custom({
+    type: "tconstruct:melting",
+    conditions: [
+        {
+          type: "mantle:tag_filled",
+          tag: "forge:dusts/redstone",
+        },
+      ],
+      ingredient: {
+        tag: "forge:dusts/redstone",
+      },
+      result: {
+        amount: Math.floor(ingot/2),
+        fluid: "gtceu:redstone",
+      },
+      temperature: 900,
+      time: second*2
+  }).id('dr2:tconstruct/compat/melting/redstone_dust');
+
 //#endregion
 
 //#region vanilla raw ores

@@ -35,7 +35,10 @@
             "undergarden:raw_cloggrum",
             "undergarden:raw_cloggrum_block",
             "undergarden:cloggrum_block",
-            "undergarden:cloggrum_nugget"
+            "undergarden:cloggrum_nugget",
+            "tconstruct:amethyst_bronze_ingot",
+            "tconstruct:amethyst_bronze_nugget",
+            "tconstruct:amethyst_bronze_block"
         ]
     }
 ]

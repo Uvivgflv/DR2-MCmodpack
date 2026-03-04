@@ -70,7 +70,8 @@ const TconstructDataRegistry = event => {
         "gm_construct:smeltery/casting/metal/malachite/block",
         "tconstruct:smeltery/casting/scorched/polished_from_magma",
         "tconstruct:smeltery/casting/scorched/stone_from_magma",
-        "tconstruct:compat/treated_wood"
+        "tconstruct:compat/treated_wood",
+        "tconstruct:smeltery/casting/metal/amethyst_bronze/block"
     
     ];
 
@@ -100,6 +101,8 @@ const TconstructDataRegistry = event => {
         "tconstruct:smeltery/casting/filling/copper_can",
         "tconstruct:smeltery/casting/filling/scorched_lantern_pixel",
         "tconstruct:smeltery/casting/filling/seared_lantern_pixel",
+        "tconstruct:smeltery/casting/metal/amethyst_bronze/ingot_gold_cast",
+        "tconstruct:smeltery/casting/metal/amethyst_bronze/ingot_sand_cast"
         
 
     ];
