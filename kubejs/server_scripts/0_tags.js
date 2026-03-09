@@ -162,6 +162,12 @@ const RegisterItemsTagsMain = (event) => {
     'quark:jasper',
     'minecraft:dripstone_block'
   ];
+
+  var anchorBlocks = [
+    'gtceu:lead_block',
+    'minecraft:iron_block',
+    'gtceu:wrought_iron_block'
+  ];
   //#endregion
   //#region adding tags
   event.add("kubejs:disabled_items", disabledItemList);
@@ -170,6 +176,8 @@ const RegisterItemsTagsMain = (event) => {
   event.add("cct:resin", resinItemList);
 
   event.add('dr2:andesite_alloy_stones', andesiteAlloyBlocks);
+
+  event.add('dr2:anchor_iron_blocks', anchorBlocks);
 
   event.add("cct:stonecuter_saw_blades", [
     "gtceu:bronze_buzz_saw_blade",

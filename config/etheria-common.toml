@@ -1,0 +1,5 @@
+
+[General]
+	#Give MageMicon book on first join
+	give_magemicon_on_start = true
+

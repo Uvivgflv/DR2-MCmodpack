@@ -197,6 +197,7 @@ global.REMOVE_RECIPES_OUTPUTS = [ //from all files where output in condition
     "create:cogwheel",
     "create:large_cogwheel",
     "create:shaft",
+    /^irons_restrictions:.*_manuscript/,
     //'botania:mana_bottle',
     //dr2:tag_remove
     "#kubejs:disabled_items"
@@ -640,6 +641,7 @@ global.REMOVE_RECIPES_GTCUE = [
     /^gtceu:shaped\/zpm_.*/,
     /^gtceu:shaped\/uv_.*/,
     //--func blocks
+    "gtceu:shaped/scaffolding",
     "gtceu:shaped/furnace",
     "gtceu:shaped/crafting_table",
     "gtceu:shaped/chest",
@@ -746,7 +748,8 @@ global.REMOVE_RECIPES_UNDERGARDEN = [
     "undergarden:stonecutter_from_depthrock",
     "undergarden:stonecutter_from_shiverstone",
     "undergarden:stonecutter_from_tremblecrust",
-    "undergarden:torch_ditchbulb_paste"
+    "undergarden:torch_ditchbulb_paste",
+    "undergarden:undergarden_scaffolding"
 ];
 /**
  * @type {Array} Irons SpellBooks To Remove
@@ -774,7 +777,7 @@ global.REMOVE_IRONS_SPELLBOOKS = [
     "irons_spellbooks:energized_core",
     //--materials
     //--research
-    /^irons_restrictions:.*_manuscript/
+    ///^irons_restrictions:.*_manuscript/
     
 ];
 /**
@@ -847,6 +850,8 @@ global.REMOVE_RECIPES_FARMERSDELIGHT = [
     /^storagedelight:.*_single_door_cabinet/,
     /^storagedelight:.*_cabinet_with_polished_deepslate_countertop/,
     /^storagedelight:.*_cabinet_with_polished_andesite_countertop/,
+    "mynethersdelight:crafting/scaffolding_alt",
+    "farmersdelight:scaffolding_from_canvas"
    
 ];
 /**
@@ -927,4 +932,5 @@ global.REMOVE_RECIPES_SOPHISTICATED = [
     "sophisticatedstorage:iron_to_gold_tier_upgrade"
     
 ];
+
 //#endregion

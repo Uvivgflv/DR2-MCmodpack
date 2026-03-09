@@ -332,16 +332,16 @@
 					]
 					tic_modifiers: [
 						{
-							level: 1
-							name: "tconstruct:jagged"
-						}
-						{
 							level: 2
 							name: "tconstruct:cultivated"
 						}
 						{
 							level: 1
 							name: "tconstruct:pierce"
+						}
+						{
+							level: 1
+							name: "tconstruct:jagged"
 						}
 					]
 					tic_persistent: { }
@@ -380,16 +380,16 @@
 							]
 							tic_modifiers: [
 								{
-									level: 1
-									name: "tconstruct:jagged"
-								}
-								{
 									level: 2
 									name: "tconstruct:cultivated"
 								}
 								{
 									level: 1
 									name: "tconstruct:pierce"
+								}
+								{
+									level: 1
+									name: "tconstruct:jagged"
 								}
 							]
 							tic_persistent: { }
@@ -423,10 +423,6 @@
 							tic_modifiers: [
 								{
 									level: 1
-									name: "tconstruct:jagged"
-								}
-								{
-									level: 1
 									name: "tconstruct:cultivated"
 								}
 								{
@@ -436,6 +432,10 @@
 								{
 									level: 1
 									name: "tconstruct:pathing"
+								}
+								{
+									level: 1
+									name: "tconstruct:jagged"
 								}
 							]
 							tic_persistent: { }
@@ -468,16 +468,16 @@
 							]
 							tic_modifiers: [
 								{
-									level: 1
-									name: "tconstruct:jagged"
-								}
-								{
 									level: 2
 									name: "tconstruct:cultivated"
 								}
 								{
 									level: 1
 									name: "tconstruct:stripping"
+								}
+								{
+									level: 1
+									name: "tconstruct:jagged"
 								}
 							]
 							tic_persistent: { }
@@ -597,7 +597,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["66CFC026C49A3F38"]
+			dependencies: [
+				"66CFC026C49A3F38"
+				"6F46AE87B331F6E9"
+			]
 			id: "726800F90D28F3A8"
 			rewards: [{
 				id: "4EA2B4FF7199A3E3"
@@ -609,8 +612,34 @@
 				item: "farmersdelight:cutting_board"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["139FB5DC7FB6368F"]
+			id: "6F46AE87B331F6E9"
+			tasks: [{
+				id: "3961C8F89968C8C2"
+				item: {
+					Count: 1
+					id: "gtceu:flint_saw"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							HarvestIce: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 31
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
 		}
 	]
 	subtitle: ["Чудный мир"]

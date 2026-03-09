@@ -4,7 +4,11 @@
 ServerEvents.highPriorityData((event) => {
   TconstructDataRegistry(event);
   //GTConstructDataRegistry(event);
-})
+});
+
+ServerEvents.lowPriorityData((event) => {
+  IronsSpellbooksDataRecipes(event);
+});
 
 ServerEvents.tags("item", (event) => {
   RegisterItemsTagsMain(event);
@@ -92,6 +96,8 @@ ServerEvents.recipes((event) => {
   //--sophisticated
   SophisBackpacksRecipesRegistry(event);
   SophiStorageRecipesRegistry(event);
+  //--alekiships
+  AlekisShipsRecipesRegistry(event);
 
   RegisterCreateRecipes(event);
   RegisterApothRecipes(event);
@@ -104,18 +110,17 @@ ServerEvents.recipes((event) => {
   RegisterMalumRecipes(event);
   RegistryInfAbyssRecipes(event);
   RegistryAdAstraRecipes(event);
-  RegisterIERecipes(event);                             //moved to 00_constants.js
-  RegistrySeqAssemblyTFMGRecipes(event);
+  //!RegisterIERecipes(event);       DELETE                       //moved to 00_constants.js
+  //?RegistrySeqAssemblyTFMGRecipes(event); REWRITE
   RegistryMechCrafterTFMGRecipes(event);
   registerMechanicalPressPlatesRecipes(event);
   RegistrySeqAssemblyCreateRecipes(event);
-  RegisterMechanicalCrafterRecipes(event);
-  //RegisterGefestForgeBlocksRecipes(event);            //mod deleted in v1.3.3 причина хардкодинг
+  //?RegisterMechanicalCrafterRecipes(event);   REWRITE
   GTCEUMachineCraftingRegistry(event);
   RegisterApotheosisInfusionResipes(event);
   RegistryIronsSpellbooksRecipes(event);
   RegistryWayStoneRecipes(event);
-  RegisterIEAlloysmelterRecipes(event);                    //created v0.4.0
+  //!RegisterIEAlloysmelterRecipes(event);     DELETE               //created v0.4.0
   RegisterPetalApothecaryRecipes(event);                   //created v0.4.0
   //RegisterAE2Recipes(event)                              //use magic materials
   //RegisterTwilightforestRecipes(event)                   //twilightKey recipes from Hefest forge

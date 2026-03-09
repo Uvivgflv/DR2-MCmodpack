@@ -65,6 +65,16 @@
     "traditional_age": true,
     "nightstag": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },
@@ -134,9 +144,15 @@
   "cslcrops": {
     "temp_data": true
   },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
   "exposure": {
     "lightroom": true,
     "photograph_frame": true
+  },
+  "jadeaddons.lootr": {
+    "info": true
   },
   "autoleveling": {
     "level": true

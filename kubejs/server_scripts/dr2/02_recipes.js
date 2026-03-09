@@ -67,7 +67,7 @@ const DR2RecipesRegistry = (event) => {
   event.shapeless('kubejs:resin_crate',['9x gtceu:sticky_resin']).id('dr2:misc/resin_storage_block');
   event.shapeless('9x gtceu:sticky_resin',['kubejs:resin_crate']).id('dr2:misc/resin_storage_block_unpack');
   event.shapeless('kubejs:hemp_fiber_block', ['9x immersiveengineering:hemp_fiber']).id('dr2:misc/hemp_fiber_block');
-  event.shapeless('9x immersiveengineering:hemp_fiber', ['kubejs:hemp_fiber_block']).id('dr2:misc/hemp_fiber_block_unpack');
+//  event.shapeless('9x immersiveengineering:hemp_fiber', ['kubejs:hemp_fiber_block']).id('dr2:misc/hemp_fiber_block_unpack');
   event.shapeless('kubejs:magic_essence_crate', ['9x irons_spellbooks:arcane_essence']).id('dr2:misc/magic_essence_block');
   event.shapeless('9x irons_spellbooks:arcane_essence', ['kubejs:magic_essence_crate']).id('dr2:misc/magic_essence_block_unpack');
   event.shapeless('kubejs:double_copper_block', ['9x #forge:storage_blocks/copper']).id('dr2:misc/double_copper_block');

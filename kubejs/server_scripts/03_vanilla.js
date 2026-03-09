@@ -71,6 +71,18 @@ const RegisterVanillaRecipes = (event) => {
   //#endregion
 
   //#region functioanal blocks
+
+  event.shaped('3x minecraft:scaffolding', [
+    'ABA',
+    'ACA',
+    'ADA'
+  ],{
+    A:'minecraft:bamboo',
+    B:'farmersdelight:canvas',
+    C:'#forge:bolts/wood',
+    D:'#forge:tools/mallets'
+  }).id('dr2:scaffolding');
+
   event
     .shaped(Item.of("minecraft:crafting_table"), ["fp", "PP"], {
       f: "minecraft:flint",

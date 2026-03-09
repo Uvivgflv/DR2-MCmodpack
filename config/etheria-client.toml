@@ -1,0 +1,7 @@
+
+[Rendering]
+	#Enable Elemental Damage numbers
+	show_elemental_damage = true
+	#Reduce Mage Micon gui motion
+	reduce_gui_motion = false
+
