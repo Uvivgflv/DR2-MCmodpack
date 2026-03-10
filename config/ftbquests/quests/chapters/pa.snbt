@@ -55,9 +55,16 @@
 			subtitle: "Самое банальное что может быть"
 			tasks: [{
 				consume_items: true
-				count: 64L
+				count: 12L
 				id: "31552A0205F6DA5D"
-				item: "minecraft:oak_log"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+					}
+				}
+				title: "Any #minecraft:logs"
 				type: "item"
 			}]
 			title: "Добыть дерева"
@@ -146,6 +153,11 @@
 					count: 8L
 					id: "59669719CAB81B35"
 					item: { Count: 8, id: "minecraft:flint" }
+					type: "item"
+				}
+				{
+					id: "569D9A5D0C03291D"
+					item: "minecraft:crafting_table"
 					type: "item"
 				}
 			]
@@ -314,8 +326,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 2.5d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B2C31DEEC980D28"]
@@ -549,29 +561,34 @@
 			]
 			icon: "minecraft:iron_ingot"
 			id: "6D6EFA6C196F3048"
+			rewards: [{
+				id: "7260E03537BE50CB"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			tasks: [
 				{
-					count: 128L
-					id: "57283D724265BB69"
-					item: { Count: 128, id: "minecraft:iron_ingot" }
+					count: 16L
+					id: "313009A156E393A4"
+					item: { Count: 16, id: "minecraft:iron_nugget" }
 					type: "item"
 				}
 				{
-					count: 128L
-					id: "4EDABBD463EC533C"
-					item: { Count: 128, id: "minecraft:copper_ingot" }
+					count: 16L
+					id: "0279A71993A40AFE"
+					item: { Count: 16, id: "gtceu:copper_nugget" }
 					type: "item"
 				}
 				{
-					count: 128L
-					id: "0E66036B7F7395B8"
-					item: { Count: 128, id: "minecraft:gold_ingot" }
+					count: 16L
+					id: "058FF3BC3BEAE7ED"
+					item: { Count: 16, id: "minecraft:gold_nugget" }
 					type: "item"
 				}
 				{
-					count: 128L
-					id: "1E06E13871350246"
-					item: { Count: 128, id: "gtceu:tin_ingot" }
+					count: 16L
+					id: "4DE8FF35F687CDB5"
+					item: { Count: 16, id: "gtceu:tin_nugget" }
 					type: "item"
 				}
 			]
@@ -582,10 +599,9 @@
 			dependencies: ["5834824BFB39F8C6"]
 			id: "024F3414FB7742C9"
 			rewards: [{
-				count: 64
-				id: "2977CD695B69FA0C"
-				item: "minecraft:coal"
-				type: "item"
+				id: "78CB4AF14A7A5653"
+				type: "xp"
+				xp: 100
 			}]
 			tasks: [{
 				count: 64L

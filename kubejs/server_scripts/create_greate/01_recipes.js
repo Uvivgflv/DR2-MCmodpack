@@ -113,11 +113,16 @@ const RegisterCreateRecipes = (event) => {
 
   
   event
-    .shaped("create:fluid_tank", ["ABA", "CDC", "ABA"], {
-      A: "#forge:screws/copper",
-      B: "#forge:double_plates/red_alloy",
-      C: "#forge:plates/red_alloy",
-      D: "#forge:glass_panes",
+    .shaped("2x create:fluid_tank", [
+      "AB ",
+      "CDC",
+      " BE"
+    ], {
+      A:'#gtceu:tools/crafting_screwdrivers',
+      B:'#forge:screws/copper',
+      C:'#forge:plates/copper',
+      D:'gtceu:wood_drum',
+      E:'#gtceu:tools/crafting_hammers'
     })
     .id("dr2:create/fluid_tank");
 
@@ -134,6 +139,18 @@ const RegisterCreateRecipes = (event) => {
       F: "#forge:tools/files",
     })
     .id("dr2:create/brass_hand");
+
+  event.shaped('greate:andesite_alloy_mechanical_pump', [
+    ' AB',
+    'CDE',
+    ' A '
+  ],{
+    A:'#forge:screws/andesite_alloy',
+    B:'#gtceu:tools/crafting_screwdrivers',
+    C:'#gtceu:tools/crafting_wrenches',
+    D:'create:fluid_pipe',
+    E:'greate:andesite_alloy_cogwheel'
+  }).id('dr2:create/mechanical_pump_uls');
 
   //#endregion
   //#region add materials recipes

@@ -7,16 +7,57 @@
 	id: "51154FBA9DA0B07F"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["741C83F58374D498"]
-		id: "051BFC0D29086093"
-		tasks: [{
-			id: "0303A13F7FCE87C5"
-			item: "kubejs:twforest_activator"
-			type: "item"
-		}]
-		x: 1.0d
-		y: -2.5d
-	}]
+	quests: [
+		{
+			description: [
+				"Для открытия портала в ссумеречный лес теперь "
+				"необходим Ключ."
+				"Этот ключ находится в Древнем городе "
+			]
+			id: "051BFC0D29086093"
+			subtitle: "Сумерки 4"
+			tasks: [{
+				id: "0303A13F7FCE87C5"
+				item: "kubejs:twforest_activator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["051BFC0D29086093"]
+			id: "7EE637B9F6435FFE"
+			rewards: [
+				{
+					id: "022B67CF8B29BAEA"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "395DE0E1F70CD180"
+					item: "twilightforest:magic_map"
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "553FEDC64B2AA358"
+				type: "dimension"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			id: "04BECDF18A254C5A"
+			tasks: [{
+				count: 12L
+				id: "4AAD5822A036CE0E"
+				item: { Count: 12, id: "gtceu:raw_cobalt" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+	]
 	title: "Сумеречный лес"
 }

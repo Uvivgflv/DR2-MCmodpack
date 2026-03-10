@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "artifacts"
+	group: "52A2B3FC7AB97687"
+	icon: {
+		Count: 1
+		id: "artifacts:bunny_hoppers"
+		tag: {
+			abilities: {
+				hold: {
+					points: 0
+					stats: {
+						duration: 4.08077d
+					}
+				}
+			}
+		}
+	}
+	id: "506A9E278684AA4C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Artifacts"
+}

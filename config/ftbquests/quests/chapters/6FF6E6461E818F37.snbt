@@ -5,23 +5,43 @@
 	group: "01A83B53FD1D0E4F"
 	icon: "gtceu:lp_steam_solid_boiler"
 	id: "6FF6E6461E818F37"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [{
+		dependencies: [
+			"2603B59AC1F8CC15"
+			"5FD7C377CA5D7814"
+		]
+		description: [
+			"На данном этапе чтобы поставлять воду в котел необходима помпа"
+			"и трубы из &5Create&r они не так сложны в сборке."
+		]
+		icon: "gtceu:lp_steam_solid_boiler"
 		id: "2E882FFBCC40A9CF"
+		rewards: [{
+			id: "5F5676841B51FCB6"
+			type: "xp"
+			xp: 100
+		}]
+		subtitle: "-*-*-*-"
 		tasks: [
 			{
-				id: "2205732D8D5CF028"
-				item: "gtceu:hp_steam_solid_boiler"
+				id: "1D2169F959E32E6F"
+				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}
 			{
-				count: 16L
-				id: "0B526AB6224E2359"
-				item: "gtceu:steel_brick_casing"
+				id: "12892043DF48920F"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}
+			{
+				id: "60B40A4A5AB9F478"
+				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}
 		]
+		title: "Коптилка"
 		x: -0.5d
 		y: -3.0d
 	}]

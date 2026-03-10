@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "428D4A96A2DE72A1"
+	group: "1EA2125AF2C34657"
+	icon: "luminous_nether:lit_wither_skull_candle"
+	id: "428D4A96A2DE72A1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Охота за головами"
+}

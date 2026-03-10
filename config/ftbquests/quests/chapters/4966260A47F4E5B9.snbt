@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "4966260A47F4E5B9"
 	group: "01A83B53FD1D0E4F"
+	icon: "create:wheat_flour"
 	id: "4966260A47F4E5B9"
 	order_index: 1
 	quest_links: [ ]
@@ -51,12 +52,6 @@
 					count: 16L
 					id: "62A2A7315D5C45FC"
 					item: { Count: 16, id: "supplementaries:flax_seeds" }
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "64EE3D1C59FA976A"
-					item: { Count: 16, id: "immersiveengineering:seed" }
 					type: "item"
 				}
 				{
@@ -212,27 +207,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["2D5CBF08D01E1AC6"]
-			icon: "immersiveengineering:hemp_fabric"
-			id: "4C3ACEDE6C1CA355"
-			tasks: [
-				{
-					count: 64L
-					id: "5B896169B874F085"
-					item: { Count: 64, id: "immersiveengineering:hemp_fiber" }
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "0E5D3EB44CD8EA8B"
-					item: { Count: 64, id: "immersiveengineering:hemp_fabric" }
-					type: "item"
-				}
-			]
-			x: 3.5d
-			y: -2.0d
-		}
-		{
 			dependencies: ["5E9B0936440646FE"]
 			id: "3606248737C61F6F"
 			tasks: [
@@ -346,6 +320,18 @@
 			}]
 			x: -3.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["2D5CBF08D01E1AC6"]
+			id: "1FD62A163E9ABCBD"
+			tasks: [{
+				count: 32L
+				id: "28C8BB0B59319755"
+				item: { Count: 32, id: "supplementaries:flax" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
 		}
 	]
 	title: "Фермерство"

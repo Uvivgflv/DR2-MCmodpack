@@ -1,5 +1,6 @@
 const GTCEUMachineCraftingRegistry = (event) => {
-  MixerRegistry(event);
-  BlastingFurnaceRecipes(event); //v0.3.5
-  RegisterLVAssemblerRecipes(event);
+  MixerRecipesGT(event);
+  BlastingFurnaceRecipesGT(event); //v0.3.5
+  AssemblerRecipesGT(event);
+  AlloySmelterRecipesGT(event)
 };

@@ -725,7 +725,8 @@ global.REMOVE_RECIPES_CREATE = [
     "create:crafting/kinetics/radial_chassis",
     'create:sequenced_assmly/track',
     'create:crafting/kinetics/item_vault',
-    'greate:assembler/item_vault_iron'
+    'greate:assembler/item_vault_iron',
+    "greate:shaped/andesite_alloy_mechanical_pump"
 ];
 /**
  * @type {Array} TFMGRecipesToRemove

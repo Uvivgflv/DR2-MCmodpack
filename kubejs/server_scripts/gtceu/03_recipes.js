@@ -69,6 +69,19 @@ const GTCEUecipesRegistry = (event) => {
     })
     .id("cct:gt/steam/bronze/compressor");
 
+  event.shaped('gtceu:lp_steam_alloy_smelter', [
+    'AAA',
+    'BCD',
+    'EFE'
+  ],{
+    A:'#forge:plates/bronze',
+    B:'minecraft:iron_bars',
+    C:'minecraft:blast_furnace',
+    D:'#gtceu:tools/crafting_wrenches',
+    E:'gtceu:bronze_machine_casing',
+    F:'gtceu:steam_machine_casing'
+  }).id('dr2:gt/steam/bronze/alloy_smelter');
+
   //#endregion
   //#region steel steam machine
   event

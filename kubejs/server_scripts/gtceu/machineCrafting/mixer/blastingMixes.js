@@ -1,4 +1,4 @@
-const MixerRegistry = (event) => {
+const MixerRecipesGT = (event) => {
   event.recipes.gtceu
     .mixer("gtceu:cloggrum_steel_dust")
     .itemInputs("#forge:dusts/steel", "#forge:dusts/cloggrum")

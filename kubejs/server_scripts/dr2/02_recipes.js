@@ -43,7 +43,7 @@ const DR2RecipesRegistry = (event) => {
     'ACA',
     'DA '
   ],{
-    A:'immersiveengineering:hemp_fiber',
+    A:'#forge:string',
     B:'#forge:tools/mallets',
     C:'minecraft:honeycomb',
     D:'minecraft:bowl'
@@ -56,7 +56,7 @@ const DR2RecipesRegistry = (event) => {
     'ACA',
     'DA '
   ],{
-    A:'immersiveengineering:hemp_fiber',
+    A:'#forge:string',
     B:'#forge:tools/mallets',
     C:'gtceu:wax_dust',
     D:'minecraft:bowl'

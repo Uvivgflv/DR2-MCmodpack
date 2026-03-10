@@ -1,4 +1,4 @@
-const BlastingFurnaceRecipes = (event) => {
+const BlastingFurnaceRecipesGT = (event) => {
   event.remove({ id: "gtceu:electric_blast_furnace/blast_blazing_deorum" });
 
   event.recipes.gtceu

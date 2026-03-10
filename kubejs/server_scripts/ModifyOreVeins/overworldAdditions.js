@@ -1,7 +1,7 @@
 const OverworldOreVeins = (event) => {
   event.add("kubejs:add_copper", (vein) => {
     // Basic vein generation properties
-    vein.weight(19); // [*]
+    vein.weight(23); // [*]
     vein.clusterSize(12); // [*]
     vein.density(0.6); // [*]
     vein.discardChanceOnAirExposure(1);

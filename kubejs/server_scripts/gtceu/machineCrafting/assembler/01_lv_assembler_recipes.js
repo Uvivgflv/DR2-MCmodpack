@@ -1,4 +1,4 @@
-const RegisterLVAssemblerRecipes = event => { //!удалить рецепты GREATE перд добавлением
+const AssemblerRecipesGT = event => { //!удалить рецепты GREATE перд добавлением
     event.recipes.gtceu.assembler('create:fluid_tank')
         .itemInputs(
             '4x #forge:glass_panes',

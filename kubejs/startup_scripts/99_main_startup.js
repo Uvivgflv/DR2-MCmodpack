@@ -1,3 +1,4 @@
+
 Platform.mods.kubejs.name = "Dark Realms 2";
 
 StartupEvents.registry("item", (event) => {
@@ -28,6 +29,10 @@ GTCEuStartupEvents.materialModification((event) => {
   //крашит из-за отсутствия материалов крафта (слитков)
   //GTCEuMatMod(event)
   GTToolsCreation(event);
+});
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+  GTCEUMultiblockMachinesRegistry(event);
 });
 
 GTCEuStartupEvents.registry("gtceu:material", (event) => {

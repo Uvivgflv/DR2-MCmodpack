@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "11DF5CF9F10BE3F3"
+	group: "1EA2125AF2C34657"
+	icon: "lightmanscurrency:coinpile_gold"
+	id: "11DF5CF9F10BE3F3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Деньги за мусор"
+}
