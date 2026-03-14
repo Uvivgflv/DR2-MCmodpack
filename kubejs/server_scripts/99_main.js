@@ -110,7 +110,6 @@ ServerEvents.recipes((event) => {
   RegisterMalumRecipes(event);
   RegistryInfAbyssRecipes(event);
   RegistryAdAstraRecipes(event);
-  //!RegisterIERecipes(event);       DELETE                       //moved to 00_constants.js
   //?RegistrySeqAssemblyTFMGRecipes(event); REWRITE
   RegistryMechCrafterTFMGRecipes(event);
   registerMechanicalPressPlatesRecipes(event);
@@ -120,7 +119,6 @@ ServerEvents.recipes((event) => {
   RegisterApotheosisInfusionResipes(event);
   RegistryIronsSpellbooksRecipes(event);
   RegistryWayStoneRecipes(event);
-  //!RegisterIEAlloysmelterRecipes(event);     DELETE               //created v0.4.0
   RegisterPetalApothecaryRecipes(event);                   //created v0.4.0
   //RegisterAE2Recipes(event)                              //use magic materials
   //RegisterTwilightforestRecipes(event)                   //twilightKey recipes from Hefest forge

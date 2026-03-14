@@ -15,7 +15,8 @@ const TconstructMeltingRecipesRegistry = (event) => {
     {type: 'ore', name: 'relict', raw: 'forge:raw_materials/relict', ingotTag: 'forge:ingots/relict', blockTag: 'forge:storage_blocks/relict', defaultFluid: 'gtceu:relict', timeIngot: second*3, timeBlock: (second*3)*9, temp: 980},
     {type: 'ore', name: 'cloggrum', raw: 'forge:raw_materials/cloggrum', ingotTag: 'forge:ingots/cloggrum', blockTag: 'forge:storage_blocks/cloggrum', defaultFluid: 'gtceu:cloggrum', timeIngot: second*5, timeBlock: (second*5)*9, temp: 800},
     {type: 'alloy', name: 'cloggrum_steel', ingotTag: 'forge:ingots/cloggrum_steel', blockTag: 'forge:storage_blocks/cloggrum_steel', defaultFluid: 'gtceu:cloggrum_steel', timeIngot: second*4, timeBlock: (second*4)*9, temp: 1000},
-    {type: 'alloy', name: 'amethyst_bronze', ingotTag: 'forge:ingots/amethyst_bronze', blockTag: 'forge:storage_blocks/amethyst_bronze', defaultFluid: 'tconstruct:molten_amethyst_bronze', timeIngot: second*5, timeBlock: (second*5)*9, temp: 820}    
+    {type: 'alloy', name: 'amethyst_bronze', ingotTag: 'forge:ingots/amethyst_bronze', blockTag: 'forge:storage_blocks/amethyst_bronze', defaultFluid: 'tconstruct:molten_amethyst_bronze', timeIngot: second*5, timeBlock: (second*5)*9, temp: 820},
+   // {type: 'ore', name: 'iron', raw: ''}
   ];
 
   let MeltingIngotByTag = (output, input, time, temp) => {

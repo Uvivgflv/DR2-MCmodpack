@@ -240,8 +240,4 @@ const RegistryIronsSpellbooksRecipes = (event) => {
     })
     .id("dr2:irons_spellbooks/scroll_anvil");
   //#endregion
-
-  //#region research
-  //all restricted may find in chests i guess
-  //#endregion
 };

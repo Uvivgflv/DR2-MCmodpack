@@ -1,3 +1,0 @@
-const RegisterIEItemTags = (event) => {
-  //( ͡° ͜ʖ ͡°)
-};

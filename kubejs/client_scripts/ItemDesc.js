@@ -18,7 +18,7 @@ const ItemDescRegistry = (event) => {
     const item_id = element;
     event.add(item_id, Text.of("Данный инструмент удален из игры,\nно может использоватся в рецептах или переработке!!!").darkRed());
   });
-  event.add(/^infinite_abyss:.*/, Text.of("Данный контент будет удаленн в ближайшее время\nНе имеет никаой ценности и рецепта!").darkRed);
+  //event.add(/^infinite_abyss:.*/, Text.of("Данный контент будет удаленн в ближайшее время\nНе имеет никаой ценности и рецепта!").darkRed);
   event.add('supplementaries:antique_ink', "Выпадает с урн в подземельях!")
   event.add("kubejs:inert_dust", "Дроп с Криперов 10-15 уровня!");
   event.add("kubejs:catalyst", "Дроп с Криперов 5-10 уровня!");
@@ -40,7 +40,19 @@ const ItemDescRegistry = (event) => {
   );
   event.add('kubejs:old_fabric', 'Низкокачественная ткань. Дроп со Скелетов 2-10 уровня!');
   event.add('kubejs:black_ash_dust', 'Выпадает из тёмного пепла, разрушаемого кувалдой');
-  event.add('gtceu:calcite_dust', 'Выпадает из кальцита, разрушаемого кувалдой')
+  event.add('gtceu:calcite_dust', 'Выпадает из кальцита, разрушаемого кувалдой');
+
+  function addGlobalDescIA(event) {
+    Ingredient.of(/^infinite_abyss:.*/).stacks.forEach(element => {
+      const item_id = element;
+      event.add(item_id, Text.of("Данный контент может исчезнуть с любым обновлением!").red());
+    });
+  };
+
+  if(Platform.isLoaded("infinite_abyss")) {
+    addGlobalDescIA(event);
+  };
+  
 };
 
 const RegistryItemModification = (event) => {
