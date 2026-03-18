@@ -18,7 +18,6 @@ const ItemDescRegistry = (event) => {
     const item_id = element;
     event.add(item_id, Text.of("Данный инструмент удален из игры,\nно может использоватся в рецептах или переработке!!!").darkRed());
   });
-  //event.add(/^infinite_abyss:.*/, Text.of("Данный контент будет удаленн в ближайшее время\nНе имеет никаой ценности и рецепта!").darkRed);
   event.add('supplementaries:antique_ink', "Выпадает с урн в подземельях!")
   event.add("kubejs:inert_dust", "Дроп с Криперов 10-15 уровня!");
   event.add("kubejs:catalyst", "Дроп с Криперов 5-10 уровня!");

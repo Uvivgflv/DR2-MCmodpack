@@ -11,7 +11,7 @@ ServerEvents.lowPriorityData((event) => {
 });
 
 ServerEvents.tags("item", (event) => {
-  RegisterItemsTagsMain(event);
+  DR2TweaksTagsItems(event);
   RegisterCreateTags(event);
   RegisterMalumTags(event);
   RegistryInfAbyssTagsItems(event);
@@ -25,8 +25,7 @@ ServerEvents.tags("item", (event) => {
 ServerEvents.tags("block", (event) => {
   RegisterBotaniaTagsBlock(event);
   RegisterGTTagsBlocks(event);
-  RegisterBlocksTagsMain(event);
-  RegisterRealisticStepsBlockTags(event);
+  DR2TweaksTagsBlocks(event);
 
   console.log("Register DR2 custom blockTags");
 });
