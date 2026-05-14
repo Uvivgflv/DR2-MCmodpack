@@ -92,6 +92,7 @@ packetfixer.properties
 oculus.properties
 worldedit/worldedit.properties
 xaerominimap_entities.json
+old_dir/
 
 
 #scripts/

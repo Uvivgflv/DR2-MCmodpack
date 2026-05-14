@@ -1,0 +1,14 @@
+{
+  "_comment_": "valid values: [0 - disable recipes, 1 - standart recipes, 2 - stupid hard recipes, 3 - alternative standart recipes]",
+  "balance_mode": 1,
+  "modules": [
+    {
+      "loot": true,
+      "gt_ores": false,
+      "unify_alloys": true,
+      "commands": true,
+      "special_tag_item": false,
+      "special_tag_block": false
+    }
+  ]
+}
