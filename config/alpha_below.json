@@ -1,0 +1,30 @@
+{
+  "structuresEnabled": true,
+  "voyagerEnabled": false,
+  "bedrockCeilingEnabled": true,
+  "dayNightCycleEnabled": false,
+  "2charEnabled": false,
+  "horrorMode": false,
+  "horrorStructures": true,
+  "falsePresence": false,
+  "silenceZones": true,
+  "fpMinRevisitTicks": 900,
+  "fpGlobalCooldownTicks": 1500,
+  "fpPlayerCooldownTicks": 1800,
+  "fpBaseChance": 0.12,
+  "fpMaxEventsPerSession": 5,
+  "fpMinTicksInDimension": 400,
+  "anhMinDefects": 1,
+  "anhMaxDefects": 3,
+  "farLandsDistance": 12550821,
+  "alphaVersionWatermark": false,
+  "alphaGameplayMechanics": false,
+  "allowMobSpawning": false,
+  "allowEntityRoaming": false,
+  "voidTransitionMode": "whitelist",
+  "voidTeleportWhitelist": [
+    "minecraft:overworld"
+  ],
+  "voidTeleportBlacklist": [],
+  "debugVoidTransitions": false
+}

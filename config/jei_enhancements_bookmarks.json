@@ -1,0 +1,40 @@
+{
+  "nextGroupId": 1,
+  "groups": {
+    "0": {
+      "expanded": true,
+      "craftingChain": false,
+      "linkedGroupId": -1
+    }
+  },
+  "items": [
+    {
+      "groupId": 0,
+      "itemKey": "minecraft:yellow_carpet",
+      "factor": 1,
+      "amount": 1,
+      "type": 0
+    },
+    {
+      "groupId": 0,
+      "itemKey": "1900404884",
+      "factor": 1,
+      "amount": 1,
+      "type": 0
+    },
+    {
+      "groupId": 0,
+      "itemKey": "gtceu:polyvinyl_butyral_ingot",
+      "factor": 1,
+      "amount": 1,
+      "type": 0
+    },
+    {
+      "groupId": 0,
+      "itemKey": "tconstruct:tinker_station",
+      "factor": 1,
+      "amount": 1,
+      "type": 0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "${modid}:${wood}_log"
+    }
+  },
+  "result": {
+    "item": "nec:${type}_chest",
+    "count": 4
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "config_version": "1.0.4",
+  "config_datetime": "2026-08-03_17-01-46",
+  "global": {
+    "disable_all_placed_features": false
+  },
+  "placed_features": [
+    {
+      "name": "minecraft:amethyst_geode",
+      "is_disabled": false,
+      "whitelisted_biomes": [
+        "twilightforest:fire_swamp",
+        "twilightforest:enchanted_forest",
+        "twilightforest:dense_mushroom_forest",
+        "twilightforest:forest",
+        "twilightforest:oak_savannah",
+        "twilightforest:snowy_forest",
+        "twilightforest:spooky_forest",
+        "twilightforest:swamp",
+        "twilightforest:dense_forest",
+        "twilightforest:dark_forest_center",
+        "twilightforest:dark_forest",
+        "twilightforest:clearing"
+      ],
+      "blacklisted_biomes": [
+        "minecraft:badlands",
+        "minecraft:bamboo_jungle",
+        "minecraft:beach",
+        "minecraft:birch_forest",
+        "minecraft:cherry_grove",
+        "minecraft:cold_ocean",
+        "minecraft:dark_forest",
+        "minecraft:deep_cold_ocean",
+        "minecraft:deep_dark",
+        "minecraft:deep_frozen_ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:deep_ocean",
+        "minecraft:desert",
+        "minecraft:dripstone_caves",
+        "minecraft:eroded_badlands",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:frozen_ocean",
+        "minecraft:frozen_peaks",
+        "minecraft:frozen_river",
+        "minecraft:grove",
+        "minecraft:ice_spikes",
+        "minecraft:jagged_peaks",
+        "minecraft:jungle",
+        "minecraft:lukewarm_ocean",
+        "minecraft:lush_caves",
+        "minecraft:mangrove_swamp",
+        "minecraft:meadow",
+        "minecraft:mushroom_fields",
+        "minecraft:ocean",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:pale_garden",
+        "minecraft:plains",
+        "minecraft:river",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:snowy_beach",
+        "minecraft:snowy_plains",
+        "minecraft:snowy_slopes",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:stony_peaks",
+        "minecraft:stony_shore",
+        "minecraft:sulfur_caves",
+        "minecraft:sunflower_plains",
+        "minecraft:swamp",
+        "minecraft:taiga",
+        "minecraft:warm_ocean",
+        "minecraft:windswept_forest",
+        "minecraft:windswept_gravelly_hills",
+        "minecraft:windswept_hills",
+        "minecraft:windswept_savanna",
+        "minecraft:wooded_badlands",
+        "alexscaves:magnetic_caves",
+        "alexscaves:toxic_caves",
+        "biomesoplenty:aspen_glade",
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:bayou",
+        "biomesoplenty:bog",
+        "biomesoplenty:cold_desert",
+        "biomesoplenty:coniferous_forest",
+        "biomesoplenty:crag",
+        "biomesoplenty:dead_forest",
+        "biomesoplenty:dryland",
+        "biomesoplenty:dune_beach",
+        "biomesoplenty:field",
+        "biomesoplenty:fir_clearing",
+        "biomesoplenty:floodplain",
+        "biomesoplenty:forested_field",
+        "biomesoplenty:fungal_jungle",
+        "biomesoplenty:glowing_grotto",
+        "biomesoplenty:grassland",
+        "biomesoplenty:gravel_beach",
+        "biomesoplenty:highland",
+        "biomesoplenty:hot_springs",
+        "biomesoplenty:jacaranda_glade",
+        "biomesoplenty:jade_cliffs",
+        "biomesoplenty:lavender_field",
+        "biomesoplenty:lush_desert",
+        "biomesoplenty:lush_savanna",
+        "biomesoplenty:maple_woods",
+        "biomesoplenty:marsh",
+        "biomesoplenty:mediterranean_forest",
+        "biomesoplenty:moor",
+        "biomesoplenty:muskeg",
+        "biomesoplenty:mystic_grove",
+        "biomesoplenty:old_growth_dead_forest",
+        "biomesoplenty:old_growth_woodland",
+        "biomesoplenty:ominous_woods",
+        "biomesoplenty:orchard",
+        "biomesoplenty:overgrown_greens",
+        "biomesoplenty:pasture",
+        "biomesoplenty:prairie",
+        "biomesoplenty:pumpkin_patch",
+        "biomesoplenty:rainforest",
+        "biomesoplenty:redwood_forest",
+        "biomesoplenty:rocky_rainforest",
+        "biomesoplenty:rocky_shrubland",
+        "biomesoplenty:scrubland",
+        "biomesoplenty:seasonal_forest",
+        "biomesoplenty:shrubland",
+        "biomesoplenty:snowblossom_grove",
+        "biomesoplenty:snowy_coniferous_forest",
+        "biomesoplenty:snowy_fir_clearing",
+        "biomesoplenty:snowy_maple_woods",
+        "biomesoplenty:spider_nest",
+        "biomesoplenty:tropics",
+        "biomesoplenty:tundra",
+        "biomesoplenty:volcanic_plains",
+        "biomesoplenty:volcano",
+        "biomesoplenty:wasteland",
+        "biomesoplenty:wasteland_steppe",
+        "biomesoplenty:wetland",
+        "biomesoplenty:woodland",
+        "darkerdepths:glowshroom_forest",
+        "darkerdepths:molten_cavern",
+        "darkerdepths:sandy_catacombs",
+        "oceanicrealms:sandstone_ocean",
+        "quark:glimmering_weald",
+        "yungscavebiomes:frosted_caves",
+        "yungscavebiomes:lost_caves"
+      ]
+    },
+    {
+      "name": "create:zinc_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "deeperdarker:sculk_coal",
+      "is_disabled": true
+    },
+    {
+      "name": "deeperdarker:sculk_copper",
+      "is_disabled": true
+    },
+    {
+      "name": "deeperdarker:sculk_diamond",
+      "is_disabled": true
+    },
+    {
+      "name": "deeperdarker:sculk_emerald",
+      "is_disabled": true
+    },
+    {
+      "name": "deeperdarker:sculk_gold",
+      "is_disabled": true
+    },
+    {
+      "name": "deeperdarker:sculk_iron",
+      "is_disabled": true
+    },
+    {
+      "name": "deeperdarker:sculk_lapis",
+      "is_disabled": true
+    },
+    {
+      "name": "deeperdarker:sculk_redstone",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_and_combat:ebony_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_and_combat:igneous_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_and_combat:igneous_ore_netherrack",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_and_combat:silver_deepslate_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_and_combat:silver_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_and_combat:titanium_deepslate_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "dungeons_and_combat:titanium_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "malum:cthonic_gold_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "malum:deepslate_quartz_geode",
+      "is_disabled": true
+    },
+    {
+      "name": "malum:ore_brilliant",
+      "is_disabled": true
+    },
+    {
+      "name": "malum:ore_natural_quartz",
+      "is_disabled": true
+    },
+    {
+      "name": "malum:ore_soulstone",
+      "is_disabled": true
+    },
+    {
+      "name": "malum:quartz_geode",
+      "is_disabled": true
+    },
+    {
+      "name": "quark:ore_lapis_extra",
+      "is_disabled": true
+    },
+    {
+      "name": "tconstruct:cobalt_ore_large",
+      "is_disabled": true
+    },
+    {
+      "name": "tconstruct:cobalt_ore_small",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:bismuth_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:bloodstone_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:cinnabar_ore_generate",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:deep_void_copper_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:deep_void_diamond_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:deep_void_gold_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:deep_void_iron_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:deep_void_lapis_lazuli_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:deep_void_redstone_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:onyx_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "the_deep_void:sulfur_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "twilightforest:legacy_coal_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "twilightforest:legacy_copper_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "twilightforest:legacy_diamond_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "twilightforest:legacy_gold_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "twilightforest:legacy_iron_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "twilightforest:legacy_lapis_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "twilightforest:legacy_redstone_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "undergarden:cloggrum_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "undergarden:coal_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "undergarden:diamond_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "undergarden:froststeel_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "undergarden:gold_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "undergarden:iron_ore",
+      "is_disabled": true
+    },
+    {
+      "name": "undergarden:utherium_ore",
+      "is_disabled": true
+    }
+  ]
+}

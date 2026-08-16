@@ -1,0 +1,46 @@
+
+[general]
+	#Aptitudes max level.
+	#Range: 2 ~ 1000
+	aptitudeMaxLevel = 32
+	#Global max level, calculated by summing all aptitude levels.
+	#Range: 32 ~ 99999
+	playersMaxGlobalLevel = 256
+	#First aptitudes level cost.
+	#Range: 1 ~ 1000
+	aptitudeFirstCostLevel = 5
+	#Show potions overlay over skills.
+	showPotionsHud = true
+	#Show Lucky Drop actionbar skill messages.
+	showLuckyDropSkillOverlay = true
+	#Show Critical Roll actionbar skill messages.
+	showCriticalRollSkillOverlay = true
+	#Show the source mod id on skill and passive tooltips.
+	showSkillModName = false
+	#Show the source mod id on title tooltips.
+	showTitleModName = false
+	#Default passive sort order used by client screens.
+	#Allowed Values: ByName, ByReverseName
+	sortPassive = "ByName"
+	#Default skill sort order used by client screens.
+	#Allowed Values: ByName, ByReverseName, ByLevel
+	sortSkill = "ByLevel"
+	#If true, locked items will be automatically dropped from player hands.
+	dropLockedItems = false
+	#If true, locked items can remain in inventories and equipment slots.
+	#Their aptitude requirements still prevent using them.
+	#This overrides dropLockedItems and per-item <droppable> markers.
+	allowLockedItemsInInventory = false
+	#If true, item usage requirement tooltips hide requirements the player already meets.
+	hideMetUsageRequirements = false
+	#If true, using a Skill Reset Crystal refunds the experience spent on aptitude levels.
+	skillResetRefundsSpentLevels = false
+	#If Timeless and Classics: Zero is present, log gun ids on fire for lock-item configuration.
+	logTaczGunNames = false
+	#If Iron's Spells 'n Spellbooks is present, log spell ids on cast for lock-item configuration.
+	logSpellIds = false
+	#Treasure Hunter possible drops. Prefix lists with any label and wrap entries in [].
+	treasureHunterItemList = ["minecraft:flint", "minecraft:clay_ball", "trashList[minecraft:feather;minecraft:bone_meal]", "lostToolList[minecraft:stick;minecraft:wooden_pickaxe{Damage:59};minecraft:wooden_shovel{Damage:59};minecraft:wooden_axe{Damage:59}]", "discList[minecraft:music_disc_13;minecraft:music_disc_cat;minecraft:music_disc_blocks;minecraft:music_disc_chirp;minecraft:music_disc_far;minecraft:music_disc_mall;minecraft:music_disc_mellohi;minecraft:music_disc_stal;minecraft:music_disc_strad;minecraft:music_disc_ward;minecraft:music_disc_11;minecraft:music_disc_wait]", "seedList[minecraft:beetroot_seeds;minecraft:wheat_seeds;minecraft:pumpkin_seeds;minecraft:melon_seeds;minecraft:brown_mushroom;minecraft:red_mushroom]", "mineralList[minecraft:raw_iron;minecraft:raw_gold;minecraft:raw_copper;minecraft:coal;minecraft:charcoal]"]
+	#Convergence crafting refunds in the format crafted_item#refund_item.
+	convergenceItemList = ["minecraft:iron_sword#minecraft:iron_ingot", "minecraft:iron_pickaxe#minecraft:iron_ingot", "minecraft:iron_axe#minecraft:iron_ingot", "minecraft:iron_shovel#minecraft:iron_nugget", "minecraft:iron_hoe#minecraft:iron_ingot", "minecraft:golden_sword#minecraft:gold_ingot", "minecraft:golden_pickaxe#minecraft:gold_ingot", "minecraft:golden_axe#minecraft:gold_ingot", "minecraft:golden_shovel#minecraft:gold_ingot", "minecraft:golden_hoe#minecraft:gold_ingot", "minecraft:diamond_sword#minecraft:diamond", "minecraft:diamond_pickaxe#minecraft:diamond", "minecraft:diamond_axe#minecraft:diamond", "minecraft:chainmail_helmet#minecraft:iron_nugget", "minecraft:chainmail_chestplate#minecraft:iron_nugget", "minecraft:chainmail_leggings#minecraft:iron_nugget", "minecraft:chainmail_boots#minecraft:iron_nugget", "minecraft:iron_helmet#minecraft:iron_ingot", "minecraft:iron_chestplate#minecraft:iron_ingot", "minecraft:iron_leggings#minecraft:iron_ingot", "minecraft:iron_boots#minecraft:iron_ingot", "minecraft:golden_helmet#minecraft:gold_ingot", "minecraft:golden_chestplate#minecraft:gold_ingot", "minecraft:golden_leggings#minecraft:gold_ingot", "minecraft:golden_boots#minecraft:gold_ingot", "minecraft:diamond_helmet#minecraft:diamond", "minecraft:diamond_chestplate#minecraft:diamond", "minecraft:diamond_leggings#minecraft:diamond", "minecraft:diamond_boots#minecraft:diamond", "minecraft:netherite_upgrade_smithing_template#minecraft:diamond", "minecraft:sentry_armor_trim_smithing_template#minecraft:diamond", "minecraft:vex_armor_trim_smithing_template#minecraft:diamond", "minecraft:wild_armor_trim_smithing_template#minecraft:diamond", "minecraft:coast_armor_trim_smithing_template#minecraft:diamond", "minecraft:dune_armor_trim_smithing_template#minecraft:diamond", "minecraft:wayfinder_armor_trim_smithing_template#minecraft:diamond", "minecraft:raiser_armor_trim_smithing_template#minecraft:diamond", "minecraft:shaper_armor_trim_smithing_template#minecraft:diamond", "minecraft:host_armor_trim_smithing_template#minecraft:diamond", "minecraft:ward_armor_trim_smithing_template#minecraft:diamond", "minecraft:silence_armor_trim_smithing_template#minecraft:diamond", "minecraft:tide_armor_trim_smithing_template#minecraft:diamond", "minecraft:snout_armor_trim_smithing_template#minecraft:diamond", "minecraft:rib_armor_trim_smithing_template#minecraft:diamond", "minecraft:eye_armor_trim_smithing_template#minecraft:diamond", "minecraft:spire_armor_trim_smithing_template#minecraft:diamond"]
+

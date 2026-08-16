@@ -2,7 +2,7 @@
 [generation]
 	#Average radius (in blocks) of an Alex's Caves cave biome.
 	#Range: 10.0 ~ 1.7976931348623157E308
-	cave_biome_mean_width = 600.0
+	cave_biome_mean_width = 300.0
 	#Average separation (in blocks) between each Alex's Caves cave biome.
 	#Range: > 50
 	cave_biome_mean_separation = 900

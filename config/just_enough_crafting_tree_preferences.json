@@ -1,0 +1,34 @@
+{
+  "recipePreference": {
+    "gtceu:granitic_mineral_sand_dust": 1
+  },
+  "ingredientPreference": {},
+  "expandedPreference": {
+    "minecraft:item_stack|gtceu:wrought_iron_ingot": true,
+    "minecraft:item_stack|gtceu:wrought_iron_ingot/ingredient:1:bdj8cohj2o1o": true,
+    "minecraft:item_stack|gtceu:wrought_iron_ingot/ingredient:1:bdj8cohj2o1o/ingredient:0:rju7krjxznb5": true,
+    "minecraft:item_stack|gtceu:wrought_iron_ingot/station:0:3saulp40h0cdm": true
+  },
+  "naturalAllow": [],
+  "naturalDeny": [],
+  "disabledRecipeMethods": [],
+  "disabledRecipeMethodsByComponent": {
+    "minecraft:item_stack|minecraft:iron_ingot": [
+      "jei:minecraft:blasting",
+      "jei:alexscaves:nuclear_furnace",
+      "jei:minecraft:furnace"
+    ],
+    "minecraft:item_stack|gtceu:wrought_iron_ingot": [
+      "jei:gtceu:arc_furnace",
+      "jei:gtceu:ingot_molding",
+      "jei:create:fan_blasting",
+      "jei:gtceu:compressor",
+      "jei:gtceu:fluid_solidifier",
+      "jei:minecraft:furnace",
+      "jei:tconstruct:casting_table",
+      "jei:gtceu:arc_furnace_recycling",
+      "jei:gtceu:electric_blast_furnace"
+    ]
+  },
+  "treeLoadingTargetFps": 90
+}

@@ -1,8 +1,0 @@
-{
-  "general": {
-    "enabled": false
-  },
-  "message_json_files": [
-    "messages/server_messages.json"
-  ]
-}

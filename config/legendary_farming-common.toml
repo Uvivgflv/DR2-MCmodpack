@@ -1,0 +1,213 @@
+
+#Per-crop mega crop settings
+[megaCrops]
+
+	[megaCrops.carrot]
+		#Whether carrot can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown carrot to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega carrot
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega carrot
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega carrot
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega carrot
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.potato]
+		#Whether potato can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown potato to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega potato
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega potato
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega potato
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega potato
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.beetroot]
+		#Whether beetroot can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown beetroot to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega beetroot
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega beetroot
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega beetroot
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega beetroot
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.cabbage]
+		#Whether cabbage can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown cabbage to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega cabbage
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega cabbage
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega cabbage
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega cabbage
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.onion]
+		#Whether onion can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown onion to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega onion
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega onion
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega onion
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega onion
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.tomato]
+		#Whether tomato can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown tomato to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega tomato
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega tomato
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega tomato
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega tomato
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.toma_root]
+		#Whether toma root can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown toma root to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega toma root
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega toma root
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega toma root
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega toma root
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.eggplant]
+		#Whether eggplant can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown eggplant to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega eggplant
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega eggplant
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega eggplant
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega eggplant
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.cultural_eggplant]
+		#Whether cultural eggplant can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown cultural eggplant to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega cultural eggplant
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega cultural eggplant
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega cultural eggplant
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega cultural eggplant
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.garlic]
+		#Whether garlic can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown garlic to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega garlic
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega garlic
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega garlic
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega garlic
+		#Range: 0 ~ 10000
+		xpMax = 75
+
+	[megaCrops.veggies_garlic]
+		#Whether veggies garlic can turn into mega crops
+		enabled = true
+		#Percent chance for a fully grown veggies garlic to turn mega (0.5 = 1 in 200)
+		#Range: 0.0 ~ 100.0
+		chancePercent = 0.5
+		#Minimum items dropped when harvesting a mega veggies garlic
+		#Range: 0 ~ 1024
+		dropMin = 20
+		#Maximum items dropped when harvesting a mega veggies garlic
+		#Range: 0 ~ 1024
+		dropMax = 30
+		#Minimum experience points dropped when harvesting a mega veggies garlic
+		#Range: 0 ~ 10000
+		xpMin = 50
+		#Maximum experience points dropped when harvesting a mega veggies garlic
+		#Range: 0 ~ 10000
+		xpMax = 75
+

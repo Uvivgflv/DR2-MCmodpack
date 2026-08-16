@@ -1,0 +1,5826 @@
+{
+  "config_version": "1.0.4",
+  "config_datetime": "2026-08-03_16-41-35",
+  "global": {
+    "disable_all_placed_features": false
+  },
+  "placed_features": [
+    {
+      "name": "minecraft:acacia"
+    },
+    {
+      "name": "minecraft:acacia_checked"
+    },
+    {
+      "name": "minecraft:amethyst_geode"
+    },
+    {
+      "name": "minecraft:bamboo"
+    },
+    {
+      "name": "minecraft:bamboo_light"
+    },
+    {
+      "name": "minecraft:bamboo_vegetation"
+    },
+    {
+      "name": "minecraft:basalt_blobs"
+    },
+    {
+      "name": "minecraft:basalt_pillar"
+    },
+    {
+      "name": "minecraft:birch_bees_0002"
+    },
+    {
+      "name": "minecraft:birch_bees_002"
+    },
+    {
+      "name": "minecraft:birch_checked"
+    },
+    {
+      "name": "minecraft:birch_tall"
+    },
+    {
+      "name": "minecraft:blackstone_blobs"
+    },
+    {
+      "name": "minecraft:blue_ice"
+    },
+    {
+      "name": "minecraft:brown_mushroom_nether"
+    },
+    {
+      "name": "minecraft:brown_mushroom_normal"
+    },
+    {
+      "name": "minecraft:brown_mushroom_old_growth"
+    },
+    {
+      "name": "minecraft:brown_mushroom_swamp"
+    },
+    {
+      "name": "minecraft:brown_mushroom_taiga"
+    },
+    {
+      "name": "minecraft:cactus_flower"
+    },
+    {
+      "name": "minecraft:cave_vines"
+    },
+    {
+      "name": "minecraft:cherry_bees_005"
+    },
+    {
+      "name": "minecraft:cherry_checked"
+    },
+    {
+      "name": "minecraft:chorus_plant"
+    },
+    {
+      "name": "minecraft:classic_vines_cave_feature"
+    },
+    {
+      "name": "minecraft:crimson_forest_vegetation"
+    },
+    {
+      "name": "minecraft:crimson_fungi"
+    },
+    {
+      "name": "minecraft:dark_forest_vegetation"
+    },
+    {
+      "name": "minecraft:dark_oak_checked"
+    },
+    {
+      "name": "minecraft:delta"
+    },
+    {
+      "name": "minecraft:desert_well"
+    },
+    {
+      "name": "minecraft:disk_clay"
+    },
+    {
+      "name": "minecraft:disk_grass"
+    },
+    {
+      "name": "minecraft:disk_gravel"
+    },
+    {
+      "name": "minecraft:disk_sand"
+    },
+    {
+      "name": "minecraft:dripstone_cluster"
+    },
+    {
+      "name": "minecraft:end_gateway_return"
+    },
+    {
+      "name": "minecraft:end_island_decorated"
+    },
+    {
+      "name": "minecraft:end_spike"
+    },
+    {
+      "name": "minecraft:fallen_birch_tree"
+    },
+    {
+      "name": "minecraft:fallen_jungle_tree"
+    },
+    {
+      "name": "minecraft:fallen_oak_tree"
+    },
+    {
+      "name": "minecraft:fallen_spruce_tree"
+    },
+    {
+      "name": "minecraft:fallen_super_birch_tree"
+    },
+    {
+      "name": "minecraft:fancy_oak_bees"
+    },
+    {
+      "name": "minecraft:fancy_oak_bees_0002"
+    },
+    {
+      "name": "minecraft:fancy_oak_bees_002"
+    },
+    {
+      "name": "minecraft:fancy_oak_checked"
+    },
+    {
+      "name": "minecraft:flower_cherry"
+    },
+    {
+      "name": "minecraft:flower_default"
+    },
+    {
+      "name": "minecraft:flower_flower_forest"
+    },
+    {
+      "name": "minecraft:flower_forest_flowers"
+    },
+    {
+      "name": "minecraft:flower_meadow"
+    },
+    {
+      "name": "minecraft:flower_pale_garden"
+    },
+    {
+      "name": "minecraft:flower_plain"
+    },
+    {
+      "name": "minecraft:flower_plains"
+    },
+    {
+      "name": "minecraft:flower_swamp"
+    },
+    {
+      "name": "minecraft:flower_warm"
+    },
+    {
+      "name": "minecraft:forest_flowers"
+    },
+    {
+      "name": "minecraft:forest_rock"
+    },
+    {
+      "name": "minecraft:fossil_lower"
+    },
+    {
+      "name": "minecraft:fossil_upper"
+    },
+    {
+      "name": "minecraft:freeze_top_layer"
+    },
+    {
+      "name": "minecraft:glow_lichen"
+    },
+    {
+      "name": "minecraft:glowstone"
+    },
+    {
+      "name": "minecraft:glowstone_extra"
+    },
+    {
+      "name": "minecraft:grass_bonemeal"
+    },
+    {
+      "name": "minecraft:ice_patch"
+    },
+    {
+      "name": "minecraft:ice_spike"
+    },
+    {
+      "name": "minecraft:iceberg_blue"
+    },
+    {
+      "name": "minecraft:iceberg_packed"
+    },
+    {
+      "name": "minecraft:jungle_bush"
+    },
+    {
+      "name": "minecraft:jungle_tree"
+    },
+    {
+      "name": "minecraft:kelp_cold"
+    },
+    {
+      "name": "minecraft:kelp_warm"
+    },
+    {
+      "name": "minecraft:lake_lava_surface"
+    },
+    {
+      "name": "minecraft:lake_lava_underground"
+    },
+    {
+      "name": "minecraft:large_basalt_columns"
+    },
+    {
+      "name": "minecraft:large_dripstone"
+    },
+    {
+      "name": "minecraft:leaf_litter"
+    },
+    {
+      "name": "minecraft:lush_caves_ceiling_vegetation"
+    },
+    {
+      "name": "minecraft:lush_caves_clay"
+    },
+    {
+      "name": "minecraft:lush_caves_vegetation"
+    },
+    {
+      "name": "minecraft:mangrove_checked"
+    },
+    {
+      "name": "minecraft:mega_jungle_tree_checked"
+    },
+    {
+      "name": "minecraft:mega_pine_checked"
+    },
+    {
+      "name": "minecraft:mega_spruce_checked"
+    },
+    {
+      "name": "minecraft:monster_room"
+    },
+    {
+      "name": "minecraft:monster_room_deep"
+    },
+    {
+      "name": "minecraft:mushroom_island_vegetation"
+    },
+    {
+      "name": "minecraft:nether_sprouts"
+    },
+    {
+      "name": "minecraft:oak"
+    },
+    {
+      "name": "minecraft:oak_bees_0002"
+    },
+    {
+      "name": "minecraft:oak_bees_002"
+    },
+    {
+      "name": "minecraft:oak_checked"
+    },
+    {
+      "name": "minecraft:ore_ancient_debris_large"
+    },
+    {
+      "name": "minecraft:ore_andesite_lower"
+    },
+    {
+      "name": "minecraft:ore_andesite_upper"
+    },
+    {
+      "name": "minecraft:ore_blackstone"
+    },
+    {
+      "name": "minecraft:ore_clay"
+    },
+    {
+      "name": "minecraft:ore_coal_lower"
+    },
+    {
+      "name": "minecraft:ore_coal_upper"
+    },
+    {
+      "name": "minecraft:ore_copper"
+    },
+    {
+      "name": "minecraft:ore_copper_large"
+    },
+    {
+      "name": "minecraft:ore_debris_small"
+    },
+    {
+      "name": "minecraft:ore_diamond"
+    },
+    {
+      "name": "minecraft:ore_diamond_buried"
+    },
+    {
+      "name": "minecraft:ore_diamond_large"
+    },
+    {
+      "name": "minecraft:ore_diorite_lower"
+    },
+    {
+      "name": "minecraft:ore_diorite_upper"
+    },
+    {
+      "name": "minecraft:ore_dirt"
+    },
+    {
+      "name": "minecraft:ore_emerald"
+    },
+    {
+      "name": "minecraft:ore_gold"
+    },
+    {
+      "name": "minecraft:ore_gold_deltas"
+    },
+    {
+      "name": "minecraft:ore_gold_extra"
+    },
+    {
+      "name": "minecraft:ore_gold_lower"
+    },
+    {
+      "name": "minecraft:ore_gold_nether"
+    },
+    {
+      "name": "minecraft:ore_granite_lower"
+    },
+    {
+      "name": "minecraft:ore_granite_upper"
+    },
+    {
+      "name": "minecraft:ore_gravel"
+    },
+    {
+      "name": "minecraft:ore_gravel_nether"
+    },
+    {
+      "name": "minecraft:ore_infested"
+    },
+    {
+      "name": "minecraft:ore_iron_middle"
+    },
+    {
+      "name": "minecraft:ore_iron_small"
+    },
+    {
+      "name": "minecraft:ore_iron_upper"
+    },
+    {
+      "name": "minecraft:ore_lapis"
+    },
+    {
+      "name": "minecraft:ore_lapis_buried"
+    },
+    {
+      "name": "minecraft:ore_magma"
+    },
+    {
+      "name": "minecraft:ore_quartz_deltas"
+    },
+    {
+      "name": "minecraft:ore_quartz_nether"
+    },
+    {
+      "name": "minecraft:ore_redstone"
+    },
+    {
+      "name": "minecraft:ore_redstone_lower"
+    },
+    {
+      "name": "minecraft:ore_soul_sand"
+    },
+    {
+      "name": "minecraft:ore_tuff"
+    },
+    {
+      "name": "minecraft:pale_garden_flowers"
+    },
+    {
+      "name": "minecraft:pale_garden_vegetation"
+    },
+    {
+      "name": "minecraft:pale_moss_patch"
+    },
+    {
+      "name": "minecraft:pale_oak_checked"
+    },
+    {
+      "name": "minecraft:pale_oak_creaking_checked"
+    },
+    {
+      "name": "minecraft:patch_berry_bush"
+    },
+    {
+      "name": "minecraft:patch_berry_common"
+    },
+    {
+      "name": "minecraft:patch_berry_rare"
+    },
+    {
+      "name": "minecraft:patch_bush"
+    },
+    {
+      "name": "minecraft:patch_cactus"
+    },
+    {
+      "name": "minecraft:patch_cactus_decorated"
+    },
+    {
+      "name": "minecraft:patch_cactus_desert"
+    },
+    {
+      "name": "minecraft:patch_crimson_roots"
+    },
+    {
+      "name": "minecraft:patch_dead_bush"
+    },
+    {
+      "name": "minecraft:patch_dead_bush_2"
+    },
+    {
+      "name": "minecraft:patch_dead_bush_badlands"
+    },
+    {
+      "name": "minecraft:patch_dry_grass_badlands"
+    },
+    {
+      "name": "minecraft:patch_dry_grass_desert"
+    },
+    {
+      "name": "minecraft:patch_fire"
+    },
+    {
+      "name": "minecraft:patch_firefly_bush_near_water"
+    },
+    {
+      "name": "minecraft:patch_firefly_bush_near_water_swamp"
+    },
+    {
+      "name": "minecraft:patch_firefly_bush_swamp"
+    },
+    {
+      "name": "minecraft:patch_grass_badlands"
+    },
+    {
+      "name": "minecraft:patch_grass_forest"
+    },
+    {
+      "name": "minecraft:patch_grass_jungle"
+    },
+    {
+      "name": "minecraft:patch_grass_normal"
+    },
+    {
+      "name": "minecraft:patch_grass_plain"
+    },
+    {
+      "name": "minecraft:patch_grass_savanna"
+    },
+    {
+      "name": "minecraft:patch_grass_taiga"
+    },
+    {
+      "name": "minecraft:patch_grass_taiga_2"
+    },
+    {
+      "name": "minecraft:patch_large_fern"
+    },
+    {
+      "name": "minecraft:patch_leaf_litter"
+    },
+    {
+      "name": "minecraft:patch_melon"
+    },
+    {
+      "name": "minecraft:patch_melon_sparse"
+    },
+    {
+      "name": "minecraft:patch_pumpkin"
+    },
+    {
+      "name": "minecraft:patch_soul_fire"
+    },
+    {
+      "name": "minecraft:patch_sugar_cane"
+    },
+    {
+      "name": "minecraft:patch_sugar_cane_badlands"
+    },
+    {
+      "name": "minecraft:patch_sugar_cane_desert"
+    },
+    {
+      "name": "minecraft:patch_sugar_cane_swamp"
+    },
+    {
+      "name": "minecraft:patch_sunflower"
+    },
+    {
+      "name": "minecraft:patch_taiga_grass"
+    },
+    {
+      "name": "minecraft:patch_tall_grass"
+    },
+    {
+      "name": "minecraft:patch_tall_grass_2"
+    },
+    {
+      "name": "minecraft:patch_waterlily"
+    },
+    {
+      "name": "minecraft:pile_hay"
+    },
+    {
+      "name": "minecraft:pile_ice"
+    },
+    {
+      "name": "minecraft:pile_melon"
+    },
+    {
+      "name": "minecraft:pile_pumpkin"
+    },
+    {
+      "name": "minecraft:pile_snow"
+    },
+    {
+      "name": "minecraft:pine"
+    },
+    {
+      "name": "minecraft:pine_checked"
+    },
+    {
+      "name": "minecraft:pine_on_snow"
+    },
+    {
+      "name": "minecraft:placed_fallen_birch_tree"
+    },
+    {
+      "name": "minecraft:placed_fallen_jungle_tree"
+    },
+    {
+      "name": "minecraft:placed_fallen_oak_tree"
+    },
+    {
+      "name": "minecraft:placed_fallen_spruce_tree"
+    },
+    {
+      "name": "minecraft:placed_fallen_super_birch_tree"
+    },
+    {
+      "name": "minecraft:placed_rare_fallen_birch_tree"
+    },
+    {
+      "name": "minecraft:placed_rare_fallen_spruce_tree"
+    },
+    {
+      "name": "minecraft:pointed_dripstone"
+    },
+    {
+      "name": "minecraft:red_mushroom_nether"
+    },
+    {
+      "name": "minecraft:red_mushroom_normal"
+    },
+    {
+      "name": "minecraft:red_mushroom_old_growth"
+    },
+    {
+      "name": "minecraft:red_mushroom_swamp"
+    },
+    {
+      "name": "minecraft:red_mushroom_taiga"
+    },
+    {
+      "name": "minecraft:rooted_azalea_tree"
+    },
+    {
+      "name": "minecraft:rooted_sulfur_spring"
+    },
+    {
+      "name": "minecraft:sculk_patch_ancient_city"
+    },
+    {
+      "name": "minecraft:sculk_patch_deep_dark"
+    },
+    {
+      "name": "minecraft:sculk_vein"
+    },
+    {
+      "name": "minecraft:sea_pickle"
+    },
+    {
+      "name": "minecraft:seagrass_cold"
+    },
+    {
+      "name": "minecraft:seagrass_deep"
+    },
+    {
+      "name": "minecraft:seagrass_deep_cold"
+    },
+    {
+      "name": "minecraft:seagrass_deep_warm"
+    },
+    {
+      "name": "minecraft:seagrass_normal"
+    },
+    {
+      "name": "minecraft:seagrass_river"
+    },
+    {
+      "name": "minecraft:seagrass_simple"
+    },
+    {
+      "name": "minecraft:seagrass_swamp"
+    },
+    {
+      "name": "minecraft:seagrass_warm"
+    },
+    {
+      "name": "minecraft:small_basalt_columns"
+    },
+    {
+      "name": "minecraft:spore_blossom"
+    },
+    {
+      "name": "minecraft:spring_closed"
+    },
+    {
+      "name": "minecraft:spring_closed_double"
+    },
+    {
+      "name": "minecraft:spring_delta"
+    },
+    {
+      "name": "minecraft:spring_lava"
+    },
+    {
+      "name": "minecraft:spring_lava_frozen"
+    },
+    {
+      "name": "minecraft:spring_open"
+    },
+    {
+      "name": "minecraft:spring_water"
+    },
+    {
+      "name": "minecraft:spruce"
+    },
+    {
+      "name": "minecraft:spruce_checked"
+    },
+    {
+      "name": "minecraft:spruce_on_snow"
+    },
+    {
+      "name": "minecraft:sulfur_pool"
+    },
+    {
+      "name": "minecraft:sulfur_spike"
+    },
+    {
+      "name": "minecraft:sulfur_spike_cluster"
+    },
+    {
+      "name": "minecraft:super_birch_bees"
+    },
+    {
+      "name": "minecraft:super_birch_bees_0002"
+    },
+    {
+      "name": "minecraft:tall_mangrove_checked"
+    },
+    {
+      "name": "minecraft:trees_badlands"
+    },
+    {
+      "name": "minecraft:trees_birch"
+    },
+    {
+      "name": "minecraft:trees_birch_and_oak"
+    },
+    {
+      "name": "minecraft:trees_cherry"
+    },
+    {
+      "name": "minecraft:trees_flower_forest"
+    },
+    {
+      "name": "minecraft:trees_grove"
+    },
+    {
+      "name": "minecraft:trees_jungle"
+    },
+    {
+      "name": "minecraft:trees_mangrove"
+    },
+    {
+      "name": "minecraft:trees_meadow"
+    },
+    {
+      "name": "minecraft:trees_old_growth_pine_taiga"
+    },
+    {
+      "name": "minecraft:trees_old_growth_spruce_taiga"
+    },
+    {
+      "name": "minecraft:trees_plains"
+    },
+    {
+      "name": "minecraft:trees_savanna"
+    },
+    {
+      "name": "minecraft:trees_snowy"
+    },
+    {
+      "name": "minecraft:trees_sparse_jungle"
+    },
+    {
+      "name": "minecraft:trees_swamp"
+    },
+    {
+      "name": "minecraft:trees_taiga"
+    },
+    {
+      "name": "minecraft:trees_water"
+    },
+    {
+      "name": "minecraft:trees_windswept_forest"
+    },
+    {
+      "name": "minecraft:trees_windswept_hills"
+    },
+    {
+      "name": "minecraft:trees_windswept_savanna"
+    },
+    {
+      "name": "minecraft:twisting_vines"
+    },
+    {
+      "name": "minecraft:underwater_magma"
+    },
+    {
+      "name": "minecraft:vines"
+    },
+    {
+      "name": "minecraft:void_start_platform"
+    },
+    {
+      "name": "minecraft:warm_ocean_vegetation"
+    },
+    {
+      "name": "minecraft:warped_forest_vegetation"
+    },
+    {
+      "name": "minecraft:warped_fungi"
+    },
+    {
+      "name": "minecraft:weeping_vines"
+    },
+    {
+      "name": "minecraft:wildflowers_birch_forest"
+    },
+    {
+      "name": "minecraft:wildflowers_meadow"
+    },
+    {
+      "name": "aether:aether_dirt_ore"
+    },
+    {
+      "name": "aether:aether_grass_bonemeal"
+    },
+    {
+      "name": "aether:ambrosium_ore"
+    },
+    {
+      "name": "aether:berry_bush_patch"
+    },
+    {
+      "name": "aether:blue_aercloud"
+    },
+    {
+      "name": "aether:cold_aercloud"
+    },
+    {
+      "name": "aether:crystal_island"
+    },
+    {
+      "name": "aether:enchanted_aether_grass_bonemeal"
+    },
+    {
+      "name": "aether:gold_dungeon_island_foliage"
+    },
+    {
+      "name": "aether:golden_aercloud"
+    },
+    {
+      "name": "aether:grass_patch"
+    },
+    {
+      "name": "aether:gravitite_ore"
+    },
+    {
+      "name": "aether:gravitite_ore_buried"
+    },
+    {
+      "name": "aether:holiday_tree"
+    },
+    {
+      "name": "aether:icestone_ore"
+    },
+    {
+      "name": "aether:purple_flower_patch"
+    },
+    {
+      "name": "aether:quicksoil_shelf"
+    },
+    {
+      "name": "aether:skyroot_forest_trees"
+    },
+    {
+      "name": "aether:skyroot_grove_trees"
+    },
+    {
+      "name": "aether:skyroot_meadow_trees"
+    },
+    {
+      "name": "aether:skyroot_woodland_trees"
+    },
+    {
+      "name": "aether:tall_grass_patch"
+    },
+    {
+      "name": "aether:water_lake"
+    },
+    {
+      "name": "aether:water_spring"
+    },
+    {
+      "name": "aether:white_flower_patch"
+    },
+    {
+      "name": "aether:zanite_ore"
+    },
+    {
+      "name": "alexscaves:abyssal_boulder"
+    },
+    {
+      "name": "alexscaves:acid_lake"
+    },
+    {
+      "name": "alexscaves:acid_vent"
+    },
+    {
+      "name": "alexscaves:amber_monolith"
+    },
+    {
+      "name": "alexscaves:ambersol"
+    },
+    {
+      "name": "alexscaves:ancient_tree"
+    },
+    {
+      "name": "alexscaves:archaic_vine"
+    },
+    {
+      "name": "alexscaves:azure_magnetic_node"
+    },
+    {
+      "name": "alexscaves:black_vent"
+    },
+    {
+      "name": "alexscaves:candy_cane"
+    },
+    {
+      "name": "alexscaves:candy_ruins"
+    },
+    {
+      "name": "alexscaves:caveman_house"
+    },
+    {
+      "name": "alexscaves:ceiling_frostmint"
+    },
+    {
+      "name": "alexscaves:ceiling_ice_cream_cone"
+    },
+    {
+      "name": "alexscaves:chocolate_ice_cream_scoop"
+    },
+    {
+      "name": "alexscaves:cookie_shelf"
+    },
+    {
+      "name": "alexscaves:coprolith_coal_ore"
+    },
+    {
+      "name": "alexscaves:cycad"
+    },
+    {
+      "name": "alexscaves:deep_one_ruins"
+    },
+    {
+      "name": "alexscaves:dirt_replace_packed_mud"
+    },
+    {
+      "name": "alexscaves:dusk_anemone"
+    },
+    {
+      "name": "alexscaves:encrusted_peppermint"
+    },
+    {
+      "name": "alexscaves:fill_in_bubbles_with_water"
+    },
+    {
+      "name": "alexscaves:floating_galena_orb"
+    },
+    {
+      "name": "alexscaves:floating_gummy_ring"
+    },
+    {
+      "name": "alexscaves:flytrap"
+    },
+    {
+      "name": "alexscaves:forlorn_hollows_brown_mushroom"
+    },
+    {
+      "name": "alexscaves:forlorn_posts"
+    },
+    {
+      "name": "alexscaves:forlorn_ruins"
+    },
+    {
+      "name": "alexscaves:galena_hexagon_ceiling"
+    },
+    {
+      "name": "alexscaves:galena_hexagon_floor"
+    },
+    {
+      "name": "alexscaves:galena_iron_ore"
+    },
+    {
+      "name": "alexscaves:giant_ancient_tree"
+    },
+    {
+      "name": "alexscaves:gobstopper_geode"
+    },
+    {
+      "name": "alexscaves:guano_pile"
+    },
+    {
+      "name": "alexscaves:guanostone_redstone_ore"
+    },
+    {
+      "name": "alexscaves:licoroot_tree_with_sprouts"
+    },
+    {
+      "name": "alexscaves:lollipop"
+    },
+    {
+      "name": "alexscaves:magnetic_ruins"
+    },
+    {
+      "name": "alexscaves:metal_swarf"
+    },
+    {
+      "name": "alexscaves:metal_swarf_replace_mud"
+    },
+    {
+      "name": "alexscaves:midnight_anemone"
+    },
+    {
+      "name": "alexscaves:moss_replace_grass"
+    },
+    {
+      "name": "alexscaves:mussel"
+    },
+    {
+      "name": "alexscaves:nuclear_siren"
+    },
+    {
+      "name": "alexscaves:packed_mud_replace_dirt"
+    },
+    {
+      "name": "alexscaves:peering_coprolith"
+    },
+    {
+      "name": "alexscaves:peppermint_patch"
+    },
+    {
+      "name": "alexscaves:pewen_tree"
+    },
+    {
+      "name": "alexscaves:ping_pong_sponge"
+    },
+    {
+      "name": "alexscaves:primordial_caves_grass"
+    },
+    {
+      "name": "alexscaves:primordial_caves_lake"
+    },
+    {
+      "name": "alexscaves:primordial_forest_rock"
+    },
+    {
+      "name": "alexscaves:radrock_uranium_ore"
+    },
+    {
+      "name": "alexscaves:scarlet_magnetic_node"
+    },
+    {
+      "name": "alexscaves:spilled_ice_cream_cone"
+    },
+    {
+      "name": "alexscaves:spring_acid"
+    },
+    {
+      "name": "alexscaves:sprinkles_pile"
+    },
+    {
+      "name": "alexscaves:subterranodon_roost"
+    },
+    {
+      "name": "alexscaves:sulfur_stack"
+    },
+    {
+      "name": "alexscaves:sundrop_patch"
+    },
+    {
+      "name": "alexscaves:sweet_puff"
+    },
+    {
+      "name": "alexscaves:sweetberry_ice_cream_scoop"
+    },
+    {
+      "name": "alexscaves:tesla_bulb"
+    },
+    {
+      "name": "alexscaves:thornwood_roots"
+    },
+    {
+      "name": "alexscaves:thornwood_tree_with_branches"
+    },
+    {
+      "name": "alexscaves:toxic_ruins"
+    },
+    {
+      "name": "alexscaves:tube_worm"
+    },
+    {
+      "name": "alexscaves:twilight_anemone"
+    },
+    {
+      "name": "alexscaves:underweed"
+    },
+    {
+      "name": "alexscaves:unrefined_waste_replace_mud"
+    },
+    {
+      "name": "alexscaves:vanilla_ice_cream_scoop"
+    },
+    {
+      "name": "alexscaves:volcano_boulder"
+    },
+    {
+      "name": "alexscaves:whalefall"
+    },
+    {
+      "name": "alexsmobs:leafcutter_anthill"
+    },
+    {
+      "name": "alpha_below:alpha_bedrock_ceiling"
+    },
+    {
+      "name": "alpha_below:alpha_cyan_rose"
+    },
+    {
+      "name": "alpha_below:alpha_dandelion"
+    },
+    {
+      "name": "alpha_below:alpha_dead_bush_patch"
+    },
+    {
+      "name": "alpha_below:alpha_floating_tree"
+    },
+    {
+      "name": "alpha_below:alpha_player_remains"
+    },
+    {
+      "name": "alpha_below:alpha_pumpkin_patch"
+    },
+    {
+      "name": "alpha_below:alpha_rose"
+    },
+    {
+      "name": "alpha_below:alpha_sparse_oak_tree"
+    },
+    {
+      "name": "alpha_below:alpha_sugarcane"
+    },
+    {
+      "name": "alpha_below:mysterious_shaft"
+    },
+    {
+      "name": "alpha_below:mysterious_stone"
+    },
+    {
+      "name": "alpha_below:ruby_ore"
+    },
+    {
+      "name": "apotheosis:boss_dungeon"
+    },
+    {
+      "name": "apotheosis:boss_dungeon_2"
+    },
+    {
+      "name": "apotheosis:boss_dungeon_2_deep"
+    },
+    {
+      "name": "apotheosis:boss_dungeon_deep"
+    },
+    {
+      "name": "apotheosis:rogue_spawner"
+    },
+    {
+      "name": "apotheosis:rogue_spawner_deep"
+    },
+    {
+      "name": "artifacts:underground_campsite"
+    },
+    {
+      "name": "betterend:aeridium"
+    },
+    {
+      "name": "betterend:amber_grass"
+    },
+    {
+      "name": "betterend:amber_ore"
+    },
+    {
+      "name": "betterend:amber_root"
+    },
+    {
+      "name": "betterend:aurant_polypore"
+    },
+    {
+      "name": "betterend:blooming_cooksonia"
+    },
+    {
+      "name": "betterend:blossom_berry"
+    },
+    {
+      "name": "betterend:blossoming_spires_structures"
+    },
+    {
+      "name": "betterend:blue_vine"
+    },
+    {
+      "name": "betterend:bolux_mushroom"
+    },
+    {
+      "name": "betterend:bubble_coral"
+    },
+    {
+      "name": "betterend:bubble_coral_rare"
+    },
+    {
+      "name": "betterend:bulb_moss"
+    },
+    {
+      "name": "betterend:bulb_moss_wood"
+    },
+    {
+      "name": "betterend:bulb_vine"
+    },
+    {
+      "name": "betterend:bushy_grass"
+    },
+    {
+      "name": "betterend:bushy_grass_wg"
+    },
+    {
+      "name": "betterend:charnia_cyan"
+    },
+    {
+      "name": "betterend:charnia_green"
+    },
+    {
+      "name": "betterend:charnia_light_blue"
+    },
+    {
+      "name": "betterend:charnia_orange"
+    },
+    {
+      "name": "betterend:charnia_purple"
+    },
+    {
+      "name": "betterend:charnia_red"
+    },
+    {
+      "name": "betterend:charnia_red_rare"
+    },
+    {
+      "name": "betterend:chorus_forest_structures"
+    },
+    {
+      "name": "betterend:chorus_grass"
+    },
+    {
+      "name": "betterend:chorus_mushroom"
+    },
+    {
+      "name": "betterend:clawfern"
+    },
+    {
+      "name": "betterend:crashed_ship"
+    },
+    {
+      "name": "betterend:creeping_moss"
+    },
+    {
+      "name": "betterend:creeping_moss_rare"
+    },
+    {
+      "name": "betterend:crystal_grass"
+    },
+    {
+      "name": "betterend:crystal_moss_cover"
+    },
+    {
+      "name": "betterend:cyan_moss"
+    },
+    {
+      "name": "betterend:cyan_moss_wood"
+    },
+    {
+      "name": "betterend:dense_vine"
+    },
+    {
+      "name": "betterend:desert_lake"
+    },
+    {
+      "name": "betterend:dragon_bone_ore"
+    },
+    {
+      "name": "betterend:dragon_tree"
+    },
+    {
+      "name": "betterend:dragon_tree_bush"
+    },
+    {
+      "name": "betterend:empty_aurora_cave_cave_populator"
+    },
+    {
+      "name": "betterend:empty_end_cave_cave_populator"
+    },
+    {
+      "name": "betterend:empty_smaragdant_cave_cave_populator"
+    },
+    {
+      "name": "betterend:end_lake"
+    },
+    {
+      "name": "betterend:end_lake_normal"
+    },
+    {
+      "name": "betterend:end_lake_rare"
+    },
+    {
+      "name": "betterend:end_lily"
+    },
+    {
+      "name": "betterend:end_lily_rare"
+    },
+    {
+      "name": "betterend:end_lotus"
+    },
+    {
+      "name": "betterend:end_lotus_leaf"
+    },
+    {
+      "name": "betterend:ender_ore"
+    },
+    {
+      "name": "betterend:fallen_pillar"
+    },
+    {
+      "name": "betterend:filalux"
+    },
+    {
+      "name": "betterend:flamaea"
+    },
+    {
+      "name": "betterend:flammalix"
+    },
+    {
+      "name": "betterend:flavolite_layer"
+    },
+    {
+      "name": "betterend:floating_spire"
+    },
+    {
+      "name": "betterend:foggy_mushroomland_structures"
+    },
+    {
+      "name": "betterend:fracturn"
+    },
+    {
+      "name": "betterend:geyser"
+    },
+    {
+      "name": "betterend:gigantic_amaranita"
+    },
+    {
+      "name": "betterend:globulagus"
+    },
+    {
+      "name": "betterend:glow_pillar"
+    },
+    {
+      "name": "betterend:helix_tree"
+    },
+    {
+      "name": "betterend:hydralux"
+    },
+    {
+      "name": "betterend:ice_star"
+    },
+    {
+      "name": "betterend:ice_star_small"
+    },
+    {
+      "name": "betterend:inflexia"
+    },
+    {
+      "name": "betterend:jade_cave_cave_populator"
+    },
+    {
+      "name": "betterend:jellyshroom"
+    },
+    {
+      "name": "betterend:jungle_fern_wood"
+    },
+    {
+      "name": "betterend:jungle_grass"
+    },
+    {
+      "name": "betterend:jungle_vine"
+    },
+    {
+      "name": "betterend:lacugrove"
+    },
+    {
+      "name": "betterend:lamellarium"
+    },
+    {
+      "name": "betterend:lanceleaf"
+    },
+    {
+      "name": "betterend:lantern_woods_structures"
+    },
+    {
+      "name": "betterend:large_amaranita"
+    },
+    {
+      "name": "betterend:lucernia"
+    },
+    {
+      "name": "betterend:lucernia_bush"
+    },
+    {
+      "name": "betterend:lucernia_bush_rare"
+    },
+    {
+      "name": "betterend:lumecorn"
+    },
+    {
+      "name": "betterend:lush_aurora_cave_cave_populator"
+    },
+    {
+      "name": "betterend:lush_smaragdant_cave_cave_populator"
+    },
+    {
+      "name": "betterend:lutebus"
+    },
+    {
+      "name": "betterend:menger_sponge"
+    },
+    {
+      "name": "betterend:mossy_glowshroom"
+    },
+    {
+      "name": "betterend:murkweed"
+    },
+    {
+      "name": "betterend:needlegrass"
+    },
+    {
+      "name": "betterend:neon_cactus"
+    },
+    {
+      "name": "betterend:obsidian_boulder"
+    },
+    {
+      "name": "betterend:obsidian_pillar_basement"
+    },
+    {
+      "name": "betterend:orango"
+    },
+    {
+      "name": "betterend:overworld_island"
+    },
+    {
+      "name": "betterend:pond_anemone"
+    },
+    {
+      "name": "betterend:purple_polypore"
+    },
+    {
+      "name": "betterend:pythadendron_bush"
+    },
+    {
+      "name": "betterend:pythadendron_tree"
+    },
+    {
+      "name": "betterend:round_cave"
+    },
+    {
+      "name": "betterend:ruscus"
+    },
+    {
+      "name": "betterend:ruscus_wood"
+    },
+    {
+      "name": "betterend:salteago"
+    },
+    {
+      "name": "betterend:shadow_berry"
+    },
+    {
+      "name": "betterend:shadow_forest_structures"
+    },
+    {
+      "name": "betterend:shadow_plant"
+    },
+    {
+      "name": "betterend:silk_moth_nest"
+    },
+    {
+      "name": "betterend:small_amaranita"
+    },
+    {
+      "name": "betterend:small_jellyshroom_ceil"
+    },
+    {
+      "name": "betterend:small_jellyshroom_floor"
+    },
+    {
+      "name": "betterend:small_jellyshroom_wall"
+    },
+    {
+      "name": "betterend:small_jellyshroom_wood"
+    },
+    {
+      "name": "betterend:spire"
+    },
+    {
+      "name": "betterend:sulphur_hill"
+    },
+    {
+      "name": "betterend:sulphuric_cave"
+    },
+    {
+      "name": "betterend:sulphuric_lake"
+    },
+    {
+      "name": "betterend:surface_vent"
+    },
+    {
+      "name": "betterend:tail_moss"
+    },
+    {
+      "name": "betterend:tail_moss_wood"
+    },
+    {
+      "name": "betterend:tenanea"
+    },
+    {
+      "name": "betterend:tenanea_bush"
+    },
+    {
+      "name": "betterend:thallasium_ore"
+    },
+    {
+      "name": "betterend:thin_umbralith_arch"
+    },
+    {
+      "name": "betterend:tunel_cave"
+    },
+    {
+      "name": "betterend:twisted_moss"
+    },
+    {
+      "name": "betterend:twisted_moss_wood"
+    },
+    {
+      "name": "betterend:twisted_umbrella_moss"
+    },
+    {
+      "name": "betterend:twisted_umbrella_moss_rare"
+    },
+    {
+      "name": "betterend:twisted_vine"
+    },
+    {
+      "name": "betterend:umbralith_arch"
+    },
+    {
+      "name": "betterend:umbrella_jungle_structures"
+    },
+    {
+      "name": "betterend:umbrella_moss"
+    },
+    {
+      "name": "betterend:umbrella_moss_rare"
+    },
+    {
+      "name": "betterend:umbrella_tree"
+    },
+    {
+      "name": "betterend:vaiolush_fern"
+    },
+    {
+      "name": "betterend:village_chorus"
+    },
+    {
+      "name": "betterend:violecite_layer"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abedul_abedular_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abedul_abedular_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abedul_abedular_viejo_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abedul_abedular_viejo_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abedul_abedular_viejo_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abedul_bosque_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abedul_cerezal_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abedul_taiga_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_arboleda_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_arboleda_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_cerezal_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_cerezal_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_taiga_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_taiga_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_taiga_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_taiga_vieja_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_taiga_vieja_d_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_abeto_taiga_vieja_e_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_acacia_sabana_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_acacia_sabana_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_acacia_sabana_3"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_acacia_sabana_4"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_cerezo_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_cerezo_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_cerezo_3"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_cerezo_4"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_jungla_cacao_jungla_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_jungla_jungla_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_jungla_jungla_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_jungla_jungla_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_jungla_jungla_d_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_jungla_jungla_esparcida_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_jungla_jungla_esparcida_d_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_manglar_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_manglar_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_manglar_3"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_manglar_4"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_manglar_p_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_panal_abedul_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_panal_roble_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_ancho"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_bosque_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_bosque_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_bosque_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_bosque_floral_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_bosque_floral_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_oscuro_bosque_oscuro_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_oscuro_bosque_oscuro_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_pantano_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_pantano_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbol_roble_pantano_3"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbusto_jungla_jungla_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbusto_jungla_jungla_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbusto_jungla_jungla_esparcida_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbusto_jungla_jungla_esparcida_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbusto_roble_bosque_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbusto_roble_oceanos_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbusto_roble_planicies_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:arbusto_roble_ventoso_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:cascada_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:charcos_pantano_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:charcos_pantano_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:estanque_bosques_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:estanque_bosques_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:estanque_bosques_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:helecho_extra_humedo_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:helecho_extra_templado_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:hongo_grande_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:hongo_grande_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:humedal_junglas_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:humedal_pantano_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abedul_abedular_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abedul_bosque_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abedul_cerezal_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abedul_prado_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_bosque_ventoso_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_bosque_ventoso_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_cerezal_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_cerezal_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_colinas_venticosas_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_colinas_venticosas_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_prado_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_prado_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_taiga_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_abeto_taiga_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_jungla_jungla_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_jungla_jungla_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_jungla_jungla_esparcida_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_jungla_jungla_esparcida_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_roble_bosque_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_roble_planicies_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:latizo_roble_ventoso_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:lirio_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pasto_extra_humedo_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pasto_extra_templado_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_montes_ventosos_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_montes_ventosos_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_pendientes_nevadas_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_pendientes_nevadas_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_congelados_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_congelados_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_congelados_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_congelados_d_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_escarpados_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_escarpados_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_escarpados_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_escarpados_d_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_rocosos_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_rocosos_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pico_picos_rocosos_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pilar_picos_rocosos_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pilar_piedras_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:pilar_toba_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:podzol_brote_abeto_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:podzol_brote_abeto_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_butte_herbacea_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_butte_herbacea_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_butte_herbacea_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_butte_montana_d_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_farallon_oceanos_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_farallon_oceanos_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_farallon_oceanos_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_inselberg_bosques_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_inselberg_bosques_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_inselberg_bosques_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_inselberg_planicies_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_inselberg_planicies_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_inselberg_planicies_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_rio_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_rio_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_toba_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_toba_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_bosque_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_bosque_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_bosque_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_cerezal_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_cerezal_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_planicies_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_planicies_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_planicies_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_taiga_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_taiga_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_taiga_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_ventosa_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_ventosa_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:roca_tor_ventosa_c_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_agua_costa_rocosa_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_agua_manglar_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_agua_pantano_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_alfombra_musgo_costa_rocosa_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_alfombra_musgo_pantanos_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_boca_cueva_humedo_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_boca_cueva_seco_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_boca_cueva_templado_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_cesped_manglar_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_costa_rocosa_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_erosion_hidrica_a_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_erosion_hidrica_a_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_erosion_hidrica_b_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_erosion_hidrica_b_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_jungla_bambu_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_montes_ventosos_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_musgo_costa_rocosa_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_musgo_pantanos_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_oceano_calido_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_oceano_calido_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_oceano_frio_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_oceano_frio_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_oceano_templado_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_oceano_templado_2"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_picos_rocosos_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_piedra_sabana_ventosa_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_podzol_abedular_viejo_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_rio_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_tierra_esteril_sabana_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_tierra_esteril_sabana_amesetada_1"
+    },
+    {
+      "name": "biomas_vanilla_renovados:suelo_tierra_esteril_sabana_ventosa_1"
+    },
+    {
+      "name": "biomesoplenty:acacia_bush_tree"
+    },
+    {
+      "name": "biomesoplenty:acacia_twiglet"
+    },
+    {
+      "name": "biomesoplenty:acacia_twiglet_small"
+    },
+    {
+      "name": "biomesoplenty:anomaly"
+    },
+    {
+      "name": "biomesoplenty:aspen_tree"
+    },
+    {
+      "name": "biomesoplenty:barnacles"
+    },
+    {
+      "name": "biomesoplenty:bayou_tree"
+    },
+    {
+      "name": "biomesoplenty:bayou_tree_medium"
+    },
+    {
+      "name": "biomesoplenty:big_dripleaf"
+    },
+    {
+      "name": "biomesoplenty:big_flowering_tree"
+    },
+    {
+      "name": "biomesoplenty:big_hellbark_tree"
+    },
+    {
+      "name": "biomesoplenty:big_jacaranda_tree"
+    },
+    {
+      "name": "biomesoplenty:big_magic_tree"
+    },
+    {
+      "name": "biomesoplenty:big_oak_tree"
+    },
+    {
+      "name": "biomesoplenty:big_orange_maple_tree"
+    },
+    {
+      "name": "biomesoplenty:big_origin_tree"
+    },
+    {
+      "name": "biomesoplenty:big_pumpkin"
+    },
+    {
+      "name": "biomesoplenty:big_rainbow_birch_tree"
+    },
+    {
+      "name": "biomesoplenty:big_red_maple_tree"
+    },
+    {
+      "name": "biomesoplenty:big_yellow_maple_tree"
+    },
+    {
+      "name": "biomesoplenty:blackstone_bulbs"
+    },
+    {
+      "name": "biomesoplenty:blackstone_spines"
+    },
+    {
+      "name": "biomesoplenty:blood_lake"
+    },
+    {
+      "name": "biomesoplenty:blood_spring"
+    },
+    {
+      "name": "biomesoplenty:bramble"
+    },
+    {
+      "name": "biomesoplenty:brimstone_bud"
+    },
+    {
+      "name": "biomesoplenty:brimstone_cluster"
+    },
+    {
+      "name": "biomesoplenty:cherry_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:cold_desert_rocks"
+    },
+    {
+      "name": "biomesoplenty:corner_cobwebs"
+    },
+    {
+      "name": "biomesoplenty:crag_moss"
+    },
+    {
+      "name": "biomesoplenty:crag_splatter"
+    },
+    {
+      "name": "biomesoplenty:cypress_tree"
+    },
+    {
+      "name": "biomesoplenty:dead_coral"
+    },
+    {
+      "name": "biomesoplenty:dead_coral_patch"
+    },
+    {
+      "name": "biomesoplenty:dead_grass_45"
+    },
+    {
+      "name": "biomesoplenty:dead_tree_wasteland"
+    },
+    {
+      "name": "biomesoplenty:dead_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:dead_twiglet_tree_small"
+    },
+    {
+      "name": "biomesoplenty:disk_black_sand"
+    },
+    {
+      "name": "biomesoplenty:disk_calcite"
+    },
+    {
+      "name": "biomesoplenty:disk_gravel_extra"
+    },
+    {
+      "name": "biomesoplenty:disk_hot_spring_basalt"
+    },
+    {
+      "name": "biomesoplenty:disk_hot_spring_calcite"
+    },
+    {
+      "name": "biomesoplenty:disk_hot_spring_gravel"
+    },
+    {
+      "name": "biomesoplenty:disk_hot_spring_packed_mud"
+    },
+    {
+      "name": "biomesoplenty:disk_hot_spring_thermal_calcite"
+    },
+    {
+      "name": "biomesoplenty:disk_mud"
+    },
+    {
+      "name": "biomesoplenty:disk_orange_sand"
+    },
+    {
+      "name": "biomesoplenty:disk_volcano_black_sandstone"
+    },
+    {
+      "name": "biomesoplenty:disk_volcano_magma"
+    },
+    {
+      "name": "biomesoplenty:disk_volcano_smooth_basalt"
+    },
+    {
+      "name": "biomesoplenty:disk_white_sand"
+    },
+    {
+      "name": "biomesoplenty:disk_white_sand_extra"
+    },
+    {
+      "name": "biomesoplenty:disk_white_sandstone"
+    },
+    {
+      "name": "biomesoplenty:dripstone_splatter"
+    },
+    {
+      "name": "biomesoplenty:dying_tree"
+    },
+    {
+      "name": "biomesoplenty:dying_tree_wasteland"
+    },
+    {
+      "name": "biomesoplenty:empyreal_tree"
+    },
+    {
+      "name": "biomesoplenty:enderphyte_bonemeal"
+    },
+    {
+      "name": "biomesoplenty:extra_glow_lichen"
+    },
+    {
+      "name": "biomesoplenty:eyebulb"
+    },
+    {
+      "name": "biomesoplenty:fallen_birch_log"
+    },
+    {
+      "name": "biomesoplenty:fallen_fir_log"
+    },
+    {
+      "name": "biomesoplenty:fallen_jacaranda_log"
+    },
+    {
+      "name": "biomesoplenty:fallen_log"
+    },
+    {
+      "name": "biomesoplenty:fir_tree"
+    },
+    {
+      "name": "biomesoplenty:fir_tree_large"
+    },
+    {
+      "name": "biomesoplenty:fir_tree_small"
+    },
+    {
+      "name": "biomesoplenty:flesh_tendon"
+    },
+    {
+      "name": "biomesoplenty:flower_coniferous_forest"
+    },
+    {
+      "name": "biomesoplenty:flower_default_extended_15"
+    },
+    {
+      "name": "biomesoplenty:flower_default_extended_6"
+    },
+    {
+      "name": "biomesoplenty:flower_end_wilds"
+    },
+    {
+      "name": "biomesoplenty:flower_field"
+    },
+    {
+      "name": "biomesoplenty:flower_jacaranda_glade"
+    },
+    {
+      "name": "biomesoplenty:flower_lavender"
+    },
+    {
+      "name": "biomesoplenty:flower_lush_desert"
+    },
+    {
+      "name": "biomesoplenty:flower_moor"
+    },
+    {
+      "name": "biomesoplenty:flower_mystic_grove"
+    },
+    {
+      "name": "biomesoplenty:flower_ominous_woods"
+    },
+    {
+      "name": "biomesoplenty:flower_origin_valley"
+    },
+    {
+      "name": "biomesoplenty:flower_overgrown_greens"
+    },
+    {
+      "name": "biomesoplenty:flower_poppy"
+    },
+    {
+      "name": "biomesoplenty:flower_rainforest"
+    },
+    {
+      "name": "biomesoplenty:flower_scrubland"
+    },
+    {
+      "name": "biomesoplenty:flower_shrubland"
+    },
+    {
+      "name": "biomesoplenty:flower_snowblossom_grove"
+    },
+    {
+      "name": "biomesoplenty:flower_snowy"
+    },
+    {
+      "name": "biomesoplenty:flower_tropics"
+    },
+    {
+      "name": "biomesoplenty:flower_undergrowth"
+    },
+    {
+      "name": "biomesoplenty:flower_violet"
+    },
+    {
+      "name": "biomesoplenty:flower_wasteland"
+    },
+    {
+      "name": "biomesoplenty:flower_wetland"
+    },
+    {
+      "name": "biomesoplenty:flower_wildflower"
+    },
+    {
+      "name": "biomesoplenty:flowering_oak_bush"
+    },
+    {
+      "name": "biomesoplenty:flowering_oak_tree"
+    },
+    {
+      "name": "biomesoplenty:flowering_oak_tree_bees"
+    },
+    {
+      "name": "biomesoplenty:giant_glowshroom_cave"
+    },
+    {
+      "name": "biomesoplenty:giant_tree"
+    },
+    {
+      "name": "biomesoplenty:glowing_grotto_mud"
+    },
+    {
+      "name": "biomesoplenty:glowing_grotto_vegetation"
+    },
+    {
+      "name": "biomesoplenty:glowworm_silk_strands"
+    },
+    {
+      "name": "biomesoplenty:goldenrod"
+    },
+    {
+      "name": "biomesoplenty:hair"
+    },
+    {
+      "name": "biomesoplenty:hanging_cobwebs"
+    },
+    {
+      "name": "biomesoplenty:hanging_flesh_tendons"
+    },
+    {
+      "name": "biomesoplenty:hellbark_tree"
+    },
+    {
+      "name": "biomesoplenty:high_grass"
+    },
+    {
+      "name": "biomesoplenty:highland_rocks"
+    },
+    {
+      "name": "biomesoplenty:hot_spring_vents"
+    },
+    {
+      "name": "biomesoplenty:huge_clover"
+    },
+    {
+      "name": "biomesoplenty:huge_glowshroom_cave"
+    },
+    {
+      "name": "biomesoplenty:huge_lily_pad"
+    },
+    {
+      "name": "biomesoplenty:huge_red_mushroom_extra"
+    },
+    {
+      "name": "biomesoplenty:huge_toadstool"
+    },
+    {
+      "name": "biomesoplenty:inferno_lava_lake"
+    },
+    {
+      "name": "biomesoplenty:inferno_lava_spring"
+    },
+    {
+      "name": "biomesoplenty:inferno_splatter"
+    },
+    {
+      "name": "biomesoplenty:jacaranda_tree"
+    },
+    {
+      "name": "biomesoplenty:jacaranda_tree_bees"
+    },
+    {
+      "name": "biomesoplenty:jagged_sandstone"
+    },
+    {
+      "name": "biomesoplenty:jungle_bush"
+    },
+    {
+      "name": "biomesoplenty:jungle_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:lake_hot_spring"
+    },
+    {
+      "name": "biomesoplenty:lake_lava_surface_extra"
+    },
+    {
+      "name": "biomesoplenty:lake_water"
+    },
+    {
+      "name": "biomesoplenty:lake_water_extra"
+    },
+    {
+      "name": "biomesoplenty:lake_water_marsh"
+    },
+    {
+      "name": "biomesoplenty:large_fumarole"
+    },
+    {
+      "name": "biomesoplenty:large_rose_quartz"
+    },
+    {
+      "name": "biomesoplenty:liquid_null_lake"
+    },
+    {
+      "name": "biomesoplenty:liquid_null_spring"
+    },
+    {
+      "name": "biomesoplenty:lumaloop"
+    },
+    {
+      "name": "biomesoplenty:magic_tree"
+    },
+    {
+      "name": "biomesoplenty:mahogany_tree"
+    },
+    {
+      "name": "biomesoplenty:mangrove_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:maple_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:medium_glowshroom_cave"
+    },
+    {
+      "name": "biomesoplenty:monolith"
+    },
+    {
+      "name": "biomesoplenty:moss_splatter"
+    },
+    {
+      "name": "biomesoplenty:mossy_black_sand_splatter"
+    },
+    {
+      "name": "biomesoplenty:mud_splatter"
+    },
+    {
+      "name": "biomesoplenty:mycelium_splatter"
+    },
+    {
+      "name": "biomesoplenty:nether_bone_spine"
+    },
+    {
+      "name": "biomesoplenty:nether_bramble"
+    },
+    {
+      "name": "biomesoplenty:nether_vines"
+    },
+    {
+      "name": "biomesoplenty:null_plant_bonemeal"
+    },
+    {
+      "name": "biomesoplenty:null_tree"
+    },
+    {
+      "name": "biomesoplenty:oak_bush"
+    },
+    {
+      "name": "biomesoplenty:obsidian_splatter"
+    },
+    {
+      "name": "biomesoplenty:orange_maple_leaf_piles"
+    },
+    {
+      "name": "biomesoplenty:orange_maple_leaf_piles_extra"
+    },
+    {
+      "name": "biomesoplenty:orange_maple_tree"
+    },
+    {
+      "name": "biomesoplenty:origin_gravel_cliffs"
+    },
+    {
+      "name": "biomesoplenty:origin_tree"
+    },
+    {
+      "name": "biomesoplenty:palm_tree"
+    },
+    {
+      "name": "biomesoplenty:patch_barley"
+    },
+    {
+      "name": "biomesoplenty:patch_barley_sparse"
+    },
+    {
+      "name": "biomesoplenty:patch_blue_hydrangea"
+    },
+    {
+      "name": "biomesoplenty:patch_bush_1"
+    },
+    {
+      "name": "biomesoplenty:patch_bush_10"
+    },
+    {
+      "name": "biomesoplenty:patch_bush_4"
+    },
+    {
+      "name": "biomesoplenty:patch_cattail_extra"
+    },
+    {
+      "name": "biomesoplenty:patch_cattail_normal"
+    },
+    {
+      "name": "biomesoplenty:patch_clover_extra"
+    },
+    {
+      "name": "biomesoplenty:patch_clover_normal"
+    },
+    {
+      "name": "biomesoplenty:patch_dead_bush_4"
+    },
+    {
+      "name": "biomesoplenty:patch_dead_grass"
+    },
+    {
+      "name": "biomesoplenty:patch_desert_grass"
+    },
+    {
+      "name": "biomesoplenty:patch_desert_grass_extra"
+    },
+    {
+      "name": "biomesoplenty:patch_dune_grass"
+    },
+    {
+      "name": "biomesoplenty:patch_enderphytes"
+    },
+    {
+      "name": "biomesoplenty:patch_fern_16"
+    },
+    {
+      "name": "biomesoplenty:patch_fern_2"
+    },
+    {
+      "name": "biomesoplenty:patch_fern_4"
+    },
+    {
+      "name": "biomesoplenty:patch_fern_8"
+    },
+    {
+      "name": "biomesoplenty:patch_grass_1"
+    },
+    {
+      "name": "biomesoplenty:patch_grass_12"
+    },
+    {
+      "name": "biomesoplenty:patch_grass_24"
+    },
+    {
+      "name": "biomesoplenty:patch_grass_3"
+    },
+    {
+      "name": "biomesoplenty:patch_grass_6"
+    },
+    {
+      "name": "biomesoplenty:patch_icy_iris"
+    },
+    {
+      "name": "biomesoplenty:patch_large_fern_extra"
+    },
+    {
+      "name": "biomesoplenty:patch_large_fern_normal"
+    },
+    {
+      "name": "biomesoplenty:patch_lilac_extra"
+    },
+    {
+      "name": "biomesoplenty:patch_lilac_normal"
+    },
+    {
+      "name": "biomesoplenty:patch_lily_pad_10"
+    },
+    {
+      "name": "biomesoplenty:patch_lily_pad_15"
+    },
+    {
+      "name": "biomesoplenty:patch_lily_pad_5"
+    },
+    {
+      "name": "biomesoplenty:patch_null_plants"
+    },
+    {
+      "name": "biomesoplenty:patch_peony"
+    },
+    {
+      "name": "biomesoplenty:patch_reed_10"
+    },
+    {
+      "name": "biomesoplenty:patch_reed_5"
+    },
+    {
+      "name": "biomesoplenty:patch_sea_oats"
+    },
+    {
+      "name": "biomesoplenty:patch_sprouts_1"
+    },
+    {
+      "name": "biomesoplenty:patch_sprouts_10"
+    },
+    {
+      "name": "biomesoplenty:patch_sprouts_15"
+    },
+    {
+      "name": "biomesoplenty:patch_sprouts_5"
+    },
+    {
+      "name": "biomesoplenty:patch_tall_grass_12"
+    },
+    {
+      "name": "biomesoplenty:patch_tall_grass_128"
+    },
+    {
+      "name": "biomesoplenty:patch_tall_grass_24"
+    },
+    {
+      "name": "biomesoplenty:patch_tall_grass_6"
+    },
+    {
+      "name": "biomesoplenty:patch_tall_grass_64"
+    },
+    {
+      "name": "biomesoplenty:patch_tall_lavender"
+    },
+    {
+      "name": "biomesoplenty:patch_tall_lavender_forest"
+    },
+    {
+      "name": "biomesoplenty:patch_tall_white_lavender"
+    },
+    {
+      "name": "biomesoplenty:patch_tiny_cactus"
+    },
+    {
+      "name": "biomesoplenty:patch_tundra_shrubs"
+    },
+    {
+      "name": "biomesoplenty:patch_watergrass_10"
+    },
+    {
+      "name": "biomesoplenty:patch_watergrass_250"
+    },
+    {
+      "name": "biomesoplenty:patch_watergrass_50"
+    },
+    {
+      "name": "biomesoplenty:patch_waterlily_flowers"
+    },
+    {
+      "name": "biomesoplenty:pine_tree"
+    },
+    {
+      "name": "biomesoplenty:porous_flesh"
+    },
+    {
+      "name": "biomesoplenty:pumpkin_patch"
+    },
+    {
+      "name": "biomesoplenty:pus_bubbles"
+    },
+    {
+      "name": "biomesoplenty:rainbow_birch_tree"
+    },
+    {
+      "name": "biomesoplenty:rainforest_cliffs_vines"
+    },
+    {
+      "name": "biomesoplenty:red_maple_leaf_piles"
+    },
+    {
+      "name": "biomesoplenty:red_maple_leaf_piles_extra"
+    },
+    {
+      "name": "biomesoplenty:red_maple_tree_checked"
+    },
+    {
+      "name": "biomesoplenty:redwood_tree"
+    },
+    {
+      "name": "biomesoplenty:redwood_tree_large"
+    },
+    {
+      "name": "biomesoplenty:redwood_tree_medium"
+    },
+    {
+      "name": "biomesoplenty:rooted_stump"
+    },
+    {
+      "name": "biomesoplenty:rose_bush_extra"
+    },
+    {
+      "name": "biomesoplenty:rose_bush_normal"
+    },
+    {
+      "name": "biomesoplenty:scattered_rocks"
+    },
+    {
+      "name": "biomesoplenty:scattered_rocks_highland"
+    },
+    {
+      "name": "biomesoplenty:scrub_extra"
+    },
+    {
+      "name": "biomesoplenty:scrub_normal"
+    },
+    {
+      "name": "biomesoplenty:short_bamboo"
+    },
+    {
+      "name": "biomesoplenty:small_brown_mushroom"
+    },
+    {
+      "name": "biomesoplenty:small_crystal"
+    },
+    {
+      "name": "biomesoplenty:small_dead_tree"
+    },
+    {
+      "name": "biomesoplenty:small_dripleaf"
+    },
+    {
+      "name": "biomesoplenty:small_fumarole"
+    },
+    {
+      "name": "biomesoplenty:small_glowshroom_cave"
+    },
+    {
+      "name": "biomesoplenty:small_red_mushroom"
+    },
+    {
+      "name": "biomesoplenty:small_toadstool"
+    },
+    {
+      "name": "biomesoplenty:snowblossom_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:sparse_acacia_tree"
+    },
+    {
+      "name": "biomesoplenty:sparse_dune_grass"
+    },
+    {
+      "name": "biomesoplenty:sparse_oak_tree"
+    },
+    {
+      "name": "biomesoplenty:spider_eggs"
+    },
+    {
+      "name": "biomesoplenty:spring_lava_volcano"
+    },
+    {
+      "name": "biomesoplenty:spring_water_extra"
+    },
+    {
+      "name": "biomesoplenty:sprout_bonemeal"
+    },
+    {
+      "name": "biomesoplenty:sprouts_undergrowth"
+    },
+    {
+      "name": "biomesoplenty:spruce_bush"
+    },
+    {
+      "name": "biomesoplenty:spruce_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:stringy_cobweb"
+    },
+    {
+      "name": "biomesoplenty:sunflower"
+    },
+    {
+      "name": "biomesoplenty:tall_dead_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:tall_spruce_tree"
+    },
+    {
+      "name": "biomesoplenty:tall_spruce_tree_bees"
+    },
+    {
+      "name": "biomesoplenty:tall_twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:tall_umbran_tree"
+    },
+    {
+      "name": "biomesoplenty:termite_mound"
+    },
+    {
+      "name": "biomesoplenty:thin_bamboo"
+    },
+    {
+      "name": "biomesoplenty:tidepool"
+    },
+    {
+      "name": "biomesoplenty:toadstool_extra"
+    },
+    {
+      "name": "biomesoplenty:toadstool_normal"
+    },
+    {
+      "name": "biomesoplenty:trees_aspen_glade"
+    },
+    {
+      "name": "biomesoplenty:trees_auroral_garden"
+    },
+    {
+      "name": "biomesoplenty:trees_bayou"
+    },
+    {
+      "name": "biomesoplenty:trees_bog"
+    },
+    {
+      "name": "biomesoplenty:trees_coniferous_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_dead_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_dense_woodland"
+    },
+    {
+      "name": "biomesoplenty:trees_dryland"
+    },
+    {
+      "name": "biomesoplenty:trees_end_corruption"
+    },
+    {
+      "name": "biomesoplenty:trees_end_wilds"
+    },
+    {
+      "name": "biomesoplenty:trees_field"
+    },
+    {
+      "name": "biomesoplenty:trees_field_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_fir_clearing"
+    },
+    {
+      "name": "biomesoplenty:trees_fungal_jungle"
+    },
+    {
+      "name": "biomesoplenty:trees_hot_springs"
+    },
+    {
+      "name": "biomesoplenty:trees_jacaranda_glade"
+    },
+    {
+      "name": "biomesoplenty:trees_jade_cliffs"
+    },
+    {
+      "name": "biomesoplenty:trees_lavender_field"
+    },
+    {
+      "name": "biomesoplenty:trees_lush_desert"
+    },
+    {
+      "name": "biomesoplenty:trees_maple_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_mediterranean_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_muskeg"
+    },
+    {
+      "name": "biomesoplenty:trees_mystic_grove"
+    },
+    {
+      "name": "biomesoplenty:trees_old_growth_dead_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_ominous_woods"
+    },
+    {
+      "name": "biomesoplenty:trees_orchard"
+    },
+    {
+      "name": "biomesoplenty:trees_origin_valley"
+    },
+    {
+      "name": "biomesoplenty:trees_prairie"
+    },
+    {
+      "name": "biomesoplenty:trees_rainforest"
+    },
+    {
+      "name": "biomesoplenty:trees_rainforest_cliffs"
+    },
+    {
+      "name": "biomesoplenty:trees_rainforest_floodplain"
+    },
+    {
+      "name": "biomesoplenty:trees_redwood_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_rocky_shrubland"
+    },
+    {
+      "name": "biomesoplenty:trees_scrubland"
+    },
+    {
+      "name": "biomesoplenty:trees_seasonal_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_seasonal_pumpkin_patch"
+    },
+    {
+      "name": "biomesoplenty:trees_shrubland"
+    },
+    {
+      "name": "biomesoplenty:trees_snowblossom_grove"
+    },
+    {
+      "name": "biomesoplenty:trees_snowy_coniferous_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_snowy_maple_forest"
+    },
+    {
+      "name": "biomesoplenty:trees_tropics"
+    },
+    {
+      "name": "biomesoplenty:trees_tundra"
+    },
+    {
+      "name": "biomesoplenty:trees_undergrowth"
+    },
+    {
+      "name": "biomesoplenty:trees_volcanic_plains"
+    },
+    {
+      "name": "biomesoplenty:trees_wasteland"
+    },
+    {
+      "name": "biomesoplenty:trees_wetland"
+    },
+    {
+      "name": "biomesoplenty:trees_woodland"
+    },
+    {
+      "name": "biomesoplenty:twiglet_tree"
+    },
+    {
+      "name": "biomesoplenty:umbran_tree"
+    },
+    {
+      "name": "biomesoplenty:wasteland_grass_1"
+    },
+    {
+      "name": "biomesoplenty:wasteland_grass_2"
+    },
+    {
+      "name": "biomesoplenty:webbing"
+    },
+    {
+      "name": "biomesoplenty:willow_tree"
+    },
+    {
+      "name": "biomesoplenty:wispjelly"
+    },
+    {
+      "name": "biomesoplenty:yellow_maple_leaf_piles"
+    },
+    {
+      "name": "biomesoplenty:yellow_maple_leaf_piles_extra"
+    },
+    {
+      "name": "biomesoplenty:yellow_maple_tree"
+    },
+    {
+      "name": "born_in_chaos_v1:black_argillite"
+    },
+    {
+      "name": "born_in_chaos_v1:infected_deepslate_diamond_ore_feature"
+    },
+    {
+      "name": "born_in_chaos_v1:infected_diamond_ore_feature"
+    },
+    {
+      "name": "born_in_chaos_v1:marigolds"
+    },
+    {
+      "name": "born_in_chaos_v1:river_mint"
+    },
+    {
+      "name": "create:striated_ores_nether"
+    },
+    {
+      "name": "create:striated_ores_overworld"
+    },
+    {
+      "name": "create:zinc_ore"
+    },
+    {
+      "name": "darkerdepths:amber"
+    },
+    {
+      "name": "darkerdepths:arid_boulder"
+    },
+    {
+      "name": "darkerdepths:arid_surface"
+    },
+    {
+      "name": "darkerdepths:arid_vegetation"
+    },
+    {
+      "name": "darkerdepths:catacombs_lava_lining"
+    },
+    {
+      "name": "darkerdepths:catacombs_layered_placement"
+    },
+    {
+      "name": "darkerdepths:catacombs_sand_placement"
+    },
+    {
+      "name": "darkerdepths:crystal_husk_ore"
+    },
+    {
+      "name": "darkerdepths:darkslate_placement"
+    },
+    {
+      "name": "darkerdepths:darkslate_surface"
+    },
+    {
+      "name": "darkerdepths:darkslate_vegetation"
+    },
+    {
+      "name": "darkerdepths:duskrock_ore"
+    },
+    {
+      "name": "darkerdepths:duskrock_stripe"
+    },
+    {
+      "name": "darkerdepths:glimmering_vines"
+    },
+    {
+      "name": "darkerdepths:glowshroom_patch"
+    },
+    {
+      "name": "darkerdepths:grime_surface"
+    },
+    {
+      "name": "darkerdepths:huge_glowshroom"
+    },
+    {
+      "name": "darkerdepths:large_molten_pillar"
+    },
+    {
+      "name": "darkerdepths:magma_disk"
+    },
+    {
+      "name": "darkerdepths:magma_ore"
+    },
+    {
+      "name": "darkerdepths:molten_pool"
+    },
+    {
+      "name": "darkerdepths:molten_spring"
+    },
+    {
+      "name": "darkerdepths:petrified_branch"
+    },
+    {
+      "name": "darkerdepths:petrified_roots"
+    },
+    {
+      "name": "darkerdepths:petrified_roots_molten_cavern"
+    },
+    {
+      "name": "darkerdepths:scorched_remains_pile"
+    },
+    {
+      "name": "darkerdepths:scorcher_placer"
+    },
+    {
+      "name": "deep_dark_regrowth:ancient_fossil"
+    },
+    {
+      "name": "deep_dark_regrowth:ancient_vase_spawner"
+    },
+    {
+      "name": "deep_dark_regrowth:apatine_plant"
+    },
+    {
+      "name": "deep_dark_regrowth:combusted_soul_crystal"
+    },
+    {
+      "name": "deep_dark_regrowth:combusted_soul_crystal_block"
+    },
+    {
+      "name": "deep_dark_regrowth:consuming_galm"
+    },
+    {
+      "name": "deep_dark_regrowth:corrupted_combusted_soul_crystal_block"
+    },
+    {
+      "name": "deep_dark_regrowth:corrupted_deepslate"
+    },
+    {
+      "name": "deep_dark_regrowth:corrupted_stone"
+    },
+    {
+      "name": "deep_dark_regrowth:creeper_structure_remnants"
+    },
+    {
+      "name": "deep_dark_regrowth:enlightened_deepslate"
+    },
+    {
+      "name": "deep_dark_regrowth:exxo_growth"
+    },
+    {
+      "name": "deep_dark_regrowth:fake_sculk_sensor"
+    },
+    {
+      "name": "deep_dark_regrowth:fernus"
+    },
+    {
+      "name": "deep_dark_regrowth:fluorescent_moss"
+    },
+    {
+      "name": "deep_dark_regrowth:galm"
+    },
+    {
+      "name": "deep_dark_regrowth:galm_fang"
+    },
+    {
+      "name": "deep_dark_regrowth:galm_hole"
+    },
+    {
+      "name": "deep_dark_regrowth:galm_traps_spawner"
+    },
+    {
+      "name": "deep_dark_regrowth:galm_traps_spawner_2"
+    },
+    {
+      "name": "deep_dark_regrowth:galm_traps_spawner_3"
+    },
+    {
+      "name": "deep_dark_regrowth:galm_traps_spawner_4"
+    },
+    {
+      "name": "deep_dark_regrowth:galm_traps_spawner_5"
+    },
+    {
+      "name": "deep_dark_regrowth:galm_traps_spawner_6"
+    },
+    {
+      "name": "deep_dark_regrowth:galmium"
+    },
+    {
+      "name": "deep_dark_regrowth:galmium_bush"
+    },
+    {
+      "name": "deep_dark_regrowth:galmium_claws"
+    },
+    {
+      "name": "deep_dark_regrowth:galmium_cloud"
+    },
+    {
+      "name": "deep_dark_regrowth:galmium_cloud_2"
+    },
+    {
+      "name": "deep_dark_regrowth:galmium_sprouts"
+    },
+    {
+      "name": "deep_dark_regrowth:galmium_sprouts_2"
+    },
+    {
+      "name": "deep_dark_regrowth:ghost_flowers"
+    },
+    {
+      "name": "deep_dark_regrowth:ghost_stone_plant"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_2"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_3"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_4"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_5"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_6"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_7"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_8"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_9"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_diamond_ore"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_emerald_ore"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_gold_ore"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_iron_ore"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_lapislazuli_ore"
+    },
+    {
+      "name": "deep_dark_regrowth:grimstone_redstone_ore"
+    },
+    {
+      "name": "deep_dark_regrowth:illager_structure_remnants"
+    },
+    {
+      "name": "deep_dark_regrowth:infected_mushroom"
+    },
+    {
+      "name": "deep_dark_regrowth:large_ancient_vase_spawner"
+    },
+    {
+      "name": "deep_dark_regrowth:large_fernus"
+    },
+    {
+      "name": "deep_dark_regrowth:large_galm_fang"
+    },
+    {
+      "name": "deep_dark_regrowth:large_infected_mushroom"
+    },
+    {
+      "name": "deep_dark_regrowth:long_sculk_tendril"
+    },
+    {
+      "name": "deep_dark_regrowth:moonstone_crystal"
+    },
+    {
+      "name": "deep_dark_regrowth:moonstone_crystal_1"
+    },
+    {
+      "name": "deep_dark_regrowth:mossy_galm"
+    },
+    {
+      "name": "deep_dark_regrowth:overloaded_sculk"
+    },
+    {
+      "name": "deep_dark_regrowth:petronium"
+    },
+    {
+      "name": "deep_dark_regrowth:phantasmal_flower"
+    },
+    {
+      "name": "deep_dark_regrowth:phantasmal_sprouts"
+    },
+    {
+      "name": "deep_dark_regrowth:pulse_flower"
+    },
+    {
+      "name": "deep_dark_regrowth:rough_petronium"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_biter"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_moss"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_moss_2"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_moss_3"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_moss_4"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_ribs"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_ribs_medium"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_ribs_small"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_soil"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_sprouts"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_tendril"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_traps_spawner"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_traps_spawner_2"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_traps_spawner_3"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_traps_spawner_4"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_traps_spawner_5"
+    },
+    {
+      "name": "deep_dark_regrowth:sculk_traps_spawner_6"
+    },
+    {
+      "name": "deep_dark_regrowth:short_infected_mushroom"
+    },
+    {
+      "name": "deep_dark_regrowth:soul_crystal"
+    },
+    {
+      "name": "deep_dark_regrowth:spectating_galm_closed"
+    },
+    {
+      "name": "deep_dark_regrowth:spectating_galmium"
+    },
+    {
+      "name": "deep_dark_regrowth:spiky_galmium"
+    },
+    {
+      "name": "deep_dark_regrowth:subterranean_vault"
+    },
+    {
+      "name": "deep_dark_regrowth:the_sculk_heart"
+    },
+    {
+      "name": "deep_dark_regrowth:time_capsule_chamber"
+    },
+    {
+      "name": "deep_dark_regrowth:vilethorn"
+    },
+    {
+      "name": "deep_dark_regrowth:warden_structure_remnants"
+    },
+    {
+      "name": "deep_dark_regrowth:wither_structure_remnants"
+    },
+    {
+      "name": "deeperdarker:blooming_moss"
+    },
+    {
+      "name": "deeperdarker:blooming_plant"
+    },
+    {
+      "name": "deeperdarker:blooming_pool"
+    },
+    {
+      "name": "deeperdarker:blooming_sculk_vegetation"
+    },
+    {
+      "name": "deeperdarker:blooming_water_edge"
+    },
+    {
+      "name": "deeperdarker:echo_soil"
+    },
+    {
+      "name": "deeperdarker:echo_tree"
+    },
+    {
+      "name": "deeperdarker:gloomslate_coal"
+    },
+    {
+      "name": "deeperdarker:gloomslate_column"
+    },
+    {
+      "name": "deeperdarker:gloomslate_copper"
+    },
+    {
+      "name": "deeperdarker:gloomslate_diamond"
+    },
+    {
+      "name": "deeperdarker:gloomslate_emerald"
+    },
+    {
+      "name": "deeperdarker:gloomslate_gold"
+    },
+    {
+      "name": "deeperdarker:gloomslate_iron"
+    },
+    {
+      "name": "deeperdarker:gloomslate_lapis"
+    },
+    {
+      "name": "deeperdarker:gloomslate_redstone"
+    },
+    {
+      "name": "deeperdarker:gloomy_sculk"
+    },
+    {
+      "name": "deeperdarker:gloomy_sculk_vegetation"
+    },
+    {
+      "name": "deeperdarker:glowing_roots"
+    },
+    {
+      "name": "deeperdarker:glowing_vines"
+    },
+    {
+      "name": "deeperdarker:glowing_vines_short"
+    },
+    {
+      "name": "deeperdarker:ice_lily"
+    },
+    {
+      "name": "deeperdarker:infested_sculk"
+    },
+    {
+      "name": "deeperdarker:magma"
+    },
+    {
+      "name": "deeperdarker:sculk_coal"
+    },
+    {
+      "name": "deeperdarker:sculk_copper"
+    },
+    {
+      "name": "deeperdarker:sculk_decoration"
+    },
+    {
+      "name": "deeperdarker:sculk_diamond"
+    },
+    {
+      "name": "deeperdarker:sculk_emerald"
+    },
+    {
+      "name": "deeperdarker:sculk_gleam"
+    },
+    {
+      "name": "deeperdarker:sculk_gleam_forest"
+    },
+    {
+      "name": "deeperdarker:sculk_gold"
+    },
+    {
+      "name": "deeperdarker:sculk_iron"
+    },
+    {
+      "name": "deeperdarker:sculk_jaw"
+    },
+    {
+      "name": "deeperdarker:sculk_lapis"
+    },
+    {
+      "name": "deeperdarker:sculk_redstone"
+    },
+    {
+      "name": "deeperdarker:sculk_stone_column"
+    },
+    {
+      "name": "deeperdarker:sculk_tendrils"
+    },
+    {
+      "name": "deeperdarker:sculk_vines"
+    },
+    {
+      "name": "deeperdarker:sculk_vines_caverns"
+    },
+    {
+      "name": "deeperdarker:soul_sand"
+    },
+    {
+      "name": "deeperdarker:soul_soil"
+    },
+    {
+      "name": "deeperdarker:surface_gloomslate"
+    },
+    {
+      "name": "deeperdarker:surface_sculk_stone"
+    },
+    {
+      "name": "dungeons_and_combat:ebony_ore"
+    },
+    {
+      "name": "dungeons_and_combat:igneous_ore"
+    },
+    {
+      "name": "dungeons_and_combat:igneous_ore_netherrack"
+    },
+    {
+      "name": "dungeons_and_combat:lisianthus"
+    },
+    {
+      "name": "dungeons_and_combat:silver_deepslate_ore"
+    },
+    {
+      "name": "dungeons_and_combat:silver_ore"
+    },
+    {
+      "name": "dungeons_and_combat:titanium_deepslate_ore"
+    },
+    {
+      "name": "dungeons_and_combat:titanium_ore"
+    },
+    {
+      "name": "dungeonsdelight:wormroot"
+    },
+    {
+      "name": "endlessbiomes:altar_podium_feature"
+    },
+    {
+      "name": "endlessbiomes:arkan_bungle"
+    },
+    {
+      "name": "endlessbiomes:arkan_feature"
+    },
+    {
+      "name": "endlessbiomes:arkan_rift_feature"
+    },
+    {
+      "name": "endlessbiomes:arkan_ruins_feature"
+    },
+    {
+      "name": "endlessbiomes:arkan_seam_feature"
+    },
+    {
+      "name": "endlessbiomes:ender_ferns_patch"
+    },
+    {
+      "name": "endlessbiomes:ender_roots_patch"
+    },
+    {
+      "name": "endlessbiomes:high_slipstone_spawning"
+    },
+    {
+      "name": "endlessbiomes:obsidian_boulder_feature"
+    },
+    {
+      "name": "endlessbiomes:penumbral_moss_patch_feature"
+    },
+    {
+      "name": "endlessbiomes:penumbral_shroom_feature"
+    },
+    {
+      "name": "endlessbiomes:reaching_vines_structure_feature"
+    },
+    {
+      "name": "endlessbiomes:riftite_fragments_feature"
+    },
+    {
+      "name": "endlessbiomes:slipgravel_feature"
+    },
+    {
+      "name": "endlessbiomes:slipgravel_piles"
+    },
+    {
+      "name": "endlessbiomes:slipstone_feature"
+    },
+    {
+      "name": "endlessbiomes:slipstone_lake"
+    },
+    {
+      "name": "endlessbiomes:slipstone_ruins_feature"
+    },
+    {
+      "name": "endlessbiomes:twisted_island_feature"
+    },
+    {
+      "name": "farmersdelight:patch_brown_mushroom_colony"
+    },
+    {
+      "name": "farmersdelight:patch_red_mushroom_colony"
+    },
+    {
+      "name": "farmersdelight:patch_wild_beetroots"
+    },
+    {
+      "name": "farmersdelight:patch_wild_cabbages"
+    },
+    {
+      "name": "farmersdelight:patch_wild_carrots"
+    },
+    {
+      "name": "farmersdelight:patch_wild_onions"
+    },
+    {
+      "name": "farmersdelight:patch_wild_potatoes"
+    },
+    {
+      "name": "farmersdelight:patch_wild_rice"
+    },
+    {
+      "name": "farmersdelight:patch_wild_tomatoes"
+    },
+    {
+      "name": "farmersrespite:patch_wild_coffee_bush"
+    },
+    {
+      "name": "farmersrespite:patch_wild_tea_bush"
+    },
+    {
+      "name": "fungidelight:huge_inky_cap_mushroom"
+    },
+    {
+      "name": "fungidelight:huge_morel_mushroom"
+    },
+    {
+      "name": "fungidelight:inky_cap_mushroom_common"
+    },
+    {
+      "name": "fungidelight:inky_cap_mushroom_normal"
+    },
+    {
+      "name": "fungidelight:inky_cap_mushroom_rare"
+    },
+    {
+      "name": "fungidelight:morel_mushroom_common"
+    },
+    {
+      "name": "fungidelight:morel_mushroom_normal"
+    },
+    {
+      "name": "fungidelight:morel_mushroom_rare"
+    },
+    {
+      "name": "fungidelight:patch_inky_cap_mushroom_colony"
+    },
+    {
+      "name": "fungidelight:patch_morel_mushroom_colony"
+    },
+    {
+      "name": "fungidelight:rooted_dirt_blob"
+    },
+    {
+      "name": "fungidelight:truffle_dirt_ore"
+    },
+    {
+      "name": "geophilic:badlands/cacti"
+    },
+    {
+      "name": "geophilic:badlands/trees"
+    },
+    {
+      "name": "geophilic:beach/dry_grass"
+    },
+    {
+      "name": "geophilic:cherry_grove/bamboo"
+    },
+    {
+      "name": "geophilic:cherry_grove/bushes"
+    },
+    {
+      "name": "geophilic:cherry_grove/deltas"
+    },
+    {
+      "name": "geophilic:cherry_grove/fallen_logs"
+    },
+    {
+      "name": "geophilic:cherry_grove/pillars"
+    },
+    {
+      "name": "geophilic:cherry_grove/pink_petals"
+    },
+    {
+      "name": "geophilic:cherry_grove/rocks"
+    },
+    {
+      "name": "geophilic:cherry_grove/stone_patches"
+    },
+    {
+      "name": "geophilic:cherry_grove/trees"
+    },
+    {
+      "name": "geophilic:common/flowers/default"
+    },
+    {
+      "name": "geophilic:common/flowers/warm"
+    },
+    {
+      "name": "geophilic:common/grass/forest"
+    },
+    {
+      "name": "geophilic:common/grass/jungle"
+    },
+    {
+      "name": "geophilic:common/grass/meadow"
+    },
+    {
+      "name": "geophilic:common/grass/plains"
+    },
+    {
+      "name": "geophilic:common/grass/savanna"
+    },
+    {
+      "name": "geophilic:common/grass/taiga"
+    },
+    {
+      "name": "geophilic:common/large_fern"
+    },
+    {
+      "name": "geophilic:common/moss"
+    },
+    {
+      "name": "geophilic:common/mushrooms"
+    },
+    {
+      "name": "geophilic:common/pale_moss"
+    },
+    {
+      "name": "geophilic:common/pumpkins"
+    },
+    {
+      "name": "geophilic:common/sugar_cane"
+    },
+    {
+      "name": "geophilic:common/tall_grass"
+    },
+    {
+      "name": "geophilic:common/tree_ornaments/birch"
+    },
+    {
+      "name": "geophilic:common/tree_ornaments/oak"
+    },
+    {
+      "name": "geophilic:common/tree_ornaments/spruce"
+    },
+    {
+      "name": "geophilic:desert/cacti"
+    },
+    {
+      "name": "geophilic:desert/dry_grass"
+    },
+    {
+      "name": "geophilic:desert/dry_grass_rare"
+    },
+    {
+      "name": "geophilic:desert/lava_lakes"
+    },
+    {
+      "name": "geophilic:desert/rocks"
+    },
+    {
+      "name": "geophilic:desert/rocks_rare"
+    },
+    {
+      "name": "geophilic:desert/sugar_cane"
+    },
+    {
+      "name": "geophilic:forest/birch/logs"
+    },
+    {
+      "name": "geophilic:forest/birch/old_growth/trees"
+    },
+    {
+      "name": "geophilic:forest/birch/trees"
+    },
+    {
+      "name": "geophilic:forest/birch/wildflowers_dense"
+    },
+    {
+      "name": "geophilic:forest/dark/dirt_patches"
+    },
+    {
+      "name": "geophilic:forest/dark/leaf_litter"
+    },
+    {
+      "name": "geophilic:forest/dark/logs"
+    },
+    {
+      "name": "geophilic:forest/dark/trees"
+    },
+    {
+      "name": "geophilic:forest/dirt_patches"
+    },
+    {
+      "name": "geophilic:forest/flower/flowers"
+    },
+    {
+      "name": "geophilic:forest/flower/trees"
+    },
+    {
+      "name": "geophilic:forest/flowers"
+    },
+    {
+      "name": "geophilic:forest/leaf_litter"
+    },
+    {
+      "name": "geophilic:forest/logs"
+    },
+    {
+      "name": "geophilic:forest/rocks"
+    },
+    {
+      "name": "geophilic:forest/trees"
+    },
+    {
+      "name": "geophilic:jungle/bamboo"
+    },
+    {
+      "name": "geophilic:jungle/bamboo/bamboo"
+    },
+    {
+      "name": "geophilic:jungle/bushes"
+    },
+    {
+      "name": "geophilic:jungle/logs"
+    },
+    {
+      "name": "geophilic:jungle/melons"
+    },
+    {
+      "name": "geophilic:jungle/rocks"
+    },
+    {
+      "name": "geophilic:jungle/sparse/bushes"
+    },
+    {
+      "name": "geophilic:jungle/sparse/trees"
+    },
+    {
+      "name": "geophilic:jungle/trees"
+    },
+    {
+      "name": "geophilic:meadow/flowers"
+    },
+    {
+      "name": "geophilic:meadow/trees"
+    },
+    {
+      "name": "geophilic:pale_garden/dead_bushes"
+    },
+    {
+      "name": "geophilic:pale_garden/flowers"
+    },
+    {
+      "name": "geophilic:pale_garden/logs"
+    },
+    {
+      "name": "geophilic:pale_garden/moss"
+    },
+    {
+      "name": "geophilic:pale_garden/trees"
+    },
+    {
+      "name": "geophilic:plains/dirt_patches"
+    },
+    {
+      "name": "geophilic:plains/flowers"
+    },
+    {
+      "name": "geophilic:plains/logs"
+    },
+    {
+      "name": "geophilic:plains/rocks"
+    },
+    {
+      "name": "geophilic:plains/sunflower/sunflowers"
+    },
+    {
+      "name": "geophilic:plains/trees"
+    },
+    {
+      "name": "geophilic:savanna/bonus_trees"
+    },
+    {
+      "name": "geophilic:savanna/bushes"
+    },
+    {
+      "name": "geophilic:savanna/dirt_mounds"
+    },
+    {
+      "name": "geophilic:savanna/dirt_patches"
+    },
+    {
+      "name": "geophilic:savanna/logs"
+    },
+    {
+      "name": "geophilic:savanna/plateau/trees"
+    },
+    {
+      "name": "geophilic:savanna/trees"
+    },
+    {
+      "name": "geophilic:stony_shore/moss"
+    },
+    {
+      "name": "geophilic:stony_shore/moss_blocks"
+    },
+    {
+      "name": "geophilic:stony_shore/pillars/large"
+    },
+    {
+      "name": "geophilic:stony_shore/pillars/small"
+    },
+    {
+      "name": "geophilic:stony_shore/puddles"
+    },
+    {
+      "name": "geophilic:swamp/flowers"
+    },
+    {
+      "name": "geophilic:swamp/logs"
+    },
+    {
+      "name": "geophilic:swamp/mud"
+    },
+    {
+      "name": "geophilic:swamp/mushrooms"
+    },
+    {
+      "name": "geophilic:swamp/sugar_cane"
+    },
+    {
+      "name": "geophilic:swamp/trees"
+    },
+    {
+      "name": "geophilic:taiga/berry_bushes"
+    },
+    {
+      "name": "geophilic:taiga/grove/hillside_snow"
+    },
+    {
+      "name": "geophilic:taiga/grove/logs"
+    },
+    {
+      "name": "geophilic:taiga/grove/trees"
+    },
+    {
+      "name": "geophilic:taiga/logs"
+    },
+    {
+      "name": "geophilic:taiga/old_growth/dead_bushes"
+    },
+    {
+      "name": "geophilic:taiga/old_growth/pine/trees"
+    },
+    {
+      "name": "geophilic:taiga/old_growth/rocks"
+    },
+    {
+      "name": "geophilic:taiga/old_growth/spruce/trees"
+    },
+    {
+      "name": "geophilic:taiga/podzol_grass"
+    },
+    {
+      "name": "geophilic:taiga/podzol_patches"
+    },
+    {
+      "name": "geophilic:taiga/rocks"
+    },
+    {
+      "name": "geophilic:taiga/snowy/berry_bushes"
+    },
+    {
+      "name": "geophilic:taiga/trees"
+    },
+    {
+      "name": "geophilic:windswept/bushes"
+    },
+    {
+      "name": "geophilic:windswept/flowers"
+    },
+    {
+      "name": "geophilic:windswept/forest/logs"
+    },
+    {
+      "name": "geophilic:windswept/forest/trees"
+    },
+    {
+      "name": "geophilic:windswept/hills/logs"
+    },
+    {
+      "name": "geophilic:windswept/hills/trees"
+    },
+    {
+      "name": "geophilic:windswept/rocks"
+    },
+    {
+      "name": "graveyard:boulder"
+    },
+    {
+      "name": "gtceu:marble_blob"
+    },
+    {
+      "name": "gtceu:raw_oil_sprout"
+    },
+    {
+      "name": "gtceu:red_granite_blob"
+    },
+    {
+      "name": "gtceu:rubber_checked"
+    },
+    {
+      "name": "hopo:acacia_mineshaft_pillar"
+    },
+    {
+      "name": "hopo:birch_mineshaft_pillar"
+    },
+    {
+      "name": "hopo:dark_oak_mineshaft_pillar"
+    },
+    {
+      "name": "hopo:deepslate_mineshaft_pillar"
+    },
+    {
+      "name": "hopo:jungle_mineshaft_pillar"
+    },
+    {
+      "name": "hopo:mangrove_mineshaft_pillar"
+    },
+    {
+      "name": "hopo:oak_mineshaft_pillar"
+    },
+    {
+      "name": "hopo:spruce_mineshaft_pillar"
+    },
+    {
+      "name": "hopo:stone_mineshaft_pillar"
+    },
+    {
+      "name": "immersive_weathering:dry_lakebed"
+    },
+    {
+      "name": "immersive_weathering:dry_lakebed_large"
+    },
+    {
+      "name": "immersive_weathering:dune_grass_patch"
+    },
+    {
+      "name": "immersive_weathering:earthen_clay"
+    },
+    {
+      "name": "immersive_weathering:frost_patch"
+    },
+    {
+      "name": "immersive_weathering:icicles"
+    },
+    {
+      "name": "immersive_weathering:ivy_patch"
+    },
+    {
+      "name": "immersive_weathering:loam"
+    },
+    {
+      "name": "immersive_weathering:moss_patch"
+    },
+    {
+      "name": "immersive_weathering:permafrost"
+    },
+    {
+      "name": "immersive_weathering:sandy_dirt"
+    },
+    {
+      "name": "immersive_weathering:silt"
+    },
+    {
+      "name": "immersive_weathering:silt_aquifer"
+    },
+    {
+      "name": "irons_spellbooks:ore_mithril_placement"
+    },
+    {
+      "name": "malum:azure_runewood_tree"
+    },
+    {
+      "name": "malum:blazing_quartz_ore"
+    },
+    {
+      "name": "malum:cthonic_gold_ore"
+    },
+    {
+      "name": "malum:deepslate_quartz_geode"
+    },
+    {
+      "name": "malum:ore_brilliant"
+    },
+    {
+      "name": "malum:ore_natural_quartz"
+    },
+    {
+      "name": "malum:ore_soulstone"
+    },
+    {
+      "name": "malum:quartz_geode"
+    },
+    {
+      "name": "malum:rare_azure_runewood_tree"
+    },
+    {
+      "name": "malum:rare_runewood_tree"
+    },
+    {
+      "name": "malum:runewood_tree"
+    },
+    {
+      "name": "netherexp:basalt_deltas/basaltic_geyser"
+    },
+    {
+      "name": "netherexp:crimson_forest/crimson_sporeshroom"
+    },
+    {
+      "name": "netherexp:crimson_forest/crimson_sprouts"
+    },
+    {
+      "name": "netherexp:crimson_forest/weeping_ivy"
+    },
+    {
+      "name": "netherexp:nether_wastes/quartz_crystal"
+    },
+    {
+      "name": "netherexp:nether_wastes/quartz_crystal_extra"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/black_ice_cluster"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/black_ice_streak"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/black_ice_surface"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/disk_soul_sand"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/freeze_lava"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/ice_ribs"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/large_black_ice"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/pale_soul_slate"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/pale_soul_slate_surface"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/patch_warped_roots"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/thin_black_ice"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/black_ice_glaciers/thin_black_ice_replacer"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/bone_rod"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/ecto_soul_sand"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/ectoplasm_lake"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/fossil_fuel_ore"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/fossil_ore"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/hanging_mound"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/mound"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/ore_soul_magma"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/pale_soul_slate"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/pale_soul_slate_surface"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/soul_magma_cluster"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/soul_swirls_ceiling"
+    },
+    {
+      "name": "netherexp:soul_sand_valley/soul_swirls_floor"
+    },
+    {
+      "name": "netherexp:warped_forest/twisting_ivy"
+    },
+    {
+      "name": "netherexp:warped_forest/warped_sporeshroom"
+    },
+    {
+      "name": "oceanicrealms:clam"
+    },
+    {
+      "name": "oceanicrealms:disk_sandstone"
+    },
+    {
+      "name": "oceanicrealms:giant_kelp"
+    },
+    {
+      "name": "oceanicrealms:red_algae"
+    },
+    {
+      "name": "oceanicrealms:reef_rock_beach"
+    },
+    {
+      "name": "oceanicrealms:reef_rock_deep"
+    },
+    {
+      "name": "oceanicrealms:reef_rock_shallow"
+    },
+    {
+      "name": "oceanicrealms:sandstone_arch"
+    },
+    {
+      "name": "oceanicrealms:sandstone_pillar"
+    },
+    {
+      "name": "oceanicrealms:sea_anemone"
+    },
+    {
+      "name": "oceanicrealms:sea_urchin"
+    },
+    {
+      "name": "oceanicrealms:starfish_beach"
+    },
+    {
+      "name": "oceanicrealms:starfish_ocean"
+    },
+    {
+      "name": "outer_end:ancient_icicle"
+    },
+    {
+      "name": "outer_end:ancient_stone_ore"
+    },
+    {
+      "name": "outer_end:azure_berry_vines_feature"
+    },
+    {
+      "name": "outer_end:azure_bud_feature"
+    },
+    {
+      "name": "outer_end:azure_sprouts_feature"
+    },
+    {
+      "name": "outer_end:azure_tree_feature"
+    },
+    {
+      "name": "outer_end:azure_vines"
+    },
+    {
+      "name": "outer_end:cobalt_bud_feature"
+    },
+    {
+      "name": "outer_end:cobalt_roots_feature"
+    },
+    {
+      "name": "outer_end:cobalt_tangled_violite_feature"
+    },
+    {
+      "name": "outer_end:crag_boulder_feature"
+    },
+    {
+      "name": "outer_end:crag_moon_feature"
+    },
+    {
+      "name": "outer_end:crystal_spike_feature"
+    },
+    {
+      "name": "outer_end:dead_rainbow_feature"
+    },
+    {
+      "name": "outer_end:ender_roots_feature"
+    },
+    {
+      "name": "outer_end:frozen_geode"
+    },
+    {
+      "name": "outer_end:halite"
+    },
+    {
+      "name": "outer_end:halite_ore"
+    },
+    {
+      "name": "outer_end:large_ominous_miasma"
+    },
+    {
+      "name": "outer_end:mint_bud_feature"
+    },
+    {
+      "name": "outer_end:mint_roots_feature"
+    },
+    {
+      "name": "outer_end:mint_tangled_violite_feature"
+    },
+    {
+      "name": "outer_end:ominous_miasma"
+    },
+    {
+      "name": "outer_end:primordial_pools"
+    },
+    {
+      "name": "outer_end:rose_bud_feature"
+    },
+    {
+      "name": "outer_end:rose_roots_feature"
+    },
+    {
+      "name": "outer_end:rose_tangled_violite_feature"
+    },
+    {
+      "name": "outer_end:stromatolite"
+    },
+    {
+      "name": "outer_end:tall_ender_roots_feature"
+    },
+    {
+      "name": "quark:blue_blossom_placed"
+    },
+    {
+      "name": "quark:glow_shrooms"
+    },
+    {
+      "name": "quark:glow_shrooms_extra"
+    },
+    {
+      "name": "quark:lavender_blossom_placed"
+    },
+    {
+      "name": "quark:orange_blossom_placed"
+    },
+    {
+      "name": "quark:ore_lapis_extra"
+    },
+    {
+      "name": "quark:red_blossom_placed"
+    },
+    {
+      "name": "quark:yellow_blossom_placed"
+    },
+    {
+      "name": "repurposed_structures:azalea_bees_05"
+    },
+    {
+      "name": "repurposed_structures:big_coral"
+    },
+    {
+      "name": "repurposed_structures:brown_mushroom_normal"
+    },
+    {
+      "name": "repurposed_structures:brown_mushroom_old_growth"
+    },
+    {
+      "name": "repurposed_structures:cherry_bees_05"
+    },
+    {
+      "name": "repurposed_structures:chorus_plant_checked"
+    },
+    {
+      "name": "repurposed_structures:decor/crimson_mineshaft_dense_plants"
+    },
+    {
+      "name": "repurposed_structures:decor/crimson_mineshaft_plants"
+    },
+    {
+      "name": "repurposed_structures:decor/crimson_mineshaft_plants_long"
+    },
+    {
+      "name": "repurposed_structures:decor/dark_forest_mineshaft_vines"
+    },
+    {
+      "name": "repurposed_structures:decor/dark_forest_mineshaft_vines_long"
+    },
+    {
+      "name": "repurposed_structures:decor/end_ancient_city_chorus_plant"
+    },
+    {
+      "name": "repurposed_structures:decor/end_mineshaft_chorus"
+    },
+    {
+      "name": "repurposed_structures:decor/end_mineshaft_dense_chorus"
+    },
+    {
+      "name": "repurposed_structures:decor/end_stronghold_chains"
+    },
+    {
+      "name": "repurposed_structures:decor/flower_forest_pyramid_structure_flowers"
+    },
+    {
+      "name": "repurposed_structures:decor/flower_forest_pyramid_structure_grass"
+    },
+    {
+      "name": "repurposed_structures:decor/icy_ruins_powder_snow"
+    },
+    {
+      "name": "repurposed_structures:decor/jungle_fortress_structure_breakage"
+    },
+    {
+      "name": "repurposed_structures:decor/jungle_fortress_structure_vine_breakage"
+    },
+    {
+      "name": "repurposed_structures:decor/jungle_fortress_structure_vines"
+    },
+    {
+      "name": "repurposed_structures:decor/jungle_mineshaft_leaves_and_vines"
+    },
+    {
+      "name": "repurposed_structures:decor/jungle_mineshaft_vines_long"
+    },
+    {
+      "name": "repurposed_structures:decor/jungle_pyramid_structure_vines"
+    },
+    {
+      "name": "repurposed_structures:decor/jungle_pyramid_structure_vines_narrow"
+    },
+    {
+      "name": "repurposed_structures:decor/nether_ancient_city_fire"
+    },
+    {
+      "name": "repurposed_structures:decor/nether_mineshaft_dense_fire"
+    },
+    {
+      "name": "repurposed_structures:decor/nether_mineshaft_fire"
+    },
+    {
+      "name": "repurposed_structures:decor/nether_mineshaft_netherwart"
+    },
+    {
+      "name": "repurposed_structures:decor/nether_stronghold_chains"
+    },
+    {
+      "name": "repurposed_structures:decor/ocean_ancient_city_structure_plants"
+    },
+    {
+      "name": "repurposed_structures:decor/ocean_mineshaft_dense_plants"
+    },
+    {
+      "name": "repurposed_structures:decor/ocean_mineshaft_plants"
+    },
+    {
+      "name": "repurposed_structures:decor/ocean_pyramid_structure_plants"
+    },
+    {
+      "name": "repurposed_structures:decor/post_process_connecting_blocks"
+    },
+    {
+      "name": "repurposed_structures:decor/swamp_mineshaft_vines"
+    },
+    {
+      "name": "repurposed_structures:decor/swamp_mineshaft_vines_long"
+    },
+    {
+      "name": "repurposed_structures:decor/swamp_village_structure_vines"
+    },
+    {
+      "name": "repurposed_structures:decor/warped_mineshaft_dense_plants"
+    },
+    {
+      "name": "repurposed_structures:decor/warped_mineshaft_plants"
+    },
+    {
+      "name": "repurposed_structures:decor/warped_mineshaft_plants_long"
+    },
+    {
+      "name": "repurposed_structures:dense_dead_bush"
+    },
+    {
+      "name": "repurposed_structures:dense_large_fern"
+    },
+    {
+      "name": "repurposed_structures:dense_tall_grass"
+    },
+    {
+      "name": "repurposed_structures:dungeons/badlands"
+    },
+    {
+      "name": "repurposed_structures:dungeons/dark_forest"
+    },
+    {
+      "name": "repurposed_structures:dungeons/deep"
+    },
+    {
+      "name": "repurposed_structures:dungeons/desert"
+    },
+    {
+      "name": "repurposed_structures:dungeons/end"
+    },
+    {
+      "name": "repurposed_structures:dungeons/icy"
+    },
+    {
+      "name": "repurposed_structures:dungeons/jungle"
+    },
+    {
+      "name": "repurposed_structures:dungeons/mushroom"
+    },
+    {
+      "name": "repurposed_structures:dungeons/nether"
+    },
+    {
+      "name": "repurposed_structures:dungeons/ocean_cold"
+    },
+    {
+      "name": "repurposed_structures:dungeons/ocean_frozen"
+    },
+    {
+      "name": "repurposed_structures:dungeons/ocean_lukewarm"
+    },
+    {
+      "name": "repurposed_structures:dungeons/ocean_neutral"
+    },
+    {
+      "name": "repurposed_structures:dungeons/ocean_warm"
+    },
+    {
+      "name": "repurposed_structures:dungeons/snow"
+    },
+    {
+      "name": "repurposed_structures:dungeons/swamp"
+    },
+    {
+      "name": "repurposed_structures:flower_default"
+    },
+    {
+      "name": "repurposed_structures:flower_forest_flowers"
+    },
+    {
+      "name": "repurposed_structures:flower_petals"
+    },
+    {
+      "name": "repurposed_structures:flower_swamp"
+    },
+    {
+      "name": "repurposed_structures:huge_brown_mushroom"
+    },
+    {
+      "name": "repurposed_structures:huge_crimson_fungus"
+    },
+    {
+      "name": "repurposed_structures:huge_red_mushroom"
+    },
+    {
+      "name": "repurposed_structures:huge_warped_fungus"
+    },
+    {
+      "name": "repurposed_structures:lily_of_the_valley"
+    },
+    {
+      "name": "repurposed_structures:minecarts/birch_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/crimson_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/dark_forest_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/desert_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/end_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/icy_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/jungle_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/nether_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/ocean_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/savanna_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/stone_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/swamp_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/taiga_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:minecarts/warped_mineshaft_minecart"
+    },
+    {
+      "name": "repurposed_structures:mobs/drowned_with_armor"
+    },
+    {
+      "name": "repurposed_structures:mobs/shulker_mob"
+    },
+    {
+      "name": "repurposed_structures:mobs/skeleton_bow"
+    },
+    {
+      "name": "repurposed_structures:mobs/skeleton_bow_deadliest"
+    },
+    {
+      "name": "repurposed_structures:mobs/skeleton_bow_deadly"
+    },
+    {
+      "name": "repurposed_structures:mobs/skeleton_horseman_bow"
+    },
+    {
+      "name": "repurposed_structures:mobs/skeleton_horseman_sword"
+    },
+    {
+      "name": "repurposed_structures:mobs/skeleton_sword"
+    },
+    {
+      "name": "repurposed_structures:mobs/skeleton_sword_deadliest"
+    },
+    {
+      "name": "repurposed_structures:mobs/skeleton_sword_deadly"
+    },
+    {
+      "name": "repurposed_structures:mobs/wither_skeleton_with_bow"
+    },
+    {
+      "name": "repurposed_structures:patch_cactus_decorated"
+    },
+    {
+      "name": "repurposed_structures:patch_crimson_roots"
+    },
+    {
+      "name": "repurposed_structures:patch_dead_bush"
+    },
+    {
+      "name": "repurposed_structures:patch_grass_taiga"
+    },
+    {
+      "name": "repurposed_structures:patch_large_fern"
+    },
+    {
+      "name": "repurposed_structures:pile_cobblestone"
+    },
+    {
+      "name": "repurposed_structures:red_mushroom_normal"
+    },
+    {
+      "name": "repurposed_structures:red_mushroom_old_growth"
+    },
+    {
+      "name": "repurposed_structures:supports/birch_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/birch_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/crimson_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/crimson_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/dark_forest_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/dark_forest_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/desert_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/desert_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/end_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/icy_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/icy_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/jungle_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/jungle_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/nether_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/nether_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/ocean_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/ocean_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/savanna_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/savanna_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/stone_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/stone_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/swamp_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/swamp_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/taiga_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/taiga_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:supports/warped_mineshaft"
+    },
+    {
+      "name": "repurposed_structures:supports/warped_mineshaft_support"
+    },
+    {
+      "name": "repurposed_structures:swamp_tree_checked"
+    },
+    {
+      "name": "repurposed_structures:underwater_pile_dried_kelp"
+    },
+    {
+      "name": "repurposed_structures:underwater_pile_hay_bale"
+    },
+    {
+      "name": "repurposed_structures:underwater_pile_melon"
+    },
+    {
+      "name": "repurposed_structures:underwater_pile_pumpkin"
+    },
+    {
+      "name": "repurposed_structures:warped_forest_vegetation"
+    },
+    {
+      "name": "repurposed_structures:wells/badlands"
+    },
+    {
+      "name": "repurposed_structures:wells/cherry"
+    },
+    {
+      "name": "repurposed_structures:wells/forest"
+    },
+    {
+      "name": "repurposed_structures:wells/mossy_stone"
+    },
+    {
+      "name": "repurposed_structures:wells/mushroom"
+    },
+    {
+      "name": "repurposed_structures:wells/nether"
+    },
+    {
+      "name": "repurposed_structures:wells/snow"
+    },
+    {
+      "name": "supplementaries:basalt_ash"
+    },
+    {
+      "name": "supplementaries:cave_urns"
+    },
+    {
+      "name": "supplementaries:road_sign"
+    },
+    {
+      "name": "supplementaries:wild_flax"
+    },
+    {
+      "name": "tconstruct:cobalt_ore_large"
+    },
+    {
+      "name": "tconstruct:cobalt_ore_small"
+    },
+    {
+      "name": "tconstruct:earth_geode"
+    },
+    {
+      "name": "tconstruct:ender_geode"
+    },
+    {
+      "name": "tconstruct:ichor_geode"
+    },
+    {
+      "name": "tconstruct:sky_geode"
+    },
+    {
+      "name": "the_deep_void:ancient_deepslate"
+    },
+    {
+      "name": "the_deep_void:ancient_pot"
+    },
+    {
+      "name": "the_deep_void:ancient_urns_generate"
+    },
+    {
+      "name": "the_deep_void:ash_pile"
+    },
+    {
+      "name": "the_deep_void:ash_pillars"
+    },
+    {
+      "name": "the_deep_void:ashen_crags_lava_deltas"
+    },
+    {
+      "name": "the_deep_void:ashen_crags_liquid_void"
+    },
+    {
+      "name": "the_deep_void:ashen_void_fern"
+    },
+    {
+      "name": "the_deep_void:ashen_watching_willow_1"
+    },
+    {
+      "name": "the_deep_void:befouled_marsh_liquid_void"
+    },
+    {
+      "name": "the_deep_void:big_blue_eye_generate"
+    },
+    {
+      "name": "the_deep_void:big_green_eye_generate"
+    },
+    {
+      "name": "the_deep_void:big_pillar_underground"
+    },
+    {
+      "name": "the_deep_void:big_red_eye_generate"
+    },
+    {
+      "name": "the_deep_void:big_yellow_eye_generate"
+    },
+    {
+      "name": "the_deep_void:bismuth_ore"
+    },
+    {
+      "name": "the_deep_void:block_of_skull_pile"
+    },
+    {
+      "name": "the_deep_void:bloodstone_ore"
+    },
+    {
+      "name": "the_deep_void:bone_column"
+    },
+    {
+      "name": "the_deep_void:bone_crawler_egg_generate"
+    },
+    {
+      "name": "the_deep_void:bone_floor_graveyard"
+    },
+    {
+      "name": "the_deep_void:bone_marrow"
+    },
+    {
+      "name": "the_deep_void:bone_piles"
+    },
+    {
+      "name": "the_deep_void:broken_bones"
+    },
+    {
+      "name": "the_deep_void:canopy_bone_marrow"
+    },
+    {
+      "name": "the_deep_void:canopy_rotten_grass"
+    },
+    {
+      "name": "the_deep_void:cave_growth"
+    },
+    {
+      "name": "the_deep_void:cinnabar_ore_generate"
+    },
+    {
+      "name": "the_deep_void:common_marrow_pillar"
+    },
+    {
+      "name": "the_deep_void:corpse_blossom"
+    },
+    {
+      "name": "the_deep_void:corpse_pile_generate"
+    },
+    {
+      "name": "the_deep_void:corpse_spawn"
+    },
+    {
+      "name": "the_deep_void:corpse_spawn_graveyard"
+    },
+    {
+      "name": "the_deep_void:corpse_spawns_in_graveyard"
+    },
+    {
+      "name": "the_deep_void:corpse_tree"
+    },
+    {
+      "name": "the_deep_void:covered_bone_pile"
+    },
+    {
+      "name": "the_deep_void:covered_corpse_spawn"
+    },
+    {
+      "name": "the_deep_void:covered_fossil_1"
+    },
+    {
+      "name": "the_deep_void:covered_fossil_2"
+    },
+    {
+      "name": "the_deep_void:covered_fossil_3"
+    },
+    {
+      "name": "the_deep_void:covered_skull_pile"
+    },
+    {
+      "name": "the_deep_void:crumbling_bedrock_generate"
+    },
+    {
+      "name": "the_deep_void:dark_steel_rock"
+    },
+    {
+      "name": "the_deep_void:deep_void_copper_ore"
+    },
+    {
+      "name": "the_deep_void:deep_void_diamond_ore"
+    },
+    {
+      "name": "the_deep_void:deep_void_gold_ore"
+    },
+    {
+      "name": "the_deep_void:deep_void_iron_ore"
+    },
+    {
+      "name": "the_deep_void:deep_void_lapis_lazuli_ore"
+    },
+    {
+      "name": "the_deep_void:deep_void_redstone_ore"
+    },
+    {
+      "name": "the_deep_void:deepslate_lava_geyser_generate"
+    },
+    {
+      "name": "the_deep_void:desolate_growth_feature"
+    },
+    {
+      "name": "the_deep_void:desolate_lichen_feature"
+    },
+    {
+      "name": "the_deep_void:desolate_soil_generate_normal"
+    },
+    {
+      "name": "the_deep_void:desolate_stem_generate"
+    },
+    {
+      "name": "the_deep_void:eye_flesh_block"
+    },
+    {
+      "name": "the_deep_void:eye_tree"
+    },
+    {
+      "name": "the_deep_void:eye_tree_undergrowth"
+    },
+    {
+      "name": "the_deep_void:eye_trunk"
+    },
+    {
+      "name": "the_deep_void:eye_trunk_undergrowth"
+    },
+    {
+      "name": "the_deep_void:fake_torch_generate"
+    },
+    {
+      "name": "the_deep_void:flesh_blob_variants_generate"
+    },
+    {
+      "name": "the_deep_void:flesh_blobs_generate"
+    },
+    {
+      "name": "the_deep_void:flesh_block_generate_normal"
+    },
+    {
+      "name": "the_deep_void:flesh_bloodstone_ore"
+    },
+    {
+      "name": "the_deep_void:flesh_cave_ambrosia_strands"
+    },
+    {
+      "name": "the_deep_void:flesh_cave_ichor_lakes"
+    },
+    {
+      "name": "the_deep_void:flesh_cave_plants"
+    },
+    {
+      "name": "the_deep_void:flesh_cave_special_plants"
+    },
+    {
+      "name": "the_deep_void:flesh_cave_veins"
+    },
+    {
+      "name": "the_deep_void:flesh_cave_vines"
+    },
+    {
+      "name": "the_deep_void:flesh_mouth"
+    },
+    {
+      "name": "the_deep_void:flesh_stuff"
+    },
+    {
+      "name": "the_deep_void:fleshy_bone"
+    },
+    {
+      "name": "the_deep_void:fleshy_formation_underground"
+    },
+    {
+      "name": "the_deep_void:fossils"
+    },
+    {
+      "name": "the_deep_void:gaol_body_pit"
+    },
+    {
+      "name": "the_deep_void:gaol_paths"
+    },
+    {
+      "name": "the_deep_void:gaping_porous_flesh"
+    },
+    {
+      "name": "the_deep_void:giant_gloom_lantern_plant"
+    },
+    {
+      "name": "the_deep_void:giant_overgrown_growth"
+    },
+    {
+      "name": "the_deep_void:giant_skulls"
+    },
+    {
+      "name": "the_deep_void:gloom_cave_ground_lanterns"
+    },
+    {
+      "name": "the_deep_void:gloom_cave_growth"
+    },
+    {
+      "name": "the_deep_void:gloom_cave_lanterns"
+    },
+    {
+      "name": "the_deep_void:gloom_cave_lichen"
+    },
+    {
+      "name": "the_deep_void:goo_cover"
+    },
+    {
+      "name": "the_deep_void:goo_growth"
+    },
+    {
+      "name": "the_deep_void:goo_nest"
+    },
+    {
+      "name": "the_deep_void:gore_stems"
+    },
+    {
+      "name": "the_deep_void:grim_soil"
+    },
+    {
+      "name": "the_deep_void:ground_bones_plant"
+    },
+    {
+      "name": "the_deep_void:hard_flesh_node"
+    },
+    {
+      "name": "the_deep_void:hunters_cabin"
+    },
+    {
+      "name": "the_deep_void:ichor_bulb_generate"
+    },
+    {
+      "name": "the_deep_void:inactive_infested_rotten_roots"
+    },
+    {
+      "name": "the_deep_void:inactive_peeping_roots"
+    },
+    {
+      "name": "the_deep_void:infested_bone_crawler_egg_generate"
+    },
+    {
+      "name": "the_deep_void:lava_geyser_generate"
+    },
+    {
+      "name": "the_deep_void:lavendite_ore"
+    },
+    {
+      "name": "the_deep_void:laying_corpse_spawn"
+    },
+    {
+      "name": "the_deep_void:liquid_void_lakes"
+    },
+    {
+      "name": "the_deep_void:marrow_holes"
+    },
+    {
+      "name": "the_deep_void:marrow_pillar"
+    },
+    {
+      "name": "the_deep_void:marsh_tree_1"
+    },
+    {
+      "name": "the_deep_void:marsh_tree_2"
+    },
+    {
+      "name": "the_deep_void:misted_remains"
+    },
+    {
+      "name": "the_deep_void:monolith_pillar_1"
+    },
+    {
+      "name": "the_deep_void:monolith_pillar_2"
+    },
+    {
+      "name": "the_deep_void:monolith_pillar_3"
+    },
+    {
+      "name": "the_deep_void:monolithic_stone_generate"
+    },
+    {
+      "name": "the_deep_void:mossy_bone_pile"
+    },
+    {
+      "name": "the_deep_void:mossy_bone_pile_generate"
+    },
+    {
+      "name": "the_deep_void:onyx_ore"
+    },
+    {
+      "name": "the_deep_void:peeping_stem"
+    },
+    {
+      "name": "the_deep_void:pile_of_bones"
+    },
+    {
+      "name": "the_deep_void:pointed_deepslate_surface"
+    },
+    {
+      "name": "the_deep_void:pointed_serrated_deepslate"
+    },
+    {
+      "name": "the_deep_void:pointed_serrated_deepslate_down"
+    },
+    {
+      "name": "the_deep_void:pointed_serrated_deepslate_tall"
+    },
+    {
+      "name": "the_deep_void:pointed_serrated_deepslate_tiny"
+    },
+    {
+      "name": "the_deep_void:pots_and_urns"
+    },
+    {
+      "name": "the_deep_void:pots_misted_remnants"
+    },
+    {
+      "name": "the_deep_void:protruding_marrow_generate"
+    },
+    {
+      "name": "the_deep_void:pus_flower"
+    },
+    {
+      "name": "the_deep_void:pus_sack"
+    },
+    {
+      "name": "the_deep_void:pustulent_flesh_block_generate"
+    },
+    {
+      "name": "the_deep_void:rot_cave_plants"
+    },
+    {
+      "name": "the_deep_void:rot_cave_protruding_marrow"
+    },
+    {
+      "name": "the_deep_void:rot_cave_vines"
+    },
+    {
+      "name": "the_deep_void:rotten_bone_pile_generate"
+    },
+    {
+      "name": "the_deep_void:rotten_fossil"
+    },
+    {
+      "name": "the_deep_void:rotten_grass"
+    },
+    {
+      "name": "the_deep_void:rotten_marrow_pillar"
+    },
+    {
+      "name": "the_deep_void:rotten_moss_generate"
+    },
+    {
+      "name": "the_deep_void:rotten_moss_generate_normal"
+    },
+    {
+      "name": "the_deep_void:rotting_corpse_spawn"
+    },
+    {
+      "name": "the_deep_void:rotting_covered_corpse_spawn"
+    },
+    {
+      "name": "the_deep_void:rotting_laying_corpse_spawn"
+    },
+    {
+      "name": "the_deep_void:seer"
+    },
+    {
+      "name": "the_deep_void:smoke_vent_crags"
+    },
+    {
+      "name": "the_deep_void:smoke_vents"
+    },
+    {
+      "name": "the_deep_void:solid_ambrosia_generate"
+    },
+    {
+      "name": "the_deep_void:staring_hills_additions"
+    },
+    {
+      "name": "the_deep_void:staring_hills_eyes"
+    },
+    {
+      "name": "the_deep_void:sulfur_ore"
+    },
+    {
+      "name": "the_deep_void:teeth"
+    },
+    {
+      "name": "the_deep_void:tendrils"
+    },
+    {
+      "name": "the_deep_void:terrain_deformity"
+    },
+    {
+      "name": "the_deep_void:twisting_spine"
+    },
+    {
+      "name": "the_deep_void:void_fern"
+    },
+    {
+      "name": "the_deep_void:void_rose"
+    },
+    {
+      "name": "the_deep_void:void_stem_marsh"
+    },
+    {
+      "name": "the_deep_void:voidrium_ore"
+    },
+    {
+      "name": "twilightforest:big_mushgloom"
+    },
+    {
+      "name": "twilightforest:canopy_fallen_log"
+    },
+    {
+      "name": "twilightforest:dark_dead_bushes"
+    },
+    {
+      "name": "twilightforest:dark_ferns"
+    },
+    {
+      "name": "twilightforest:dark_grass"
+    },
+    {
+      "name": "twilightforest:dark_mushglooms"
+    },
+    {
+      "name": "twilightforest:dark_mushrooms"
+    },
+    {
+      "name": "twilightforest:dark_pumpkins"
+    },
+    {
+      "name": "twilightforest:default_fallen_logs"
+    },
+    {
+      "name": "twilightforest:druid_hut"
+    },
+    {
+      "name": "twilightforest:fallen_leaves"
+    },
+    {
+      "name": "twilightforest:fiddlehead"
+    },
+    {
+      "name": "twilightforest:fire_jet"
+    },
+    {
+      "name": "twilightforest:flower_placer"
+    },
+    {
+      "name": "twilightforest:flower_placer_alt"
+    },
+    {
+      "name": "twilightforest:foundation"
+    },
+    {
+      "name": "twilightforest:graveyard"
+    },
+    {
+      "name": "twilightforest:grove_ruins"
+    },
+    {
+      "name": "twilightforest:hollow_log"
+    },
+    {
+      "name": "twilightforest:hollow_stump"
+    },
+    {
+      "name": "twilightforest:huge_lily_pad"
+    },
+    {
+      "name": "twilightforest:huge_water_lily"
+    },
+    {
+      "name": "twilightforest:lamppost_placer"
+    },
+    {
+      "name": "twilightforest:lava_lake"
+    },
+    {
+      "name": "twilightforest:legacy_coal_ore"
+    },
+    {
+      "name": "twilightforest:legacy_copper_ore"
+    },
+    {
+      "name": "twilightforest:legacy_diamond_ore"
+    },
+    {
+      "name": "twilightforest:legacy_gold_ore"
+    },
+    {
+      "name": "twilightforest:legacy_iron_ore"
+    },
+    {
+      "name": "twilightforest:legacy_lapis_ore"
+    },
+    {
+      "name": "twilightforest:legacy_redstone_ore"
+    },
+    {
+      "name": "twilightforest:mangrove_fallen_log"
+    },
+    {
+      "name": "twilightforest:mayapple"
+    },
+    {
+      "name": "twilightforest:monolith"
+    },
+    {
+      "name": "twilightforest:mushgloom_cluster"
+    },
+    {
+      "name": "twilightforest:mushroom/canopy_mushrooms_dense"
+    },
+    {
+      "name": "twilightforest:mushroom/canopy_mushrooms_sparse"
+    },
+    {
+      "name": "twilightforest:mycelium_blob"
+    },
+    {
+      "name": "twilightforest:outside_stalagmite"
+    },
+    {
+      "name": "twilightforest:plant_roots"
+    },
+    {
+      "name": "twilightforest:pumpkin_lamppost"
+    },
+    {
+      "name": "twilightforest:small_andesite"
+    },
+    {
+      "name": "twilightforest:small_diorite"
+    },
+    {
+      "name": "twilightforest:small_granite"
+    },
+    {
+      "name": "twilightforest:smoker"
+    },
+    {
+      "name": "twilightforest:snow_under_trees"
+    },
+    {
+      "name": "twilightforest:spruce_fallen_log"
+    },
+    {
+      "name": "twilightforest:stone_circle"
+    },
+    {
+      "name": "twilightforest:tf_oak_fallen_log"
+    },
+    {
+      "name": "twilightforest:thorns"
+    },
+    {
+      "name": "twilightforest:torch_berries"
+    },
+    {
+      "name": "twilightforest:tree/darkwood_tree"
+    },
+    {
+      "name": "twilightforest:tree/dead_canopy_tree"
+    },
+    {
+      "name": "twilightforest:tree/forest_canopy_oak_tree"
+    },
+    {
+      "name": "twilightforest:tree/hollow_oak"
+    },
+    {
+      "name": "twilightforest:tree/large_twilight_oak_tree"
+    },
+    {
+      "name": "twilightforest:tree/mangrove_tree"
+    },
+    {
+      "name": "twilightforest:tree/savannah_canopy_oak_tree"
+    },
+    {
+      "name": "twilightforest:tree/savannah_oak_tree"
+    },
+    {
+      "name": "twilightforest:tree/selector/canopy_trees"
+    },
+    {
+      "name": "twilightforest:tree/selector/dark_forest_tree_mix"
+    },
+    {
+      "name": "twilightforest:tree/selector/dark_forest_trees"
+    },
+    {
+      "name": "twilightforest:tree/selector/dense_canopy_trees"
+    },
+    {
+      "name": "twilightforest:tree/selector/enchanted_forest_trees"
+    },
+    {
+      "name": "twilightforest:tree/selector/firefly_forest_trees"
+    },
+    {
+      "name": "twilightforest:tree/selector/highlands_trees"
+    },
+    {
+      "name": "twilightforest:tree/selector/snowy_forest_trees"
+    },
+    {
+      "name": "twilightforest:tree/selector/vanilla_mushrooms"
+    },
+    {
+      "name": "twilightforest:tree/selector/vanilla_trees"
+    },
+    {
+      "name": "twilightforest:tree/swampy_oak_tree"
+    },
+    {
+      "name": "twilightforest:tree/twilight_oak_tree"
+    },
+    {
+      "name": "twilightforest:troll_roots"
+    },
+    {
+      "name": "twilightforest:vanilla_roots"
+    },
+    {
+      "name": "twilightforest:water_lake"
+    },
+    {
+      "name": "twilightforest:webs"
+    },
+    {
+      "name": "twilightforest:well_placer"
+    },
+    {
+      "name": "twilightforest:wood_roots"
+    },
+    {
+      "name": "undergarden:amorous_bristle_patch"
+    },
+    {
+      "name": "undergarden:ashen_deepturf_patch"
+    },
+    {
+      "name": "undergarden:blisterberry_bush_patch"
+    },
+    {
+      "name": "undergarden:blood_mushroom_patch"
+    },
+    {
+      "name": "undergarden:bog_delta"
+    },
+    {
+      "name": "undergarden:butterbunch_patch"
+    },
+    {
+      "name": "undergarden:cloggrum_ore"
+    },
+    {
+      "name": "undergarden:coal_ore"
+    },
+    {
+      "name": "undergarden:deepsoil_ore"
+    },
+    {
+      "name": "undergarden:deepturf_patch"
+    },
+    {
+      "name": "undergarden:depthrock_pebble_patch"
+    },
+    {
+      "name": "undergarden:depthrock_rock"
+    },
+    {
+      "name": "undergarden:diamond_ore"
+    },
+    {
+      "name": "undergarden:ditchbulb_patch"
+    },
+    {
+      "name": "undergarden:droopvine_patch"
+    },
+    {
+      "name": "undergarden:froststeel_ore"
+    },
+    {
+      "name": "undergarden:frozen_deepturf_patch"
+    },
+    {
+      "name": "undergarden:glitterkelp_patch"
+    },
+    {
+      "name": "undergarden:gloomgourd_patch"
+    },
+    {
+      "name": "undergarden:gold_ore"
+    },
+    {
+      "name": "undergarden:grongle_bush"
+    },
+    {
+      "name": "undergarden:grongle_tree"
+    },
+    {
+      "name": "undergarden:gronglegrowth_delta"
+    },
+    {
+      "name": "undergarden:huge_blood_mushroom"
+    },
+    {
+      "name": "undergarden:huge_indigo_mushroom"
+    },
+    {
+      "name": "undergarden:huge_indigo_mushroom_smogstem_forest"
+    },
+    {
+      "name": "undergarden:huge_ink_mushroom"
+    },
+    {
+      "name": "undergarden:huge_veil_mushroom"
+    },
+    {
+      "name": "undergarden:ice_ore"
+    },
+    {
+      "name": "undergarden:ice_pillar"
+    },
+    {
+      "name": "undergarden:indigo_mushroom_patch"
+    },
+    {
+      "name": "undergarden:ink_mushroom_patch"
+    },
+    {
+      "name": "undergarden:iron_ore"
+    },
+    {
+      "name": "undergarden:miserabell_patch"
+    },
+    {
+      "name": "undergarden:regalium_ore"
+    },
+    {
+      "name": "undergarden:sediment_ore"
+    },
+    {
+      "name": "undergarden:shimmerweed_patch"
+    },
+    {
+      "name": "undergarden:shiverstone_ore"
+    },
+    {
+      "name": "undergarden:shiverstone_rock"
+    },
+    {
+      "name": "undergarden:small_grongle_tree"
+    },
+    {
+      "name": "undergarden:smog_vent"
+    },
+    {
+      "name": "undergarden:smogstem_bush"
+    },
+    {
+      "name": "undergarden:smogstem_tree"
+    },
+    {
+      "name": "undergarden:tall_deepturf_patch"
+    },
+    {
+      "name": "undergarden:tall_shimmerweed_patch"
+    },
+    {
+      "name": "undergarden:tall_smogstem_tree"
+    },
+    {
+      "name": "undergarden:tall_wigglewood_tree"
+    },
+    {
+      "name": "undergarden:underbean_bush_patch"
+    },
+    {
+      "name": "undergarden:utherium_ore"
+    },
+    {
+      "name": "undergarden:veil_mushroom_patch"
+    },
+    {
+      "name": "undergarden:wide_smogstem_tree"
+    },
+    {
+      "name": "undergarden:wigglewood_tree"
+    },
+    {
+      "name": "waystones:blackstone_waystone"
+    },
+    {
+      "name": "waystones:deepslate_waystone"
+    },
+    {
+      "name": "waystones:end_stone_waystone"
+    },
+    {
+      "name": "waystones:mossy_waystone"
+    },
+    {
+      "name": "waystones:sandy_waystone"
+    },
+    {
+      "name": "waystones:waystone"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/frost_lily"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/ice_patch"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/ice_patch_ceiling"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/ice_sheet_replace"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/ice_sheet_replace_2"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/icicles"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/large_icicle"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/large_icicle_tilted"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/small_icicle"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/water_surface_ice_fragment"
+    },
+    {
+      "name": "yungscavebiomes:frosted_caves/water_surface_ice_fragment_2"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/brittle_sandstone_ceiling_patch"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/cactus_patch"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/dead_bush_spread"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/layered_sandstone_pillar"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/lost_caves_surface_replace"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/lost_caves_surface_replace_2"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/prickly_peach_cactus_patch"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/prickly_vines"
+    },
+    {
+      "name": "yungscavebiomes:lost_caves/sandstone_glow_lichen"
+    }
+  ]
+}

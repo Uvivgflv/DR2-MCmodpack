@@ -1,0 +1,11 @@
+{
+    "type": "forge:remove_features",
+    "biomes": "#minecraft:is_overworld",
+    "features": [
+        "malum:azure_runewood_tree",
+        "malum:runewood_tree",
+        "malum:rare_azure_runewood_tree",
+        "malum:rare_runewood_tree"
+    ],
+    "order": 0
+}

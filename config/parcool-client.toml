@@ -12,7 +12,7 @@
 	can_Dodge = true
 	can_FastRun = true
 	can_FastSwim = true
-	can_Flipping = false
+	can_Flipping = true
 	can_HangDown = true
 	can_HorizontalWallRun = true
 	can_JumpFromBar = true
@@ -24,7 +24,7 @@
 	can_Tap = true
 	can_Vault = true
 	can_VerticalWallRun = true
-	can_WallJump = false
+	can_WallJump = true
 	can_WallSlide = true
 	can_StartSwimByCrawl = true
 
@@ -40,6 +40,8 @@
 	hide_hud_if_stamina_infinite = true
 	#Stamina HUD shows action charge rate, cool time or etc
 	show_action_status_bar = true
+	#Light stamina HUD shows always
+	show_light_hud_always = false
 	#horizontal offset of normal HUD
 	#Range: 0 ~ 100
 	offset_h_stamina_hud = 3
@@ -52,8 +54,6 @@
 	#vertical offset of light HUD
 	#Range: -100 ~ 100
 	offset_v_light_hud = 0
-	#Light stamina HUD shows always
-	show_light_hud_always = false
 
 [Animations]
 	#Enable custom animations
@@ -71,7 +71,7 @@
 	#Enable rotation of camera by Roll
 	enable_camera_rotation_roll = true
 	#Enable rotation of camera by Flipping
-	enable_camera_rotation_flipping = true
+	enable_camera_rotation_flipping = false
 	#Enable animation of camera by Vault
 	enable_camera_animation_vault = false
 	#Enable animation of camera by Horizontal-WallRun
@@ -156,9 +156,21 @@
 	#Max number of times of successive Dodge action
 	#Range: > 1
 	successive_dodge_count = 3
+	#Window time of just time breakfall
+	#Range: > 0
+	justtime_breakfall_tick = 5
+	#coyote time tick (how long tick player can behave like on ground after getting off ledge
+	#Range: 0 ~ 20
+	coyote_time = 3
 	#Lowest fall distance needed to trigger breakfall movements
 	#Range: 0.0 ~ 10.0
 	lowest_fall_distance_for_breakfall = 2.0
+	#How long distance breakfall can remove damage
+	#Range: 0.0 ~ 1.7976931348623157E308
+	max_breakfall_damage_remove_height = 6.0
+	#Damage reduction rate of Breakfall
+	#Range: 0.0 ~ 1.0
+	max_breakfall_damage_reduction_rate = 0.6
 
 [Modifier]
 	#How long you can do Horizontal Wall Run
@@ -176,6 +188,9 @@
 	#Dodge speed modifier
 	#Range: 0.5 ~ 3.0
 	dodge-speed_modifier = 1.0
+	#SkyDive speed decreasement rate
+	#Range: 0.001 ~ 1.0
+	sky_dive-speed-decreasement = 0.98
 
 [Other_Configuration]
 	#Vault Animation(Dynamic is to select animation dynamically)
@@ -195,7 +210,7 @@
 	#Enable block like rendering of zipline
 	enable_3d_render_zipline = true
 	#Notify if auto resynchronization of Limitation is executed
-	notify_limitation_auto_resync = true
+	notify_limitation_auto_resync = false
 	#Whether ParCool is active
 	parcool_activation = true
 

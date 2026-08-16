@@ -1,0 +1,89 @@
+{
+  "worldSettings": {
+    "desc:": "Biome size settings per noise setting, set by default to no changes. Gets automatically filled on world creation. Restart after changing values.Note that the biome size changes work indirectly by modifying temperature and vegetation zone sizes and you cannot change the size of a specific biome",
+    "minecraft:amplified": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "minecraft:caves": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 4.0
+    },
+    "minecraft:floating_islands": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "minecraft:large_biomes": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "minecraft:nether": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "minecraft:overworld": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 2.0
+    },
+    "undergarden:undergarden": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "deeperdarker:otherside": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "netherexp:large_nether": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "graveyard:past": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "bclib:amplified_nether": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "alex_caves_dimensions:abyssal_chasm": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "alex_caves_dimensions:candy_cavity": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "alex_caves_dimensions:forlorn_hollows": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "alex_caves_dimensions:magnetic_caves": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "alex_caves_dimensions:primordial_caves": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "aether:skylands": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "alex_caves_dimensions:toxic_caves": {
+      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
+      "size_multiplier": 1.0
+    },
+    "minecraft:end": {
+      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
+      "horizontal_size": 0
+    },
+    "twilightforest:skylight_noise_gen": {
+      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
+      "horizontal_size": 0
+    },
+    "twilightforest:twilight_noise_gen": {
+      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
+      "horizontal_size": 0
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: "75B1D843E2A961F0"
+	id: "12AECCBD9F1E7424"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "1 - Начало выживания"
+}

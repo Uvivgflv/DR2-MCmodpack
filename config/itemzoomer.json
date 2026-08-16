@@ -1,9 +1,0 @@
-{
-  "enabled": false,
-  "appearAnimation": "FADE",
-  "idleAnimation": "NONE",
-  "appearDelayMs": 250,
-  "itemSizePercent": 100,
-  "showItemInfo": true,
-  "infoDelaySeconds": 2
-}

@@ -1,0 +1,36 @@
+{
+  "armorSetName": "chainmail",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "minecraft:chainmail_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "minecraft:chainmail_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "minecraft:chainmail_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "minecraft:chainmail_boots",
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+       "type": "attribute",
+      "name": "attributeslib:crit_damage",
+      "value": 0.07,
+      "modifierUUID": "d4f37718-8492-4d13-a699-a42d030b5cd9",
+      "description": "+7% crit damage",
+      "attributeOperation": 1,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false,
+      "percentageChance": 100.0
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

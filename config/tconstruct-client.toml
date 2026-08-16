@@ -16,25 +16,25 @@
 	#They are more intrusive than most advanced tooltip content, so this option is provided in case some mod made poor design decisions and put essential gameplay info in tooltips or for pack makers who do not need modifier info.
 	modifiersIDsInAdvancedTooltips = true
 
-	#JEI configuration
+	#EMI configuration
 	[client.jei]
-		#If true, modifiers will be added to the JEI ingredient list. If false, they will only be visible in the modifiers recipe tab.
+		#If true, modifiers will be added to the EMI ingredient list. If false, they will only be visible in the modifiers recipe tab.
 		showModifiers = true
-		#If non-empty, only this material will be shown on tools in JEI (or the first valid material if this is invalid for the tool).
+		#If non-empty, only this material will be shown on tools in EMI (or the first valid material if this is invalid for the tool).
 		#If empty, all materials will show
 		showOnlyToolMaterial = ""
-		#If non-empty, only material will be shown on parts in JEI (or the first valid material if this is invalid for the part).
+		#If non-empty, only material will be shown on parts in EMI (or the first valid material if this is invalid for the part).
 		#If empty, all materials will show
 		showOnlyPartMaterial = ""
-		#If true, tables such as the part builder and tinker station will show all variants in JEI. If false the variants only show in the tables tab
+		#If true, tables such as the part builder and tinker station will show all variants in EMI. If false the variants only show in the tables tab
 		showAllTableVariants = false
-		#If true, anvils will show all metal variants in JEI. If false, the variants only show in the tables tab
+		#If true, anvils will show all metal variants in EMI. If false, the variants only show in the tables tab
 		showAllAnvilVariants = true
-		#If true, smeltery and foundry controllers, drains, ducts, and chutes will show all variants in JEI. If false, the variants only shows in the smeltery tab
+		#If true, smeltery and foundry controllers, drains, ducts, and chutes will show all variants in EMI. If false, the variants only shows in the smeltery tab
 		showAllSmelteryVariants = false
-		#If true, filled copper cans and fluid gauges will show in JEI. If false only empty ones will show
+		#If true, filled copper cans and fluid gauges will show in EMI. If false only empty ones will show
 		showFilledFluidTanks = false
-		#If true, variants of our potion fluid for every potion will show in JEI. If false it will be hidden, but still usable.
+		#If true, variants of our potion fluid for every potion will show in EMI. If false it will be hidden, but still usable.
 		showPotionFluid = true
 
 	#Settings related to modifiers

@@ -1,0 +1,32 @@
+
+["Common Configs for Tinker's Tool Leveling"]
+	#The multiplier for the exp granted to a mining tool after each block break. Default is 1.0
+	#Range: 0.0 ~ 2.147483647E9
+	blockBreakMultiplier = 1.0
+	#The multiplier for the exp granted to a melee weapon after each block break. Default is 1.0
+	#Range: 0.0 ~ 2.147483647E9
+	damageEntityMultiplier = 1.0
+	#The multiplier for the exp granted to an armor piece after each block break. Default is 1.0
+	#Range: 0.0 ~ 2.147483647E9
+	armorHitMultiplier = 1.0
+	#The amount of levels between each bonus modifier. Set to 0 to disable bonus modifiers. Default is 3
+	modifierLevelGap = 3
+	#The base exp required to level up a tool. Default is 200
+	#Range: > 1
+	levelupExpRequired = 200
+	#The exponential increase between tool exp levels. Default is 2.0
+	#Range: 0.0 ~ 2.147483647E9
+	levelupExpIncrease = 2.0
+	#The randomness factor when gaining exp.
+	#A value of 1 means that the tool's exp gain will be randomized from +-100% of what it was
+	#For example, if a tool gains 5 exp with a randomness factor of 1, it can gain anywhere from 0 to 10 exp.
+	#Range: 0.0 ~ 1.0
+	randomnessFactor = 0.5
+	#The amount the current exp is divided by when a part of the tool is replaced.
+	#A value of 0 means that it will be reset to 0
+	#A value of 1 means that the exp will not be affected
+	#A value of > 1 is what the exp will be divded by when a tool part is replaced
+	#For example, a value of 2 means that if a tool has 50 exp it will have 25 exp after a part is replaced
+	#Range: 0.0 ~ 2.147483647E9
+	expLossOnReplace = 2.0
+

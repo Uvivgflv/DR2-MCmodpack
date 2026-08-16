@@ -4,7 +4,7 @@
 	enableSocketGemInjector = true
 	#Chance to insert a random gem into each socket slot, 1.0 means 100%
 	#Range: 0.0 ~ 1.0
-	socketGemChance = 0.3
+	socketGemChance = 0.05
 	#Enable the SocketHelperMixin that allows gaps between sockets
 	enableSocketHelperMixin = true
 	#Switch the implementation type of PermanentEffectBonus
@@ -18,8 +18,44 @@
 	enableCelestisynthAttributes = true
 	#If true, enables Celestisynth weapons patch to increase weapon damage when held, scaled by the respective Spell Power on the item
 	enableCelestisynthSpellPowerPatch = true
+	#Maximum number of Augment Slots an item can have
+	#Range: 0 ~ 4
+	maxAugmentSlots = 1
+	#Chance for a universal boss to drop an Affix Scroll on death (0.0 = never, 1.0 = always)
+	#Range: 0.0 ~ 1.0
+	affixScrollDropChance = 0.01
+	#XP level cost to apply an Affix Scroll in the anvil
+	#Range: 1 ~ 100
+	affixScrollXpCost = 25
+	#Maximum number of Affix Scrolls that can be applied to a single item
+	#Range: 0 ~ 10
+	maxScrollSlots = 2
+	#If true, universal bosses will have their rarity name prefixed (e.g. 'Mythic Zombie').
+	showUniversalBossRarityName = true
+	#Adds extra sockets to ALL items with a valid LootCategory.
+	#This value is added on top of existing sockets.
+	#Set to 0 to disable.
+	#Range: 0 ~ 10
+	extraSockets = 0
+	#Tiered Socket Mode – controls gem-socket compatibility at the smithing table.
+	#ON       - A gem of equal or LOWER tier may be placed in a higher-tier socket
+	#           (e.g. a Common gem can go into an Epic socket).
+	#HARDCORE - Only a gem of the EXACT same tier fits the socket
+	#           (e.g. only an Epic gem can go into an Epic socket).
+	#OFF      - Totally disable tiered socket
+	#
+	#To disable partial or add other socket tiers, you need to access datapack folder
+	#When no tier definitions are loaded all sockets behave as plain Apotheosis sockets.
+	#Allowed Values: ON, OFF, HARDCORE
+	tiered_socket_mode = "ON"
+	#Chance for a Fabled universal boss to drop a random Augment on death (0.0 = never, 1.0 = always)
+	#Range: 0.0 ~ 1.0
+	fabledAugmentDropChance = 0.0
 	#Map of item Resource Locations to School Type IDs for Adaptive Spell Power Affixes
 	#Example: modid:itemid|modid:schoolid
 	#You can also set multiple schools: modid:itemid|modid:schoolid|modid:schoolid
 	irons_items = ["celestisynth:crescentia|irons_spellbooks:ender", "celestisynth:solaris|irons_spellbooks:fire", "celestisynth:aquaflora|irons_spellbooks:nature", "celestisynth:breezebreaker|irons_spellbooks:evocation", "celestisynth:poltergeist|irons_spellbooks:eldritch", "celestisynth:rainfall_serenity|irons_spellbooks:lightning", "celestisynth:keres|irons_spellbooks:blood", "celestisynth:frostbound|irons_spellbooks:ice"]
+	#Use vanilla check for enchanting book drops, unobtainable books / treasure books will be excluded
+	#If you want more fine-grained control, see data file located at data/fallen_gems_affixes/loot_modifiers/universal_boss_loot.json
+	strictUniversalBossEnchantDrop = false
 

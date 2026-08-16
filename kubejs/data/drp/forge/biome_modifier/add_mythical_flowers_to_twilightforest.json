@@ -1,0 +1,10 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#twilightforest:in_twilight_forest",
+    "features": [
+        "botania:mystical_flowers",
+        "botania:mystical_mushrooms"
+    ],
+    "step": "vegetal_decoration",
+    "order": 1
+}

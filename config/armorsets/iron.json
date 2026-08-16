@@ -1,0 +1,52 @@
+{
+  "armorSetName": "iron",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "minecraft:iron_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "minecraft:iron_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "minecraft:iron_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "minecraft:iron_boots",
+    "mustBeEmpty": false
+  },
+  "partialBonusRequiredAmount": 2,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.movement_speed",
+      "value": 8,
+      "modifierUUID": "d3bf61ea-7c21-47ad-91af-a17481558f9a",
+      "description": "+8 max health",
+      "attributeOperation": 1,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false,
+      "percentageChance": 100.0
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "value": 10,
+      "modifierUUID": "07a446eb-73fa-4f6b-b646-3697350ef888",
+      "description": "+10 max health",
+      "attributeOperation": 1,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false,
+      "percentageChance": 100.0
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

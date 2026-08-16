@@ -13,7 +13,7 @@
   },
   "moddedItemWeight": {
     "desc:": "Add additional weight to modded items (e.g. 10 = 10 times more likely), making them more likely to be chosen default:3, minimum:0",
-    "moddedItemWeight": 5
+    "moddedItemWeight": 3
   },
   "debugOutput": {
     "desc:": "Shows the added loot in the log if enabled: default:false",

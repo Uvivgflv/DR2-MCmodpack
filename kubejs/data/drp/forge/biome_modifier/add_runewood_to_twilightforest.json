@@ -1,0 +1,12 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#twilightforest:in_twilight_forest",
+    "features": [
+        "malum:azure_runewood_tree",
+        "malum:runewood_tree",
+        "malum:rare_azure_runewood_tree",
+        "malum:rare_runewood_tree"
+    ],
+    "step": "vegetal_decoration",
+    "order": 1
+}

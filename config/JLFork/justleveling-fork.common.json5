@@ -2,17 +2,17 @@
 	// DON'T CHANGE THIS, REQUIRED TO AUTOMATICALLY TRY TO PORT LOCK ITEMS FROM THE OLD CONFIG.
 	usingNewConfig: true,
 	// Should the mod automatically check for updates on load?
-	checkForUpdates: true,
+	checkForUpdates: false,
 	// Aptitudes Max Level
-	aptitudeMaxLevel: 150,
+	aptitudeMaxLevel: 120,
 	// Global max level, the global level is calculated summing all aptitudes level, so if this is set to 32 players will be able to only maximize 1 skill.
-	playersMaxGlobalLevel: 900,
+	playersMaxGlobalLevel: 512,
 	// First aptitudes level cost
-	aptitudeFirstCostLevel: 25,
+	aptitudeFirstCostLevel: 30,
 	// Show potions overlay over skills
 	showPotionsHud: true,
 	// If true, locked items will be automatically dropped from player hands
-	dropLockedItems: true,
+	dropLockedItems: false,
 	// TAC:Zero have a special id system, so if you wanna get the id to restrict you need to enable this and shoot.
 	logTaczGunNames: false,
 	// If Iron's Spells 'n Spellbooks is present, it will log the spells id's on cast required to restrict them.
@@ -23,186 +23,186 @@
 	attackDamageValue: 1.5,
 	// Attack damage passive levels. Don't modify the length of the array!
 	attackPassiveLevels: [
-		15,
-		25,
-		35,
-		45,
-		55,
-		65,
-		75,
-		85,
-		95,
-		150
+		5,
+		8,
+		11,
+		14,
+		17,
+		20,
+		23,
+		26,
+		29,
+		32
 	],
 	// Attack Knockback passive value at max level
-	attackKnockbackValue: 0.2,
+	attackKnockbackValue: 0.4,
 	// Attack knockback passive levels. Don't modify the length of the array!
 	attackKnockbackPassiveLevels: [
+		8,
+		14,
 		20,
-		30,
-		50,
-		80,
-		90
+		26,
+		32
 	],
 	// Max Health passive value at max level
-	maxHealthValue: 10.0,
+	maxHealthValue: 20.0,
 	// Max health passive levels. Don't modify the length of the array!
 	maxHealthPassiveLevels: [
-		10,
-		25,
-		40,
-		50,
-		60,
-		70,
-		80,
-		90,
-		100,
-		150
+		5,
+		8,
+		11,
+		14,
+		17,
+		20,
+		23,
+		26,
+		29,
+		32
 	],
 	// Knockback Resistance passive value at max level
 	knockbackResistanceValue: 0.5,
 	// Knockback resistance passive levels. Don't modify the length of the array!
 	knockbackResistancePassiveLevels: [
-		15,
-		25,
-		50,
-		40,
-		60
+		8,
+		14,
+		20,
+		26,
+		32
 	],
 	// Movement Speed passive value at max level
 	movementSpeedValue: 0.05,
 	// Movement speed passive levels. Don't modify the length of the array!
 	movementSpeedPassiveLevels: [
-		15,
-		45,
-		65,
-		85,
-		105
+		8,
+		14,
+		20,
+		26,
+		32
 	],
 	// Projectile Damage passive value at max level
-	projectileDamageValue: 8.0,
+	projectileDamageValue: 5.0,
 	// Projectile damage passive levels. Don't modify the length of the array!
 	projectileDamagePassiveLevels: [
-		15,
-		30,
-		45,
-		75,
-		90
+		8,
+		14,
+		20,
+		26,
+		32
 	],
 	// Armor passive value at max level
 	armorValue: 4.0,
 	// Armor passive levels. Don't modify the length of the array!
 	armorPassiveLevels: [
-		15,
+		8,
+		14,
 		20,
-		30,
-		40,
-		55
+		26,
+		32
 	],
 	// Armor Toughness passive value at max level
-	armorToughnessValue: 1.5,
+	armorToughnessValue: 1.0,
 	// Armor toughness passive levels. Don't modify the length of the array!
 	armorToughnessPassiveLevels: [
-		25,
-		35,
-		45,
-		55,
-		85
+		8,
+		14,
+		20,
+		26,
+		32
 	],
 	// Attack Speed passive value at max level
 	attackSpeedValue: 0.4,
 	// Attack speed passive levels. Don't modify the length of the array!
 	attackSpeedPassiveLevels: [
-		15,
-		35,
-		65,
-		85,
-		110
+		8,
+		14,
+		20,
+		26,
+		32
 	],
 	// Entity Reach passive value at max level
-	entityReachValue: 1.3,
+	entityReachValue: 1.0,
 	// Entity reach passive levels. Don't modify the length of the array!
 	entityReachPassiveLevels: [
-		15,
-		25,
-		35,
-		80,
-		100
+		8,
+		14,
+		20,
+		26,
+		32
 	],
 	// Block Reach passive value at max level
-	blockReachValue: 2.0,
+	blockReachValue: 1.5,
 	// Block reach passive levels. Don't modify the length of the array!
 	blockReachPassiveLevels: [
-		15,
-		25,
-		35,
-		45,
-		50
+		8,
+		14,
+		20,
+		26,
+		32
 	],
 	// Break Speed passive value at max level
 	breakSpeedValue: 0.5,
 	// Break speed passive levels. Don't modify the length of the array!
 	breakSpeedPassiveLevels: [
-		15,
-		30,
-		45,
-		60,
-		75
+		8,
+		14,
+		20,
+		26,
+		3
 	],
 	// Beneficial Effect passive value at max level
 	beneficialEffectValue: 60.0,
 	// Beneficial effect passive levels. Don't modify the length of the array!
 	beneficialEffectPassiveLevels: [
-		15,
+		5,
+		8,
+		11,
+		14,
+		17,
 		20,
-		25,
-		30,
-		35,
-		40,
-		45,
-		50,
-		55,
-		60
+		23,
+		26,
+		29,
+		32
 	],
 	// Magic Resist passive value at max level
-	magicResistValue: 1.5,
+	magicResistValue: 0.5,
 	// Magic resistance passive levels. Don't modify the length of the array!
 	magicResistPassiveLevels: [
-		15,
-		45,
-		75,
-		105,
-		135
+		8,
+		14,
+		20,
+		26,
+		32
 	],
 	// Critical Damage passive value at max level
 	criticalDamageValue: 0.25,
 	// Critical damage passive levels. Don't modify the length of the array!
 	criticalDamagePassiveLevels: [
-		15,
-		25,
-		35,
-		45,
-		55,
-		65,
-		75,
-		80,
-		90,
-		150
+		5,
+		8,
+		11,
+		14,
+		17,
+		20,
+		23,
+		26,
+		29,
+		32
 	],
 	// Luck passive value at max level
-	luckValue: 1.0,
+	luckValue: 2.0,
 	// Luck passive levels. Don't modify the length of the array!
 	luckPassiveLevels: [
 		5,
-		15,
-		45,
-		65,
-		85,
-		95,
-		100,
-		105,
-		110,
-		150
+		8,
+		11,
+		14,
+		17,
+		20,
+		23,
+		26,
+		29,
+		32
 	],
 	// One Handed skill damage amplifier increase
 	oneHandedAmplifier: 0.5,
@@ -253,9 +253,9 @@
 		"mineralList[minecraft:raw_iron;minecraft:raw_gold;minecraft:raw_copper;minecraft:coal;minecraft:charcoal]"
 	],
 	// Convergence skill probability chance to obtain part of the spent material
-	convergenceProbability: 0,
+	convergenceProbability: 8,
 	// Life Eater skill life steal amplifier increase
-	lifeEaterModifier: 0.3,
+	lifeEaterModifier: 1.0,
 	// Critical Roll skill critic modifier multiply when you roll a 6
 	criticalRoll6Modifier: 1.25,
 	// Critical Roll skill critic probability reduce when you roll a 1
@@ -265,31 +265,31 @@
 	// Lucky Drop skill mobs drops probability
 	luckyDropProbability: 10,
 	// Limit Breaker skill deal damage amplifier
-	limitBreakerAmplifier: 100.0,
+	limitBreakerAmplifier: 999.0,
 	// Limit Breaker skill deal damage probability
 	limitBreakerProbability: 100,
 	// Required level to unlock skill
-	oneHandedRequiredLevel: 30,
+	oneHandedRequiredLevel: 10,
 	// Required level to unlock skill
-	fightingSpiritRequiredLevel: 30,
+	fightingSpiritRequiredLevel: 16,
 	// Required level to unlock skill
 	berserkerRequiredLevel: 30,
 	// Required level to unlock skill
-	athleticsRequiredLevel: 30,
+	athleticsRequiredLevel: 10,
 	// Required level to unlock skill
-	turtleShieldRequiredLevel: 35,
+	turtleShieldRequiredLevel: 20,
 	// Required level to unlock skill
-	lionHeartRequiredLevel: 45,
+	lionHeartRequiredLevel: 32,
 	// Required level to unlock skill
-	quickRepositionRequiredLevel: 30,
+	quickRepositionRequiredLevel: 10,
 	// Required level to unlock skill
-	stealthMasteryRequiredLevel: 30,
+	stealthMasteryRequiredLevel: 16,
 	// Required level to unlock skill
-	catEyesRequiredLevel: 80,
+	catEyesRequiredLevel: 32,
 	// Required level to unlock skill
-	snowWalkerRequiredLevel: 15,
+	snowWalkerRequiredLevel: 10,
 	// Required level to unlock skill
-	counterattackRequiredLevel: 25,
+	counterattackRequiredLevel: 18,
 	// Required level to unlock skill
 	diamondSkinRequiredLevel: 30,
 	// Required level to unlock skill
@@ -299,21 +299,21 @@
 	// Required level to unlock skill
 	alchemyManipulationRequiredLevel: 30,
 	// Required level to unlock skill
-	obsidianSmasherRequiredLevel: 30,
+	obsidianSmasherRequiredLevel: 12,
 	// Required level to unlock skill
-	treasureHunterRequiredLevel: 100,
+	treasureHunterRequiredLevel: 20,
 	// Required level to unlock skill
-	convergenceRequiredLevel: 250,
+	convergenceRequiredLevel: 30,
 	// Required level to unlock skill
-	safePortRequiredLevel: 30,
+	safePortRequiredLevel: 12,
 	// Required level to unlock skill
-	lifeEaterRequiredLevel: 100,
+	lifeEaterRequiredLevel: 18,
 	// Required level to unlock skill
-	wornholeStorageRequiredLevel: 50,
+	wornholeStorageRequiredLevel: 32,
 	// Required level to unlock skill
-	criticalRollRequiredLevel: 90,
+	criticalRollRequiredLevel: 12,
 	// Required level to unlock skill
-	luckyDropRequiredLevel: 150,
+	luckyDropRequiredLevel: 22,
 	// Required level to unlock skill
-	limitBreakerRequiredLevel: 250
+	limitBreakerRequiredLevel: 32
 }

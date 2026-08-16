@@ -1,7 +1,7 @@
 
 [Mobs]
 	#Example: ["minecraft:zombie", "minecraft:skeleton"]
-	"List of mobs that shouldn't be able to level up" = []
+	"List of mobs that shouldn't be able to level up" = ["minecraft:pig", "minecraft:cow", "minecraft:sheep", "minecraft:chiken"]
 	#If this list is not empty only these mobs will be able to level up
 	#Example: ["minecraft:zombie", "minecraft:skeleton"]
 	"List of mobs that should be able to level up" = []

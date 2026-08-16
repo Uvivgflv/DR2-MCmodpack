@@ -1,9 +1,0 @@
-{
-    "armor_items" :[
-        "twilightforest:steeleaf_helmet",
-        "twilightforest:steeleaf_chestplate",
-        "twilightforest:steeleaf_leggings",
-        "twilightforest:steeleaf_boots"
-    ],
-    "slotsPerPiece": 1.0
-}

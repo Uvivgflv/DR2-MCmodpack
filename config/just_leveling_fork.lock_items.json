@@ -1,0 +1,1600 @@
+[
+  {
+    "Item": "minecraft:anvil",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:chipped_anvil",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:damaged_anvil",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:brewing_stand",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 12
+      },
+      {
+        "Aptitude": "Magic",
+        "Level": 12
+      },
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:enchanting_table",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:beacon",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:end_crystal",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 30
+      },
+      {
+        "Aptitude": "Building",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:ender_chest",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:respawn_anchor",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:white_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:light_gray_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:gray_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:black_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:brown_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:red_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:orange_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:yellow_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:lime_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:green_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:cyan_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:light_blue_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:blue_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:purple_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:magenta_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:pink_shulker_box",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:dragon_egg",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 30
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:wither_skeleton_skull",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 8
+      },
+      {
+        "Aptitude": "Building",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:lodestone",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 16
+      },
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:smithing_table",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 20
+      },
+      {
+        "Aptitude": "Intelligence",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:grindstone",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 16
+      },
+      {
+        "Aptitude": "Intelligence",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:cartography_table",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 12
+      },
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:stonecutter",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Strength",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:smoker",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:blast_furnace",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:loom",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 8
+      },
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:name_tag",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 10
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:fishing_rod",
+    "Aptitudes": [
+      {
+        "Aptitude": "Luck",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:bone_meal",
+    "Aptitudes": [
+      {
+        "Aptitude": "Luck",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:shears",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:lead",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:spyglass",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 4
+      },
+      {
+        "Aptitude": "Dexterity",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:brush",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:fire_charge",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:flint_and_steel",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:redstone",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:redstone_torch",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:repeater",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:comparator",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:writable_book",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:written_book",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:tnt",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:lectern",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Building",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:ender_pearl",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:ender_eye",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:bow",
+    "Aptitudes": [
+      {
+        "Aptitude": "Dexterity",
+        "Level": 4
+      },
+      {
+        "Aptitude": "Strength",
+        "Level": 2
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:crossbow",
+    "Aptitudes": [
+      {
+        "Aptitude": "Dexterity",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Strength",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:saddle",
+    "Aptitudes": [
+      {
+        "Aptitude": "Dexterity",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:elytra",
+    "Aptitudes": [
+      {
+        "Aptitude": "Dexterity",
+        "Level": 30
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:firework_rocket",
+    "Aptitudes": [
+      {
+        "Aptitude": "Dexterity",
+        "Level": 20
+      },
+      {
+        "Aptitude": "Intelligence",
+        "Level": 20
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:experience_bottle",
+    "Aptitudes": [
+      {
+        "Aptitude": "Magic",
+        "Level": 12
+      },
+      {
+        "Aptitude": "Luck",
+        "Level": 10
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:wheat_seeds",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:cocoa_beans",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:pumpkin_seeds",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:melon_seeds",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:beetroot_seeds",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:torchflower_seeds",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:pitcher_pod",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:glow_berries",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:sweet_berries",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:nether_wart",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 10
+      },
+      {
+        "Aptitude": "Magic",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:egg",
+    "Aptitudes": [
+      {
+        "Aptitude": "Constitution",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:frogspawn",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      },
+      {
+        "Aptitude": "Constitution",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:turtle_egg",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      },
+      {
+        "Aptitude": "Constitution",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:sniffer_egg",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      },
+      {
+        "Aptitude": "Constitution",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:oak_sapling",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:spruce_sapling",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:birch_sapling",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:jungle_sapling",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:acacia_sapling",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:dark_oak_sapling",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:mangrove_propagule",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:cherry_sapling",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:azalea",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:flowering_azalea",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:brown_mushroom",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:red_mushroom",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:crimson_fungus",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:warped_fungus",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:bamboo",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:sugar_cane",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:cactus",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:chorus_plant",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:chorus_flower",
+    "Aptitudes": [
+      {
+        "Aptitude": "Intelligence",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:shield",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 4
+      },
+      {
+        "Aptitude": "Constitution",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:chainmail_helmet",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:chainmail_chestplate",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:chainmail_leggings",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:chainmail_boots",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_helmet",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_chestplate",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_leggings",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_boots",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_helmet",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Magic",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_chestplate",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Magic",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_leggings",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Magic",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_boots",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Magic",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_helmet",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_chestplate",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_leggings",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_boots",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_helmet",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_chestplate",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_leggings",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_boots",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:turtle_helmet",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Dexterity",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_horse_armor",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 4
+      },
+      {
+        "Aptitude": "Dexterity",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_horse_armor",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Dexterity",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_horse_armor",
+    "Aptitudes": [
+      {
+        "Aptitude": "Defense",
+        "Level": 12
+      },
+      {
+        "Aptitude": "Dexterity",
+        "Level": 12
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:totem_of_undying",
+    "Aptitudes": [
+      {
+        "Aptitude": "Constitution",
+        "Level": 16
+      },
+      {
+        "Aptitude": "Magic",
+        "Level": 12
+      }
+    ],
+    "Droppable": true
+  },
+  {
+    "Item": "minecraft:trident",
+    "Aptitudes": [
+      {
+        "Aptitude": "Strength",
+        "Level": 20
+      },
+      {
+        "Aptitude": "Dexterity",
+        "Level": 18
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_hoe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_shovel",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_pickaxe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_axe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Strength",
+        "Level": 8
+      },
+      {
+        "Aptitude": "Building",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:iron_sword",
+    "Aptitudes": [
+      {
+        "Aptitude": "Strength",
+        "Level": 8
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_hoe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_shovel",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_pickaxe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_axe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Strength",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:golden_sword",
+    "Aptitudes": [
+      {
+        "Aptitude": "Strength",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_hoe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_shovel",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_pickaxe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_axe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Strength",
+        "Level": 16
+      },
+      {
+        "Aptitude": "Building",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:diamond_sword",
+    "Aptitudes": [
+      {
+        "Aptitude": "Strength",
+        "Level": 16
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_hoe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_shovel",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_pickaxe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Building",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_axe",
+    "Aptitudes": [
+      {
+        "Aptitude": "Strength",
+        "Level": 24
+      },
+      {
+        "Aptitude": "Building",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:netherite_sword",
+    "Aptitudes": [
+      {
+        "Aptitude": "Strength",
+        "Level": 24
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:honey_bottle",
+    "Aptitudes": [
+      {
+        "Aptitude": "Constitution",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:potion",
+    "Aptitudes": [
+      {
+        "Aptitude": "Luck",
+        "Level": 4
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:splash_potion",
+    "Aptitudes": [
+      {
+        "Aptitude": "Luck",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Dexterity",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  },
+  {
+    "Item": "minecraft:lingering_potion",
+    "Aptitudes": [
+      {
+        "Aptitude": "Luck",
+        "Level": 6
+      },
+      {
+        "Aptitude": "Magic",
+        "Level": 6
+      }
+    ],
+    "Droppable": false
+  }
+]
