@@ -5,24 +5,11 @@
       "name": "UviV",
       "uniqueId": "edb2aafc-edbe-49d9-a7d0-c10dc106efbc"
     },
-    "time": 1761600613190,
+    "time": 1784578369642,
     "type": "Profiler",
     "data": {
-      "type": "file",
-      "value": "D:\\prismLauncher\\instances\\CCT04\\minecraft\\config\\spark\\profile-2025-10-28_02.30.12.sparkprofile"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "UviV",
-      "uniqueId": "edb2aafc-edbe-49d9-a7d0-c10dc106efbc"
-    },
-    "time": 1761599080682,
-    "type": "Profiler",
-    "data": {
-      "type": "file",
-      "value": "D:\\prismLauncher\\instances\\CCT04\\minecraft\\config\\spark\\profile-2025-10-28_02.04.40.sparkprofile"
+      "type": "url",
+      "value": "https://spark.lucko.me/9dKfh9CxDN"
     }
   }
 ]

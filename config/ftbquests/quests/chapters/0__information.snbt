@@ -1,0 +1,112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "0__information"
+	group: "75B1D843E2A961F0"
+	icon: "minecraft:writable_book"
+	id: "5F47B31F295D732B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Главная тематитка модпака - это \"связать\" весь контент модификаций вместе, в жанре RPG-Factory-immersive-simulator."
+				"Кропотливая настройка почти каждой модификации, скрипты, крафты и переопределение многих механик. Сильные враги, прогрессия агрессивных мобов и зависимость выпадения ресурсов с них, должна создать уникальные пути решения дефицита ресурсов, прогрессия игрока и линейная разблокировка предметов, гибкость &6Create&r и возможности масштабируемости &6GregTech&r предоставят игроку свободу реализации своих идей по преодолению преград, поставленных тебе разработчиком модпака, создадут один из самых гринд-основанных опытов в играх."
+				"Модпак активно фиксится (по мере возможностей автора) и дополняется контентом."
+			]
+			icon: "supplementaries:checker_block"
+			id: "2E9BA5ED163F37AD"
+			size: 1.7d
+			subtitle: "Dark Realms Project"
+			tasks: [{
+				id: "64A13EF3A97E4A88"
+				title: "DRP"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			description: ["Камень, земля, песок и растения замедляют твое передвижение по этому миру. Так же во время дождя и под водой передвижение становится значительнее медленее."]
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7B8EF7C2BB009094"
+			subtitle: "Замедление движений"
+			tasks: [{
+				id: "7E8D67ADD111A893"
+				title: "Realistic Steps"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"У игрока есть 5 слотов для активной еды, которая на время действия эффекта увеличивает здоровье."
+				"Чем сложнее готовить или добыть еду, тем дольше будет длится эффект."
+			]
+			icon: "farmersrespite:coffee_berries"
+			id: "78807DDCC87493DB"
+			subtitle: "Переработка еды"
+			tasks: [{
+				id: "0F84A6B8C2DA00F3"
+				title: "Spice of life: Valheim"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"В сборке есть множество вариантов использования мода ParCool, с его карабканрием, взбиранием на уступы, спринтом и прочими его механиками. "
+				"Ползаешь тут между проводами и трубами в 1 блок высотой и паралельно пытаешься вспомить что куда и зачем..."
+			]
+			icon: "minecraft:feather"
+			id: "3AA43C1539059804"
+			subtitle: "Это SmartMoving"
+			tasks: [{
+				id: "274D3428C2EDC3C7"
+				title: "ParCool"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			description: ["По возможности все крафты в этой сборке сделаны так чтобы соответсвовать крафтам в &6Greg Tech: New Horizons&r, что вличет за собой некое усложнение прогресса игрока, но только до тех пор, пока он игрок не поймет паттерн всего и не сделает все инструменты из мода &6GTCEu&r"]
+			icon: {
+				Count: 1
+				id: "gtceu:wrought_iron_wrench"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 383
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "42127F905178E497"
+			subtitle: "Сложно, а не передумал"
+			tasks: [{
+				id: "55F49EAE61E69324"
+				title: "Грегофикация"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+	]
+	title: "0 - Information"
+}

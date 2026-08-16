@@ -1,0 +1,9 @@
+#Biome ids disabled for newly generated chunks. Example: ["minecraft:desert", "biomesoplenty:lavender_field"]
+disabledBiomes = []
+#Legacy single fallback biome id used by older configs when fallbackBiomes is not present.
+fallbackBiome = "minecraft:plains"
+#Fallback biome candidates for disabled biomes. Use ["default:all_enabled"] to dynamically use every enabled biome in the active worldgen registry.
+fallbackBiomes = ["default:all_enabled"]
+#Direct biome replacements that win before fallback selection. Format: ["minecraft:forest=minecraft:plains"].
+replacementBiomes = []
+

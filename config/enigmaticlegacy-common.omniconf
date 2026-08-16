@@ -37,7 +37,7 @@
     B:AstralDustEnabled=true
 
     # Whether or not Astral Potato should be enabled. [default: true, synchronized: yes]
-    B:AstralPotatoEnabled=false
+    B:AstralPotatoEnabled=true
 
     # Whether or not Axe of Executioner should be enabled. [default: true, synchronized: yes]
     B:AxeofExecutionerEnabled=true
@@ -214,7 +214,7 @@
     B:MegaspongeEnabled=true
 
     # Whether or not Mending Mixture should be enabled. [default: true, synchronized: yes]
-    B:MendingMixtureEnabled=false
+    B:MendingMixtureEnabled=true
 
     # Whether or not Nefarious Essence should be enabled. [default: true, synchronized: yes]
     B:NefariousEssenceEnabled=true
@@ -349,7 +349,7 @@
     I:AngelBlessingCooldown=40
 
     # Chance to deflect projectile when having Angel's Blessing equipped. Measured in percents. [range: 0 ~ 100, default: 50, synchronized: yes]
-    I:AngelBlessingDeflectChance=30
+    I:AngelBlessingDeflectChance=50
 
     # List of entities that should count towards the curse-altering effect of Guide to Animal Companionship, and thus remain neutral to players bearing Ring of the Seven Curses if they posses such guide. Examples: minecraft:iron_golem, minecraft:zombified_piglin [default: , synchronized: no]
     S:AnimalGuideAnimalExclusionList <
@@ -607,7 +607,7 @@
     I:GuardianHeartEnrageRange=12
 
     # Multiplier for experience consumption by Gift of the Heaven. [range: 0.0 ~ 32768.0, default: 1.0, synchronized: yes]
-    D:HeavenScrollXPCostModifier=5.0
+    D:HeavenScrollXPCostModifier=1.0
 
     # The range in which Guide to Feral Hunt will redirect damage from pet to it's owner. [range: 0 ~ 32768, default: 24, synchronized: yes]
     I:HunterGuideEffectiveDistance=24
@@ -637,7 +637,7 @@
     B:MonsterCharmBonusLooting=true
 
     # Whether or not Emblem of Monster Slayer should provide double experience drop from monsters. [default: true, synchronized: yes]
-    B:MonsterCharmDoubleXP=false
+    B:MonsterCharmDoubleXP=true
 
     # Damage bonus against agressive creatures for Emblem of Monster Slayer. Defined as percentage. [range: 0 ~ 1000, default: 10, synchronized: yes]
     I:MonsterCharmHostileDamage=10
@@ -661,7 +661,7 @@
     I:OceanStoneUnderwaterCreaturesResistance=40
 
     # Multiplier for experience consumption by active ability of Will of the Ocean. [range: 0.0 ~ 1000.0, default: 1.0, synchronized: yes]
-    D:OceanStoneXPCostModifier=5.0
+    D:OceanStoneXPCostModifier=1.0
 
     # Whether or not it should be allowed to equip multiple spellstones if they are different items, granted player somehow gets more than one spellstone slot. [default: false, synchronized: yes]
     B:SpellstonesMultiequip=false
@@ -743,10 +743,10 @@
      >
 
     # Maximum amount of Soul Crystals a player can lose before they won't drop anymore. If set to 10 - player can loose all of them, and doing so will result in permadeath. Each crystal lost subtracts 10% of from their maximum possible health value. [range: 1 ~ 10, default: 9, synchronized: no]
-    I:MaxSoulCrystalLoss=4
+    I:MaxSoulCrystalLoss=9
 
     # Soul Crystals mechanic mode. 0 - disabled unless enforced by specific in-game items; 1 - also enabled when keepInventory is true; 2 - always enabled. [range: 0 ~ 2, default: 0, synchronized: no]
-    I:SoulCrystalsMode=2
+    I:SoulCrystalsMode=0
 }
 
 
@@ -771,13 +771,13 @@
 
 "The Seven Curses" {
     # How much less effective armor will be for those who bear the ring. Measured as percetage. [range: 0 ~ 100, default: 30, synchronized: yes]
-    I:CursedRingArmorDebuff=40
+    I:CursedRingArmorDebuff=30
 
     # If true, Ring of the Seven Curses will be equipped into player's ring slot right away when it enters their inventory. This is different from ultra hardcore option as the way through which ring ends up in player's inventory does not matter. [default: false, synchronized: yes]
     B:CursedRingAutoEquip=true
 
     # Set to false to disable ALL special drops that can be obtained from vanilla mobs when bearing Ring of the Seven Curses. [default: true, synchronized: yes]
-    B:CursedRingEnableSpecialDrops=false
+    B:CursedRingEnableSpecialDrops=true
 
     # How much additional Enchanting Power ring provides in Enchanting Table. [range: 0 ~ 32768, default: 10, synchronized: yes]
     I:CursedRingEnchantingBonus=0
@@ -814,16 +814,16 @@
     D:CursedRingNeutralXRayRange=4.0
 
     # Defines how much damage bearers of the ring receive from any source. Measured as percentage. [range: 0 ~ 32768, default: 200, synchronized: yes]
-    I:CursedRingPainModifier=250
+    I:CursedRingPainModifier=200
 
     # A fraction of time the player should bear the Seven Curses to use Abyssal Artifacts. [range: 0.0 ~ 32768.0, default: 0.995, synchronized: yes]
     D:CursedRingSuperCursedTime=0.995
 
     # If true, Ring of the Seven Curses will be equipped into player's ring slot right away when entering a new world, instead of just being added to their inventory. [default: false, synchronized: yes]
-    B:CursedRingUltraHardcore=false
+    B:CursedRingUltraHardcore=true
 
     # Set to true to prevent curse of insomnia from actually doing anything. [default: false, synchronized: yes]
-    B:CursedRingdisableInsomnia=true
+    B:CursedRingdisableInsomnia=false
 }
 
 

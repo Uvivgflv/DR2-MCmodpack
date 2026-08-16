@@ -1,9 +1,0 @@
-{
-  "armorItems": [
-    "minecraft:chainmail_boots",
-    "minecraft:chainmail_leggings",
-    "minecraft:chainmail_chestplate",
-    "minecraft:chainmail_helmet"
-  ],
-  "slotsPerPiece": 1.0
-}

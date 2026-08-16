@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "born_in_chaos_v1"
+    }
+  ],
+  "weight": 50,
+  "quality": 4,
+  "stack": {
+    "item": "born_in_chaos_v1:dark_ritual_dagger",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "min_rarity": "apotheosis:common",
+  "max_rarity": "apotheosis:rare"
+}

@@ -1,0 +1,312 @@
+[
+  {
+    "TitleId": "rookie",
+    "Conditions": [],
+    "Default": true,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "fighter",
+    "Conditions": [
+      "aptitude/Strength/greater_or_equal/16"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "fighter_great",
+    "Conditions": [
+      "aptitude/Strength/greater_or_equal/32"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "warrior",
+    "Conditions": [
+      "aptitude/Constitution/greater_or_equal/16"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "warrior_great",
+    "Conditions": [
+      "aptitude/Constitution/greater_or_equal/32"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "ranger",
+    "Conditions": [
+      "aptitude/Dexterity/greater_or_equal/16"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "ranger_great",
+    "Conditions": [
+      "aptitude/Dexterity/greater_or_equal/32"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "tank",
+    "Conditions": [
+      "aptitude/Defense/greater_or_equal/16"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "tank_great",
+    "Conditions": [
+      "aptitude/Defense/greater_or_equal/32"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "alchemist",
+    "Conditions": [
+      "aptitude/Intelligence/greater_or_equal/16"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "alchemist_great",
+    "Conditions": [
+      "aptitude/Intelligence/greater_or_equal/32"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "miner",
+    "Conditions": [
+      "aptitude/Building/greater_or_equal/16"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "miner_great",
+    "Conditions": [
+      "aptitude/Building/greater_or_equal/32"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "magician",
+    "Conditions": [
+      "aptitude/Magic/greater_or_equal/16"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "magician_great",
+    "Conditions": [
+      "aptitude/Magic/greater_or_equal/32"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "lucky_one",
+    "Conditions": [
+      "aptitude/Luck/greater_or_equal/16"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "lucky_one_great",
+    "Conditions": [
+      "aptitude/Luck/greater_or_equal/32"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "dragon_slayer",
+    "Conditions": [
+      "EntityKilled/ender_dragon/greater_or_equal/10"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "player_killer",
+    "Conditions": [
+      "EntityKilled/player/greater_or_equal/100"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "mob_killer",
+    "Conditions": [
+      "stat/mob_kills/greater_or_equal/100"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "mob_killer_great",
+    "Conditions": [
+      "stat/mob_kills/greater_or_equal/1000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "mob_killer_master",
+    "Conditions": [
+      "stat/mob_kills/greater_or_equal/10000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "hero",
+    "Conditions": [
+      "stat/raid_win/greater_or_equal/100"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "villain",
+    "Conditions": [
+      "EntityKilled/villager/greater_or_equal/100"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "fisherman",
+    "Conditions": [
+      "stat/fish_caught/greater_or_equal/100"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "fisherman_great",
+    "Conditions": [
+      "stat/fish_caught/greater_or_equal/1000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "fisherman_master",
+    "Conditions": [
+      "stat/fish_caught/greater_or_equal/10000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "enchanter",
+    "Conditions": [
+      "stat/enchant_item/greater_or_equal/10"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "enchanter_great",
+    "Conditions": [
+      "stat/enchant_item/greater_or_equal/100"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "enchanter_master",
+    "Conditions": [
+      "stat/enchant_item/greater_or_equal/1000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "survivor",
+    "Conditions": [
+      "stat/time_since_death/greater_or_equal/2400000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "businessman",
+    "Conditions": [
+      "stat/traded_with_villager/greater_or_equal/100"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "driver_boat",
+    "Conditions": [
+      "stat/boat_one_cm/greater_or_equal/1000000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "driver_cart",
+    "Conditions": [
+      "stat/minecart_one_cm/greater_or_equal/1000000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "rider_horse",
+    "Conditions": [
+      "stat/horse_one_cm/greater_or_equal/1000000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "rider_pig",
+    "Conditions": [
+      "stat/pig_one_cm/greater_or_equal/1000000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "rider_strider",
+    "Conditions": [
+      "stat/strider_one_cm/greater_or_equal/1000000"
+    ],
+    "Default": false,
+    "HideRequirements": false
+  },
+  {
+    "TitleId": "traveler_nether",
+    "Conditions": [
+      "special/dimension/equals/minecraft:the_nether"
+    ],
+    "Default": false,
+    "HideRequirements": true
+  },
+  {
+    "TitleId": "traveler_end",
+    "Conditions": [
+      "special/dimension/equals/minecraft:the_end"
+    ],
+    "Default": false,
+    "HideRequirements": true
+  }
+]

@@ -1,0 +1,94 @@
+
+#视觉与 UI 设置 (Visual & UI Settings)
+[Visual]
+	xOffset = 0.0
+	yOffset = 0.0
+	uiScale = 0.75
+	panelWidth = 120
+	visibleRows = 4.5
+	globalAlpha = 0.9
+	#是否显示快捷栏过滤指示器
+	showHotbarIndicator = true
+	#自定义悬浮窗标题 (留空则隐藏)
+	customOverlayTitle = "Loot Detected"
+	#新物品标签文本 (留空则隐藏, 默认 NEW)
+	newLabelText = "NEW"
+	#物品栏左侧掉落物列表面板宽度 (默认 100)
+	inventoryListWidth = 100
+	#物品栏掉落列表相对默认贴合位置的额外 X 偏移
+	inventoryListXOffset = 0.0
+	#物品栏掉落列表相对背包顶部的额外 Y 偏移
+	inventoryListYOffset = 0.0
+	#物品栏掉落列表整体缩放倍率 (0.1 ~ 4.0, 默认 1.0)
+	inventoryListScale = 1.0
+	#物品栏掉落列表独立透明度 (0.1 ~ 1.0, 默认 0.9)
+	inventoryListAlpha = 0.9
+	#物品栏掉落列表面板像素高度 (默认 166)
+	inventoryListHeight = 166
+	#是否在物品栏左侧显示掉落物列表
+	showInventoryLootList = true
+	#是否在悬浮窗选中物品时显示物品信息预览
+	enableTooltipPreview = true
+	#是否在悬浮窗选中物品时显示左侧按键提示框
+	showKeyPrompt = true
+	#悬浮窗物品行背景皮肤: vanilla(原版) / stardew(星露谷风格) / terraria(泰拉瑞亚风格)。对应 textures/overlay/<skin>/ 目录, 默认 vanilla
+	overlaySkin = "vanilla"
+	#掉落物上方数量文字显示模式: OFF(关闭) / ITEM_COUNT(物品数量) / STACK_COUNT(堆叠组数), 默认 ITEM_COUNT
+	itemCountDisplayMode = "ITEM_COUNT"
+	#数量文字缩放倍率 (0.25 ~ 5.0, 默认 1.0)
+	itemCountScale = 1.0
+	#数量文字最大渲染距离 (4 ~ 64, 默认 16)
+	itemCountRenderDistance = 16
+
+#快捷栏指示器悬浮窗设置 (Indicator Settings)
+[Indicator]
+	#-1 代表使用默认贴合快捷栏的位置(建议游戏内具体调整)
+	indicatorX = -1.0
+	indicatorY = -1.0
+	#支持 0, 90, 180, 270
+	indicatorRotation = 0
+
+#交互模式设置 (Interaction Modes)
+[Interaction]
+	#动画速度: SLOW(慢) / MEDIUM(中,默认) / FAST(快) / OFF(关闭)
+	animationSpeed = "MEDIUM"
+	activationMode = "ALWAYS"
+	scrollMode = "ALWAYS"
+
+#判定参数设置 (Scanning Parameters)
+[Scanning]
+	#HUD触发角度
+	lookDownAngle = 45.0
+	#水平拾取检测范围(联机时受服主强制同步覆盖)
+	scanRangeXZ = 1.0
+	#垂直拾取检测范围(联机时受服主强制同步覆盖)
+	scanRangeY = 1.0
+
+#核心功能设置 (Core Feature Settings)
+[Core]
+	#拾取拦截策略: AUTO(智能,推荐) / ALWAYS(始终拦截)
+	pickupInterceptMode = "AUTO"
+	#长按拾取模式: PICKUP_ALL(全部拾取,默认) / PICKUP_ROW(单行全部拾取)
+	longPressMode = "PICKUP_ALL"
+	#物品必须连续存在多少 tick 才在悬浮窗显示（默认4=0.2秒，0=关闭）
+	stabilityThresholdTicks = 4
+	#白名单是否启用默认稀有物品过滤。关闭后仅显示白名单内的物品
+	enableRareItemFilter = true
+	#是否开启掉落物超大堆叠合并
+	enableSuperMerge = true
+	#水平合并范围 (最大 10)
+	mergeRangeXZ = 5.0
+	#垂直合并范围 (最大 10)
+	mergeRangeY = 5.0
+	#运输方块黑名单，用逗号分隔方块ID关键词。物品站在匹配的方块上将跳过超大堆叠合并，避免干扰传送带等运输模组。默认: belt,conveyor,chute,funnel,depot
+	mergeTransportBlacklist = "belt,conveyor,chute,funnel,depot"
+	#拾取延迟保护 (秒)
+	pickupDelaySeconds = 1.0
+	#长按触发时间 (默认 20 ticks = 1秒)
+	maxHoldTicks = 20
+
+[State]
+	#状态持久化数据，请勿更改此处
+	lastFilterMode = "ALL"
+	lastAutoMode = false
+

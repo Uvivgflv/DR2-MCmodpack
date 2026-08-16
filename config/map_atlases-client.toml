@@ -1,5 +1,9 @@
 
 [minimap]
+	#Hides minimap when inventory is open
+	hide_when_inventory_is_open = false
+	#Shows a background texture for each map, useful to see where each map ends
+	shows_map_background = false
 	#Hide minimap when holding the atlas in hand
 	hide_when_in_hand = true
 	#Only display y coordinates if atlas holds some slice maps
@@ -58,10 +62,6 @@
 	map_change_sound = false
 	#Automatically switches to the nearest slice when possible
 	automatic_slice_change = false
-	#Hides minimap when inventory is open
-	hide_when_inventory_is_open = false
-	#Shows a background texture for each map, useful to see where each map ends
-	shows_map_background = false
 
 [world_map]
 	crossair = false
@@ -83,6 +83,8 @@
 	map_borders = true
 	#When enabled, the Atlas world map coordinates will be displayed
 	draw_coordinates = true
+	#When enabled, the Atlas world map pins will have their coordinates displayed when hovered
+	draw_coordinates_pin = true
 	#Sets the scale of the text rendered for Coords world-map data
 	#Range: 0.0 ~ 10.0
 	coordinates_scale = 1.0

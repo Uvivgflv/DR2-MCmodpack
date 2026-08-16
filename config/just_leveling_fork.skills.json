@@ -1,0 +1,143 @@
+{
+  "one_handed": {
+    "requiredLevel": 10,
+    "values": [
+      0.5
+    ]
+  },
+  "fighting_spirit": {
+    "requiredLevel": 16,
+    "values": [
+      1.0,
+      3.0
+    ]
+  },
+  "berserker": {
+    "requiredLevel": 30,
+    "values": [
+      30.0
+    ]
+  },
+  "athletics": {
+    "requiredLevel": 10,
+    "values": [
+      1.5
+    ]
+  },
+  "turtle_shield": {
+    "requiredLevel": 20,
+    "values": []
+  },
+  "lion_heart": {
+    "requiredLevel": 32,
+    "values": [
+      50.0
+    ]
+  },
+  "quick_reposition": {
+    "requiredLevel": 10,
+    "values": [
+      2.0,
+      3.0
+    ]
+  },
+  "stealth_mastery": {
+    "requiredLevel": 16,
+    "values": [
+      20.0,
+      60.0,
+      1.25
+    ]
+  },
+  "cat_eyes": {
+    "requiredLevel": 32,
+    "values": []
+  },
+  "snow_walker": {
+    "requiredLevel": 10,
+    "values": []
+  },
+  "counter_attack": {
+    "requiredLevel": 18,
+    "values": [
+      3.0,
+      50.0
+    ]
+  },
+  "diamond_skin": {
+    "requiredLevel": 30,
+    "values": [
+      2.0,
+      2.0
+    ]
+  },
+  "scholar": {
+    "requiredLevel": 8,
+    "values": []
+  },
+  "haggler": {
+    "requiredLevel": 16,
+    "values": [
+      20.0
+    ]
+  },
+  "alchemy_manipulation": {
+    "requiredLevel": 30,
+    "values": [
+      1.0
+    ]
+  },
+  "obsidian_smasher": {
+    "requiredLevel": 12,
+    "values": [
+      10.0
+    ]
+  },
+  "treasure_hunter": {
+    "requiredLevel": 20,
+    "values": [
+      500.0
+    ]
+  },
+  "convergence": {
+    "requiredLevel": 30,
+    "values": [
+      8.0
+    ]
+  },
+  "safe_port": {
+    "requiredLevel": 12,
+    "values": []
+  },
+  "life_eater": {
+    "requiredLevel": 18,
+    "values": [
+      1.0
+    ]
+  },
+  "wormhole_storage": {
+    "requiredLevel": 32,
+    "values": []
+  },
+  "critical_roll": {
+    "requiredLevel": 12,
+    "values": [
+      1.25,
+      3.0
+    ]
+  },
+  "lucky_drop": {
+    "requiredLevel": 22,
+    "values": [
+      10.0,
+      2.0
+    ]
+  },
+  "limit_breaker": {
+    "requiredLevel": 32,
+    "values": [
+      100.0,
+      999.0
+    ]
+  }
+}

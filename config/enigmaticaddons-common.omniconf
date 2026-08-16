@@ -1,6 +1,6 @@
 # Configuration File
 
-@CONFIG_VERSION: 1.2.5
+@CONFIG_VERSION: 1.2.5.2
 
 ##########################################################################################################
 # Accessibility Options
@@ -173,7 +173,7 @@
         goety_revelation:resistance
      >
 
-    # List of Effects that will never appear in Magic Quartz Flower. Changing this option required game restart to take effect. [default: [alexscaves:darkness_incarnate], [alexsmobs:oiled], [aquamirae:crystallization], [born_in_chaos_v1:light_rampage], [born_in_chaos_v1:medium_rampage], [born_in_chaos_v1:strong_rampage], [born_in_chaos_v1:furious_rampage], [born_in_chaos_v1:rampant_rampage], [cataclysm:ghost_form], [cataclysm:ghost_sickness], [enigmaticdelicacy:fading], [enigmaticlegacy:blazing_strength], [goety:shadow_walk], [irons_spellbooks:abyssal_shroud], [irons_spellbooks:evasion], [irons_spellbooks:heartstop], [irons_spellbooks:true_invisibility], [ltc2:undying_benediction], [more_potion_effects:extension], [more_potion_effects:immortal], [more_potion_effects:static_life], [supernatural:supernatural], [unusual_delight:crystal_aspect], [unusual_delight:ember_aspect], [unusual_delight:vitality], synchronized: no]
+    # List of Effects that will never appear in Magic Quartz Flower. Changing this option required game restart to take effect. [default: [alexscaves:darkness_incarnate], [alexsmobs:oiled], [aquamirae:crystallization], [born_in_chaos_v1:light_rampage], [born_in_chaos_v1:medium_rampage], [born_in_chaos_v1:strong_rampage], [born_in_chaos_v1:furious_rampage], [born_in_chaos_v1:rampant_rampage], [cataclysm:ghost_form], [cataclysm:ghost_sickness], [enigmaticdelicacy:astral_drunkenness], [enigmaticdelicacy:abyss_corruption], [enigmaticdelicacy:fading], [enigmaticdelicacy:health_curse], [enigmaticlegacy:blazing_strength], [goety:shadow_walk], [irons_spellbooks:abyssal_shroud], [irons_spellbooks:evasion], [irons_spellbooks:heartstop], [irons_spellbooks:true_invisibility], [ltc2:undying_benediction], [more_potion_effects:extension], [more_potion_effects:immortal], [more_potion_effects:static_life], [supernatural:supernatural], [unusual_delight:crystal_aspect], [unusual_delight:ember_aspect], [unusual_delight:vitality], synchronized: no]
     S:ArtificialFlowerEffectBlackList <
         alexscaves:darkness_incarnate
         alexsmobs:oiled
@@ -185,7 +185,10 @@
         born_in_chaos_v1:rampant_rampage
         cataclysm:ghost_form
         cataclysm:ghost_sickness
+        enigmaticdelicacy:astral_drunkenness
+        enigmaticdelicacy:abyss_corruption
         enigmaticdelicacy:fading
+        enigmaticdelicacy:health_curse
         enigmaticlegacy:blazing_strength
         goety:shadow_walk
         irons_spellbooks:abyssal_shroud
@@ -386,8 +389,8 @@
     # Active ability cooldown for Lost Engine. Measured in ticks. 20 ticks equal to 1 second. [range: 0 ~ 32768, default: 0, synchronized: yes]
     I:LostEngineCooldown=0
 
-    # The crit damage modifier of the Lost Engine. [range: 0 ~ 256, default: 60, synchronized: yes]
-    I:LostEngineCritDamageModifier=60
+    # The crit damage modifier of the Lost Engine. [range: 0 ~ 256, default: 35, synchronized: yes]
+    I:LostEngineCritDamageModifier=35
 
     # List of entities that will be affected as Golem by the Lost Engine. Examples: minecraft:iron_golem. Changing this option required game restart to take effect. [default: , synchronized: no]
     S:LostEngineExtraGolemList <
@@ -489,7 +492,7 @@
     # The damage boost multiplier of the Ring of Ultimate Luxury . [range: 0.0 ~ 2.0, default: 0.5, synchronized: yes]
     D:RingofUltimateLuxuryDamageBoostMultiplier=0.5
 
-    # List of entities that will be affected as Golem by the Ring of Ultimate Luxury. Examples: minecraft:iron_golem. Changing this option required game restart to take effect. [default: , synchronized: no]
+    # List of entities that will be affected as Merchant by the Ring of Ultimate Luxury. Changing this option required game restart to take effect. [default: , synchronized: no]
     S:RingofUltimateLuxuryExtraMerchantList <
      >
 
@@ -562,6 +565,13 @@
     # The hurt interval time of cursed target. Measured as ticks. [range: 1 ~ 40, default: 12, synchronized: yes]
     I:TheCurseCarverCurseHurtInterval=12
 
+    # When set to false, only the upper limit of ONE level will be exceeded. [default: true, synchronized: yes]
+    B:TomeofDivinationAmplifyMode=true
+
+    # List of enchantments that will not be affected by the Tome of Divination. Examples: minecraft:sharpness. Changing this option required game restart to take effect. [default: , synchronized: no]
+    S:TomeofDivinationBlacklist <
+     >
+
     # List of entities that will be affected as Raider by the Totem of Malice. Examples: minecraft:witch. Changing this option required game restart to take effect. [default: , synchronized: no]
     S:TotemofMaliceExtraRaiderList <
      >
@@ -571,6 +581,15 @@
 
     # The damage resistance to the Raiders. [range: 0.0 ~ 400.0, default: 0.5, synchronized: yes]
     D:TotemofMaliceRaiderDamageResistance=0.5
+
+    # Undocumented property [range: 160 ~ 800, default: 320, synchronized: yes]
+    I:explorerScrollcooldown=320
+
+    # Undocumented property [range: 1 ~ 10, default: 5, synchronized: yes]
+    I:explorerScrolleffectiveRange=5
+
+    # Undocumented property [range: 0 ~ 100, default: 40, synchronized: yes]
+    I:survivalScrollhealthThreshold=40
 }
 
 

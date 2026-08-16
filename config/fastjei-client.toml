@@ -1,0 +1,31 @@
+#Batch JEI's ingredient filter construction into a single bulk operation
+#instead of one call per ingredient. Required for parallelSearchBuild to
+#help during startup. Safe.
+#Only used on JEI 15.20.0.113 - 15.21.0.148; newer JEI does this itself.
+batchedFilterInit = true
+#Build JEI's search indexes (name/mod/tag/tooltip prefix trees) on worker
+#threads instead of one at a time on the main thread. Safe: each index is
+#only ever written by one thread.
+parallelSearchBuild = true
+#Also compute item tooltips for JEI's tooltip search on worker threads.
+#This is usually the single slowest part of JEI startup because it runs
+#every mod's tooltip code once per item. Errors are isolated per item.
+#Disable this first if you see startup crashes mentioning tooltips.
+parallelTooltipScan = true
+#Worker thread count for parallel work. 0 = auto (cpu cores - 2, minimum 2).
+#Range: 0 ~ 64
+workerThreads = 0
+#When a recipe category has more recipes than lazyRecipeLayoutThreshold,
+#only build the recipe widgets for the page being viewed instead of all of
+#them up front. Fixes the freeze/crash when opening an item with a huge
+#number of recipes or uses. Note: for such huge categories the
+#'bookmarked first' / 'craftable first' recipe sorting is skipped.
+#Only used on JEI 15.20.0.113 - 15.21.0.148; newer JEI does this itself.
+lazyRecipeLayouts = true
+#Recipe count above which lazy recipe layouts kick in.
+#0 = always lazy (recipe sorting stages never apply).
+#Range: 0 ~ 1000000
+lazyRecipeLayoutThreshold = 200
+#Log how long each FastJEI-accelerated phase took.
+logTimings = true
+

@@ -1,7 +1,0 @@
-
-#General settings
-[general]
-	#The amount of slots given by armor that has not been setup with a slot count [Default: 2.25]
-	#Range: 0.0 ~ 26.0
-	defaultSlotCount = 2.25
-

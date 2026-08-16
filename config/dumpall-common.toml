@@ -1,0 +1,9 @@
+#How many entries each dump job serializes per server tick.
+#Lower spreads the work across more ticks (lighter on the server); higher finishes sooner.
+#Range: 1 ~ 100000
+entriesPerTick = 200
+#Freeze the world (time, mobs, blocks, machines) while a paced dump is running,
+#so nothing but the dump progresses. Progress still shows in chat.
+#Set false to let the world keep running during dumps.
+freezeWorldWhileDumping = true
+

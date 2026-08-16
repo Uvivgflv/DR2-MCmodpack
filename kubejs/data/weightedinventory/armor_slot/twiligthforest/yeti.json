@@ -1,9 +1,0 @@
-{
-    "armor_items" :[
-        "twilightforest:yeti_helmet",
-        "twilightforest:yeti_chestplate",
-        "twilightforest:yeti_leggings",
-        "twilightforest:yeti_boots"
-    ],
-    "slotsPerPiece": 2.0
-}

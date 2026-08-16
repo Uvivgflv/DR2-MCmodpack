@@ -1,9 +1,0 @@
-{
-    "armor_items" :[
-        "twilightforest:arctic_helmet",
-        "twilightforest:arctic_chestplate",
-        "twilightforest:arctic_leggings",
-        "twilightforest:arctic_boots"
-    ],
-    "slotsPerPiece": 1.0
-}

@@ -1,0 +1,13 @@
+[
+    {
+        "action": "remove",
+        "items": [
+            "vintage:andesite_sheet",
+            "vintage:netherite_sheet",
+            "vintage:zinc_sheet",
+            "vintage:nethersteel_sheet",
+            "vintage:cobalt_sheet",
+            "createbigcannons:bronze_ingot"
+        ]
+    }
+]

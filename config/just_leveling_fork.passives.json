@@ -1,0 +1,187 @@
+{
+  "attack_damage": {
+    "value": 1.5,
+    "levels": [
+      5,
+      8,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32
+    ]
+  },
+  "attack_knockback": {
+    "value": 0.4,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "max_health": {
+    "value": 20.0,
+    "levels": [
+      5,
+      8,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32
+    ]
+  },
+  "knockback_resistance": {
+    "value": 0.5,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "movement_speed": {
+    "value": 0.05,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "projectile_damage": {
+    "value": 5.0,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "armor": {
+    "value": 4.0,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "armor_toughness": {
+    "value": 1.0,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "attack_speed": {
+    "value": 0.4,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "entity_reach": {
+    "value": 1.0,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "block_reach": {
+    "value": 1.5,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "break_speed": {
+    "value": 0.5,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "beneficial_effect": {
+    "value": 60.0,
+    "levels": [
+      5,
+      8,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32
+    ]
+  },
+  "magic_resist": {
+    "value": 0.5,
+    "levels": [
+      8,
+      14,
+      20,
+      26,
+      32
+    ]
+  },
+  "critical_damage": {
+    "value": 0.25,
+    "levels": [
+      5,
+      8,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32
+    ]
+  },
+  "luck": {
+    "value": 2.0,
+    "levels": [
+      5,
+      8,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32
+    ]
+  }
+}

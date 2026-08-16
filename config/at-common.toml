@@ -3,30 +3,24 @@
 maxTier = 10
 #Enables max Tier in Creative.
 creativeMax = true
-#Enables exp system to lvl up Tier.
-enableExp = true
 #Percentage for second Tier and higher.
 #Range: 0.01 ~ 1.0
 startingExpPercent = 0.3
-#Defines should player pick up items with higher Tier or not.
-pickUp = true
-#Set to true if player can't craft higher Tier item.
-craftLock = true
 #Tiers for Items: 
-itemTiers = "1-item.minecraft.wooden_sword,2-item.minecraft.stone_sword,2-item.minecraft.bowl,"
+itemTiers = ""
 #Tiers for Entities: 
 entityTiers = ""
 #Tiers for Blocks: 
 blockTiers = ""
 #Time until items with higher Tier will drop from player. Set to 0 to disable.
 #Range: 0 ~ 9223372036854775807
-timeToDrop = 5000
+timeToDrop = 0
 #Minimum damage that higher Tier entity receives.
 #Range: 0.0 ~ 3.4028234663852886E38
-minimumDamage = 0.1
+minimumDamage = 1.0
 #Maximum bonus from max Tier tool damage dealt to Tier 1 creature. Works reverse also.
-#Range: 1 ~ 2100000000
-damagePercentBonus = 400
+#Range: 1.0 ~ 2.1E9
+damagePercentBonus = 200.0
 #Maximum durability bonus for Max Tier.
 #Range: 1 ~ 2100000000
 durabilityPercentBonus = 150

@@ -1,0 +1,318 @@
+
+["Generation&World"]
+	#Whether the Cult Temple will be place at 0,0 or not
+	PlaceCultTemple = false
+	#Whether Players will teleport to the Deep Void when jumping in the Void or not
+	PlayersTeleportInVoid = true
+	#Whether Players will teleport to the Deep Void when falling in the Void in the End or not (If PlayersTeleportInVoid is false, this will automatically be false)
+	PlayersTeleportInEnd = true
+	#At which depth does the Player teleport to the dimension (Default -70)
+	TeleportHeight = -70.0
+	#If the Deep Void should have fog or not
+	DeepVoidFog = true
+	#If blocks under specific biomes should generate plants on top of them to make the cave biome (this depends on random tick speed). If the server lags a lot, set this to true
+	StopActiveBlockGeneration = false
+	#If the old structure with the hole to the void should generate in the overworld instead of the new version
+	OldHoleStructure = false
+	#At which Y level should the structure in the Overworld generate (this needs to be at the deepest layer where bedrock generates)
+	HoleStructureY = -64.0
+	#If crumbling bedrock should generate in the overworld
+	CrumblingBedrockGenerate = false
+	GenerateCabin = true
+
+[Spawns]
+	#Whether Abductors will spawn in the Overworld or not
+	SpawnAbductors = true
+	#If corpses should fall from the sky in the Deep Void
+	SpawnFallingCorpse = true
+	#If falling corpses should place a corpse on impact
+	PlaceCorpseOnImpact = false
+	#If the Stalker should spawn or not
+	StalkerSpawns = true
+	#If Stalking Stalkers should spawn or not
+	StalkingStalkerSpawns = true
+	#The time it takes for the Stalker to spawn in ticks (Default = 1,200 ticks)
+	StalkerSpawnTimer = 1200.0
+	StalkerDespawnTimer = 6000.0
+	#How long before a Voidborn spawns when in total darkness (in ticks)
+	VoidbornSpawnTimer = 600.0
+	#If a respawn entity should be summoned when a boss dies
+	SummonBossRespawn = true
+	#By how much the Stalker Timer is reduced when the player is in light
+	LightReduceStalkerTimer = 4.0
+	#The light level (and under) at which the Stalker can spawn if the Player is in that light level range for long enough
+	StalkerLightLevel = 1.0
+	#If the False Hydra should spawn when the player has brain fog
+	FalseHydraFromBrainFog = true
+
+[Misc]
+	#Whether the ''Seek Light'' warning should appear when the Stalker is close or not (Happens only one time)
+	SeekLightWarning = true
+	#Whether light sources should be destroyed in the Deep Void or not (disable Light entities)
+	DestroyLightSources = true
+	#How long the Void Blessing effect should last when entering the Deep Void (In ticks)
+	VoidBlessingTimer = 600.0
+	#Should players teleport to the Deep Void when falling in the void in any dimension
+	AllowOtherWorldTp = false
+	#Should Soul light sources not get destroyed
+	AllowSoulLight = false
+	#If players should hallucinate below y=1 or not
+	PlayerHallucinates = true
+	#Should the Stalker be able to break certain blocks
+	StalkerBreaksBlocks = true
+	#If Darkness should attack the Player below y=0 while still keeping Hallucinate
+	Darkness = true
+	#Should players be teleported to the top of the dimension when falling in the void in the Deep Void
+	DeepVoidTp = true
+	#Should players be able to mine Primordial Stone with the Shatterbone Pickaxe
+	AllowMiningPrimordialStone = false
+	#If the Wanderer should pathfind to x=0 z=0 (may affect performance)
+	WandererCenterPathing = false
+	#If the Curse Of The Cult should block mining and placing blocks
+	CurseDisallowMiningPlacing = true
+	#If sleeping should be prevented when a Masked Hunter is nearby
+	PreventSleeping = true
+	#If bosses should apply Broken Armor when attacking
+	BossesBreakArmor = true
+	#At what percentage of the boss's health should the cap activate
+	DamageCapPercentage = 0.15
+	#If bosses should have damage caps
+	DoDamageCap = false
+	#How much armor should the broken armor effect remove (percentage removed)
+	BrokenArmorAmplifier = 0.65
+	GiveWikiBook = true
+	#If the bosses' health should scale based on the number of players
+	DoBossHpScaling = true
+	#How many hits it takes before the Voidborn disappears (damage is irrelevant)
+	VoidbornHealth = 10.0
+	#How long before the Voidborn can get hit again (in ticks)
+	VoidbornHitCooldown = 60.0
+	#If bosses should go back to idling when there are no players nearby
+	BossIdles = true
+	#If brain fog should be applied to the player when in the misted remnants
+	DoBrainFog = true
+	#If the false hydra should remove brain fog when it is killed
+	FalseHydraRemovesBrainFog = true
+	#In ticks
+	BrainFogDuration = 2000.0
+
+["Gameplay Changes"]
+	#The player spawns in the Deep Void
+	EndlessAbyss = false
+	#When the player dies, they get sent to the Deep Void
+	Purgatory = false
+	#If torches should be given to players that respawn in the Deep Void (through Purgatory)
+	GiveTorches = true
+	#Bosses can no longer kill you, instead they will bring you down to 1 health and then idle (Does not apply to the Weaver Of Souls)
+	BossesDoNotKill = false
+	#Allows the Stalker to spawn in the Overworld
+	Stalked = false
+
+["Apostle Of Catastrophe"]
+	#Damage of each knife (velocity increases that number)
+	ApostleThreeKnives = 4.0
+	ApostleBigSlash = 16.0
+	#Damage of each knife (velocity increases that number)
+	ApostleJumpShoot = 7.0
+	#Damage (ignores i-frames)
+	ApostleSpin = 1.0
+	#Damage upon landing
+	ApostleGrab = 21.0
+	#When under Max Health/Config Number, second phase is active
+	ApostleSecondPhase = 2.0
+	#Damage repeated 4 times
+	ApostlePierceHeart = 6.0
+	#Delay between attacks (in ticks)
+	ApostleDelay = 70.0
+	#Delay between attacks during the second phase (in ticks)
+	ApostleDelaySecondPhase = 50.0
+	#How many times can the apostle teleport
+	ApostleTeleportCount = 4.0
+	#Cooldown between teleports (in ticks)
+	ApostleTeleportCooldown = 100.0
+	ApostleSlash = 10.0
+	#How long does the player need to keep using a shield before angering the apostle (in ticks)
+	ApostleAngerTimer = 200.0
+	#How far the player has to be for the apostle to use his chain attack
+	ApostleChainDistance = 28.0
+	#How far the player has to be (y position) for the apostle to use his chain attack
+	ApostleChainYDistance = 4.0
+
+["Misanthropic Hivemind"]
+	#Damage each tick
+	ThrowerBoneSaw = 6.0
+	#Damage each tick
+	ThrowerSpin = 8.0
+	#Damage
+	SmasherSlash = 10.0
+	#Damage
+	SmasherOverhead = 14.0
+	#Amount healed each tick when protected by the hivemind tentacles
+	HivemindHealTentacles = 0.1
+	#Amount healed each tick when digesting a player
+	HivemindHealDigest = 2.0
+	#Damage dealt to the player when they are being digested (ignores i-frames)
+	HivemindDamageDigest = 0.54
+	HivemindBloodSpitDamage = 8.0
+	FleshFangsDamage = 2.0
+	#Damage dealt to the boss when the saw thrower or the skull smasher dies
+	HivemindDamageFromSummon = 10.0
+	#The force with which the hivemind sucks the player in
+	HivemindPullIntensity = 0.028
+
+["Primordial Bone Crawler"]
+	#Damage
+	PrimordialCrawlerSlam = 16.0
+	#Damage per spit (velocity increases that number)
+	PrimordialCrawlerSpit = 6.0
+	#Damage
+	PrimordialCrawlerDigPlayerClose = 17.0
+	#Damage (on contact)
+	PrimordialCrawlerDash = 20.0
+	#Damage in an AOE
+	PrimordialCrawlerGooBlock = 10.0
+	#Damage
+	PrimordialCrawlerAirSlam = 18.0
+	PrimordialCrawlerAirSlamChance = 0.38
+	PrimordialCrawlerStunDuration = 80.0
+
+[Weapons]
+	#Initial damage & damage dealt by the daggers
+	ForbiddenTome = 6.0
+	#Damage dealt in an AOE
+	CruelStiletto = 5.0
+	#Damage dealt by the small arrows
+	ShadestormShadeArrow = 2.0
+	#Damage dealt by the big arrow in an AOE (+ original damage)
+	ShadestormBigArrow = 5.0
+	#The amount healed when using the dark slash (per entity in the AOE)
+	SoulReaperLifesteal = 0.8
+	#Damage dealt in an AOE each tick
+	VoodooDoll = 2.0
+	#Damage dealt in an AOE
+	TheHarvest = 5.0
+	#Damage dealt in an AOE each tick (ignores armor)
+	TheHarvestSlash = 8.0
+	#Damage (velocity increases that number)
+	HeresyBloodShot = 4.0
+	#Damage (velocity increases that number)
+	HeresyGoldenBloodShot = 2.5
+	#Damage (velocity increases that number)
+	HeresyBloodShotShotgun = 25.0
+	#Damage (velocity increases that number)
+	HeresyGoldenBloodShotShotgun = 20.0
+	#Damage (velocity increases that number)
+	ApostasySoulFusedShot = 3.0
+	#Damage (velocity increases that number)
+	KnifeGlove = 4.5
+	#Damage per projectile
+	IchorSwordSpit = 5.0
+	#Damage per projectile
+	ArrowOfSpite = 4.0
+	#Damage per projectile
+	ArrowOfIchorPellets = 2.5
+	#Damage (velocity increases that number)
+	Misanthropy = 3.2
+	NervesOfSteelCrit = 34.0
+	#Damage upon teleporting to the target
+	FleshParasiteTp = 15.0
+	#If the flesh parasite should work on mobs other than players (for servers: may cause extreme lag if used repeatedly)
+	FleshParasiteEnableEntity = true
+	#Extra damage when on low health
+	RottenTongueDamage = 5.0
+	BloodBowSpike = 2.0
+	OnyxNaginataReachAddition = 1.5
+	Needlefish = 4.0
+	#Ignores armor
+	TombstoneDoom = 16.0
+	NecronomiconRange = 16.0
+	#Damage upon successfully catching an entity
+	TheCatcherInitialDamage = 2.0
+	#Damage added to the weapon's base damage upon catching an entity
+	TheCatcherExtraDamage = 4.0
+	#For how long can the player fly (in ticks)
+	FlyWingsDuration = 100.0
+	PenitentCrossReachAddition = 1.0
+	#Damage (velocity increases that number)
+	EldritchMaw = 0.7
+	#Damage dealt when the effect expires. The damage is equal to the level of the effect * value (ignores armor)
+	AbyssalMarkBurst = 2.15
+	#Distance is multiplied by this value. The result multiplies the initial damage
+	Sharpshooter = 0.085
+	#The damage dealt to the player upon shooting themselves (ignores armor)
+	PerilSelfDamage = 18.0
+	#Adrenaline is multiplied by that value, which is then used to multiply the projectile's damage
+	PerilDamageMultiplier = 3.0
+	#Damage (velocity increases that number)
+	Peril = 2.8
+	#The attack damage bonus
+	BloodstoneArmorBonus = 2.0
+	#Void bow damage (ignores armor and i-frames)
+	VoidBow = 8.0
+	ScythesReach = 0.5
+	#The attack damage bonus
+	PlagueArmorBonus = 2.0
+	BlackHoleDamage = 4.0
+	#The arrow storing limit of Black Hole when enchanted with Dimensional Burst
+	BlackHoleStoreLimit = 60.0
+	#The attack damage bonus
+	GrimRottenArmorBonus = 1.0
+	#The attack damage bonus
+	HunterArmorBonus = 1.0
+	#Base damage multiplier (ignores i-frames)
+	BloodyChainsaw = 0.05
+	#Damage (ignores i-frames)
+	DoubleBarrelShotgun = 0.7
+	PerilShowAdrenaline = true
+
+["Hive's Watcher"]
+	#Damage each tick
+	HiveWatcherWhileMoving = 10.0
+	#Damage per projectile
+	HiveWatcherSpit = 8.0
+	#Percentage change of spawning bone spikes
+	HiveWatcherSpikeSpawn = 0.18
+	#Percentage change of spawning fangs
+	HiveWatcherFangsSpawn = 0.2
+	#How long the bone spike attack lasts (in ticks)
+	HiveWatcherSpikeDuration = 70.0
+	#The frequency at which the bone spikes spawn (in ticks)
+	HiveWatcherSpikeFrequency = 5.0
+	#Damage when the player is near the spike
+	HiveWatcherSpike = 8.0
+	#Size of the damaging zone around the boss while it's moving
+	HiveWatcherAttackRadius = 6.0
+
+["Masked Hunter"]
+	#The cooldown before a Masked Hunter can spawn naturally (In ticks, 24,000 ticks is one day)
+	MaskedHunterCooldown = 72000.0
+	#If Bone Cages should be placed by Masked Hunters
+	SpawnBoneCages = true
+	#Whether Masked Hunters will spawn in the Overworld or not
+	SpawnMaskedHunters = true
+	#From how far away the hunter's screams can be heard (in chunks)
+	MaskedHunterScreamDistance = 16.0
+	#How long before the hunter screams (in ticks, 24,000 ticks is one day)
+	MaskedHunterScreamCooldown = 72000.0
+	#The chance of the masked hunter screaming (percentage divided by 100)
+	MaskedHunterScreamChance = 0.7
+	#The radius around the player in which the masked hunter cannot spawn (in blocks * 2)
+	MaskedHunterSpawnRadius = 200.0
+
+["False Hydra"]
+	HydraDebuffDuration = 500.0
+	#Damage
+	HydraHitGround = 8.0
+	#Damage
+	HydraSweep = 12.0
+	HydraSlideSpeed = 0.4
+	HydraSlideDamage = 8.0
+	#Damage
+	HydraMultiHit = 8.0
+	#Damage of the projectile
+	HydraBoulder = 10.0
+	#In ticks
+	HydraSingingDespawnTimer = 2000.0
+	#The amount of encounters that is required before the false hydra spawns (-1)
+	SpawnHydraRequiredEncounter = 3.0
+

@@ -1,0 +1,49 @@
+
+[Soils]
+	#Disables the generation of dirt soil features
+	generationDirtSoils = true
+	#Disables the generation of eroded cave soil features
+	generationErodedCaveSoils = true
+	#Disables the generation of stony soil features
+	generationStonySoils = true
+
+[Plants]
+	#Disables the generation of extra grass features
+	generationExtraGrass = true
+	#Disables the generation of extra fern features
+	generationExtraFern = true
+	#Disables the generation of bush features
+	generationBushes = true
+	#Disables the generation of young tree features
+	generationYoungTrees = true
+	#Disables the generation of tree features
+	generationTrees = true
+
+["Water bodies"]
+	#Disables the generation of puddle features
+	generationPuddles = true
+	#Disables the generation of wetland puddle features
+	generationWetlandPuddles = true
+	#Disables the generation of pond features
+	generationPonds = true
+	#Disables the generation of waterfall features
+	generationWaterfalls = true
+
+[Rocks]
+	#Disables the generation of pillar features
+	generationPillars = true
+	#Disables the generation of stack rock features
+	generationStackRocks = true
+	#Disables the generation of beach rock features
+	generationBeachRocks = true
+	#Disables the generation of river rock features
+	generationRiverRocks = true
+	#Disables the generation of tor rock features
+	generationTorRocks = true
+	#Disables the generation of butte rock features
+	generationButteRocks = true
+	#Disables the generation of inselberg rock features
+	generationInselbergRocks = true
+	#Disables the generation of peak features
+	generationPeaks = true
+

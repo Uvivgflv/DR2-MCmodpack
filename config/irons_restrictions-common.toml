@@ -4,20 +4,24 @@ tintBasePage = true
 tintOverlayPage = true
 #If true, to use a spell on an imbued item, the spell must be learnt
 imbuedItemsRequireLearning = false
+#If true, to use a spell on an imbued item, the rarity of the spell must be gained
+imbuedItemsRequireRarity = false
+#If true, the spell on an imbued item will be obfuscated, if the user doesnt know it
+ImbuedItemsObfuscate = true
+#The spells listed in the defaultLearntSpells, will instead be the only spells that are not learnt by default
+invertDefaultSpells = false
 #A list of spells that the player will already know
 defaultLearntSpells = ["irons_spellbooks:firebolt", "irons_spellbooks:icicle"]
+#The spells listed in the excludeRandomLearntSpells, will instead be the only spells that can be learnt from the Unfinished Manuscript
+invertUnfinishedManuscript = false
 #A list of spells that will not be able to be learnt through the Unfinished Manuscript
 excludeRandomLearntSpells = ["irons_spellbooks:abyssal_shroud", "irons_spellbooks:sculk_tentacles", "irons_spellbooks:sonic_boom", "irons_spellbooks:planar_sight", "irons_spellbooks:telekinesis", "irons_spellbooks:eldritch_blast", "irons_spellbooks:pocket_dimension"]
+#A list of spells that will not be able to be learnt through Manuscripts
+excludeLearnSpells = ["irons_spellbooks:heartstop"]
 #The chance for an Unfinished Manuscript to fail
 #Range: 0.0 ~ 1.0
 failChance = 0.3
-#The spells listed in the defaultLearntSpells, will instead be the only spells that are not learnt by default
-invertDefaultSpells = false
-#The spells listed in the excludeRandomLearntSpells, will instead be the only spells that can be learnt from the Unfinished Manuscript
-invertUnfinishedManuscript = false
-#A list of spells that will not be able to be learnt through Manuscripts
-excludeLearnSpells = ["irons_spellbooks:heartstop"]
 #The default starting rarity, only applies to new players
-#Allowed Values: NONE, COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+#Allowed Values: NONE, COMMON, UNCOMMON, RARE, EPIC, LEGENDARY, MYTHIC, ANCIENT
 startingRarity = "RARE"
 

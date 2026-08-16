@@ -1,9 +1,3 @@
 {
-	chapter_groups: [
-		{ id: "01A83B53FD1D0E4F", title: "Ознакомление" }
-		{ id: "791F980752131E48", title: "Технологии" }
-		{ id: "3A75D86B692D0011", title: "Магия" }
-		{ id: "52A2B3FC7AB97687", title: "Снаряжение" }
-		{ id: "1EA2125AF2C34657", title: "DR2 Store" }
-	]
+	chapter_groups: [{ id: "75B1D843E2A961F0", title: "The BIG begining" }]
 }

@@ -148,6 +148,8 @@
 	placeable_tooltips = true
 	#Enables custom Configured config screen
 	custom_configured_screen = true
+	#I am very boring
+	unfunny = false
 	#ignore this
 	#Range: -10.0 ~ 10.0
 	test1 = 0.0
@@ -157,11 +159,11 @@
 	#ignore this
 	#Range: -10.0 ~ 10.0
 	test3 = 0.0
-	#I am very boring
-	unfunny = false
 
 #Game tweaks
 [tweaks]
+	#Show a slime overlay when you hit an entity with a slimeball
+	overlay = true
 	#Allow to right click with a clock to display current time in numerical form
 	clock_right_click = true
 	#Adds an overlay to projectile weapons in gui displaying currently selected ammo
@@ -185,8 +187,6 @@
 	mob_head_shaders = true
 	#Sends your current chat when you die while typing
 	send_chat_on_death = true
-	#Show a slime overlay when you hit an entity with a slimeball
-	overlay = true
 	#Makes enderman heads use vanilla texture. Enable for texture pack support
 	enderman_head_texture_pack_support = true
 

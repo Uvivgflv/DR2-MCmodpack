@@ -21,6 +21,7 @@ shaderpacks/.cache/
 
 #========MODS===============
 mods/
+!kubejs/server_scripts/tweak/pack/mods
 
 #========KUBEJS=============
 kubejs/exported/
@@ -66,8 +67,14 @@ data/
 !kubejs/data
 fancymenu_data/
 global_packs/
-minecraft/gtceu
+gtceu/*
+exports/*
+dumpall/*
 schematics/
+moonlight-global-datapacks/*
+resourcepacks/*
+texturepacks/*
+skilltree/*
 server-resource-packs/
 xaero/
 XaeroWaypoints_*/
@@ -95,7 +102,7 @@ xaerominimap_entities.json
 old_dir/
 
 
-#scripts/
+scripts/
 
 #======SYSTEM===============
 .DS_Store
@@ -109,11 +116,9 @@ desktop.ini
 *.jar
 
 #========VSCODE=============
-.vscode/workspaceStorage/
-!.vscode/settings.js
-!.vscode/extensions.js
-!.vscode/tasks.json
+.vscode/*
 
 #=========NODE==============
 node_modules/
 package-lock.json
+

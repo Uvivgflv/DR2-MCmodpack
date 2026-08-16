@@ -318,6 +318,9 @@
 		"Allow Opening Shulker Boxes" = true
 		"Allow Rotating Bundles" = true
 
+	[management.hotbar_changer]
+		"Animation Time" = 7.0
+
 	[management.inventory_sorting]
 		"Enable Player Inventory" = true
 		"Enable Player Inventory In Chests" = true
@@ -333,9 +336,6 @@
 
 	[management.quick_armor_swapping]
 		"Swap Off Hand" = true
-
-	[management.hotbar_changer]
-		"Animation Time" = 7.0
 
 [tools]
 	Abacus = true
@@ -525,7 +525,7 @@
 	"Enhanced Ladders" = true
 	"Glass Shard" = true
 	"Gold Tools Have Fortune" = true
-	"Grab Chickens" = false
+	"Grab Chickens" = true
 	"Hoe Harvesting" = true
 	"Horses Swim" = true
 	"Improved Sponges" = true
@@ -549,7 +549,7 @@
 	"Slabs To Blocks" = true
 	"Slimes To Magma Cubes" = true
 	"Snow Golem Player Heads" = true
-	"Utility Recipes" = false
+	"Utility Recipes" = true
 	"Vexes Die With Their Masters" = true
 	"Villagers Follow Emeralds" = true
 	"Zombie Villagers On Normal" = true
@@ -1823,11 +1823,11 @@
 [oddities]
 	Backpack = true
 	Crate = true
-	Magnets = true
+	Magnets = false
 	"Matrix Enchanting" = false
 	Pipes = false
-	"Tiny Potato" = false
-	"Totem Of Holding" = false
+	"Tiny Potato" = true
+	"Totem Of Holding" = true
 
 	[oddities.backpack]
 		#Set this to true to allow the backpacks to be unequipped even with items in them

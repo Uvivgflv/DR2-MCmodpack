@@ -1,0 +1,9 @@
+{
+    "type": "forge:remove_features",
+    "biomes": "#minecraft:is_overworld",
+    "features": [
+        "botania:mystical_flowers",
+        "botania:mystical_mushrooms"
+    ],
+    "order": 0
+}

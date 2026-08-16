@@ -15,7 +15,7 @@
       "weapon_attributes": "bettercombat:double_axe"
     },
     {
-      "item_id_regex": ".*scythe.*",
+      "item_id_regex": "scythe",
       "weapon_attributes": "bettercombat:scythe"
     },
     {
