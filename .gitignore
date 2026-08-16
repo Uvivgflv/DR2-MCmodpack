@@ -30,6 +30,7 @@ kubejs/client_scripts/cache
 kubejs/server_scripts/cache
 kubejs/*.log
 !kubejs/assets
+!kubejs/server_scripts/mods
 
 #========CONFIGS============
 config/**/*.cfg.cache
